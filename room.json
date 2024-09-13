@@ -1,0 +1,74 @@
+[
+    {
+        "roomid": "1001",
+        "capacity": 1
+    },
+    {
+        "roomid": "1003",
+        "capacity": 1
+    },
+    {
+        "roomid": "1033",
+        "capacity": 1
+    },
+    {
+        "roomid": "1006",
+        "capacity": 1
+    },
+    {
+        "roomid": "1031",
+        "capacity": 1
+    },
+    {
+        "roomid": "1036",
+        "capacity": 1
+    },
+    {
+        "roomid": "1041",
+        "capacity": 1
+    },
+    {
+        "roomid": "1054",
+        "capacity": 1
+    },
+    {
+        "roomid": "1057",
+        "capacity": 1
+    },
+    {
+        "roomid": "1056",
+        "capacity": 1
+    },
+    {
+        "roomid": "1069",
+        "capacity": 1
+    },
+    {
+        "roomid": "1101",
+        "capacity": 1
+    },
+    {
+        "roomid": "1075",
+        "capacity": 1
+    },
+    {
+        "roomid": "1071",
+        "capacity": 1
+    },
+    {
+        "roomid": "1085",
+        "capacity": 1
+    },
+    {
+        "roomid": "1087",
+        "capacity": 1
+    },
+    {
+        "roomid": "1089",
+        "capacity": 1
+    },
+    {
+        "roomid": "191",
+        "capacity": 1
+    }
+]
