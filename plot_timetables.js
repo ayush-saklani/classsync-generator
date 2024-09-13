@@ -2,6 +2,7 @@ import { time } from 'console';
 import fs from 'fs';
 let no_of_timetable = 20;
 
+//  structure of timetable as template
 let timetablestructure = [
     [{ "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }],
     [{ "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }],
@@ -11,13 +12,14 @@ let timetablestructure = [
     [{ "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }],
     [{ "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }]
 ];
+//  subject data 
 let subject = JSON.parse(fs.readFileSync('subjects.json', 'utf8'));
+//  room data
 let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
+
 let max = 60; // 6 days * 10 hours mon to sat 8am to 6pm
 
 let alltimetable = [];
-
-
 
 
 
@@ -41,8 +43,9 @@ const validate_timetable_slot = (alltimetable, j, k,teacherid) => {
         return true;
     }
 }
-let flag = 0;
-let number_of_sections = 5;
+
+let flag = 0;   // flag to check the number of conflicts in the timetable generation
+let number_of_sections = 5;     // number of timetable to generate
 for (let i = 0; i < number_of_sections; i++) {
     console.log("Generating Timetables for Section " + i);
     let subjects = JSON.parse(JSON.stringify(subject));             // deep copy of subject

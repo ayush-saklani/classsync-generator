@@ -1,3 +1,4 @@
+// this function will validate the array of timetable and flag out the room and teacher conflicts from that batch of timetables
 import fs from 'fs';
 const validate_timetable = (timetable) => {
     let day = ["Mon", "Tue", "Wedn", "Thu", "Fri", "Sat", "Sun"];
