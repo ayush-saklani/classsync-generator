@@ -648,5 +648,330 @@
                 "weekly_hrs": 3
             }
         ]
+    },
+    {
+        "timetable": [
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "2",
+                    "teacherid": "11"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ]
+        ],
+        "subjects": [
+            {
+                "subjectid": "TCS601",
+                "teacherid": "2118420",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "PXCS601",
+                "teacherid": "2118421",
+                "weekly_hrs": 2
+            },
+            {
+                "subjectid": "XCS601Q",
+                "teacherid": "2118422",
+                "weekly_hrs": 2
+            },
+            {
+                "subjectid": "TCS604",
+                "teacherid": "2118423",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "TES669",
+                "teacherid": "2118424",
+                "weekly_hrs": 3
+            }
+        ]
     }
 ]

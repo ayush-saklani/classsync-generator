@@ -19,22 +19,23 @@ let max = 60; // 6 days * 10 hours mon to sat 8am to 6pm
 
 let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 
-const validate_timetable_slot = (alltimetable, j, k,teacherid) => {
+const validate_timetable_slot = (alltimetable, j, k, teacherid, classid) => {
     // 8am to 6pm
     let temp = {}
     if (alltimetable.length == 0) { return true; }
     for (let i = 0; i < alltimetable.length; i++) {        // all timetables
-        if (alltimetable[i]['timetable'][j][k].teacherid) {         // if class is empty
-            if (temp[("teacher" + alltimetable[i]['timetable'][j][k].teacherid)]) {
+        if (alltimetable[i]['timetable'][j][k].teacherid && alltimetable[i]['timetable'][j][k].classid) {         // if class is empty            
+            if (temp[("teacher" + alltimetable[i]['timetable'][j][k].teacherid)] || temp[("class" + alltimetable[i]['timetable'][j][k].classid)]) {
                 return false;
             } else {
-                temp[("teacher" + alltimetable[i]['timetable'][j][k].teacherid)] = true;         // teacher is not required now 
+                temp[("teacher" + alltimetable[i]['timetable'][j][k].teacherid)] = true;
+                temp[("class" + alltimetable[i]['timetable'][j][k].classid)] = true;
             }
         }
     }
-    if (temp[("teacher" + teacherid)]) {
+    if (temp[("teacher" + teacherid)] || temp[("class" + classid)]) {
         return false;
-    } else{
+    } else {
         return true;
     }
 }
@@ -47,22 +48,32 @@ for (let i = 0; i < alltimetable.length; i++) {
     let timetable = JSON.parse(JSON.stringify(timetablestructure)); // deep copy of timetablestructure
     while (subjects.length > 0) {
         let tempsubjectindex = (Math.floor(Math.random() * subjects.length));   // randomly choose subject\
+        let temp2 = (Math.floor(Math.random() * room.length)); // randomly choose room
+
         // console.log(subjects);
 
-        if (subjects[tempsubjectindex]) {
-            let temp = Math.floor(Math.random() * max);
+        if (subjects[tempsubjectindex] && room[temp2]) {
+            let temp = Math.floor(Math.random() * max); // randomly choose slot
+
             // console.log(temp + " || " + (Math.floor(temp / 10)) + " || " + (Math.floor((temp % 10))));
-            if (timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].teacherid == "" ) {
-                if(validate_timetable_slot(alltimetable, (Math.floor(temp / 10)), (Math.floor(temp % 10)), subjects[tempsubjectindex].teacherid)){
+            if (timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].teacherid == "" && timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].classid == "") {
+
+                //if validation in slot is true then assign the subject to that slot
+                if (validate_timetable_slot(alltimetable, (Math.floor(temp / 10)), (Math.floor(temp % 10)), subjects[tempsubjectindex].teacherid, room[temp2].roomid)) {
                     timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].teacherid = subjects[tempsubjectindex].teacherid;
+                    timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].classid = room[temp2].roomid;
                     subjects[tempsubjectindex].weekly_hrs--;
+                    // room[temp2].capacity--;
                     if (subjects[tempsubjectindex].weekly_hrs == 0) {
                         subjects.splice(tempsubjectindex, 1); // remove subject from list and 
                     }
-                }else{
+                    if (room[temp2].capacity == 0) {
+                        room.splice(temp2, 1); // remove room from list and 
+                    }
+                } else {
                     flag++;
                     // console.log(flag);
-                } 
+                }
             }
         }
     }

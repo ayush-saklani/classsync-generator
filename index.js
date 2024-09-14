@@ -2985,11 +2985,11 @@ const displayTimetableAsTables = (timetable) => {
                 <tbody>`;
                 let day = ["Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
-        for (let j = 0; j < timetable[i].length; j++) {
+        for (let j = 0; j < timetable[i]['timetable'].length; j++) {
             listHTML += `<tr> <th><b>${day[j]}</b></th>`; // Start each row
-            for (let k = 0; k < timetable[i][j].length; k++) {
-                let classid = timetable[i][j][k].classid || "";     // Default to 'N/A' if empty
-                let teacherid = timetable[i][j][k].teacherid || ""; // Default to 'N/A' if empty
+            for (let k = 0; k < timetable[i]['timetable'][j].length; k++) {
+                let classid = timetable[i]['timetable'][j][k].classid || "";     // Default to 'N/A' if empty
+                let teacherid = timetable[i]['timetable'][j][k].teacherid || ""; // Default to 'N/A' if empty
 
                 // Add row regardless of empty or non-empty data
                 listHTML += `
