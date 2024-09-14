@@ -1,4 +1,3 @@
-import { time } from 'console';
 import fs from 'fs';
 let no_of_timetable = 20;
 
@@ -12,28 +11,24 @@ let timetablestructure = [
     [{ "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }],
     [{ "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }]
 ];
-//  subject data 
-let subject = JSON.parse(fs.readFileSync('subjects.json', 'utf8'));
+
 //  room data
 let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
 
 let max = 60; // 6 days * 10 hours mon to sat 8am to 6pm
 
-let alltimetable = [];
-
-
-
+let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 
 const validate_timetable_slot = (alltimetable, j, k,teacherid) => {
     // 8am to 6pm
     let temp = {}
     if (alltimetable.length == 0) { return true; }
     for (let i = 0; i < alltimetable.length; i++) {        // all timetables
-        if (alltimetable[i][j][k].teacherid) {         // if class is empty
-            if (temp[("teacher" + alltimetable[i][j][k].teacherid)]) {
+        if (alltimetable[i]['timetable'][j][k].teacherid) {         // if class is empty
+            if (temp[("teacher" + alltimetable[i]['timetable'][j][k].teacherid)]) {
                 return false;
             } else {
-                temp[("teacher" + alltimetable[i][j][k].teacherid)] = true;         // teacher is not required now 
+                temp[("teacher" + alltimetable[i]['timetable'][j][k].teacherid)] = true;         // teacher is not required now 
             }
         }
     }
@@ -46,9 +41,9 @@ const validate_timetable_slot = (alltimetable, j, k,teacherid) => {
 
 let flag = 0;   // flag to check the number of conflicts in the timetable generation
 let number_of_sections = 5;     // number of timetable to generate
-for (let i = 0; i < number_of_sections; i++) {
+for (let i = 0; i < alltimetable.length; i++) {
     console.log("Generating Timetables for Section " + i);
-    let subjects = JSON.parse(JSON.stringify(subject));             // deep copy of subject
+    let subjects = JSON.parse(JSON.stringify(alltimetable[i].subjects));  // deep copy of subjects
     let timetable = JSON.parse(JSON.stringify(timetablestructure)); // deep copy of timetablestructure
     while (subjects.length > 0) {
         let tempsubjectindex = (Math.floor(Math.random() * subjects.length));   // randomly choose subject\
@@ -66,13 +61,13 @@ for (let i = 0; i < number_of_sections; i++) {
                     }
                 }else{
                     flag++;
-                    console.log(flag);
+                    // console.log(flag);
                 } 
             }
         }
     }
     console.log("===========================================================");
-    alltimetable.push(timetable)
+    alltimetable[i].timetable = timetable;
 }
 
 fs.writeFileSync('data2.json', JSON.stringify(alltimetable), 'utf8');

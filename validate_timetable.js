@@ -7,19 +7,19 @@ const validate_timetable = (timetable) => {
         for (let k = 0; k < 10; k++) {                          // 8am to 6pm
             let temp = {}
             for (let i = 0; i < timetable.length; i++) {        // all timetables
-                if (timetable[i][j][k].teacherid) {         // if class is empty
+                if (timetable[i]['timetable'][j][k].teacherid) {         // if class is empty
                 // if (timetable[i][j][k].classid != "") {         // if class is empty
-                    if (temp[("teacher" + timetable[i][j][k].teacherid)]) {
-                        process.stdout.write(temp[("class" + timetable[i][j][k].classid)] ? "class conflicts " : "class error safe");
+                    if (temp[("teacher" + timetable[i]['timetable'][j][k].teacherid)]) {
+                        process.stdout.write(temp[("class" + timetable[i]['timetable'][j][k].classid)] ? "class conflicts " : "class error safe");
                         process.stdout.write("    --------    ");
-                        process.stdout.write(temp[("teacher" + timetable[i][j][k].teacherid)] ? "teacher conflicts " : "teacher error safe");
+                        process.stdout.write(temp[("teacher" + timetable[i]['timetable'][j][k].teacherid)] ? "teacher conflicts " : "teacher error safe");
                         process.stdout.write("    --------    ");
-                        process.stdout.write(i+" "+j+" "+k+" conflict at" + " Day : " + day[j] + " Period : " + slot[j] + " Class id : " + timetable[i][j][k].classid + " Teacher id : " + timetable[i][j][k].teacherid);
+                        process.stdout.write(i+" "+j+" "+k+" conflict at" + " Day : " + day[j] + " Period : " + slot[j] + " Class id : " + timetable[i]['timetable'][j][k].classid + " Teacher id : " + timetable[i]['timetable'][j][k].teacherid);
                         console.log("");
                         // return false;
                     } else {
                         // temp[("class" + timetable[i][j][k].classid)] = true;
-                        temp[("teacher" + timetable[i][j][k].teacherid)] = true;
+                        temp[("teacher" + timetable[i]['timetable'][j][k].teacherid)] = true;
                     }
                 }
             }    
