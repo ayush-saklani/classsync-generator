@@ -2966,10 +2966,10 @@ const displayTimetableAsTables = (timetable) => {
     for (let i = 0; i < timetable.length; i++) {
         listHTML += `
         <li>
-            <table border="1">            
+            <table>            
                 <thead>
                 <tr>
-                <th></th>
+                <th>${(timetable[i]['fit_score'] || "Fit-NA")}</th>
                 <th><b>08-09</b></th>
                 <th><b>09-10</b></th>
                 <th><b>10-11</b></th>
@@ -2980,7 +2980,7 @@ const displayTimetableAsTables = (timetable) => {
                 <th><b>03-04</b></th>
                 <th><b>04-05</b></th>
                 <th><b>05-06</b></th>
-                </tr>
+                </dr>
                 </thead>
                 <tbody>`;
                 let day = ["Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun"];

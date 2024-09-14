@@ -27,8 +27,8 @@ let timetablestructure = [
 
 
 //  slot range for timetable
-let min = 10; // start from 10 (tuesday 9am)   
-let max = 60; // end at 59  (saturday 6pm) (60 is not included)
+let min = 0; // if 10 then start from 10 (tuesday 9am)   
+let max = 50; // it 60 then end at 59  (saturday 6pm) (60 is not included)
 
 //  timetable data with subjects and teachers already assigned
 let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));
