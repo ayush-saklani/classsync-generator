@@ -1,4 +1,5 @@
 import fs from 'fs';
+import validate_timetable_set from './validate_timetable.js';
 let no_of_timetable = 20;
 
 //  structure of timetable as template
@@ -44,31 +45,28 @@ let flag = 0;   // flag to check the number of conflicts in the timetable genera
 let number_of_sections = 5;     // number of timetable to generate
 for (let i = 0; i < alltimetable.length; i++) {
     console.log("Generating Timetables for Section " + i);
-    let subjects = JSON.parse(JSON.stringify(alltimetable[i].subjects));  // deep copy of subjects
-    let timetable = JSON.parse(JSON.stringify(timetablestructure)); // deep copy of timetablestructure
-    while (subjects.length > 0) {
-        let tempsubjectindex = (Math.floor(Math.random() * subjects.length));   // randomly choose subject\
-        let temp2 = (Math.floor(Math.random() * room.length)); // randomly choose room
+    let subjects = JSON.parse(JSON.stringify(alltimetable[i].subjects));        // deep copy of subjects
+    let timetable = JSON.parse(JSON.stringify(timetablestructure));             // deep copy of timetablestructure
+    while (subjects.length > 0) {                                               // loop until all subjects are assigned
+        let temp_subject_index = (Math.floor(Math.random() * subjects.length));   // randomly choose subject\
+        let temp_room_index = (Math.floor(Math.random() * room.length));                  // randomly choose room
 
-        // console.log(subjects);
-
-        if (subjects[tempsubjectindex] && room[temp2]) {
-            let temp = Math.floor(Math.random() * max); // randomly choose slot
+        if (subjects[temp_subject_index] && room[temp_room_index]) {
+            let temp = Math.floor(Math.random() * max);                         // randomly choose slot
 
             // console.log(temp + " || " + (Math.floor(temp / 10)) + " || " + (Math.floor((temp % 10))));
             if (timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].teacherid == "" && timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].classid == "") {
 
                 //if validation in slot is true then assign the subject to that slot
-                if (validate_timetable_slot(alltimetable, (Math.floor(temp / 10)), (Math.floor(temp % 10)), subjects[tempsubjectindex].teacherid, room[temp2].roomid)) {
-                    timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].teacherid = subjects[tempsubjectindex].teacherid;
-                    timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].classid = room[temp2].roomid;
-                    subjects[tempsubjectindex].weekly_hrs--;
-                    // room[temp2].capacity--;
-                    if (subjects[tempsubjectindex].weekly_hrs == 0) {
-                        subjects.splice(tempsubjectindex, 1); // remove subject from list and 
-                    }
-                    if (room[temp2].capacity == 0) {
-                        room.splice(temp2, 1); // remove room from list and 
+                if (validate_timetable_slot(alltimetable, (Math.floor(temp / 10)), (Math.floor(temp % 10)), subjects[temp_subject_index].teacherid, room[temp_room_index].roomid)) {
+                    timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].teacherid = subjects[temp_subject_index].teacherid;
+                    timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].classid = room[temp_room_index].roomid;
+                    subjects[temp_subject_index].weekly_hrs--;
+                    // room[temp_room_index].capacity--;                        // currently not implemented due to logic thinking incapability of the developer, lol :P
+                    if (subjects[temp_subject_index].weekly_hrs == 0) {
+                        subjects.splice(temp_subject_index, 1);                 // remove subject from list and 
+                    }if (room[temp_room_index].capacity == 0) {
+                        room.splice(temp_room_index, 1);                        // remove room from list (currently not implemented) due to above reason
                     }
                 } else {
                     flag++;
@@ -80,11 +78,16 @@ for (let i = 0; i < alltimetable.length; i++) {
     console.log("===========================================================");
     alltimetable[i].timetable = timetable;
 }
-
+console.log("=============  Timetable Generation Complete  =============");
+console.log("==========  Timetable validation status : "+validate_timetable_set(alltimetable)+"    =========");
+console.log("===========================================================");
 fs.writeFileSync('data2.json', JSON.stringify(alltimetable), 'utf8');
 
 
-//      Timtable in 2D-array
+
+
+
+// Timtable in 2D-array (just for reference)
 //  0  1  2  3  4  5  6  7  8  9
 // 10 11 12 13 14 15 16 17 18 19
 // 20 21 22 23 24 25 26 27 28 29
