@@ -298,31 +298,66 @@
         ],
         "subjects": [
             {
-                "subjectid": "TCS601",
-                "teacherid": "2118420",
-                "weekly_hrs": 3
+              "subjectid": "TCS509",
+              "teacherid": "2118536",
+              "weekly_hrs": 3
             },
             {
-                "subjectid": "PXCS601",
-                "teacherid": "2118421",
-                "weekly_hrs": 2
+              "subjectid": "TCS502",
+              "teacherid": "2118572",
+              "weekly_hrs": 3
             },
             {
-                "subjectid": "XCS601Q",
-                "teacherid": "2118422",
-                "weekly_hrs": 2
+              "subjectid": "TCS503",
+              "teacherid": "2118523",
+              "weekly_hrs": 3
             },
             {
-                "subjectid": "TCS604",
-                "teacherid": "2118423",
-                "weekly_hrs": 3
+              "subjectid": "TMA502",
+              "teacherid": "2118526",
+              "weekly_hrs": 3
             },
             {
-                "subjectid": "TES669",
-                "teacherid": "2118424",
-                "weekly_hrs": 3
+              "subjectid": "TCS548",
+              "teacherid": "2118529",
+              "weekly_hrs": 3
+            },
+            {
+              "subjectid": "TCS591",
+              "teacherid": "2118517",
+              "weekly_hrs": 3
+            },
+            {
+              "subjectid": "TCS592",
+              "teacherid": "2118555",
+              "weekly_hrs": 3
+            },
+            {
+              "subjectid": "XCS501Q",
+              "teacherid": "2118571",
+              "weekly_hrs": 1
+            },
+            {
+              "subjectid": "XCS501V",
+              "teacherid": "2118601",
+              "weekly_hrs": 1
+            },
+            {
+              "subjectid": "PCS503",
+              "teacherid": "2118523",
+              "weekly_hrs": 2
+            },
+            {
+              "subjectid": "PMA502",
+              "teacherid": "2118526",
+              "weekly_hrs": 2
+            },
+            {
+              "subjectid": "XCS510",
+              "teacherid": "2118573",
+              "weekly_hrs": 2
             }
-        ]
+          ]
     },
     {
         "timetable": [
@@ -623,31 +658,66 @@
         ],
         "subjects": [
             {
-                "subjectid": "TCS601",
-                "teacherid": "2118420",
-                "weekly_hrs": 3
+              "subjectid": "TCS509",
+              "teacherid": "2118536",
+              "weekly_hrs": 3
             },
             {
-                "subjectid": "PXCS601",
-                "teacherid": "2118421",
-                "weekly_hrs": 2
+              "subjectid": "TCS502",
+              "teacherid": "2118572",
+              "weekly_hrs": 3
             },
             {
-                "subjectid": "XCS601Q",
-                "teacherid": "2118422",
-                "weekly_hrs": 2
+              "subjectid": "TCS503",
+              "teacherid": "2118523",
+              "weekly_hrs": 3
             },
             {
-                "subjectid": "TCS604",
-                "teacherid": "2118423",
-                "weekly_hrs": 3
+              "subjectid": "TMA502",
+              "teacherid": "2118526",
+              "weekly_hrs": 3
             },
             {
-                "subjectid": "TES669",
-                "teacherid": "2118424",
-                "weekly_hrs": 3
+              "subjectid": "TCS548",
+              "teacherid": "2118529",
+              "weekly_hrs": 3
+            },
+            {
+              "subjectid": "TCS591",
+              "teacherid": "2118517",
+              "weekly_hrs": 3
+            },
+            {
+              "subjectid": "TCS592",
+              "teacherid": "2118555",
+              "weekly_hrs": 3
+            },
+            {
+              "subjectid": "XCS501Q",
+              "teacherid": "2118571",
+              "weekly_hrs": 1
+            },
+            {
+              "subjectid": "XCS501V",
+              "teacherid": "2118601",
+              "weekly_hrs": 1
+            },
+            {
+              "subjectid": "PCS503",
+              "teacherid": "2118523",
+              "weekly_hrs": 2
+            },
+            {
+              "subjectid": "PMA502",
+              "teacherid": "2118526",
+              "weekly_hrs": 2
+            },
+            {
+              "subjectid": "XCS510",
+              "teacherid": "2118573",
+              "weekly_hrs": 2
             }
-        ]
+          ]
     },
     {
         "timetable": [
@@ -948,30 +1018,65 @@
         ],
         "subjects": [
             {
-                "subjectid": "TCS601",
-                "teacherid": "2118420",
-                "weekly_hrs": 3
+              "subjectid": "TCS509",
+              "teacherid": "2118536",
+              "weekly_hrs": 3
             },
             {
-                "subjectid": "PXCS601",
-                "teacherid": "2118421",
-                "weekly_hrs": 2
+              "subjectid": "TCS502",
+              "teacherid": "2118572",
+              "weekly_hrs": 3
             },
             {
-                "subjectid": "XCS601Q",
-                "teacherid": "2118422",
-                "weekly_hrs": 2
+              "subjectid": "TCS503",
+              "teacherid": "2118523",
+              "weekly_hrs": 3
             },
             {
-                "subjectid": "TCS604",
-                "teacherid": "2118423",
-                "weekly_hrs": 3
+              "subjectid": "TMA502",
+              "teacherid": "2118526",
+              "weekly_hrs": 3
             },
             {
-                "subjectid": "TES669",
-                "teacherid": "2118424",
-                "weekly_hrs": 3
+              "subjectid": "TCS548",
+              "teacherid": "2118529",
+              "weekly_hrs": 3
+            },
+            {
+              "subjectid": "TCS591",
+              "teacherid": "2118517",
+              "weekly_hrs": 3
+            },
+            {
+              "subjectid": "TCS592",
+              "teacherid": "2118555",
+              "weekly_hrs": 3
+            },
+            {
+              "subjectid": "XCS501Q",
+              "teacherid": "2118571",
+              "weekly_hrs": 1
+            },
+            {
+              "subjectid": "XCS501V",
+              "teacherid": "2118601",
+              "weekly_hrs": 1
+            },
+            {
+              "subjectid": "PCS503",
+              "teacherid": "2118523",
+              "weekly_hrs": 2
+            },
+            {
+              "subjectid": "PMA502",
+              "teacherid": "2118526",
+              "weekly_hrs": 2
+            },
+            {
+              "subjectid": "XCS510",
+              "teacherid": "2118573",
+              "weekly_hrs": 2
             }
-        ]
+          ]
     }
 ]

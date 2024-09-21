@@ -1,6 +1,5 @@
 import fs from 'fs';
 import validate_timetable_set from './validate_timetable.js';
-let no_of_timetable = 20;
 
 //  structure of timetable as template
 let timetablestructure = [
@@ -37,7 +36,6 @@ let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
 
 //  this function will validate the slot of timetable and flag out the room and teacher conflicts from that batch of timetables
 const validate_timetable_slot = (alltimetable, j, k, teacherid, classid) => {
-    // 8am to 6pm
     let temp = {}
     if (alltimetable.length == 0) { return true; }
     for (let i = 0; i < alltimetable.length; i++) {        // all timetables
@@ -69,71 +67,134 @@ const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, classid) =>
         return true;
     }
 }
-let flag = 0;   // flag to check the number of conflicts in the timetable generation
-let number_of_sections = alltimetable.length;
-let morning_batch = Math.ceil(number_of_sections / 2);     // number of timetable to generate 
-for (let i = 0; i < alltimetable.length; i++) {
-    console.log("Generating Timetables for Section " + i);
-    let subjects = JSON.parse(JSON.stringify(alltimetable[i].subjects));            // deep copy of subjects
-    let timetable = JSON.parse(JSON.stringify(timetablestructure));                 // deep copy of timetablestructure
-    while (subjects.length > 0) {                                                   // loop until all subjects are assigned
-        let temp_subject_index = (Math.floor(Math.random() * subjects.length));     // randomly choose subject
-        let temp_room_index = (Math.floor(Math.random() * room.length));            // randomly choose room
-
-        if (subjects[temp_subject_index] && room[temp_room_index]) {
-
-            // =====================================  Randomly assign subject to slot  =======================================
-            // =========== this above logic will make half timetable of that batch morning and half evening shift ============
-            let temp;
-            while (1) {
-                temp = Math.floor(Math.random() * (max - min)) + min;           // randomly choose slot btwn 10 to 59 (just for testing)
-                // temp = Math.floor(Math.random() * max);                      // randomly choose slot
-                if (morning_batch == 0 && (Math.floor(temp % 10) >= 5)) {       // if morning batch is over then choose only afternoon slots
-                    break;
-                }
-                else if (morning_batch > 0 && (Math.floor(temp % 10) < 5)) {    // if morning batch is not over then choose only morning slots
-                    break;
-                }
-            }
-            // =========== this above logic will make half timetable of that batch morning and half evening shift ============
-            // let temp = Math.floor(Math.random() * max);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      // old logic to assign subject to slot (randomly)
+const initialize_population = (alltimetable) => {
+    let flag = 0;   // flag to check the number of conflicts in the timetable generation
+    let number_of_sections = alltimetable.length;
+    for (let i = 0; i < number_of_sections; i++) {
+        console.log("Generating Timetables for Section " + i);
+        let subjects = JSON.parse(JSON.stringify(alltimetable[i].subjects));            // deep copy of subjects
+        let timetable = JSON.parse(JSON.stringify(timetablestructure));                 // deep copy of timetablestructure
+        while (subjects.length > 0) {                                                   // loop until all subjects are assigned
+            let temp_subject_index = (Math.floor(Math.random() * subjects.length));     // randomly choose subject
+            temp_subject_index = 0;                                                     // for testing
 
 
-            // console.log(temp + " || " + (Math.floor(temp / 10)) + " || " + (Math.floor((temp % 10))));
-            if (timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].teacherid == "" && timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].classid == "") {
+            let temp_room_index = (Math.floor(Math.random() * room.length));            // randomly choose room
 
-                //if validation in slot is true then assign the subject to that slot
-                if (validate_timetable_slot(alltimetable, (Math.floor(temp / 10)), (Math.floor(temp % 10)), subjects[temp_subject_index].teacherid, room[temp_room_index].roomid, morning_batch)) {
-                    
-                    // if validation in a day is true then assign the subject to that slot (this will prevent the teacher to teach in multiple slots in a day)
-                    if (validate_multiple_slot_in_a_day(timetable, (Math.floor(temp / 10)), (Math.floor(temp % 10)), subjects[temp_subject_index].teacherid, room[temp_room_index].roomid)) {
-                        timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].teacherid = subjects[temp_subject_index].teacherid;
-                        timetable[(Math.floor(temp / 10))][(Math.floor(temp % 10))].classid = room[temp_room_index].roomid;
-                        subjects[temp_subject_index].weekly_hrs--;
-                        // room[temp_room_index].capacity--;                        // currently not implemented due to logic thinking incapability of the developer, lol :P
-                        if (subjects[temp_subject_index].weekly_hrs == 0) {
-                            subjects.splice(temp_subject_index, 1);                 // remove subject from list and 
-                        } if (room[temp_room_index].capacity == 0) {
-                            room.splice(temp_room_index, 1);                        // remove room from list (currently not implemented) due to above reason
+            if (subjects[temp_subject_index] && room[temp_room_index]) {
+
+                let temp = Math.floor(Math.random() * (max - min)) + min;           // randomly choose slot btwn 10 to 59 (just for testing)
+                let temp_day = Math.floor(temp / 10);                               // get the day from slot
+                let temp_slot = Math.floor(temp % 10);                              // get the slot from slot
+
+                // console.log(temp + " || " + temp_day + " || " + temp_slot);
+                if (timetable[temp_day][temp_slot].teacherid == "" && timetable[(temp_day)][temp_slot].classid == "") {
+
+                    //if validation in slot is true then assign the subject to that slot
+                    if (validate_timetable_slot(alltimetable, temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[temp_room_index].roomid)) {
+
+                        // if validation in a day is true then assign the subject to that slot (this will prevent the teacher to teach in multiple slots in a day)
+                        if (validate_multiple_slot_in_a_day(timetable, temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[temp_room_index].roomid)) {
+                            timetable[temp_day][temp_slot].teacherid = subjects[temp_subject_index].teacherid;
+                            timetable[temp_day][temp_slot].classid = room[temp_room_index].roomid;
+                            subjects[temp_subject_index].weekly_hrs--;
+                            if (subjects[temp_subject_index].weekly_hrs == 0) {
+                                subjects.splice(temp_subject_index, 1);                 // remove subject from list and 
+                            }
+                            if (room[temp_room_index].capacity == 0) {
+                                room.splice(temp_room_index, 1);                        // remove room from list (currently not implemented) due to above reason
+                            }
                         }
+                    } else {
+                        flag++;
+                        // console.log(flag);
                     }
-                } else {
-                    flag++;
-                    // console.log(flag);
                 }
             }
         }
+        console.log("===========================================================");
+        alltimetable[i].timetable = timetable;
     }
+    console.log("=============  Timetable Generation Complete  =============");
+    console.log("==========  Timetable validation status : " + validate_timetable_set(alltimetable) + "    =========");
     console.log("===========================================================");
-    morning_batch = (morning_batch > 0) ? (morning_batch - 1) : morning_batch;
-    alltimetable[i].timetable = timetable;
+    fs.writeFileSync('data2.json', JSON.stringify(alltimetable, null, 4), 'utf8');
 }
-console.log("=============  Timetable Generation Complete  =============");
-console.log("==========  Timetable validation status : " + validate_timetable_set(alltimetable) + "    =========");
-console.log("===========================================================");
-fs.writeFileSync('data2.json', JSON.stringify(alltimetable), 'utf8');
+initialize_population(alltimetable);    // initialize the population of timetables randomly for all sections
 
+// Fitness function to evaluate each timetable
+const calculate_fitness = (alltimetable) => {
+    let res=[];
+    for (let i = 0; i < alltimetable.length; i++) {
+        let timetable = alltimetable[i].timetable;
+        let fitness_score = 0;
+        let teacher_conflicts = 0;
+        let room_conflicts = 0;
+        let day_overload_penalty = 0;
 
+        // Step 1: Check for teacher and room conflicts
+        for (let j = 0; j < timetable.length; j++) {            // loop through days
+            let teacher_map = {};                               // track teacher per day
+            let room_map = {};                                  // track room per day
+            for (let k = 0; k < timetable[j].length; k++) {     // loop through slots
+                let current_teacher = timetable[j][k].teacherid;
+                let current_room = timetable[j][k].classid;
+
+                if (current_teacher !== "" && current_room !== "") {
+                    // Check for teacher conflict
+                    if (teacher_map[current_teacher]) {
+                        teacher_conflicts++;
+                    } else {
+                        teacher_map[current_teacher] = true;
+                    }
+
+                    // Check for room conflict
+                    if (room_map[current_room]) {
+                        room_conflicts++;
+                    } else {
+                        room_map[current_room] = true;
+                    }
+                }
+            }
+
+            // Step 2: Check for day overload for each teacher
+            for (let teacher in teacher_map) {
+                let teacher_slots = Object.keys(teacher_map).length;
+                if (teacher_slots > 5) {    // let's say more than 5 classes in a day is excessive
+                    day_overload_penalty++;
+                }
+            }
+        }
+
+        // Step 3: Check for weekly hours fulfillment for each subject
+        let weekly_hours_bonus = 0;
+        alltimetable[i].subjects.forEach(subject => {
+            let total_hours = subject.weekly_hrs;
+            let assigned_hours = 0;
+            for (let j = 0; j < timetable.length; j++) {
+                for (let k = 0; k < timetable[j].length; k++) {
+                    if (timetable[j][k].teacherid === subject.teacherid) {
+                        assigned_hours++;
+                    }
+                }
+            }
+            if (assigned_hours === total_hours) {
+                weekly_hours_bonus += 5;  // reward for fulfilling weekly hours
+            }
+        });
+
+        // Step 4: Calculate final fitness score
+        fitness_score = (weekly_hours_bonus * 10) - (teacher_conflicts * 20) - (room_conflicts * 15) - (day_overload_penalty * 10);
+        res.push({section: (alltimetable[i].section||i), fitness_score: fitness_score});
+    }
+    // Calculate the average fitness score
+    let total_fitness_score = res.reduce((acc, curr) => acc + curr.fitness_score, 0);
+    let avg_fitness_score = total_fitness_score / res.length;
+    console.log("Average Fitness Score: " + avg_fitness_score);
+    res.push({fitness_score: avg_fitness_score});
+    return res;
+};
+console.log(calculate_fitness(alltimetable));
 
 
 
