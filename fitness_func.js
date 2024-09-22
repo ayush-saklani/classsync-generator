@@ -1,3 +1,4 @@
+import { time } from 'console';
 import fs from 'fs';
 let alltimetable = JSON.parse(fs.readFileSync('data2.json', 'utf8'));
 
@@ -77,9 +78,57 @@ const fitness_func = (alltimetable) => {
         res.push({ section: (alltimetable[i].section || i), fitness_score: fitness_score });
         console.log(day_overload_penalty)
     }
+    //================= Teacher Overload calculation [experiment]=================
+    let overload_penalty = 0;
+    let overload_teacher_map = {}
+    for (let i = 0; i < alltimetable.length; i++) {
+        let timetable = alltimetable[i].timetable;
+        for (let j = 0; j < timetable.length; j++) {
+            for (let k = 0; k < timetable[j].length; k++) {
+                if (timetable[j][k].teacherid == "") continue;
+                let curr_teacher_mark = j + ";" + k + ";" + timetable[j][k].teacherid;
+                overload_teacher_map[curr_teacher_mark] = 1;
+            }
+        }
+    }
+    for (let i = 0; i < alltimetable.length; i++) {
+        let timetable = alltimetable[i].timetable;
+        for (let j = 0; j < timetable.length; j++) {
+            for (let k = 0; k < timetable[j].length; k++) {
+                if (timetable[j][k].teacherid == "") continue;
+                let curr_teacher_mark = k + ";" + k + ";" + timetable[j][k].teacherid;
+                if (overload_teacher_map[curr_teacher_mark] > 0) {
+                    let z = k;
+                    let streak = 0;
+                    while (1) {
+                        if (z >= timetable[j].length - 1) {
+                            if (streak > 2) {
+                                console.log("Streak: " + streak);
+                                overload_penalty+=streak;
+                            }
+                            break;
+                        }
+                        let check_curr_teacher_mark = j + ";" + z + ";" + timetable[j][k].teacherid;
+                        if (overload_teacher_map[check_curr_teacher_mark]) {
+                            streak++;
+                        } else {
+                            if (streak > 2) {
+                                console.log("Streak: " + streak + " " + check_curr_teacher_mark);
+                                overload_penalty+=streak;
+                            }
+                            break;
+                        }
+                        z++;
+                    }
+                }
+            }
+        }
+    }
+    //================= Teacher Overload calculation [experiment]=================
     // Calculate the average fitness score
     let total_fitness_score = res.reduce((acc, curr) => acc + curr.fitness_score, 0);
     let avg_fitness_score = total_fitness_score / res.length;
+    avg_fitness_score -= overload_penalty * 8;
     // console.log("Average Fitness Score: " + avg_fitness_score);
     res.push({ fitness_score: avg_fitness_score });
     return res;
