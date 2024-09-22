@@ -7,141 +7,11 @@
                     "teacherid": ""
                 },
                 {
-                    "classid": "1033",
-                    "teacherid": "2118523"
-                },
-                {
                     "classid": "1006",
                     "teacherid": "2118536"
                 },
                 {
-                    "classid": "1036",
-                    "teacherid": "2118529"
-                },
-                {
-                    "classid": "1085",
-                    "teacherid": "2118571"
-                },
-                {
-                    "classid": "191",
-                    "teacherid": "2118573"
-                },
-                {
-                    "classid": "1041",
-                    "teacherid": "2118526"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1057",
-                    "teacherid": "2118572"
-                }
-            ],
-            [
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1075",
-                    "teacherid": "2118529"
-                },
-                {
-                    "classid": "1085",
-                    "teacherid": "2118526"
-                },
-                {
-                    "classid": "1041",
-                    "teacherid": "2118555"
-                },
-                {
-                    "classid": "1036",
-                    "teacherid": "2118536"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1101",
-                    "teacherid": "2118517"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1003",
-                    "teacherid": "2118523"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                }
-            ],
-            [
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1085",
-                    "teacherid": "2118572"
-                },
-                {
                     "classid": "1071",
-                    "teacherid": "2118526"
-                },
-                {
-                    "classid": "1033",
-                    "teacherid": "2118517"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "191",
-                    "teacherid": "2118523"
-                },
-                {
-                    "classid": "1101",
-                    "teacherid": "2118555"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                }
-            ],
-            [
-                {
-                    "classid": "1101",
-                    "teacherid": "2118517"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1087",
                     "teacherid": "2118523"
                 },
                 {
@@ -155,668 +25,6 @@
                 {
                     "classid": "",
                     "teacherid": ""
-                },
-                {
-                    "classid": "1006",
-                    "teacherid": "2118529"
-                },
-                {
-                    "classid": "1071",
-                    "teacherid": "2118555"
-                },
-                {
-                    "classid": "1085",
-                    "teacherid": "2118526"
-                }
-            ],
-            [
-                {
-                    "classid": "1001",
-                    "teacherid": "2118573"
-                },
-                {
-                    "classid": "1056",
-                    "teacherid": "2118536"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1057",
-                    "teacherid": "2118601"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1071",
-                    "teacherid": "2118526"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1054",
-                    "teacherid": "2118523"
-                },
-                {
-                    "classid": "1041",
-                    "teacherid": "2118572"
-                }
-            ],
-            [
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                }
-            ],
-            [
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                }
-            ]
-        ],
-        "subjects": [
-            {
-                "subjectid": "TCS509",
-                "teacherid": "2118536",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "TCS502",
-                "teacherid": "2118572",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "TCS503",
-                "teacherid": "2118523",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "TMA502",
-                "teacherid": "2118526",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "TCS548",
-                "teacherid": "2118529",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "TCS591",
-                "teacherid": "2118517",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "TCS592",
-                "teacherid": "2118555",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "XCS501Q",
-                "teacherid": "2118571",
-                "weekly_hrs": 1
-            },
-            {
-                "subjectid": "XCS501V",
-                "teacherid": "2118601",
-                "weekly_hrs": 1
-            },
-            {
-                "subjectid": "PCS503",
-                "teacherid": "2118523",
-                "weekly_hrs": 2
-            },
-            {
-                "subjectid": "PMA502",
-                "teacherid": "2118526",
-                "weekly_hrs": 2
-            },
-            {
-                "subjectid": "XCS510",
-                "teacherid": "2118573",
-                "weekly_hrs": 2
-            }
-        ]
-    },
-    {
-        "timetable": [
-            [
-                {
-                    "classid": "1006",
-                    "teacherid": "2118526"
-                },
-                {
-                    "classid": "1056",
-                    "teacherid": "2118517"
-                },
-                {
-                    "classid": "1036",
-                    "teacherid": "2118555"
-                },
-                {
-                    "classid": "1003",
-                    "teacherid": "2118536"
-                },
-                {
-                    "classid": "1071",
-                    "teacherid": "2118572"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1001",
-                    "teacherid": "2118529"
-                },
-                {
-                    "classid": "1001",
-                    "teacherid": "2118523"
-                },
-                {
-                    "classid": "1056",
-                    "teacherid": "2118573"
-                }
-            ],
-            [
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1003",
-                    "teacherid": "2118571"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1075",
-                    "teacherid": "2118526"
-                },
-                {
-                    "classid": "1085",
-                    "teacherid": "2118517"
-                },
-                {
-                    "classid": "1101",
-                    "teacherid": "2118523"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1085",
-                    "teacherid": "2118536"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                }
-            ],
-            [
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "191",
-                    "teacherid": "2118572"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1041",
-                    "teacherid": "2118523"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1031",
-                    "teacherid": "2118529"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1033",
-                    "teacherid": "2118555"
-                },
-                {
-                    "classid": "1001",
-                    "teacherid": "2118526"
-                }
-            ],
-            [
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1003",
-                    "teacherid": "2118601"
-                },
-                {
-                    "classid": "1036",
-                    "teacherid": "2118536"
-                },
-                {
-                    "classid": "191",
-                    "teacherid": "2118572"
-                },
-                {
-                    "classid": "191",
-                    "teacherid": "2118529"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "191",
-                    "teacherid": "2118523"
-                },
-                {
-                    "classid": "191",
-                    "teacherid": "2118526"
-                },
-                {
-                    "classid": "1056",
-                    "teacherid": "2118573"
-                }
-            ],
-            [
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1071",
-                    "teacherid": "2118555"
-                },
-                {
-                    "classid": "1057",
-                    "teacherid": "2118523"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1057",
-                    "teacherid": "2118517"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "191",
-                    "teacherid": "2118526"
-                }
-            ],
-            [
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                }
-            ],
-            [
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                }
-            ]
-        ],
-        "subjects": [
-            {
-                "subjectid": "TCS509",
-                "teacherid": "2118536",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "TCS502",
-                "teacherid": "2118572",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "TCS503",
-                "teacherid": "2118523",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "TMA502",
-                "teacherid": "2118526",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "TCS548",
-                "teacherid": "2118529",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "TCS591",
-                "teacherid": "2118517",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "TCS592",
-                "teacherid": "2118555",
-                "weekly_hrs": 3
-            },
-            {
-                "subjectid": "XCS501Q",
-                "teacherid": "2118571",
-                "weekly_hrs": 1
-            },
-            {
-                "subjectid": "XCS501V",
-                "teacherid": "2118601",
-                "weekly_hrs": 1
-            },
-            {
-                "subjectid": "PCS503",
-                "teacherid": "2118523",
-                "weekly_hrs": 2
-            },
-            {
-                "subjectid": "PMA502",
-                "teacherid": "2118526",
-                "weekly_hrs": 2
-            },
-            {
-                "subjectid": "XCS510",
-                "teacherid": "2118573",
-                "weekly_hrs": 2
-            }
-        ]
-    },
-    {
-        "timetable": [
-            [
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1033",
-                    "teacherid": "2118523"
-                },
-                {
-                    "classid": "1087",
-                    "teacherid": "2118529"
-                },
-                {
-                    "classid": "1041",
-                    "teacherid": "2118526"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1056",
-                    "teacherid": "2118536"
-                },
-                {
-                    "classid": "1041",
-                    "teacherid": "2118517"
-                }
-            ],
-            [
-                {
-                    "classid": "1057",
-                    "teacherid": "2118526"
-                },
-                {
-                    "classid": "1054",
-                    "teacherid": "2118601"
-                },
-                {
-                    "classid": "1101",
-                    "teacherid": "2118572"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "191",
-                    "teacherid": "2118555"
-                },
-                {
-                    "classid": "1071",
-                    "teacherid": "2118573"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1006",
-                    "teacherid": "2118523"
-                }
-            ],
-            [
-                {
-                    "classid": "1056",
-                    "teacherid": "2118526"
-                },
-                {
-                    "classid": "1101",
-                    "teacherid": "2118523"
-                },
-                {
-                    "classid": "1101",
-                    "teacherid": "2118529"
                 },
                 {
                     "classid": "",
@@ -824,16 +32,864 @@
                 },
                 {
                     "classid": "1069",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "191",
+                    "teacherid": "2118529"
+                },
+                {
+                    "classid": "1069",
+                    "teacherid": "2118555"
+                }
+            ],
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1031",
+                    "teacherid": "2118555"
+                },
+                {
+                    "classid": "1069",
                     "teacherid": "2118573"
+                },
+                {
+                    "classid": "1101",
+                    "teacherid": "2118523"
+                },
+                {
+                    "classid": "191",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "1087",
+                    "teacherid": "2118601"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1056",
+                    "teacherid": "2118517"
+                },
+                {
+                    "classid": "1089",
+                    "teacherid": "2118529"
+                },
+                {
+                    "classid": "1085",
+                    "teacherid": "2118572"
+                }
+            ],
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1006",
+                    "teacherid": "2118517"
+                },
+                {
+                    "classid": "1033",
+                    "teacherid": "2118523"
+                },
+                {
+                    "classid": "1033",
+                    "teacherid": "2118536"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1041",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "1089",
+                    "teacherid": "2118572"
+                }
+            ],
+            [
+                {
+                    "classid": "1085",
+                    "teacherid": "2118572"
+                },
+                {
+                    "classid": "1001",
+                    "teacherid": "2118523"
+                },
+                {
+                    "classid": "1089",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "191",
+                    "teacherid": "2118573"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1085",
+                    "teacherid": "2118529"
+                },
+                {
+                    "classid": "1031",
+                    "teacherid": "2118571"
+                }
+            ],
+            [
+                {
+                    "classid": "1054",
+                    "teacherid": "2118555"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1071",
+                    "teacherid": "2118517"
+                },
+                {
+                    "classid": "1006",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "1041",
+                    "teacherid": "2118523"
+                },
+                {
+                    "classid": "1036",
+                    "teacherid": "2118536"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ]
+        ],
+        "subjects": [
+            {
+                "subjectid": "TCS509",
+                "teacherid": "2118536",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "TCS502",
+                "teacherid": "2118572",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "TCS503",
+                "teacherid": "2118523",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "TMA502",
+                "teacherid": "2118526",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "TCS548",
+                "teacherid": "2118529",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "TCS591",
+                "teacherid": "2118517",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "TCS592",
+                "teacherid": "2118555",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "XCS501Q",
+                "teacherid": "2118571",
+                "weekly_hrs": 1
+            },
+            {
+                "subjectid": "XCS501V",
+                "teacherid": "2118601",
+                "weekly_hrs": 1
+            },
+            {
+                "subjectid": "PCS503",
+                "teacherid": "2118523",
+                "weekly_hrs": 2
+            },
+            {
+                "subjectid": "PMA502",
+                "teacherid": "2118526",
+                "weekly_hrs": 2
+            },
+            {
+                "subjectid": "XCS510",
+                "teacherid": "2118573",
+                "weekly_hrs": 2
+            }
+        ]
+    },
+    {
+        "timetable": [
+            [
+                {
+                    "classid": "1089",
+                    "teacherid": "2118517"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1089",
+                    "teacherid": "2118523"
+                },
+                {
+                    "classid": "1101",
+                    "teacherid": "2118529"
+                },
+                {
+                    "classid": "1003",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1003",
+                    "teacherid": "2118536"
+                },
+                {
+                    "classid": "1031",
+                    "teacherid": "2118571"
+                }
+            ],
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1085",
+                    "teacherid": "2118523"
+                },
+                {
+                    "classid": "1087",
+                    "teacherid": "2118555"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1031",
+                    "teacherid": "2118517"
+                },
+                {
+                    "classid": "1071",
+                    "teacherid": "2118572"
+                },
+                {
+                    "classid": "1031",
+                    "teacherid": "2118573"
+                },
+                {
+                    "classid": "1075",
+                    "teacherid": "2118529"
+                },
+                {
+                    "classid": "191",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1101",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "1001",
+                    "teacherid": "2118523"
+                },
+                {
+                    "classid": "191",
+                    "teacherid": "2118536"
+                },
+                {
+                    "classid": "1054",
+                    "teacherid": "2118529"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1071",
+                    "teacherid": "2118555"
+                },
+                {
+                    "classid": "1101",
+                    "teacherid": "2118572"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "1041",
+                    "teacherid": "2118573"
+                },
+                {
+                    "classid": "1101",
+                    "teacherid": "2118517"
+                },
+                {
+                    "classid": "1033",
+                    "teacherid": "2118523"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1003",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
                 },
                 {
                     "classid": "1085",
                     "teacherid": "2118555"
                 },
                 {
-                    "classid": "1041",
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1057",
+                    "teacherid": "2118601"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "1069",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1031",
+                    "teacherid": "2118523"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1031",
                     "teacherid": "2118536"
                 },
+                {
+                    "classid": "1085",
+                    "teacherid": "2118572"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ]
+        ],
+        "subjects": [
+            {
+                "subjectid": "TCS509",
+                "teacherid": "2118536",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "TCS502",
+                "teacherid": "2118572",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "TCS503",
+                "teacherid": "2118523",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "TMA502",
+                "teacherid": "2118526",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "TCS548",
+                "teacherid": "2118529",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "TCS591",
+                "teacherid": "2118517",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "TCS592",
+                "teacherid": "2118555",
+                "weekly_hrs": 3
+            },
+            {
+                "subjectid": "XCS501Q",
+                "teacherid": "2118571",
+                "weekly_hrs": 1
+            },
+            {
+                "subjectid": "XCS501V",
+                "teacherid": "2118601",
+                "weekly_hrs": 1
+            },
+            {
+                "subjectid": "PCS503",
+                "teacherid": "2118523",
+                "weekly_hrs": 2
+            },
+            {
+                "subjectid": "PMA502",
+                "teacherid": "2118526",
+                "weekly_hrs": 2
+            },
+            {
+                "subjectid": "XCS510",
+                "teacherid": "2118573",
+                "weekly_hrs": 2
+            }
+        ]
+    },
+    {
+        "timetable": [
+            [
+                {
+                    "classid": "1036",
+                    "teacherid": "2118523"
+                },
+                {
+                    "classid": "1087",
+                    "teacherid": "2118555"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1071",
+                    "teacherid": "2118573"
+                },
+                {
+                    "classid": "1041",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1101",
+                    "teacherid": "2118529"
+                }
+            ],
+            [
+                {
+                    "classid": "1069",
+                    "teacherid": "2118517"
+                },
+                {
+                    "classid": "1036",
+                    "teacherid": "2118601"
+                },
+                {
+                    "classid": "191",
+                    "teacherid": "2118523"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1036",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "191",
+                    "teacherid": "2118536"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1087",
+                    "teacherid": "2118572"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                }
+            ],
+            [
+                {
+                    "classid": "1054",
+                    "teacherid": "2118529"
+                },
+                {
+                    "classid": "1001",
+                    "teacherid": "2118555"
+                },
+                {
+                    "classid": "191",
+                    "teacherid": "2118517"
+                },
+                {
+                    "classid": "1001",
+                    "teacherid": "2118572"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1041",
+                    "teacherid": "2118573"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1085",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1071",
+                    "teacherid": "2118523"
+                }
+            ],
+            [
+                {
+                    "classid": "1033",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "1075",
+                    "teacherid": "2118572"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1001",
+                    "teacherid": "2118517"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1036",
+                    "teacherid": "2118571"
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "191",
+                    "teacherid": "2118555"
+                },
+                {
+                    "classid": "1087",
+                    "teacherid": "2118536"
+                },
+                {
+                    "classid": "1057",
+                    "teacherid": "2118523"
+                }
+            ],
+            [
                 {
                     "classid": "",
                     "teacherid": ""
@@ -844,79 +900,11 @@
                 },
                 {
                     "classid": "1056",
-                    "teacherid": "2118572"
-                }
-            ],
-            [
-                {
-                    "classid": "1006",
-                    "teacherid": "2118572"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1006",
-                    "teacherid": "2118517"
-                },
-                {
-                    "classid": "1041",
-                    "teacherid": "2118571"
-                },
-                {
-                    "classid": "1054",
-                    "teacherid": "2118555"
-                },
-                {
-                    "classid": "1054",
-                    "teacherid": "2118523"
-                },
-                {
-                    "classid": "1054",
-                    "teacherid": "2118526"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                }
-            ],
-            [
-                {
-                    "classid": "1041",
-                    "teacherid": "2118517"
-                },
-                {
-                    "classid": "1031",
-                    "teacherid": "2118523"
-                },
-                {
-                    "classid": "1075",
-                    "teacherid": "2118526"
-                },
-                {
-                    "classid": "",
-                    "teacherid": ""
-                },
-                {
-                    "classid": "1071",
-                    "teacherid": "2118529"
-                },
-                {
-                    "classid": "1075",
                     "teacherid": "2118536"
                 },
                 {
-                    "classid": "",
-                    "teacherid": ""
+                    "classid": "1031",
+                    "teacherid": "2118529"
                 },
                 {
                     "classid": "",
@@ -929,6 +917,18 @@
                 {
                     "classid": "",
                     "teacherid": ""
+                },
+                {
+                    "classid": "",
+                    "teacherid": ""
+                },
+                {
+                    "classid": "1054",
+                    "teacherid": "2118526"
+                },
+                {
+                    "classid": "1054",
+                    "teacherid": "2118523"
                 }
             ],
             [

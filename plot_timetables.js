@@ -1,5 +1,6 @@
 import fs from 'fs';
 import validate_timetable_set from './validate_timetable.js';
+import fitness_func from './fitness_func.js';
 
 //  structure of timetable as template
 let timetablestructure = [
@@ -117,85 +118,11 @@ const initialize_population = (alltimetable) => {
     }
     console.log("=============  Timetable Generation Complete  =============");
     console.log("==========  Timetable validation status : " + validate_timetable_set(alltimetable) + "    =========");
+    console.log(fitness_func(alltimetable));
     console.log("===========================================================");
     fs.writeFileSync('data2.json', JSON.stringify(alltimetable, null, 4), 'utf8');
 }
 initialize_population(alltimetable);    // initialize the population of timetables randomly for all sections
-
-// Fitness function to evaluate each timetable
-const calculate_fitness = (alltimetable) => {
-    let res=[];
-    for (let i = 0; i < alltimetable.length; i++) {
-        let timetable = alltimetable[i].timetable;
-        let fitness_score = 0;
-        let teacher_conflicts = 0;
-        let room_conflicts = 0;
-        let day_overload_penalty = 0;
-
-        // Step 1: Check for teacher and room conflicts
-        for (let j = 0; j < timetable.length; j++) {            // loop through days
-            let teacher_map = {};                               // track teacher per day
-            let room_map = {};                                  // track room per day
-            for (let k = 0; k < timetable[j].length; k++) {     // loop through slots
-                let current_teacher = timetable[j][k].teacherid;
-                let current_room = timetable[j][k].classid;
-
-                if (current_teacher !== "" && current_room !== "") {
-                    // Check for teacher conflict
-                    if (teacher_map[current_teacher]) {
-                        teacher_conflicts++;
-                    } else {
-                        teacher_map[current_teacher] = true;
-                    }
-
-                    // Check for room conflict
-                    if (room_map[current_room]) {
-                        room_conflicts++;
-                    } else {
-                        room_map[current_room] = true;
-                    }
-                }
-            }
-
-            // Step 2: Check for day overload for each teacher
-            for (let teacher in teacher_map) {
-                let teacher_slots = Object.keys(teacher_map).length;
-                if (teacher_slots > 5) {    // let's say more than 5 classes in a day is excessive
-                    day_overload_penalty++;
-                }
-            }
-        }
-
-        // Step 3: Check for weekly hours fulfillment for each subject
-        let weekly_hours_bonus = 0;
-        alltimetable[i].subjects.forEach(subject => {
-            let total_hours = subject.weekly_hrs;
-            let assigned_hours = 0;
-            for (let j = 0; j < timetable.length; j++) {
-                for (let k = 0; k < timetable[j].length; k++) {
-                    if (timetable[j][k].teacherid === subject.teacherid) {
-                        assigned_hours++;
-                    }
-                }
-            }
-            if (assigned_hours === total_hours) {
-                weekly_hours_bonus += 5;  // reward for fulfilling weekly hours
-            }
-        });
-
-        // Step 4: Calculate final fitness score
-        fitness_score = (weekly_hours_bonus * 10) - (teacher_conflicts * 20) - (room_conflicts * 15) - (day_overload_penalty * 10);
-        res.push({section: (alltimetable[i].section||i), fitness_score: fitness_score});
-    }
-    // Calculate the average fitness score
-    let total_fitness_score = res.reduce((acc, curr) => acc + curr.fitness_score, 0);
-    let avg_fitness_score = total_fitness_score / res.length;
-    console.log("Average Fitness Score: " + avg_fitness_score);
-    res.push({fitness_score: avg_fitness_score});
-    return res;
-};
-console.log(calculate_fitness(alltimetable));
-
 
 
 // Timtable in 2D-array (just for reference)

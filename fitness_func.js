@@ -1,51 +1,89 @@
 import fs from 'fs';
-
 let alltimetable = JSON.parse(fs.readFileSync('data2.json', 'utf8'));
 
-const fitness_func = (timetable) => {
-    let fitness = 0;
+const fitness_func = (alltimetable) => {
+    let res = [];
+    for (let i = 0; i < alltimetable.length; i++) {
+        let timetable = alltimetable[i].timetable;
+        let fitness_score = 0;
+        let teacher_conflicts = 0;
+        let room_conflicts = 0;
+        let day_overload_penalty = 0;
 
-    for (let i = 0; i < 7; i++) {
-        let free_period_counter_morning = 0;
-        let free_period_counter_afternoon = 0;
-        for (let j = 0; j < 10; j++) {
+        // Step 1: Check for teacher and room conflicts
+        for (let j = 0; j < timetable.length; j++) {            // loop through days
+            let teacher_map = {};  // Track teacher per slot across the day
+            let room_map = {};     // Track room per slot across the day
 
-            if (timetable.timetable[i][j].classid === "") {
-                if (j < 5) {
-                    free_period_counter_morning++;
-                } else {
-                    free_period_counter_afternoon++;
+            // Loop through the day's timetable slots
+            for (let k = 0; k < timetable[j].length; k++) {  // j represents the current day
+                let current_teacher = timetable[j][k].teacherid;
+                let current_room = timetable[j][k].classid;
+
+                if (current_teacher !== "" && current_room !== "") {
+                    // Initialize the slot in the maps if it doesn't exist
+                    if (!teacher_map[k]) {
+                        teacher_map[k] = new Set();  // Track teachers assigned to this slot
+                    }
+                    if (!room_map[k]) {
+                        room_map[k] = new Set();  // Track rooms assigned to this slot
+                    }
+
+                    // Check for teacher conflict
+                    if (teacher_map[k].has(current_teacher)) {
+                        teacher_conflicts++;
+                    } else {
+                        teacher_map[k].add(current_teacher);  // Assign teacher to this slot
+                    }
+
+                    // Check for room conflict
+                    if (room_map[k].has(current_room)) {
+                        room_conflicts++;
+                    } else {
+                        room_map[k].add(current_room);  // Assign room to this slot
+                    }
+                }
+            }
+
+
+            // Step 2: Check for day overload for each teacher
+            for (let teacher in teacher_map) {
+                let teacher_slots = Object.keys(teacher_map).length;
+                if (teacher_slots > 5) {    // let's say more than 5 classes in a day is excessive
+                    day_overload_penalty++;
                 }
             }
         }
-        if ((free_period_counter_morning + free_period_counter_afternoon) === 10) {
-            fitness += 2;
-            continue;
-        }
-        if (free_period_counter_morning === 5) {
-            fitness += 1;
-        }
-        if (free_period_counter_afternoon === 5) {
-            fitness += 1;
-        }
-    }
-    for (let i = 0; i < 7; i++) {
-        let curr_class = 0;
-        for (let j = 0; j < 10; j++) {
-            if (timetable.timetable[i][j].classid != "") {
-                curr_class++;
-            } else {
-                curr_class = 0;
+
+        // Step 3: Check for weekly hours fulfillment for each subject
+        let weekly_hours_bonus = 0;
+        alltimetable[i].subjects.forEach(subject => {
+            let total_hours = subject.weekly_hrs;
+            let assigned_hours = 0;
+            for (let j = 0; j < timetable.length; j++) {
+                for (let k = 0; k < timetable[j].length; k++) {
+                    if (timetable[j][k].teacherid === subject.teacherid) {
+                        assigned_hours++;
+                    }
+                }
             }
-            if (curr_class > 3) {
-                // fitness = fitness - 2;
-                fitness = fitness - curr_class;
+            if (assigned_hours === total_hours) {
+                weekly_hours_bonus += 5;  // reward for fulfilling weekly hours
             }
-        }
+        });
+
+        // Step 4: Calculate final fitness score
+        fitness_score = (weekly_hours_bonus * 10) - (teacher_conflicts * 20) - (room_conflicts * 15) - (day_overload_penalty * 10);
+        res.push({ section: (alltimetable[i].section || i), fitness_score: fitness_score });
+        console.log(day_overload_penalty)
     }
-    return fitness;
+    // Calculate the average fitness score
+    let total_fitness_score = res.reduce((acc, curr) => acc + curr.fitness_score, 0);
+    let avg_fitness_score = total_fitness_score / res.length;
+    // console.log("Average Fitness Score: " + avg_fitness_score);
+    res.push({ fitness_score: avg_fitness_score });
+    return res;
 };
-console.log(fitness_func(alltimetable[2]));
-// console.log((alltimetable[0]));
+console.log(fitness_func(alltimetable));
 
 export default fitness_func;
