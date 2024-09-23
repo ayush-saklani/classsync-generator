@@ -38,14 +38,14 @@ let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
 //  this function will validate the slot of timetable and flag out the room and teacher conflicts from that batch of timetables
 const validate_timetable_slot = (alltimetable, j, k, teacherid, classid) => {
     let temp = {}
-    if (alltimetable.length == 0) { return true; }
-    for (let i = 0; i < alltimetable.length; i++) {        // all timetables
-        if (alltimetable[i]['timetable'][j][k].teacherid && alltimetable[i]['timetable'][j][k].classid) {         // if class is empty            
-            if (temp[("teacher" + alltimetable[i]['timetable'][j][k].teacherid)] || temp[("class" + alltimetable[i]['timetable'][j][k].classid)]) {
+    if (alltimetable['data'].length == 0) { return true; }
+    for (let i = 0; i < alltimetable['data'].length; i++) {        // all timetables
+        if (alltimetable['data'][i]['timetable'][j][k].teacherid && alltimetable['data'][i]['timetable'][j][k].classid) {         // if class is empty            
+            if (temp[("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid)] || temp[("class" + alltimetable['data'][i]['timetable'][j][k].classid)]) {
                 return false;
             } else {
-                temp[("teacher" + alltimetable[i]['timetable'][j][k].teacherid)] = true;
-                temp[("class" + alltimetable[i]['timetable'][j][k].classid)] = true;
+                temp[("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid)] = true;
+                temp[("class" + alltimetable['data'][i]['timetable'][j][k].classid)] = true;
             }
         }
     }
@@ -70,10 +70,10 @@ const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, classid) =>
 }
 const initialize_population = (alltimetable) => {
     let flag = 0;   // flag to check the number of conflicts in the timetable generation
-    let number_of_sections = alltimetable.length;
+    let number_of_sections = alltimetable['data'].length;
     for (let i = 0; i < number_of_sections; i++) {
         console.log("Generating Timetables for Section " + i);
-        let subjects = JSON.parse(JSON.stringify(alltimetable[i].subjects));            // deep copy of subjects
+        let subjects = JSON.parse(JSON.stringify(alltimetable['data'][i].subjects));            // deep copy of subjects
         let timetable = JSON.parse(JSON.stringify(timetablestructure));                 // deep copy of timetablestructure
         while (subjects.length > 0) {                                                   // loop until all subjects are assigned
             let temp_subject_index = (Math.floor(Math.random() * subjects.length));     // randomly choose subject
@@ -114,7 +114,7 @@ const initialize_population = (alltimetable) => {
             }
         }
         console.log("===========================================================");
-        alltimetable[i].timetable = timetable;
+        alltimetable['data'][i].timetable = timetable;
     }
     console.log("=============  Timetable Generation Complete  =============");
     console.log("==========  Timetable validation status : " + validate_timetable_set(alltimetable) + "    =========");

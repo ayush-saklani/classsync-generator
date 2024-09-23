@@ -9,18 +9,18 @@ const fitness_func = (alltimetable) => {
     for (let j = 0; j < 7; j++) {                               // monday to sunday
         for (let k = 0; k < 10; k++) {                          // 8am to 6pm
             let temp = {}
-            for (let i = 0; i < alltimetable.length; i++) {        // all timetables
-                if (alltimetable[i]['timetable'][j][k].teacherid && alltimetable[i]['timetable'][j][k].classid) {
+            for (let i = 0; i < alltimetable['data'].length; i++) {        // all timetables
+                if (alltimetable['data'][i]['timetable'][j][k].teacherid && alltimetable['data'][i]['timetable'][j][k].classid) {
                     // if class is empty or teacher is empty then skip
-                    if (alltimetable[i]['timetable'][j][k].classid == "" || alltimetable[i]['timetable'][j][k].teacherid == "") continue;
+                    if (alltimetable['data'][i]['timetable'][j][k].classid == "" || alltimetable['data'][i]['timetable'][j][k].teacherid == "") continue;
 
-                    if (temp[("teacher" + alltimetable[i]['timetable'][j][k].teacherid)] || temp[("class" + alltimetable[i]['timetable'][j][k].classid)]) {
-                        if (temp[("teacher" + alltimetable[i]['timetable'][j][k].teacherid)]) count_teacher_conflicts++;
-                        if (temp[("class" + alltimetable[i]['timetable'][j][k].classid)]) count_room_conflicts++;
+                    if (temp[("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid)] || temp[("class" + alltimetable['data'][i]['timetable'][j][k].classid)]) {
+                        if (temp[("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid)]) count_teacher_conflicts++;
+                        if (temp[("class" + alltimetable['data'][i]['timetable'][j][k].classid)]) count_room_conflicts++;
                     } else {
-                        temp[("class" + alltimetable[i]['timetable'][j][k].classid)] = true;
-                        temp[("teacher" + alltimetable[i]['timetable'][j][k].teacherid)] = true;
-                        temp[(("class" + alltimetable[i]['timetable'][j][k].classid) + ";" + ("teacher" + alltimetable[i]['timetable'][j][k].teacherid))] = true;
+                        temp[("class" + alltimetable['data'][i]['timetable'][j][k].classid)] = true;
+                        temp[("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid)] = true;
+                        temp[(("class" + alltimetable['data'][i]['timetable'][j][k].classid) + ";" + ("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid))] = true;
                     }
                 }
             }
@@ -37,8 +37,8 @@ const fitness_func = (alltimetable) => {
     //================= Teacher Overload calculation [experiment starts]===================
     let overload_penalty = 0;
     let overload_teacher_map = {}
-    for (let i = 0; i < alltimetable.length; i++) {
-        let timetable = alltimetable[i].timetable;
+    for (let i = 0; i < alltimetable['data'].length; i++) {
+        let timetable = alltimetable['data'][i].timetable;
         for (let j = 0; j < timetable.length; j++) {
             for (let k = 0; k < timetable[j].length; k++) {
                 if (timetable[j][k].teacherid == "") continue;
@@ -47,8 +47,8 @@ const fitness_func = (alltimetable) => {
             }
         }
     }
-    for (let i = 0; i < alltimetable.length; i++) {
-        let timetable = alltimetable[i].timetable;
+    for (let i = 0; i < alltimetable['data'].length; i++) {
+        let timetable = alltimetable['data'][i].timetable;
         for (let j = 0; j < timetable.length; j++) {
             for (let k = 0; k < timetable[j].length; k++) {
                 if (timetable[j][k].teacherid == "") continue;
@@ -88,11 +88,11 @@ const fitness_func = (alltimetable) => {
     // ================== Student Overload calculation [experiment starts] ================
     let overload_penalty_student_arr = [];
     let active_day_count_arr = [];
-    for (let i = 0; i < alltimetable.length; i++) {
+    for (let i = 0; i < alltimetable['data'].length; i++) {
         let overload_penalty_student = 0;
         let active_day_count = 0;
 
-        let timetable = alltimetable[i].timetable;
+        let timetable = alltimetable['data'][i].timetable;
         for (let j = 0; j < timetable.length; j++) {
             let streak = 0;
             let active = false;
