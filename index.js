@@ -2961,8 +2961,9 @@ const  timetable = [
     ]
 ]
 const displayTimetableAsTables = (timetable) => {
-    document.getElementById('fitness').innerHTML = `${timetable.fitness}`;
-    let listHTML ='<ol>'; // Start ordered list
+    let listHTML = '<article>'; 
+    listHTML += `<h1 style="text-align: center; font-size: 2em;">Avg Fitness of this set ${timetable.fitness}</h1>`; 
+    listHTML += '<ol>'; // Start ordered list
 
     for (let i = 0; i < timetable['data'].length; i++) {
         listHTML += `
@@ -3003,8 +3004,8 @@ const displayTimetableAsTables = (timetable) => {
         listHTML += '</tbody></table></li>'; // Close each table and list item
     }
 
-    listHTML += '</ol>'; // End ordered list
-    document.getElementById('timetable').innerHTML = listHTML; // Insert into the page
+    listHTML += '</ol></article>'; // End ordered list
+    document.getElementById('timetable').innerHTML += listHTML; // Insert into the page
 }
 const functiosn = async () => {
     
@@ -3014,6 +3015,7 @@ const functiosn = async () => {
     .then(data => {
         timetable = data;
         displayTimetableAsTables(timetable);
+        // if there are multiple timetables this function can be called multiple times in a loop
     }).catch(error => console.error('Error fetching the timetable:', error));
     console.log(timetable);
 
