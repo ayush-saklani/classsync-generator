@@ -59,7 +59,7 @@ const fitness_func = (alltimetable) => {
                     while (1) {
                         if (z >= timetable[j].length - 1) {
                             if (streak > 2) {
-                                console.log("Streak: " + streak);
+                                // console.log("Streak: " + streak);
                                 overload_penalty += streak;
                             }
                             break;
@@ -69,7 +69,7 @@ const fitness_func = (alltimetable) => {
                             streak++;
                         } else {
                             if (streak > 2) {
-                                console.log("Streak: " + streak + " " + check_curr_teacher_mark);
+                                // console.log("Streak: " + streak + " " + check_curr_teacher_mark);
                                 overload_penalty += streak;
                             }
                             break;
@@ -86,25 +86,48 @@ const fitness_func = (alltimetable) => {
 
     // ====================================================================================
     // ================== Student Overload calculation [experiment starts] ================
-    let overload_penalty_student = 0;
-    // for (let i = 0; i < alltimetable.length; i++) {
-    //     let timetable = alltimetable[i].timetable;
-    //     for (let j = 0; j < timetable.length; j++) {
-    //         for (let k = 0; k < timetable[j].length; k++) {
-    //             if (timetable[j][k].teacherid == "") continue;
-    //             let curr_teacher_mark = j + ";" + k + ";" + timetable[j][k].teacherid;
-    //             overload_teacher_map[curr_teacher_mark] = 1;
-    //         }
-    //     }
-    // }
-    // check if continous 3 periods are there for a section then penalize it  
-    // and if a day is off then it will be considered as as rest day hence rewarded by 10 marks
+    let overload_penalty_student_arr = [];
+    let active_day_count_arr = [];
+    for (let i = 0; i < alltimetable.length; i++) {
+        let overload_penalty_student = 0;
+        let active_day_count = 0;
 
+        let timetable = alltimetable[i].timetable;
+        for (let j = 0; j < timetable.length; j++) {
+            let streak = 0;
+            let active = false;
+            for (let k = 0; k < timetable[j].length; k++) {
+                if (timetable[j][k].teacherid == "") {
+                    if (streak > 3) {
+                        overload_penalty_student += streak - 3;
+                    }
+                    streak = 0;
+                } else {
+                    streak++;
+                    active = true;
+                }
+            }
+            if (active) {
+                active_day_count++;
+            }
+        }
+        overload_penalty_student_arr.push(overload_penalty_student);
+        active_day_count_arr.push(active_day_count);
+    }
+    let total_overload_penalty_student = overload_penalty_student_arr.reduce((a, b) => a + b, 0);
+    let avg_active_day_count = (active_day_count_arr.reduce((a, b) => a + b, 0)) / active_day_count_arr.length;
+
+
+    console.log("Student Overload Penalty       ======== " + overload_penalty_student_arr);
+    console.log("Total Student Overload Penalty ======== " + total_overload_penalty_student);
+    console.log("Active Day Count               ======== " + active_day_count_arr);
+    console.log("Average Active Day Count       ======== " + avg_active_day_count);
     // ================== Student Overload calculation [experiment ends] ==================
     // ====================================================================================
 
-    
-    let real_fitness_score = 100 - (count_teacher_conflicts * 20) - (count_room_conflicts * 15) - (overload_penalty * 10);
+    let real_fitness_score = 100 - (count_teacher_conflicts * 20) - (count_room_conflicts * 15) - (overload_penalty * 10) - (total_overload_penalty_student * 5);
+    real_fitness_score += (avg_active_day_count == 4 || avg_active_day_count == 5) ? 20 : -20;
+
     return ({ fitness_score: real_fitness_score });
 };
 console.log(fitness_func(alltimetable));
