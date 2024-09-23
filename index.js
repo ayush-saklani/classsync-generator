@@ -2961,15 +2961,16 @@ const  timetable = [
     ]
 ]
 const displayTimetableAsTables = (timetable) => {
-    let listHTML = '<ol>'; // Start ordered list
+    document.getElementById('fitness').innerHTML = `${timetable.fitness}`;
+    let listHTML ='<ol>'; // Start ordered list
 
-    for (let i = 0; i < timetable.length; i++) {
+    for (let i = 0; i < timetable['data'].length; i++) {
         listHTML += `
         <li>
             <table>            
                 <thead>
                 <tr>
-                <th>${(timetable[i]['fit_score'] || "Fit-NA")}</th>
+                <th>localFit ${(timetable['data'][i]['local_fitness'] || "Fit-NA")}</th>
                 <th><b>08-09</b></th>
                 <th><b>09-10</b></th>
                 <th><b>10-11</b></th>
@@ -2985,11 +2986,11 @@ const displayTimetableAsTables = (timetable) => {
                 <tbody>`;
                 let day = ["Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
-        for (let j = 0; j < timetable[i]['timetable'].length; j++) {
+        for (let j = 0; j < timetable['data'][i]['timetable'].length; j++) {
             listHTML += `<tr> <th><b>${day[j]}</b></th>`; // Start each row
-            for (let k = 0; k < timetable[i]['timetable'][j].length; k++) {
-                let classid = timetable[i]['timetable'][j][k].classid || "";     // Default to 'N/A' if empty
-                let teacherid = timetable[i]['timetable'][j][k].teacherid || ""; // Default to 'N/A' if empty
+            for (let k = 0; k < timetable['data'][i]['timetable'][j].length; k++) {
+                let classid = timetable['data'][i]['timetable'][j][k].classid || "";     // Default to 'N/A' if empty
+                let teacherid = timetable['data'][i]['timetable'][j][k].teacherid || ""; // Default to 'N/A' if empty
 
                 // Add row regardless of empty or non-empty data
                 listHTML += `

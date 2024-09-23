@@ -113,8 +113,10 @@ const fitness_func = (alltimetable) => {
         }
         overload_penalty_student_arr.push(overload_penalty_student);
         active_day_count_arr.push(active_day_count);
+        alltimetable['data'][i].local_fitness = 100 - (overload_penalty_student * 5);
+        alltimetable['data'][i].local_fitness += (active_day_count == 4 || active_day_count == 5) ? 20 : -20;
     }
-    let total_overload_penalty_student = overload_penalty_student_arr.reduce((a, b) => a + b, 0);
+    let total_overload_penalty_student = (overload_penalty_student_arr.reduce((a, b) => a + b, 0)).toFixed(2);;
     let avg_active_day_count = (active_day_count_arr.reduce((a, b) => a + b, 0)) / active_day_count_arr.length;
 
 
@@ -127,6 +129,8 @@ const fitness_func = (alltimetable) => {
 
     let real_fitness_score = 100 - (count_teacher_conflicts * 20) - (count_room_conflicts * 15) - (overload_penalty * 10) - (total_overload_penalty_student * 5);
     real_fitness_score += (avg_active_day_count == 4 || avg_active_day_count == 5) ? 20 : -20;
+    alltimetable['fitness'] = real_fitness_score;
+    fs.writeFileSync('data2.json', JSON.stringify(alltimetable, null, 4), 'utf8');
 
     return ({ fitness_score: real_fitness_score });
 };

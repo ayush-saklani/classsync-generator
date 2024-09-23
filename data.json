@@ -2,6 +2,7 @@
     "fitness": 0,
     "data":[
         {
+            "local_fitness": 0,
             "timetable": [
                 [
                     {
@@ -362,6 +363,7 @@
             ]
         },
         {
+            "local_fitness": 0,
             "timetable": [
                 [
                     {
@@ -722,6 +724,7 @@
             ]
         },
         {
+            "local_fitness": 0,
             "timetable": [
                 [
                     {
