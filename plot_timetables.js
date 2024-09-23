@@ -62,7 +62,7 @@ const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, classid) =>
         map[timetable[j][i].teacherid] = true;
     }
     if (map[teacherid]) {
-        console.log("false");
+        // console.log("false");
         return false;
     } else {
         return true;
@@ -72,7 +72,6 @@ const initialize_population = (alltimetable) => {
     let flag = 0;   // flag to check the number of conflicts in the timetable generation
     let number_of_sections = alltimetable['data'].length;
     for (let i = 0; i < number_of_sections; i++) {
-        console.log("Generating Timetables for Section " + i);
         let subjects = JSON.parse(JSON.stringify(alltimetable['data'][i].subjects));            // deep copy of subjects
         let timetable = JSON.parse(JSON.stringify(timetablestructure));                 // deep copy of timetablestructure
         while (subjects.length > 0) {                                                   // loop until all subjects are assigned
@@ -113,13 +112,10 @@ const initialize_population = (alltimetable) => {
                 }
             }
         }
-        console.log("===========================================================");
         alltimetable['data'][i].timetable = timetable;
     }
-    console.log("=============  Timetable Generation Complete  =============");
-    console.log("==========  Timetable validation status : " + validate_timetable_set(alltimetable) + "    =========");
-    console.log(fitness_func(alltimetable));
-    console.log("===========================================================");
+    alltimetable = fitness_func(alltimetable);
+    console.log("========== [ Validation : " + validate_timetable_set(alltimetable) + " ] ========= [ Fitness : " + alltimetable['fitness'] + " ] ==========");
     fs.writeFileSync('data2.json', JSON.stringify(alltimetable, null, 4), 'utf8');
 }
 initialize_population(alltimetable);    // initialize the population of timetables randomly for all sections
