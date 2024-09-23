@@ -13,27 +13,12 @@ let timetablestructure = [
     [{ "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" }]
 ];
 
-// Timtable in 2D-array (just for reference)
-//  0  1  2  3  4  5  6  7  8  9        monday
-// 10 11 12 13 14 15 16 17 18 19        tuesday
-// 20 21 22 23 24 25 26 27 28 29        wednesday
-// 30 31 32 33 34 35 36 37 38 39        thursday
-// 40 41 42 43 44 45 46 47 48 49        friday
-// 50 51 52 53 54 55 56 57 58 59        saturday
-// 60 61 62 63 64 65 66 67 68 69        sunday
-//              |
-//             \/
-//           index = [6,4] in 2D array   and yes i made it by myself not AI :P
-
-
 //  slot range for timetable
 let min = 0; // if 10 then start from 10 (tuesday 9am)   
 let max = 50; // it 60 then end at 59  (saturday 6pm) (60 is not included)
 
-//  timetable data with subjects and teachers already assigned
-let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));
-//  room data with room id and capacity (capacity is not implemented in this code right now)
-let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
+let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));    //  timetable data with subjects and teachers already assigned
+let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));            //  (capacity is not implemented in this code right now)
 
 //  this function will validate the slot of timetable and flag out the room and teacher conflicts from that batch of timetables
 const validate_timetable_slot = (alltimetable, j, k, teacherid, classid) => {
@@ -114,11 +99,13 @@ const initialize_population = (alltimetable) => {
         }
         alltimetable['data'][i].timetable = timetable;
     }
-    alltimetable = fitness_func(alltimetable);
+    alltimetable = fitness_func(alltimetable,true);
     console.log("========== [ Validation : " + validate_timetable_set(alltimetable) + " ] ========= [ Fitness : " + alltimetable['fitness'] + " ] ==========");
-    fs.writeFileSync('data2.json', JSON.stringify(alltimetable, null, 4), 'utf8');
+    
+    return alltimetable;
 }
-initialize_population(alltimetable);    // initialize the population of timetables randomly for all sections
+// initialize the population of timetables randomly for all sections
+fs.writeFileSync('data2.json', JSON.stringify(initialize_population(alltimetable), null, 4), 'utf8');
 
 
 // Timtable in 2D-array (just for reference)
