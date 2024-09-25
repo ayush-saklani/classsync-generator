@@ -1,6 +1,7 @@
 import fs from 'fs';
 import validate_timetable_set from './validate_timetable.js';
 import fitness_func from './fitness_func.js';
+import { and } from 'mathjs';
 
 //  structure of timetable as template
 let timetablestructure = [
@@ -14,7 +15,7 @@ let timetablestructure = [
 ];
 
 //  this function will validate the slot of timetable and flag out the room and teacher conflicts from that batch of timetables
-const validate_timetable_slot = (alltimetable, j, k, teacherid, classid) => {
+const validate_timetable_slot = (alltimetable, j, k, teacherid, classid, type) => {
     let temp = {}
     if (alltimetable['data'].length == 0) { return true; }
     for (let i = 0; i < alltimetable['data'].length; i++) {        // all timetables
@@ -22,15 +23,27 @@ const validate_timetable_slot = (alltimetable, j, k, teacherid, classid) => {
             if (temp[("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid)] || temp[("class" + alltimetable['data'][i]['timetable'][j][k].classid)]) {
                 return false;
             } else {
-                temp[("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid)] = true;
-                temp[("class" + alltimetable['data'][i]['timetable'][j][k].classid)] = true;
+                temp[("teacher" + ";" + j + ";" + k + ";" + alltimetable['data'][i]['timetable'][j][k].teacherid)] = true;
+                temp[("class" + ";" + j + ";" + k + ";" + alltimetable['data'][i]['timetable'][j][k].classid)] = true;
+                if (type == 'practical') {
+                    temp[("teacher" + ";" + j + ";" + (k + 1) + ";" + alltimetable['data'][i]['timetable'][j][k + 1].teacherid)] = true;
+                    temp[("class" + ";" + j + ";" + (k + 1) + ";" + alltimetable['data'][i]['timetable'][j][k + 1].classid)] = true;
+                }
             }
         }
     }
-    if (temp[("teacher" + teacherid)] || temp[("class" + classid)]) {
-        return false;
+    if (type == 'practical') {
+        if (temp[("teacher" + ";" + j + ";" + k + ";" + teacherid)] || temp[("class" + ";" + j + ";" + k + ";" + classid)] || temp[("teacher" + ";" + j + ";" + (k + 1) + ";" + teacherid)] || temp[("class" + ";" + j + ";" + (k + 1) + ";" + classid)]) {
+            return false;
+        } else {
+            return true;
+        }
     } else {
-        return true;
+        if (temp[("teacher" + ";" + j + ";" + k + ";" + teacherid)] || temp[("class" + ";" + j + ";" + k + ";" + classid)]) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }
 // this function will prevent the teacher to teach in multiple slots in a day
@@ -51,18 +64,17 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
     let number_of_sections = alltimetable['data'].length;
     for (let i = 0; i < number_of_sections; i++) {
         let subjects = JSON.parse(JSON.stringify(alltimetable['data'][i].subjects));            // deep copy of subjects
+        subjects = subjects.sort((a, b) => a.type.localeCompare(b.type));
         let timetable = JSON.parse(JSON.stringify(timetablestructure));                 // deep copy of timetablestructure
         while (subjects.length > 0) {                                                   // loop until all subjects are assigned
             let temp_subject_index = (Math.floor(Math.random() * subjects.length));     // randomly choose subject
             temp_subject_index = 0;
+
             let room_type = 'room';
-            if (subjects[temp_subject_index].type == 'theory') {
-                room_type = 'room';
-            } else if (subjects[temp_subject_index].type == 'practical') {
-                room_type = 'lab';
-            } else {
-                room_type = 'room';
-            }
+            if (subjects[temp_subject_index].type == 'theory') room_type = 'room';
+            else if (subjects[temp_subject_index].type == 'practical') room_type = 'lab';
+            else room_type = 'room';
+
             let temp_room_index = (Math.floor(Math.random() * room[room_type].length));            // randomly choose room
 
             if (subjects[temp_subject_index] && room[room_type][temp_room_index]) {
@@ -71,20 +83,35 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
                 let temp_day = Math.floor(temp / 10);                               // get the day from slot
                 let temp_slot = Math.floor(temp % 10);                              // get the slot from slot
 
-                // console.log(temp + " || " + temp_day + " || " + temp_slot);
-                if (timetable[temp_day][temp_slot].teacherid == "" && timetable[(temp_day)][temp_slot].classid == "") {
+                if (subjects[temp_subject_index].type == 'practical' && temp_slot % 2 != 0) {
+                    temp_slot++;
+                    console.log(temp_slot);
+                }
+
+                if (timetable[temp_day][temp_slot].teacherid == "" && timetable[(temp_day)][temp_slot].classid == "") { // if slot is empty only then assign the subject to that slot
 
                     //if validation in slot is true then assign the subject to that slot
-                    if (validate_timetable_slot(alltimetable, temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[room_type][temp_room_index].roomid)) {
+                    if (validate_timetable_slot(alltimetable, temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[room_type][temp_room_index].roomid, subjects[temp_subject_index].type)) {
 
                         // if validation in a day is true then assign the subject to that slot (this will prevent the teacher to teach in multiple slots in a day)
                         if (validate_multiple_slot_in_a_day(timetable, temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[room_type][temp_room_index].roomid)) {
                             timetable[temp_day][temp_slot].teacherid = subjects[temp_subject_index].teacherid;
                             timetable[temp_day][temp_slot].classid = room[room_type][temp_room_index].roomid;
+
+                            // if subject is practical then assign the next slot to the teacher and room as well (this is for practical subjects) 
+                            // the practical subjects are assigned in even slots only because the odd slots are best suited as they fit better 
+                            // and practical subjects are assigned first so that the clashes can be minimized  
+                            if (subjects[temp_subject_index].type == 'practical') {
+                                timetable[temp_day][temp_slot + 1].teacherid = subjects[temp_subject_index].teacherid;
+                                timetable[temp_day][temp_slot + 1].classid = room[room_type][temp_room_index].roomid;
+                                subjects[temp_subject_index].weekly_hrs--;  
+                            }
+
                             subjects[temp_subject_index].weekly_hrs--;
                             if (subjects[temp_subject_index].weekly_hrs == 0) {
-                                subjects.splice(temp_subject_index, 1);                 // remove subject from list and 
+                                subjects.splice(temp_subject_index, 1);                             // remove subject from list and 
                             }
+
                             if (room[room_type][temp_room_index].capacity == 0) {
                                 room[room_type].splice(temp_room_index, 1);                        // remove room from list (currently not implemented) due to above reason
                             }

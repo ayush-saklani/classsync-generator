@@ -356,15 +356,15 @@
                 },
                 {
                     "subjectid": "PCS503",
-                    "teacherid": "2118523",
+                    "teacherid": "21185299",
                     "weekly_hrs": 2,
-                    "type": "theory"
+                    "type": "practical"
                 },
                 {
                     "subjectid": "PMA502",
                     "teacherid": "2118526",
                     "weekly_hrs": 2,
-                    "type": "theory"
+                    "type": "practical"
                 },
                 {
                     "subjectid": "XCS510",
