@@ -303,62 +303,74 @@
                 {
                     "subjectid": "TCS509",
                     "teacherid": "2118536",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS502",
                     "teacherid": "2118572",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS503",
                     "teacherid": "2118523",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TMA502",
                     "teacherid": "2118526",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS548",
                     "teacherid": "2118529",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS591",
                     "teacherid": "2118517",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS592",
                     "teacherid": "2118555",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "XCS501Q",
                     "teacherid": "2118571",
-                    "weekly_hrs": 1
+                    "weekly_hrs": 1,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "XCS501V",
                     "teacherid": "2118601",
-                    "weekly_hrs": 1
+                    "weekly_hrs": 1,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "PCS503",
                     "teacherid": "2118523",
-                    "weekly_hrs": 2
+                    "weekly_hrs": 2,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "PMA502",
                     "teacherid": "2118526",
-                    "weekly_hrs": 2
+                    "weekly_hrs": 2,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "XCS510",
                     "teacherid": "2118573",
-                    "weekly_hrs": 2
+                    "weekly_hrs": 2,
+                    "type": "practical"
                 }
             ]
         },
@@ -664,62 +676,74 @@
                 {
                     "subjectid": "TCS509",
                     "teacherid": "2118536",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS502",
                     "teacherid": "2118572",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS503",
                     "teacherid": "2118523",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TMA502",
                     "teacherid": "2118526",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS548",
                     "teacherid": "2118529",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS591",
                     "teacherid": "2118517",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS592",
                     "teacherid": "2118555",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "XCS501Q",
                     "teacherid": "2118571",
-                    "weekly_hrs": 1
+                    "weekly_hrs": 1,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "XCS501V",
                     "teacherid": "2118601",
-                    "weekly_hrs": 1
+                    "weekly_hrs": 1,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "PCS503",
                     "teacherid": "2118523",
-                    "weekly_hrs": 2
+                    "weekly_hrs": 2,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "PMA502",
                     "teacherid": "2118526",
-                    "weekly_hrs": 2
+                    "weekly_hrs": 2,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "XCS510",
                     "teacherid": "2118573",
-                    "weekly_hrs": 2
+                    "weekly_hrs": 2,
+                    "type": "theory"
                 }
             ]
         },
@@ -1025,62 +1049,74 @@
                 {
                     "subjectid": "TCS509",
                     "teacherid": "2118536",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS502",
                     "teacherid": "2118572",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS503",
                     "teacherid": "2118523",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TMA502",
                     "teacherid": "2118526",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS548",
                     "teacherid": "2118529",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS591",
                     "teacherid": "2118517",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "TCS592",
                     "teacherid": "2118555",
-                    "weekly_hrs": 3
+                    "weekly_hrs": 3,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "XCS501Q",
                     "teacherid": "2118571",
-                    "weekly_hrs": 1
+                    "weekly_hrs": 1,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "XCS501V",
                     "teacherid": "2118601",
-                    "weekly_hrs": 1
+                    "weekly_hrs": 1,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "PCS503",
                     "teacherid": "2118523",
-                    "weekly_hrs": 2
+                    "weekly_hrs": 2,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "PMA502",
                     "teacherid": "2118526",
-                    "weekly_hrs": 2
+                    "weekly_hrs": 2,
+                    "type": "theory"
                 },
                 {
                     "subjectid": "XCS510",
                     "teacherid": "2118573",
-                    "weekly_hrs": 2
+                    "weekly_hrs": 2,
+                    "type": "theory"
                 }
             ]
         }

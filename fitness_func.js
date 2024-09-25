@@ -122,14 +122,14 @@ const fitness_func = (alltimetable, showstats = false) => {
     alltimetable['fitness'] = real_fitness_score;
 
     if (showstats){
-        console.log("Teacher Conflicts              ======== " + count_teacher_conflicts);
-        console.log("Room Conflicts                 ======== " + count_room_conflicts);
-        console.log("Student Overload Penalty       ======== " + overload_penalty_student_arr);
-        console.log("Total Student Overload Penalty ======== " + total_overload_penalty_student);
-        console.log("Active Day Count               ======== " + active_day_count_arr);
-        console.log("Average Active Day Count       ======== " + avg_active_day_count);
-        console.log("Teacher Overload Penalty       ======== " + overload_penalty);
-        console.log("Real Fitness Score             ======== " + real_fitness_score);
+        console.log("Teacher Conflicts               ========  " + count_teacher_conflicts);
+        console.log("Room Conflicts                  ========  " + count_room_conflicts);
+        console.log("Student Overload Penalty        ========  " + overload_penalty_student_arr);
+        console.log("Total Student Overload Penalty  ========  " + total_overload_penalty_student);
+        console.log("Active Day Count                ========  " + active_day_count_arr);
+        console.log("Average Active Day Count        ========  " + avg_active_day_count);
+        console.log("Teacher Overload Penalty        ========  " + overload_penalty);
+        console.log("Real Fitness Score              ========  " + real_fitness_score);
     }
     return alltimetable;
 };
