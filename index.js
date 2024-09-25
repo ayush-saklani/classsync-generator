@@ -1,4 +1,4 @@
-const  timetable = [
+const timetable = [
     [
         [
             {
@@ -2961,8 +2961,8 @@ const  timetable = [
     ]
 ]
 const displayTimetableAsTables = (timetable) => {
-    let listHTML = '<article>'; 
-    listHTML += `<h1 style="text-align: center; font-size: 2em;">Avg Fitness of this set ${timetable.fitness}</h1>`; 
+    let listHTML = '<article>';
+    listHTML += `<h1 style="text-align: center; font-size: 2em;">Avg Fitness of this set ${timetable.fitness}</h1>`;
     listHTML += '<ol>'; // Start ordered list
 
     for (let i = 0; i < timetable['data'].length; i++) {
@@ -2985,7 +2985,7 @@ const displayTimetableAsTables = (timetable) => {
                 </dr>
                 </thead>
                 <tbody>`;
-                let day = ["Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun"];
+        let day = ["Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
         for (let j = 0; j < timetable['data'][i]['timetable'].length; j++) {
             listHTML += `<tr> <th><b>${day[j]}</b></th>`; // Start each row
@@ -3000,7 +3000,13 @@ const displayTimetableAsTables = (timetable) => {
             }
             listHTML += '</tr>'; // Close each row
         }
-
+        listHTML += `<table><th>subjectid</th><th>teacherid</th><th>weekly hrs</th><th>type</th>`;
+        let subjects = timetable['data'][i]['subjects'];
+        subjects = subjects.sort((a, b) => a.type.localeCompare(b.type)); 
+        for (let j = 0; j < subjects.length; j++) {
+            listHTML += `<tr><td>${subjects[j].subjectid}</td><td>${subjects[j].teacherid}</td><td>${subjects[j].weekly_hrs}</td><td>${subjects[j].type}</td></tr>`;
+        }
+        listHTML += '</table>';
         listHTML += '</tbody></table></li>'; // Close each table and list item
     }
 
@@ -3008,15 +3014,15 @@ const displayTimetableAsTables = (timetable) => {
     document.getElementById('timetable').innerHTML += listHTML; // Insert into the page
 }
 const functiosn = async () => {
-    
+
     let timetable = [];
     await fetch('./data2.json')
-    .then(response => response.json())
-    .then(data => {
-        timetable = data;
-        displayTimetableAsTables(timetable);
-        // if there are multiple timetables this function can be called multiple times in a loop
-    }).catch(error => console.error('Error fetching the timetable:', error));
+        .then(response => response.json())
+        .then(data => {
+            timetable = data;
+            displayTimetableAsTables(timetable);
+            // if there are multiple timetables this function can be called multiple times in a loop
+        }).catch(error => console.error('Error fetching the timetable:', error));
     console.log(timetable);
 
 }
