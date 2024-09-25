@@ -10,3 +10,63 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg" height="75"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg" height="75"/>
 </div>
+
+```
+data.JSON (example)
+{
+    "fitness": 0,
+    "data":[
+        {
+            "local_fitness": 0,
+            "timetable": [
+                [{ "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" },  ........ for 10 periods ],
+                [{ "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" },  ........ for 10 periods ],
+                "
+                "
+                "
+                "
+                "
+                .... for 7 days a week 
+            ],
+            "subjects": [
+                {
+                    "subjectid": "TEST1",
+                    "teacherid": "2118526",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TEST2",
+                    "teacherid": "2118529",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TEST3",
+                    "teacherid": "2118555",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "PTEST1",
+                    "teacherid": "21185299",
+                    "weekly_hrs": 2,
+                    "type": "practical"
+                },
+                {
+                    "subjectid": "PTEST2",
+                    "teacherid": "21185269",
+                    "weekly_hrs": 2,
+                    "type": "practical"
+                }
+            ]
+        },
+        {
+            "local_fitness": 0,
+            "timetable": [..........],
+            "subjects": [...........]
+        },
+        .... as many sections as we need with predecided teacher and subjects 
+    ]
+}
+```

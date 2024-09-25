@@ -362,13 +362,13 @@
                 },
                 {
                     "subjectid": "PMA502",
-                    "teacherid": "2118526",
+                    "teacherid": "21185269",
                     "weekly_hrs": 2,
                     "type": "practical"
                 },
                 {
                     "subjectid": "XCS510",
-                    "teacherid": "2118573",
+                    "teacherid": "21185739",
                     "weekly_hrs": 2,
                     "type": "practical"
                 }
@@ -729,21 +729,21 @@
                 },
                 {
                     "subjectid": "PCS503",
-                    "teacherid": "2118523",
+                    "teacherid": "21185299",
                     "weekly_hrs": 2,
-                    "type": "theory"
+                    "type": "practical"
                 },
                 {
                     "subjectid": "PMA502",
-                    "teacherid": "2118526",
+                    "teacherid": "21185269",
                     "weekly_hrs": 2,
-                    "type": "theory"
+                    "type": "practical"
                 },
                 {
                     "subjectid": "XCS510",
-                    "teacherid": "2118573",
+                    "teacherid": "21185739",
                     "weekly_hrs": 2,
-                    "type": "theory"
+                    "type": "practical"
                 }
             ]
         },
@@ -1102,21 +1102,21 @@
                 },
                 {
                     "subjectid": "PCS503",
-                    "teacherid": "2118523",
+                    "teacherid": "21185299",
                     "weekly_hrs": 2,
-                    "type": "theory"
+                    "type": "practical"
                 },
                 {
                     "subjectid": "PMA502",
-                    "teacherid": "2118526",
+                    "teacherid": "21185269",
                     "weekly_hrs": 2,
-                    "type": "theory"
+                    "type": "practical"
                 },
                 {
                     "subjectid": "XCS510",
-                    "teacherid": "2118573",
+                    "teacherid": "21185739",
                     "weekly_hrs": 2,
-                    "type": "theory"
+                    "type": "practical"
                 }
             ]
         }

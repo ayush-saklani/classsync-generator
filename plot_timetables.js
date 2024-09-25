@@ -84,8 +84,7 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
                 let temp_slot = Math.floor(temp % 10);                              // get the slot from slot
 
                 if (subjects[temp_subject_index].type == 'practical' && temp_slot % 2 != 0) {
-                    temp_slot++;
-                    console.log(temp_slot);
+                    (temp_slot == 9)? temp_slot-- : temp_slot++; // if slot is odd then make it even
                 }
 
                 if (timetable[temp_day][temp_slot].teacherid == "" && timetable[(temp_day)][temp_slot].classid == "") { // if slot is empty only then assign the subject to that slot
@@ -104,7 +103,7 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
                             if (subjects[temp_subject_index].type == 'practical') {
                                 timetable[temp_day][temp_slot + 1].teacherid = subjects[temp_subject_index].teacherid;
                                 timetable[temp_day][temp_slot + 1].classid = room[room_type][temp_room_index].roomid;
-                                subjects[temp_subject_index].weekly_hrs--;  
+                                subjects[temp_subject_index].weekly_hrs--;
                             }
 
                             subjects[temp_subject_index].weekly_hrs--;
