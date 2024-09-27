@@ -2992,11 +2992,25 @@ const displayTimetableAsTables = (timetable) => {
             for (let k = 0; k < timetable['data'][i]['timetable'][j].length; k++) {
                 let classid = timetable['data'][i]['timetable'][j][k].classid || "";     // Default to 'N/A' if empty
                 let teacherid = timetable['data'][i]['timetable'][j][k].teacherid || ""; // Default to 'N/A' if empty
+                let subjectid = timetable['data'][i]['timetable'][j][k].subjectid || ""; // Default to 'N/A' if empty
+                let type = timetable['data'][i]['timetable'][j][k].type || ""; // Default to 'N/A' if empty
 
                 // Add row regardless of empty or non-empty data
-                listHTML += `
-                        <td>${classid}<br> ${teacherid}</td>
-                `;
+                if(classid === "" && teacherid === "" && subjectid === "" && type === "") {
+                    listHTML += `<td> <br><br> </td>`;
+                }else{
+                    listHTML += `<td>
+                                    <b style="color: black">${subjectid}</b>        <br>
+                                    <b style="color: darkblue">${teacherid}</b>         <br>
+                                    <b style="color: black">Room:${classid}</b> <br>
+                                    `;
+                    if(type === 'theory') {
+                        listHTML += `<b style="color: darkgreen">${type}</b>`
+                    } else {
+                        listHTML += `<b style="color: red">${type}</b>`
+                    }
+                    listHTML += `</td>`;
+                }
             }
             listHTML += '</tr>'; // Close each row
         }
