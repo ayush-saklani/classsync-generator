@@ -117,8 +117,8 @@ const fitness_func = (alltimetable, showstats = false) => {
     // ====================================================================================
 
     
-    let real_fitness_score = 100 - (count_teacher_conflicts * 20) - (count_room_conflicts * 15) - (overload_penalty * 10) - (total_overload_penalty_student * 5);
-    real_fitness_score += (avg_active_day_count == 4 || avg_active_day_count == 5) ? 20 : -20;
+    let real_fitness_score = 100 - (count_teacher_conflicts * 20) - (count_room_conflicts * 20) - (overload_penalty * 14) - (total_overload_penalty_student * 6);
+    real_fitness_score += (avg_active_day_count == 4 || avg_active_day_count == 5) ? 24 : -24;
     alltimetable['fitness'] = real_fitness_score;
 
     if (showstats){

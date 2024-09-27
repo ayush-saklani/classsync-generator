@@ -1,1032 +1,6 @@
 {
-    "fitness": 55,
+    "fitness": 52,
     "data": [
-        {
-            "local_fitness": 120,
-            "timetable": [
-                [
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1085",
-                        "teacherid": "2118529",
-                        "subjectid": "TCS548",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "191",
-                        "teacherid": "21185739",
-                        "subjectid": "XCS510",
-                        "type": "practical"
-                    },
-                    {
-                        "classid": "191",
-                        "teacherid": "21185739",
-                        "subjectid": "XCS510",
-                        "type": "practical"
-                    },
-                    {
-                        "classid": "1087",
-                        "teacherid": "21185299",
-                        "subjectid": "PCS503",
-                        "type": "practical"
-                    },
-                    {
-                        "classid": "1087",
-                        "teacherid": "21185299",
-                        "subjectid": "PCS503",
-                        "type": "practical"
-                    }
-                ],
-                [
-                    {
-                        "classid": "1101",
-                        "teacherid": "2118526",
-                        "subjectid": "TMA502",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1071",
-                        "teacherid": "2118572",
-                        "subjectid": "TCS502",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1085",
-                        "teacherid": "2118517",
-                        "subjectid": "TCS591",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1071",
-                        "teacherid": "2118523",
-                        "subjectid": "TCS503",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1069",
-                        "teacherid": "2118555",
-                        "subjectid": "TCS592",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1057",
-                        "teacherid": "2118536",
-                        "subjectid": "TCS509",
-                        "type": "theory"
-                    }
-                ],
-                [
-                    {
-                        "classid": "1006",
-                        "teacherid": "2118572",
-                        "subjectid": "TCS502",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1075",
-                        "teacherid": "2118529",
-                        "subjectid": "TCS548",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1033",
-                        "teacherid": "2118517",
-                        "subjectid": "TCS591",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1057",
-                        "teacherid": "2118526",
-                        "subjectid": "TMA502",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1001",
-                        "teacherid": "2118536",
-                        "subjectid": "TCS509",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1057",
-                        "teacherid": "2118523",
-                        "subjectid": "TCS503",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1075",
-                        "teacherid": "2118555",
-                        "subjectid": "TCS592",
-                        "type": "theory"
-                    }
-                ],
-                [
-                    {
-                        "classid": "1075",
-                        "teacherid": "2118536",
-                        "subjectid": "TCS509",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1071",
-                        "teacherid": "2118555",
-                        "subjectid": "TCS592",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1085",
-                        "teacherid": "2118517",
-                        "subjectid": "TCS591",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1056",
-                        "teacherid": "2118526",
-                        "subjectid": "TMA502",
-                        "type": "theory"
-                    }
-                ],
-                [
-                    {
-                        "classid": "1101",
-                        "teacherid": "2118571",
-                        "subjectid": "XCS501Q",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1056",
-                        "teacherid": "2118529",
-                        "subjectid": "TCS548",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1031",
-                        "teacherid": "2118523",
-                        "subjectid": "TCS503",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1003",
-                        "teacherid": "2118572",
-                        "subjectid": "TCS502",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1001",
-                        "teacherid": "2118601",
-                        "subjectid": "XCS501V",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1087",
-                        "teacherid": "21185269",
-                        "subjectid": "PMA502",
-                        "type": "practical"
-                    },
-                    {
-                        "classid": "1087",
-                        "teacherid": "21185269",
-                        "subjectid": "PMA502",
-                        "type": "practical"
-                    }
-                ],
-                [
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    }
-                ],
-                [
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    }
-                ]
-            ],
-            "subjects": [
-                {
-                    "subjectid": "TCS509",
-                    "teacherid": "2118536",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "TCS502",
-                    "teacherid": "2118572",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "TCS503",
-                    "teacherid": "2118523",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "TMA502",
-                    "teacherid": "2118526",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "TCS548",
-                    "teacherid": "2118529",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "TCS591",
-                    "teacherid": "2118517",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "TCS592",
-                    "teacherid": "2118555",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "XCS501Q",
-                    "teacherid": "2118571",
-                    "weekly_hrs": 1,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "XCS501V",
-                    "teacherid": "2118601",
-                    "weekly_hrs": 1,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "PCS503",
-                    "teacherid": "21185299",
-                    "weekly_hrs": 2,
-                    "type": "practical"
-                },
-                {
-                    "subjectid": "PMA502",
-                    "teacherid": "21185269",
-                    "weekly_hrs": 2,
-                    "type": "practical"
-                },
-                {
-                    "subjectid": "XCS510",
-                    "teacherid": "21185739",
-                    "weekly_hrs": 2,
-                    "type": "practical"
-                }
-            ]
-        },
-        {
-            "local_fitness": 95,
-            "timetable": [
-                [
-                    {
-                        "classid": "1001",
-                        "teacherid": "2118536",
-                        "subjectid": "TCS509",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1033",
-                        "teacherid": "2118526",
-                        "subjectid": "TMA502",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1089",
-                        "teacherid": "21185739",
-                        "subjectid": "XCS510",
-                        "type": "practical"
-                    },
-                    {
-                        "classid": "1089",
-                        "teacherid": "21185739",
-                        "subjectid": "XCS510",
-                        "type": "practical"
-                    },
-                    {
-                        "classid": "1069",
-                        "teacherid": "2118529",
-                        "subjectid": "TCS548",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1057",
-                        "teacherid": "2118523",
-                        "subjectid": "TCS503",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1075",
-                        "teacherid": "2118555",
-                        "subjectid": "TCS592",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    }
-                ],
-                [
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1036",
-                        "teacherid": "2118523",
-                        "subjectid": "TCS503",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1054",
-                        "teacherid": "2118571",
-                        "subjectid": "XCS501Q",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1057",
-                        "teacherid": "2118536",
-                        "subjectid": "TCS509",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "191",
-                        "teacherid": "21185299",
-                        "subjectid": "PCS503",
-                        "type": "practical"
-                    },
-                    {
-                        "classid": "191",
-                        "teacherid": "21185299",
-                        "subjectid": "PCS503",
-                        "type": "practical"
-                    },
-                    {
-                        "classid": "1087",
-                        "teacherid": "21185269",
-                        "subjectid": "PMA502",
-                        "type": "practical"
-                    },
-                    {
-                        "classid": "1087",
-                        "teacherid": "21185269",
-                        "subjectid": "PMA502",
-                        "type": "practical"
-                    }
-                ],
-                [
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1003",
-                        "teacherid": "2118523",
-                        "subjectid": "TCS503",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1036",
-                        "teacherid": "2118572",
-                        "subjectid": "TCS502",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1003",
-                        "teacherid": "2118529",
-                        "subjectid": "TCS548",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1041",
-                        "teacherid": "2118555",
-                        "subjectid": "TCS592",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1101",
-                        "teacherid": "2118517",
-                        "subjectid": "TCS591",
-                        "type": "theory"
-                    }
-                ],
-                [
-                    {
-                        "classid": "1071",
-                        "teacherid": "2118526",
-                        "subjectid": "TMA502",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1069",
-                        "teacherid": "2118601",
-                        "subjectid": "XCS501V",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1006",
-                        "teacherid": "2118517",
-                        "subjectid": "TCS591",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1085",
-                        "teacherid": "2118572",
-                        "subjectid": "TCS502",
-                        "type": "theory"
-                    }
-                ],
-                [
-                    {
-                        "classid": "1003",
-                        "teacherid": "2118529",
-                        "subjectid": "TCS548",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1057",
-                        "teacherid": "2118526",
-                        "subjectid": "TMA502",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1071",
-                        "teacherid": "2118517",
-                        "subjectid": "TCS591",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1054",
-                        "teacherid": "2118572",
-                        "subjectid": "TCS502",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1085",
-                        "teacherid": "2118536",
-                        "subjectid": "TCS509",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1071",
-                        "teacherid": "2118555",
-                        "subjectid": "TCS592",
-                        "type": "theory"
-                    }
-                ],
-                [
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    }
-                ],
-                [
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    }
-                ]
-            ],
-            "subjects": [
-                {
-                    "subjectid": "TCS509",
-                    "teacherid": "2118536",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "TCS502",
-                    "teacherid": "2118572",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "TCS503",
-                    "teacherid": "2118523",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "TMA502",
-                    "teacherid": "2118526",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "TCS548",
-                    "teacherid": "2118529",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "TCS591",
-                    "teacherid": "2118517",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "TCS592",
-                    "teacherid": "2118555",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "XCS501Q",
-                    "teacherid": "2118571",
-                    "weekly_hrs": 1,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "XCS501V",
-                    "teacherid": "2118601",
-                    "weekly_hrs": 1,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "PCS503",
-                    "teacherid": "21185299",
-                    "weekly_hrs": 2,
-                    "type": "practical"
-                },
-                {
-                    "subjectid": "PMA502",
-                    "teacherid": "21185269",
-                    "weekly_hrs": 2,
-                    "type": "practical"
-                },
-                {
-                    "subjectid": "XCS510",
-                    "teacherid": "21185739",
-                    "weekly_hrs": 2,
-                    "type": "practical"
-                }
-            ]
-        },
         {
             "local_fitness": 80,
             "timetable": [
@@ -1038,19 +12,13 @@
                         "type": ""
                     },
                     {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
+                        "classid": "1036",
+                        "teacherid": "2118529",
+                        "subjectid": "TCS548",
+                        "type": "theory"
                     },
                     {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1031",
+                        "classid": "1003",
                         "teacherid": "2118526",
                         "subjectid": "TMA502",
                         "type": "theory"
@@ -1062,22 +30,196 @@
                         "type": ""
                     },
                     {
-                        "classid": "1085",
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1003",
                         "teacherid": "2118536",
                         "subjectid": "TCS509",
                         "type": "theory"
                     },
                     {
-                        "classid": "1001",
+                        "classid": "1036",
+                        "teacherid": "2118572",
+                        "subjectid": "TCS502",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1031",
+                        "teacherid": "2118555",
+                        "subjectid": "TCS592",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1041",
+                        "teacherid": "2118523",
+                        "subjectid": "TCS503",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "classid": "1054",
+                        "teacherid": "2118526",
+                        "subjectid": "TMA502",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1054",
                         "teacherid": "2118601",
                         "subjectid": "XCS501V",
                         "type": "theory"
                     },
                     {
-                        "classid": "1056",
+                        "classid": "1041",
                         "teacherid": "2118529",
                         "subjectid": "TCS548",
                         "type": "theory"
+                    },
+                    {
+                        "classid": "1056",
+                        "teacherid": "2118523",
+                        "subjectid": "TCS503",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1001",
+                        "teacherid": "2118517",
+                        "subjectid": "TCS591",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1033",
+                        "teacherid": "2118555",
+                        "subjectid": "TCS592",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1006",
+                        "teacherid": "2118536",
+                        "subjectid": "TCS509",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1089",
+                        "teacherid": "21185299",
+                        "subjectid": "PCS503",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "1089",
+                        "teacherid": "21185299",
+                        "subjectid": "PCS503",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1101",
+                        "teacherid": "2118526",
+                        "subjectid": "TMA502",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1001",
+                        "teacherid": "2118572",
+                        "subjectid": "TCS502",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1041",
+                        "teacherid": "2118517",
+                        "subjectid": "TCS591",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1089",
+                        "teacherid": "21185269",
+                        "subjectid": "PMA502",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "1089",
+                        "teacherid": "21185269",
+                        "subjectid": "PMA502",
+                        "type": "practical"
+                    }
+                ],
+                [
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1056",
+                        "teacherid": "2118555",
+                        "subjectid": "TCS592",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1089",
+                        "teacherid": "21185739",
+                        "subjectid": "XCS510",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "1089",
+                        "teacherid": "21185739",
+                        "subjectid": "XCS510",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
                     },
                     {
                         "classid": "",
@@ -1090,14 +232,38 @@
                         "teacherid": "2118523",
                         "subjectid": "TCS503",
                         "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1003",
+                        "teacherid": "2118517",
+                        "subjectid": "TCS591",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1057",
+                        "teacherid": "2118572",
+                        "subjectid": "TCS502",
+                        "type": "theory"
                     }
                 ],
                 [
                     {
-                        "classid": "1056",
-                        "teacherid": "2118571",
-                        "subjectid": "XCS501Q",
-                        "type": "theory"
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
                     },
                     {
                         "classid": "",
@@ -1112,12 +278,6 @@
                         "type": ""
                     },
                     {
-                        "classid": "1057",
-                        "teacherid": "2118526",
-                        "subjectid": "TMA502",
-                        "type": "theory"
-                    },
-                    {
                         "classid": "",
                         "teacherid": "",
                         "subjectid": "",
@@ -1130,54 +290,36 @@
                         "type": ""
                     },
                     {
-                        "classid": "1075",
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1031",
                         "teacherid": "2118529",
                         "subjectid": "TCS548",
                         "type": "theory"
                     },
                     {
-                        "classid": "1056",
-                        "teacherid": "2118517",
-                        "subjectid": "TCS591",
+                        "classid": "1003",
+                        "teacherid": "2118536",
+                        "subjectid": "TCS509",
                         "type": "theory"
                     },
                     {
-                        "classid": "",
-                        "teacherid": "",
-                        "subjectid": "",
-                        "type": ""
-                    },
-                    {
-                        "classid": "1041",
-                        "teacherid": "2118555",
-                        "subjectid": "TCS592",
+                        "classid": "1075",
+                        "teacherid": "2118571",
+                        "subjectid": "XCS501Q",
                         "type": "theory"
                     }
                 ],
                 [
                     {
-                        "classid": "1036",
-                        "teacherid": "2118517",
-                        "subjectid": "TCS591",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1001",
-                        "teacherid": "2118572",
-                        "subjectid": "TCS502",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1087",
-                        "teacherid": "21185739",
-                        "subjectid": "XCS510",
-                        "type": "practical"
-                    },
-                    {
-                        "classid": "1087",
-                        "teacherid": "21185739",
-                        "subjectid": "XCS510",
-                        "type": "practical"
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
                     },
                     {
                         "classid": "",
@@ -1186,7 +328,204 @@
                         "type": ""
                     },
                     {
-                        "classid": "1054",
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ]
+            ],
+            "subjects": [
+                {
+                    "subjectid": "TCS509",
+                    "teacherid": "2118536",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TCS502",
+                    "teacherid": "2118572",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TCS503",
+                    "teacherid": "2118523",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TMA502",
+                    "teacherid": "2118526",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TCS548",
+                    "teacherid": "2118529",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TCS591",
+                    "teacherid": "2118517",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TCS592",
+                    "teacherid": "2118555",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "XCS501Q",
+                    "teacherid": "2118571",
+                    "weekly_hrs": 1,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "XCS501V",
+                    "teacherid": "2118601",
+                    "weekly_hrs": 1,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "PCS503",
+                    "teacherid": "21185299",
+                    "weekly_hrs": 2,
+                    "type": "practical"
+                },
+                {
+                    "subjectid": "PMA502",
+                    "teacherid": "21185269",
+                    "weekly_hrs": 2,
+                    "type": "practical"
+                },
+                {
+                    "subjectid": "XCS510",
+                    "teacherid": "21185739",
+                    "weekly_hrs": 2,
+                    "type": "practical"
+                }
+            ]
+        },
+        {
+            "local_fitness": 100,
+            "timetable": [
+                [
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1001",
                         "teacherid": "2118523",
                         "subjectid": "TCS503",
                         "type": "theory"
@@ -1198,26 +537,92 @@
                         "type": ""
                     },
                     {
+                        "classid": "1069",
+                        "teacherid": "2118536",
+                        "subjectid": "TCS509",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1069",
+                        "teacherid": "2118555",
+                        "subjectid": "TCS592",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1069",
+                        "teacherid": "2118517",
+                        "subjectid": "TCS591",
+                        "type": "theory"
+                    },
+                    {
                         "classid": "",
                         "teacherid": "",
                         "subjectid": "",
                         "type": ""
                     },
                     {
-                        "classid": "1089",
-                        "teacherid": "21185269",
-                        "subjectid": "PMA502",
-                        "type": "practical"
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
                     },
                     {
-                        "classid": "1089",
-                        "teacherid": "21185269",
-                        "subjectid": "PMA502",
-                        "type": "practical"
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1056",
+                        "teacherid": "2118526",
+                        "subjectid": "TMA502",
+                        "type": "theory"
                     }
                 ],
                 [
                     {
+                        "classid": "1033",
+                        "teacherid": "2118517",
+                        "subjectid": "TCS591",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1033",
+                        "teacherid": "2118523",
+                        "subjectid": "TCS503",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1069",
+                        "teacherid": "2118536",
+                        "subjectid": "TCS509",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1056",
+                        "teacherid": "2118529",
+                        "subjectid": "TCS548",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1071",
+                        "teacherid": "2118601",
+                        "subjectid": "XCS501V",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
                         "classid": "",
                         "teacherid": "",
                         "subjectid": "",
@@ -1230,7 +635,27 @@
                         "type": ""
                     },
                     {
-                        "classid": "1057",
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "classid": "1101",
+                        "teacherid": "2118572",
+                        "subjectid": "TCS502",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1036",
+                        "teacherid": "2118523",
+                        "subjectid": "TCS503",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1001",
                         "teacherid": "2118529",
                         "subjectid": "TCS548",
                         "type": "theory"
@@ -1242,9 +667,115 @@
                         "type": ""
                     },
                     {
+                        "classid": "1101",
+                        "teacherid": "2118555",
+                        "subjectid": "TCS592",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1087",
+                        "teacherid": "21185739",
+                        "subjectid": "XCS510",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "1087",
+                        "teacherid": "21185739",
+                        "subjectid": "XCS510",
+                        "type": "practical"
+                    }
+                ],
+                [
+                    {
+                        "classid": "1101",
+                        "teacherid": "2118571",
+                        "subjectid": "XCS501Q",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1101",
+                        "teacherid": "2118529",
+                        "subjectid": "TCS548",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
                         "classid": "1031",
-                        "teacherid": "2118536",
-                        "subjectid": "TCS509",
+                        "teacherid": "2118572",
+                        "subjectid": "TCS502",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1085",
+                        "teacherid": "2118526",
+                        "subjectid": "TMA502",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1087",
+                        "teacherid": "21185299",
+                        "subjectid": "PCS503",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "1087",
+                        "teacherid": "21185299",
+                        "subjectid": "PCS503",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "classid": "1054",
+                        "teacherid": "2118526",
+                        "subjectid": "TMA502",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1054",
+                        "teacherid": "2118555",
+                        "subjectid": "TCS592",
                         "type": "theory"
                     },
                     {
@@ -1255,20 +786,38 @@
                     },
                     {
                         "classid": "1006",
+                        "teacherid": "2118536",
+                        "subjectid": "TCS509",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1001",
                         "teacherid": "2118572",
                         "subjectid": "TCS502",
                         "type": "theory"
                     },
                     {
-                        "classid": "1036",
-                        "teacherid": "2118555",
-                        "subjectid": "TCS592",
-                        "type": "theory"
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
                     },
                     {
-                        "classid": "1001",
-                        "teacherid": "2118526",
-                        "subjectid": "TMA502",
+                        "classid": "191",
+                        "teacherid": "21185269",
+                        "subjectid": "PMA502",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "191",
+                        "teacherid": "21185269",
+                        "subjectid": "PMA502",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "1069",
+                        "teacherid": "2118517",
+                        "subjectid": "TCS591",
                         "type": "theory"
                     },
                     {
@@ -1280,28 +829,10 @@
                 ],
                 [
                     {
-                        "classid": "1075",
-                        "teacherid": "2118572",
-                        "subjectid": "TCS502",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "1069",
-                        "teacherid": "2118517",
-                        "subjectid": "TCS591",
-                        "type": "theory"
-                    },
-                    {
-                        "classid": "191",
-                        "teacherid": "21185299",
-                        "subjectid": "PCS503",
-                        "type": "practical"
-                    },
-                    {
-                        "classid": "191",
-                        "teacherid": "21185299",
-                        "subjectid": "PCS503",
-                        "type": "practical"
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
                     },
                     {
                         "classid": "",
@@ -1309,6 +840,197 @@
                         "subjectid": "",
                         "type": ""
                     },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ]
+            ],
+            "subjects": [
+                {
+                    "subjectid": "TCS509",
+                    "teacherid": "2118536",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TCS502",
+                    "teacherid": "2118572",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TCS503",
+                    "teacherid": "2118523",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TMA502",
+                    "teacherid": "2118526",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TCS548",
+                    "teacherid": "2118529",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TCS591",
+                    "teacherid": "2118517",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TCS592",
+                    "teacherid": "2118555",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "XCS501Q",
+                    "teacherid": "2118571",
+                    "weekly_hrs": 1,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "XCS501V",
+                    "teacherid": "2118601",
+                    "weekly_hrs": 1,
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "PCS503",
+                    "teacherid": "21185299",
+                    "weekly_hrs": 2,
+                    "type": "practical"
+                },
+                {
+                    "subjectid": "PMA502",
+                    "teacherid": "21185269",
+                    "weekly_hrs": 2,
+                    "type": "practical"
+                },
+                {
+                    "subjectid": "XCS510",
+                    "teacherid": "21185739",
+                    "weekly_hrs": 2,
+                    "type": "practical"
+                }
+            ]
+        },
+        {
+            "local_fitness": 120,
+            "timetable": [
+                [
                     {
                         "classid": "1071",
                         "teacherid": "2118555",
@@ -1322,7 +1044,267 @@
                         "type": ""
                     },
                     {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1006",
+                        "teacherid": "2118523",
+                        "subjectid": "TCS503",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1075",
+                        "teacherid": "2118572",
+                        "subjectid": "TCS502",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1033",
+                        "teacherid": "2118529",
+                        "subjectid": "TCS548",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1071",
+                        "teacherid": "2118517",
+                        "subjectid": "TCS591",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1006",
+                        "teacherid": "2118536",
+                        "subjectid": "TCS509",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "classid": "1075",
+                        "teacherid": "2118529",
+                        "subjectid": "TCS548",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1089",
+                        "teacherid": "21185269",
+                        "subjectid": "PMA502",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "1089",
+                        "teacherid": "21185269",
+                        "subjectid": "PMA502",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1075",
+                        "teacherid": "2118517",
+                        "subjectid": "TCS591",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1087",
+                        "teacherid": "21185739",
+                        "subjectid": "XCS510",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "1087",
+                        "teacherid": "21185739",
+                        "subjectid": "XCS510",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "classid": "1031",
+                        "teacherid": "2118601",
+                        "subjectid": "XCS501V",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1056",
+                        "teacherid": "2118555",
+                        "subjectid": "TCS592",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1003",
+                        "teacherid": "2118572",
+                        "subjectid": "TCS502",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1071",
+                        "teacherid": "2118517",
+                        "subjectid": "TCS591",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "191",
+                        "teacherid": "21185299",
+                        "subjectid": "PCS503",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "191",
+                        "teacherid": "21185299",
+                        "subjectid": "PCS503",
+                        "type": "practical"
+                    },
+                    {
+                        "classid": "1054",
+                        "teacherid": "2118571",
+                        "subjectid": "XCS501Q",
+                        "type": "theory"
+                    },
+                    {
                         "classid": "1041",
+                        "teacherid": "2118526",
+                        "subjectid": "TMA502",
+                        "type": "theory"
+                    }
+                ],
+                [
+                    {
+                        "classid": "1033",
+                        "teacherid": "2118526",
+                        "subjectid": "TMA502",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1071",
+                        "teacherid": "2118572",
+                        "subjectid": "TCS502",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1003",
+                        "teacherid": "2118555",
+                        "subjectid": "TCS592",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1001",
+                        "teacherid": "2118523",
+                        "subjectid": "TCS503",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1057",
+                        "teacherid": "2118536",
+                        "subjectid": "TCS509",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "classid": "1001",
+                        "teacherid": "2118529",
+                        "subjectid": "TCS548",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "1056",
                         "teacherid": "2118523",
                         "subjectid": "TCS503",
                         "type": "theory"
@@ -1335,9 +1317,27 @@
                     },
                     {
                         "classid": "1075",
+                        "teacherid": "2118526",
+                        "subjectid": "TMA502",
+                        "type": "theory"
+                    },
+                    {
+                        "classid": "1075",
                         "teacherid": "2118536",
                         "subjectid": "TCS509",
                         "type": "theory"
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "classid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
                     }
                 ],
                 [
