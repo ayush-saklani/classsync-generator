@@ -1,18 +1,27 @@
 import fs from 'fs';
 import initialize_population from "./plot_timetables.js";
-import { all } from 'mathjs';
-let showstats = true;                                                   //  show the stats of the timetable generation
 
-let min = 0; // if 10 then start from 10 (tuesday 9am)   
-let max = 50; // it 60 then end at 59  (saturday 6pm) (60 is not included)
-let temp = []
-
-for(let i = 0; i < 5000; i++){
-    let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));    //  timetable data with subjects and teachers already assigned
-    let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));            //  (capacity is not implemented in this code right now)
-    temp.push(initialize_population(alltimetable, room, min, max, false));
-    if(temp[i].fitness >50){
-        fs.writeFileSync('data2.json', JSON.stringify(temp[i], null, 4), 'utf8');
-        break;
+const initialize_population_population = (showstats = false) => {
+    let min = 0;
+    let max = 50;
+    let population = []
+    let counter = 0;
+    for (let i = 0; i < 50; i++) {
+        counter += 1;
+        console.log("counter: ", counter + " i: ", i);
+        let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));    //  timetable data with subjects and teachers already assigned
+        let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));            //  (capacity is not implemented in this code right now)
+        let timetable = initialize_population(alltimetable, room, min, max, showstats);
+        if(timetable.fitness < 0){
+            i--;
+            continue;
+        }else{
+            population.push(timetable);
+        }
     }
+    return population;
 }
+let population = initialize_population_population(false);
+console.log(population.length);
+// population.sort((a, b) => b.fitness - a.fitness);
+fs.writeFileSync('population.json', JSON.stringify(population, null, 4), 'utf8');
