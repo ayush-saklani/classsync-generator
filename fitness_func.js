@@ -1,8 +1,8 @@
 import fs from 'fs';
 
 const fitness_func = (alltimetable, showstats = false) => {
-    // ====================================================================================
-    // ================== Teacher and Room Conflicts [experiment starts] ==================
+    // ============================================================================================
+    // ====================== Teacher and Room Conflicts [experiment starts] ======================
     let count_teacher_conflicts = 0;
     let count_room_conflicts = 0;
     for (let j = 0; j < 7; j++) {                               // monday to sunday
@@ -24,12 +24,12 @@ const fitness_func = (alltimetable, showstats = false) => {
             }
         }
     }
-    // ================== Teacher and Room Conflicts [experiment ends] ====================
-    // ====================================================================================
+    // ====================== Teacher and Room Conflicts [experiment ends] ========================
+    // ============================================================================================
 
 
-    // ====================================================================================
-    //================= Teacher Overload calculation [experiment starts]===================
+    // ============================================================================================
+    //===================== Teacher Overload calculation [experiment starts]=======================
     let overload_penalty = 0;
     let overload_teacher_map = {}
     for (let i = 0; i < alltimetable['data'].length; i++) {
@@ -75,12 +75,12 @@ const fitness_func = (alltimetable, showstats = false) => {
             }
         }
     }
-    //================= Teacher Overload calculation [experiment ends]=====================
-    // ====================================================================================
+    //===================== Teacher Overload calculation [experiment ends]=========================
+    // ============================================================================================
 
 
-    // ====================================================================================
-    // ================== Student Overload calculation [experiment starts] ================
+    // ============================================================================================
+    // ====================== Student Overload calculation [experiment starts] ====================
     let overload_penalty_student_arr = [];
     let active_day_count_arr = [];
     for (let i = 0; i < alltimetable['data'].length; i++) {
@@ -94,7 +94,7 @@ const fitness_func = (alltimetable, showstats = false) => {
             for (let k = 0; k < timetable[j].length; k++) {
                 if (timetable[j][k].teacherid == "") {
                     if (streak > 3) {
-                        overload_penalty_student += streak ;
+                        overload_penalty_student += streak;
                     }
                     streak = 0;
                 } else {
@@ -113,23 +113,23 @@ const fitness_func = (alltimetable, showstats = false) => {
     }
     let total_overload_penalty_student = (overload_penalty_student_arr.reduce((a, b) => a + b, 0)).toFixed(2);;
     let avg_active_day_count = (active_day_count_arr.reduce((a, b) => a + b, 0)) / active_day_count_arr.length;
-    // ================== Student Overload calculation [experiment ends] ==================
-    // ====================================================================================
+    // ====================== Student Overload calculation [experiment ends] ======================
+    // ============================================================================================
 
 
-    // ====================================================================================
-    // =============== bus student come at 8am 12 am and leave at 1pm 4pm 6pm =============
-    // ================ perfect day reward calculation [experiment starts] ================
+    // ============================================================================================
+    // =================== bus student come at 8am 12 am and leave at 1pm 4pm 6pm =================
+    // ==================== perfect day reward calculation [experiment starts] ====================
     let perfect_day_reward_arr = [];
     for (let i = 0; i < alltimetable['data'].length; i++) {
         let timetable = alltimetable['data'][i].timetable;
         let perfect_day_reward = 0;
 
         for (let j = 0; j < timetable.length; j++) {
-            let day_start = 0; 
-            let day_end = 0; 
+            let day_start = 0;
+            let day_end = 0;
             let day_load = 0;
-            let flag = true; 
+            let flag = true;
             for (let k = 0; k < timetable[j].length; k++) {
                 if (timetable[j][k].teacherid == "") {
                 }
@@ -147,13 +147,13 @@ const fitness_func = (alltimetable, showstats = false) => {
             }
             else if ((day_start >= 4 && day_start <= 9) && (day_end <= 9 && day_end >= 4) && day_load > 3) {
                 perfect_day_reward = perfect_day_reward + 6;
-            } 
+            }
             else if ((day_start >= 0 && day_start <= 7) && (day_end <= 7 && day_end >= 0) && day_load > 5) {
                 perfect_day_reward = perfect_day_reward + 4;
-            } 
+            }
             else if (day_load == 0) {
                 // already rewarded for this earlier might merge both later when the number starts making sense
-            } 
+            }
             else {
                 // console.log(i+" 6 " + "day_start " +day_start + " " + "day_end "+ day_end + " " + day_load + " day " + j); // for debugging
                 perfect_day_reward = perfect_day_reward - 6;
@@ -162,9 +162,9 @@ const fitness_func = (alltimetable, showstats = false) => {
         perfect_day_reward_arr.push(perfect_day_reward);
         alltimetable['data'][i].local_fitness += perfect_day_reward;
     }
-    let total_perfect_day_reward = (perfect_day_reward_arr.reduce((a, b) => a + b, 0)); 
-    // ================== perfect day reward calculation [experiment starts] ==============
-    // ====================================================================================
+    let total_perfect_day_reward = (perfect_day_reward_arr.reduce((a, b) => a + b, 0));
+    // ====================== perfect day reward calculation [experiment starts] ==================
+    // ============================================================================================
 
     let real_fitness_score = 100 - (count_teacher_conflicts * 20) - (count_room_conflicts * 20) - (overload_penalty * 14) - (total_overload_penalty_student * 6);
     real_fitness_score += (avg_active_day_count == 4 || avg_active_day_count == 5) ? 24 : -24;
@@ -187,5 +187,6 @@ const fitness_func = (alltimetable, showstats = false) => {
 
 // let alltimetable = JSON.parse(fs.readFileSync('data2.json', 'utf8'));        // for testing purpose only                                
 // console.log(fitness_func(alltimetable));                                     // for testing purpose only 
+fitness_func(JSON.parse(fs.readFileSync('data2.json', 'utf8')), true);          // for testing purpose only
 
 export default fitness_func;
