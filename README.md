@@ -73,23 +73,23 @@ data.JSON (example)
 ## File Structure
 | **File Name**           | **Description**
 |--------------------|-----------------------------------|
-|test.js                      |  Function to build a generation
-|plot_timetables.js           |  Function that plot the timetable according to the predefined resource data set 
-|validate_timetable.js        |  Function that validate the timetable set from teacher and room clash 
-|fitness_func.js              |  Fitness Function
-|selection.js                 |  Function that do the selection of the Fit timetable for next generation as parents
+|`test.js`                    |  Function to build a generation
+|`plot_timetables.js`         |  Function that plot the timetable according to the predefined resource data set 
+|`validate_timetable.js`      |  Function that validate the timetable set from teacher and room clash 
+|`fitness_func.js`            |  Fitness Function
+|`selection.js`               |  Function that do the selection of the Fit timetable for next generation as parents
 ||
-|data.json                    |  Represent a set of timetables ___(1 person in population)___ 
-|data2.json                   |  Represent a plotted set of timetables ___(for testing)___
-|population.json              |  Represent population of many set of timetable
-|room.json                    |  Room data in which slots can be plotted 
-|population_selected.json     |  Selected timetable from this generation 
+|`data.json`                  |  Represent a set of timetables ___(1 person in population)___ 
+|`data2.json`                 |  Represent a plotted set of timetables ___(for testing)___
+|`population.json`            |  Represent population of many set of timetable
+|`room.json`                  |  Room data in which slots can be plotted 
+|`population_selected.json`   |  Selected timetable from this generation 
 ||
-|index.html                   |  For visualization of plotted set of timetable 
-|index.js                     |  JS for `index.html`
-|README.md                    |  Readme.md
-|
-|subjects.json                |  Trash _(might delete later)_
+|`index.html`                 |  For visualization of plotted set of timetable 
+|`index.js`                   |  JS for `index.html`
+|`README.md`                  |  Readme.md
+||
+|`subjects.json`              |  Trash _(might delete later)_
 
 ## Penalty and Reward System
 __(these are not used right now)__ 
