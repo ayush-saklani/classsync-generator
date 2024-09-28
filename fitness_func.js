@@ -187,6 +187,6 @@ const fitness_func = (alltimetable, showstats = false) => {
 
 // let alltimetable = JSON.parse(fs.readFileSync('data2.json', 'utf8'));        // for testing purpose only                                
 // console.log(fitness_func(alltimetable));                                     // for testing purpose only 
-fitness_func(JSON.parse(fs.readFileSync('data2.json', 'utf8')), true);          // for testing purpose only
+// fitness_func(JSON.parse(fs.readFileSync('data2.json', 'utf8')), true);          // for testing purpose only
 
 export default fitness_func;
