@@ -47,7 +47,7 @@ const fitness_func = (alltimetable, showstats = false) => {
         for (let j = 0; j < timetable.length; j++) {
             for (let k = 0; k < timetable[j].length; k++) {
                 if (timetable[j][k].teacherid == "") continue;
-                let curr_teacher_mark = k + ";" + k + ";" + timetable[j][k].teacherid;
+                let curr_teacher_mark = j + ";" + k + ";" + timetable[j][k].teacherid;
                 if (overload_teacher_map[curr_teacher_mark] > 0) {
                     let z = k;
                     let streak = 0;

@@ -70,3 +70,13 @@ data.JSON (example)
     ]
 }
 ```
+these are not used right now 
+| **Type**           | **Condition**                     | **Points**|
+|--------------------|-----------------------------------|-----------|
+| Teacher Conflict   | Per conflict                      | -20       |
+| Room Conflict      | Per conflict                      | -20       |
+| Teacher Overload   | Per extra hour                    | -10       |
+| Student Overload   | For exceeding max classes in a day| -5        |
+| Perfect Day Reward | 4-5 classes in a day              | +6        |
+| Active Day Count   | 4-5 active days                   | +20       |
+| Low Active Days    | Less than 3 active days           | -10       |
