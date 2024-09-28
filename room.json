@@ -1,77 +1,129 @@
 {
     "room": [
         {
-            "roomid": "1001",
+            "roomid": "2201",
             "capacity": 1
         },
         {
-            "roomid": "1003",
+            "roomid": "2202",
             "capacity": 1
         },
         {
-            "roomid": "1033",
+            "roomid": "2203",
             "capacity": 1
         },
         {
-            "roomid": "1006",
+            "roomid": "2204",
             "capacity": 1
         },
         {
-            "roomid": "1031",
+            "roomid": "2205",
             "capacity": 1
         },
         {
-            "roomid": "1036",
+            "roomid": "2206",
             "capacity": 1
         },
         {
-            "roomid": "1041",
+            "roomid": "2207",
             "capacity": 1
         },
         {
-            "roomid": "1054",
+            "roomid": "2401",
             "capacity": 1
         },
         {
-            "roomid": "1057",
+            "roomid": "2402",
             "capacity": 1
         },
         {
-            "roomid": "1056",
+            "roomid": "2403",
             "capacity": 1
         },
         {
-            "roomid": "1069",
+            "roomid": "2404",
             "capacity": 1
         },
         {
-            "roomid": "1101",
+            "roomid": "2405",
             "capacity": 1
         },
         {
-            "roomid": "1075",
+            "roomid": "2406",
             "capacity": 1
         },
         {
-            "roomid": "1071",
+            "roomid": "2407",
             "capacity": 1
         },
         {
-            "roomid": "1085",
+            "roomid": "2408",
+            "capacity": 1
+        },
+        {
+            "roomid": "2301",
+            "capacity": 1
+        },
+        {
+            "roomid": "2302",
+            "capacity": 1
+        },
+        {
+            "roomid": "2303",
+            "capacity": 1
+        },
+        {
+            "roomid": "2304",
+            "capacity": 1
+        },
+        {
+            "roomid": "2305",
+            "capacity": 1
+        },
+        {
+            "roomid": "2306",
+            "capacity": 1
+        },
+        {
+            "roomid": "2307",
+            "capacity": 1
+        },
+        {
+            "roomid": "2308",
             "capacity": 1
         }
     ],
     "lab": [
         {
-            "roomid": "1087",
+            "roomid": "3001",
             "capacity": 1
         },
         {
-            "roomid": "1089",
+            "roomid": "3003",
             "capacity": 1
         },
         {
-            "roomid": "191",
+            "roomid": "3069",
+            "capacity": 1
+        },
+        {
+            "roomid": "3069",
+            "capacity": 1
+        },
+        {
+            "roomid": "3069",
+            "capacity": 1
+        },
+        {
+            "roomid": "3069",
+            "capacity": 1
+        },
+        {
+            "roomid": "3101",
+            "capacity": 1
+        },
+        {
+            "roomid": "3101",
             "capacity": 1
         }
     ]
