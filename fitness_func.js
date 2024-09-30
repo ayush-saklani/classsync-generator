@@ -108,7 +108,7 @@ const fitness_func = (alltimetable, showstats = false) => {
         }
         overload_penalty_student_arr.push(overload_penalty_student);
         active_day_count_arr.push(active_day_count);
-        alltimetable['data'][i].local_fitness = 100 - (overload_penalty_student * 5);
+        alltimetable['data'][i].local_fitness = 100 - (overload_penalty_student * 6);
         alltimetable['data'][i].local_fitness += (active_day_count == 4 || active_day_count == 5) ? 20 : -20;
     }
     let total_overload_penalty_student = (overload_penalty_student_arr.reduce((a, b) => a + b, 0)).toFixed(2);;
@@ -142,13 +142,13 @@ const fitness_func = (alltimetable, showstats = false) => {
                     day_end = k;
                 }
             }
-            if ((day_start >= 0 && day_start <= 4) && (day_end <= 4 && day_end >= 0) && day_load > 2) {
+            if ((day_start >= 0 && day_start <= 4) && (day_end <= 4 && day_end >= 0) && day_load >= 3) {
                 perfect_day_reward = perfect_day_reward + 6;
             }
-            else if ((day_start >= 4 && day_start <= 9) && (day_end <= 9 && day_end >= 4) && day_load > 3) {
+            else if ((day_start >= 4 && day_start <= 9) && (day_end <= 9 && day_end >= 4) && day_load >= 4) {
                 perfect_day_reward = perfect_day_reward + 6;
             }
-            else if ((day_start >= 0 && day_start <= 7) && (day_end <= 7 && day_end >= 0) && day_load > 5) {
+            else if ((day_start >= 0 && day_start <= 7) && (day_end <= 7 && day_end >= 0) && day_load >= 6) {
                 perfect_day_reward = perfect_day_reward + 4;
             }
             else if (day_load == 0) {
@@ -156,7 +156,7 @@ const fitness_func = (alltimetable, showstats = false) => {
             }
             else {
                 // console.log(i+" 6 " + "day_start " +day_start + " " + "day_end "+ day_end + " " + day_load + " day " + j); // for debugging
-                perfect_day_reward = perfect_day_reward - 6;
+                perfect_day_reward = perfect_day_reward - 10;
             }
         }
         perfect_day_reward_arr.push(perfect_day_reward);
@@ -166,7 +166,7 @@ const fitness_func = (alltimetable, showstats = false) => {
     // ====================== perfect day reward calculation [experiment starts] ==================
     // ============================================================================================
 
-    let real_fitness_score = 100 - (count_teacher_conflicts * 20) - (count_room_conflicts * 20) - (overload_penalty * 14) - (total_overload_penalty_student * 6);
+    let real_fitness_score = (100*alltimetable.data.length) - (count_teacher_conflicts * 20) - (count_room_conflicts * 20) - (overload_penalty * 14) - (total_overload_penalty_student * 6);
     real_fitness_score += (avg_active_day_count == 4 || avg_active_day_count == 5) ? 24 : -24;
     real_fitness_score += total_perfect_day_reward;
     alltimetable['fitness'] = real_fitness_score;
