@@ -129,7 +129,9 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
         alltimetable['data'][i].timetable = timetable;
     }
     alltimetable = fitness_func(alltimetable, showstats);
-    console.log("======== [ Validation : " + validate_timetable_set(alltimetable) + " ] ========= [ Fitness : " + alltimetable['fitness'] + " ] ==========");
+    if (showstats){
+        console.log("======== [ Validation : " + validate_timetable_set(alltimetable) + " ] ========= [ Fitness : " + alltimetable['fitness'] + " ] ==========");
+    }
 
     return alltimetable;
 }
