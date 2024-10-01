@@ -135,12 +135,12 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
 export default initialize_population;
 
 
-let min = 0;                             // if 10 then start from 10 (tuesday 9am)
-let max = 50;                            // it 60 then end at 59  (saturday 6pm) (60 is not included)
-let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));
-let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
-let showstats = true;
-fs.writeFileSync('data2.json', JSON.stringify(initialize_population(alltimetable, room, min, max, showstats), null, 4), 'utf8');
+// let min = 0;                             // if 10 then start from 10 (tuesday 9am)
+// let max = 50;                            // it 60 then end at 59  (saturday 6pm) (60 is not included)
+// let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+// let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
+// let showstats = true;
+// fs.writeFileSync('data2.json', JSON.stringify(initialize_population(alltimetable, room, min, max, showstats), null, 4), 'utf8');
 
 // initialize_population(alltimetable, room, min, max, true); // demo function call
 
