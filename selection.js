@@ -25,6 +25,7 @@ const tournamentSelection = (population, tournamentSize = 3, selectionRate = 0.5
 let population = JSON.parse(fs.readFileSync('population.json', 'utf8'));
 const selectionRate = 0.3; // Select 30% of the population
 const selectedPopulation = tournamentSelection(population, 3, selectionRate); // Apply tournament selection
+selectedPopulation.sort((a, b) => -(a.fitness - b.fitness)); // Sort the selected individuals by fitness in 
 fs.writeFileSync('population_selected.json', JSON.stringify(selectedPopulation, null, 2));
 
 console.log("Selected Individuals:", selectedPopulation.length);
