@@ -18,14 +18,15 @@ const tournamentSelection = (population, tournamentSize = 3, selectionRate = 0.5
 
         selectedIndividuals.push(bestIndividual);
     }
+    selectedIndividuals.sort((a, b) => -(a.fitness - b.fitness)); 
+    console.log("Selected Individuals:", selectedIndividuals.length);
     return selectedIndividuals;
 };
 
-// Example usage:
-let population = JSON.parse(fs.readFileSync('population.json', 'utf8'));
-const selectionRate = 0.3; // Select 30% of the population
-const selectedPopulation = tournamentSelection(population, 3, selectionRate); // Apply tournament selection
-selectedPopulation.sort((a, b) => -(a.fitness - b.fitness)); // Sort the selected individuals by fitness in 
-fs.writeFileSync('population_selected.json', JSON.stringify(selectedPopulation, null, 2));
+export default tournamentSelection;
 
-console.log("Selected Individuals:", selectedPopulation.length);
+// Example usage
+// let population = JSON.parse(fs.readFileSync('population.json', 'utf8'));
+// const selectionRate = 0.3;  /// 30% 
+// let selectedIndividuals = tournamentSelection(population, 3, selectionRate);
+// fs.writeFileSync('population_selected.json', JSON.stringify(selectedIndividuals, null, 2));
