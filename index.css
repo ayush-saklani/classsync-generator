@@ -1,0 +1,64 @@
+body {
+    font-family: consolas;
+}
+
+li {
+    padding: 5px;
+    display: flex;
+}
+
+table {
+    border: 5px solid black;
+    /* padding: 5px; */
+    border-collapse: collapse;
+    margin: 5px;
+}
+
+td,
+th {
+    border: 3px solid black;
+    height: 30px;
+    width: 100px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+nav>h2 {
+    margin: 0;
+    font-size: xx-large;
+}
+
+article {
+    border: 5px solid black;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.setclass{
+    font-weight: 1000;
+    font-size: larger;
+    background-color: rgb(62, 155, 191);
+    border-right: 5px solid black;
+}
+.unacceptable {
+    font-weight: 800;
+    background-color: red;
+}
+
+.poor {
+    font-weight: 800;
+    background-color: rgb(196, 196, 0);
+}
+
+.average {
+    font-weight: 800;
+    background-color: rgb(196, 127, 0);
+}
+
+.good {
+    font-weight: 800;
+    background-color: green;
+}
