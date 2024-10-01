@@ -5,55 +5,51 @@ import { and } from 'mathjs';
 
 //  structure of timetable as template
 let timetablestructure = [
-    [{ "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}],
-    [{ "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}],
-    [{ "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}],
-    [{ "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}],
-    [{ "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}],
-    [{ "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}],
-    [{ "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}, { "classid": "", "teacherid": "", "subjectid": "", "type":""}]
+    [{ "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }],
+    [{ "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }],
+    [{ "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }],
+    [{ "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }],
+    [{ "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }],
+    [{ "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }],
+    [{ "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }, { "classid": "", "teacherid": "", "subjectid": "", "type": "" }]
 ];
 
 //  this function will validate the slot of timetable and flag out the room and teacher conflicts from that batch of timetables
 const validate_timetable_slot = (alltimetable, j, k, teacherid, classid, type) => {
     let temp = {}
-    if (alltimetable['data'].length == 0) { return true; }
+    // if (alltimetable['data'].length == 0) { return true; }
     for (let i = 0; i < alltimetable['data'].length; i++) {        // all timetables
         if (alltimetable['data'][i]['timetable'][j][k].teacherid && alltimetable['data'][i]['timetable'][j][k].classid) {         // if class is empty            
-            if (temp[("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid)] || temp[("class" + alltimetable['data'][i]['timetable'][j][k].classid)]) {
+            if (temp[("teacher" + ";" + j + ";" + k + ";" + alltimetable['data'][i]['timetable'][j][k].teacherid)] ||
+                temp[("class" + ";" + j + ";" + k + ";" + alltimetable['data'][i]['timetable'][j][k].classid)]) {
                 return false;
             } else {
                 temp[("teacher" + ";" + j + ";" + k + ";" + alltimetable['data'][i]['timetable'][j][k].teacherid)] = true;
                 temp[("class" + ";" + j + ";" + k + ";" + alltimetable['data'][i]['timetable'][j][k].classid)] = true;
-                if (type == 'practical') {
+                if (k <= 8 && type == 'practical') {
                     temp[("teacher" + ";" + j + ";" + (k + 1) + ";" + alltimetable['data'][i]['timetable'][j][k + 1].teacherid)] = true;
                     temp[("class" + ";" + j + ";" + (k + 1) + ";" + alltimetable['data'][i]['timetable'][j][k + 1].classid)] = true;
                 }
             }
         }
     }
-    if (type == 'practical') {
-        if (temp[("teacher" + ";" + j + ";" + k + ";" + teacherid)] || temp[("class" + ";" + j + ";" + k + ";" + classid)] || temp[("teacher" + ";" + j + ";" + (k + 1) + ";" + teacherid)] || temp[("class" + ";" + j + ";" + (k + 1) + ";" + classid)]) {
-            return false;
-        } else {
-            return true;
-        }
-    } else {
-        if (temp[("teacher" + ";" + j + ";" + k + ";" + teacherid)] || temp[("class" + ";" + j + ";" + k + ";" + classid)]) {
-            return false;
-        } else {
-            return true;
-        }
+    if (temp[("teacher" + ";" + j + ";" + k + ";" + teacherid)] || temp[("class" + ";" + j + ";" + k + ";" + classid)]) {
+        return false;
     }
+    if (k <= 8 && type == 'practical' &&
+        (temp[("teacher" + ";" + j + ";" + (k + 1) + ";" + teacherid)] || temp[("class" + ";" + j + ";" + (k + 1) + ";" + classid)])) {
+        return false;
+    }
+    return true;
 }
 // this function will prevent the teacher to teach in multiple slots in a day
-const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, classid) => {    // this function will prevent the teacher to teach in multiple slots in a day
+const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, classid, subjectid, type) => {    // this function will prevent the teacher to teach in multiple slots in a day
     let map = {}
     for (let i = 0; i < 10; i++) {
-        map[timetable[j][i].teacherid] = true;
+        if (timetable[j][i].teacherid == "" || timetable[j][i].classid == "") continue;
+        map[("subjectid" + ";" + j + ";" + k + ";" + (timetable[j][i].subjectid))] = true;
     }
-    if (map[teacherid]) {
-        // console.log("false");
+    if (map[("subjectid" + ";" + j + ";" + k + ";" + subjectid)]) {
         return false;
     } else {
         return true;
@@ -84,7 +80,7 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
                 let temp_slot = Math.floor(temp % 10);                              // get the slot from slot
 
                 if (subjects[temp_subject_index].type == 'practical' && temp_slot % 2 != 0) {
-                    (temp_slot == 9)? temp_slot-- : temp_slot++; // if slot is odd then make it even
+                    (temp_slot == 9) ? temp_slot-- : temp_slot++; // if slot is odd then make it even
                 }
 
                 if (timetable[temp_day][temp_slot].teacherid == "" && timetable[(temp_day)][temp_slot].classid == "") { // if slot is empty only then assign the subject to that slot
@@ -93,7 +89,7 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
                     if (validate_timetable_slot(alltimetable, temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[room_type][temp_room_index].roomid, subjects[temp_subject_index].type)) {
 
                         // if validation in a day is true then assign the subject to that slot (this will prevent the teacher to teach in multiple slots in a day)
-                        if (validate_multiple_slot_in_a_day(timetable, temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[room_type][temp_room_index].roomid)) {
+                        if (validate_multiple_slot_in_a_day(timetable, temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[room_type][temp_room_index].roomid, subjects[temp_subject_index].subjectid, subjects[temp_subject_index].type)) {
                             timetable[temp_day][temp_slot].teacherid = subjects[temp_subject_index].teacherid;
                             timetable[temp_day][temp_slot].classid = room[room_type][temp_room_index].roomid;
                             timetable[temp_day][temp_slot].subjectid = subjects[temp_subject_index].subjectid;
@@ -129,26 +125,25 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
         alltimetable['data'][i].timetable = timetable;
     }
     alltimetable = fitness_func(alltimetable, showstats);
-    if (showstats){
+    if (showstats) {
         console.log("======== [ Validation : " + validate_timetable_set(alltimetable) + " ] ========= [ Fitness : " + alltimetable['fitness'] + " ] ==========");
     }
 
     return alltimetable;
 }
 
+export default initialize_population;
 
-//  slot range for timetable
-let min = 0; // if 10 then start from 10 (tuesday 9am)   
-let max = 50; // it 60 then end at 59  (saturday 6pm) (60 is not included)
 
-let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));    //  timetable data with subjects and teachers already assigned
-let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));            //  (capacity is not implemented in this code right now)
-let showstats = true;                                                   //  show the stats of the timetable generation
-// fs.writeFileSync('data2.json', JSON.stringify(initialize_population(alltimetable, room, min, max, showstats), null, 4), 'utf8');
+let min = 0;                             // if 10 then start from 10 (tuesday 9am)
+let max = 50;                            // it 60 then end at 59  (saturday 6pm) (60 is not included)
+let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
+let showstats = true;
+fs.writeFileSync('data2.json', JSON.stringify(initialize_population(alltimetable, room, min, max, showstats), null, 4), 'utf8');
 
 // initialize_population(alltimetable, room, min, max, true); // demo function call
 
-export default initialize_population;
 
 
 // Timtable in 2D-array (just for reference)
