@@ -1,7 +1,6 @@
 import fs from 'fs';
 import validate_timetable_set from './validate_timetable.js';
 import fitness_func from './fitness_func.js';
-import { and } from 'mathjs';
 
 //  structure of timetable as template
 let timetablestructure = [
@@ -45,9 +44,35 @@ const validate_timetable_slot = (alltimetable, j, k, teacherid, classid, type) =
 // this function will prevent the teacher to teach in multiple slots in a day
 const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, classid, subjectid, type) => {    // this function will prevent the teacher to teach in multiple slots in a day
     let map = {}
+    // testing code for day reward for bus students
+    // let flaglimit = 8000;
+    // let day_start = 0;
+    // let day_end = 0;
+    // let pflag = true;
+    // for (let z = 0; z < 10; z++) {
+    //     if (timetable[j][z].classid == "" && timetable[j][z].teacherid == "") {
+    //         continue;
+    //     } else {
+    //         if (pflag) {
+    //             day_start = z;
+    //             pflag = false;
+    //         }
+    //         day_end = z;
+    //     }
+    // }
+    // if ((day_start >= 0 && day_start <= 7) && (day_end >= 0 && day_end <= 7) && flag < flaglimit) {
+    //     if (k >= 8) {
+    //         return false;
+    //     }
+    // }
+    // else if ((day_start >= 4 && day_start <= 9) && (day_end >= 4 && day_end <= 9) && flag < flaglimit) {
+    //     if (k <= 3) {
+    //         return false;
+    //     }
+    // }
     for (let i = 0; i < 10; i++) {
         if (timetable[j][i].teacherid == "" || timetable[j][i].classid == "") continue;
-        map[("subjectid" + ";" + j + ";" + k + ";" + (timetable[j][i].subjectid))] = true;
+        map[("subjectid" + ";" + j + ";" + i + ";" + (timetable[j][i].subjectid))] = true;
     }
     if (map[("subjectid" + ";" + j + ";" + k + ";" + subjectid)]) {
         return false;
@@ -115,14 +140,25 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
                                 room[room_type].splice(temp_room_index, 1);                        // remove room from list (currently not implemented) due to above reason
                             }
                         }
+                        else {
+                            flag++;
+                            if (flag > 30000) {
+                                console.log("Too many conflicts for section " + i + ". Resetting timetable.");
+                                return null;
+                            }
+                        }
                     } else {
                         flag++;
-                        // console.log(flag);
+                        if (flag > 30000) {
+                            console.log("Too many conflicts for section " + i + ". Resetting timetable.");
+                            return null;
+                        }
                     }
                 }
             }
         }
         alltimetable['data'][i].timetable = timetable;
+        flag = 0;
     }
     alltimetable = fitness_func(alltimetable, showstats);
     if (showstats) {
