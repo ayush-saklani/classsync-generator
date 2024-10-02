@@ -120,10 +120,19 @@ const fitness_func = (alltimetable, showstats = false) => {
     // ============================================================================================
     // =================== bus student come at 8am 12 am and leave at 1pm 4pm 6pm =================
     // ==================== perfect day reward calculation [experiment starts] ====================
-    let perfect_day_reward_arr = [];
+    let perfect_day_status_average = '';
+    let total_perfect_day_reward = 0;
+    let perfect_dat_reward_map = {
+        'PerfectDay': 10,
+        'GoodDay': 5,
+        'AverageDay': 0,
+        'PoorDay': -10,
+        'Holiday': 0
+    };
     for (let i = 0; i < alltimetable['data'].length; i++) {
         let timetable = alltimetable['data'][i].timetable;
-        let perfect_day_reward = 0;
+        let perfect_day_status = '';
+        let perfect_day_status_arr = [];
 
         for (let j = 0; j < timetable.length; j++) {
             let day_start = 0;
@@ -132,6 +141,7 @@ const fitness_func = (alltimetable, showstats = false) => {
             let flag = true;
             for (let k = 0; k < timetable[j].length; k++) {
                 if (timetable[j][k].teacherid == "") {
+                    continue;
                 }
                 else {
                     day_load++;
@@ -142,31 +152,37 @@ const fitness_func = (alltimetable, showstats = false) => {
                     day_end = k;
                 }
             }
-            if ((day_start >= 0 && day_start <= 4) && (day_end <= 4 && day_end >= 0) && day_load >= 3) {
-                perfect_day_reward = perfect_day_reward + 6;
+            if ((day_start >= 0 && day_start <= 4) && (day_end <= 4 && day_end >= 0)) {
+                perfect_day_status = (day_load >= 3) ? 'PerfectDay' : 'GoodDay';
             }
-            else if ((day_start >= 4 && day_start <= 9) && (day_end <= 9 && day_end >= 4) && day_load >= 4) {
-                perfect_day_reward = perfect_day_reward + 6;
+            else if ((day_start >= 4 && day_start <= 9) && (day_end <= 9 && day_end >= 4)) {
+                perfect_day_status = (day_load >= 4) ? 'PerfectDay' : 'GoodDay';
             }
-            else if ((day_start >= 0 && day_start <= 7) && (day_end <= 7 && day_end >= 0) && day_load >= 6) {
-                perfect_day_reward = perfect_day_reward + 4;
+            else if ((day_start >= 0 && day_start <= 7) && (day_end <= 7 && day_end >= 0)) {
+                perfect_day_status = (day_load >= 6) ? 'PerfectDay' : 'GoodDay';
             }
             else if (day_load == 0) {
-                // already rewarded for this earlier might merge both later when the number starts making sense
+                perfect_day_status = 'Holiday';
             }
             else {
-                // console.log(i+" 6 " + "day_start " +day_start + " " + "day_end "+ day_end + " " + day_load + " day " + j); // for debugging
-                perfect_day_reward = perfect_day_reward - 10;
+                perfect_day_status = (day_load >= 6) ? 'AverageDay' : 'PoorDay';
+            }
+            if (perfect_day_status != 'Holiday') {
+                perfect_day_status_arr.push(perfect_day_status);
             }
         }
-        perfect_day_reward_arr.push(perfect_day_reward);
-        alltimetable['data'][i].local_fitness += perfect_day_reward;
+        // console.log(perfect_day_status_arr);
+        // remove the most frequent element from the array
+        perfect_day_status_average = perfect_day_status_arr.sort((a, b) =>
+            perfect_day_status_arr.filter(v => v === a).length - perfect_day_status_arr.filter(v => v === b).length).pop();
+        alltimetable['data'][i].local_fitness += perfect_dat_reward_map[perfect_day_status_average];
+        total_perfect_day_reward += perfect_dat_reward_map[perfect_day_status_average];
     }
-    let total_perfect_day_reward = (perfect_day_reward_arr.reduce((a, b) => a + b, 0));
+
     // ====================== perfect day reward calculation [experiment starts] ==================
     // ============================================================================================
 
-    let real_fitness_score = (100*alltimetable.data.length) - (count_teacher_conflicts * 20) - (count_room_conflicts * 20) - (overload_penalty * 14) - (total_overload_penalty_student * 6);
+    let real_fitness_score = (100 * alltimetable.data.length) - (count_teacher_conflicts * 20) - (count_room_conflicts * 20) - (overload_penalty * 14) - (total_overload_penalty_student * 6);
     real_fitness_score += (avg_active_day_count == 4 || avg_active_day_count == 5) ? 24 : -24;
     real_fitness_score += total_perfect_day_reward;
     alltimetable['fitness'] = real_fitness_score;
