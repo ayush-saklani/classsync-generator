@@ -16,7 +16,7 @@ const initialize_population_population = (showstats = false) => {
         if(timetable == null){
             i--;
             continue;
-        }else if(timetable.fitness < -1500){
+        }else if(timetable.fitness < -500){
             i--;
             continue;
         }else{

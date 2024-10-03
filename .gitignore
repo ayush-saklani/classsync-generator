@@ -1,3 +1,5 @@
 node_modules/
 population_selected.json
 population.json
+JSONdata/
+population_crossover.json
