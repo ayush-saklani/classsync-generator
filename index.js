@@ -31,19 +31,19 @@ const displayTimetableAsTables = (timetable) => {
         for (let j = 0; j < timetable['data'][i]['timetable'].length; j++) {
             listHTML += `<tr> <th><b>${day[j]}</b></th>`; // Start each row
             for (let k = 0; k < timetable['data'][i]['timetable'][j].length; k++) {
-                let classid = timetable['data'][i]['timetable'][j][k].classid || "";     // Default to 'N/A' if empty
+                let roomid = timetable['data'][i]['timetable'][j][k].roomid || "";     // Default to 'N/A' if empty
                 let teacherid = timetable['data'][i]['timetable'][j][k].teacherid || ""; // Default to 'N/A' if empty
                 let subjectid = timetable['data'][i]['timetable'][j][k].subjectid || ""; // Default to 'N/A' if empty
                 let type = timetable['data'][i]['timetable'][j][k].type || ""; // Default to 'N/A' if empty
 
                 // Add row regardless of empty or non-empty data
-                if (classid === "" && teacherid === "" && subjectid === "" && type === "") {
+                if (roomid === "" && teacherid === "" && subjectid === "" && type === "") {
                     listHTML += `<td> <br><br> </td>`;
                 } else {
                     listHTML += `<td>
                                     <b style="color: black">${subjectid}</b>        <br>
                                     <b style="color: darkblue">${teacherid}</b>         <br>
-                                    <b style="color: black">Room:${classid}</b> <br>
+                                    <b style="color: black">Room:${roomid}</b> <br>
                                     `;
 
                     if (type === 'theory') {
