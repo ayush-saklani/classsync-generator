@@ -2,71 +2,81 @@
 import fs from 'fs'
 import fitness_func from './fitness_func.js';
 import validate_timetable from './validate_timetable.js';
-import { sort } from 'mathjs';
 
-// Function to reassign a class when there's a conflict
-const reassignClass = (timetable, day, slot, teacherid, room) => {
-    // Randomly find a new empty slot that doesn't have a teacher conflict
-    for (let i = 0; i < 7; i++) {
-        for (let j = 0; j < 10; j++) {
-            if (timetable[i][j].teacherid === "" && timetable[i][j].classid === "") {
-                timetable[i][j].teacherid = teacherid;
-                timetable[day][slot] = { teacherid: "", classid: "" }; // Clear the conflicting slot
-                return;
+const findNewRoom = (j, k, roomid, type, room, temp) => {
+    let room_type = (type == 'practical') ? 'lab' : 'room';
+
+    while (room[room_type].length > 0) {
+        let random_room_index = Math.floor(Math.random() * room[room_type].length);
+        let temproom = room[room_type][random_room_index].roomid;
+        // console.log("Room conflict " + temproom + " " + roomid + " " + j + " " + k + " " + type);
+        if (type == 'practical') {
+            let offset = (k < 9) ? 1 : -1;
+            if ((temp[('class' + ';' + j + ';' + k + ';' + temproom)] || false) || (temp[('class' + ';' + j + ';' + (k + offset) + ';' + temproom)] || false)) {
+                room[room_type].splice(random_room_index, 1);
+            } else {
+                return temproom;
+            }
+        }
+        else {
+            if (temp[('class' + ';' + j + ';' + k + ';' + temproom)]) {
+                room[room_type].splice(random_room_index, 1);
+            } else {
+                return temproom;
             }
         }
     }
-};
+    return null;
+}
 
-// Function to reassign a room when there's a conflict
-const reassignRoom = (timetable, day, slot, classid, room) => {
-    // Randomly find a new room that doesn't have a conflict
-    for (let i = 0; i < room['room'].length; i++) {
-        const newRoomId = room['room'][i].roomid;
-        if (!isRoomOccupied(timetable, newRoomId, day, slot)) {
-            timetable[day][slot].classid = newRoomId;
-            return;
-        }
-    }
-};
-
-// Helper function to check if a room is already occupied at a given day and slot
-const isRoomOccupied = (timetable, roomid, day, slot) => {
-    for (let i = 0; i < timetable.length; i++) {
-        if (timetable[day][slot].classid === roomid) {
-            return true;
-        }
-    }
-    return false;
-};
+const findNewSlot = (timetable, day, slot, teacherid, room) => {
+}
 
 // Function to resolve conflicts (teacher/room clashes) in a timetable
 const resolveConflicts = (offspring, room) => {
-    const teacherMap = {};
-    const roomMap = {};
-
+    let temp = {};
     for (let i = 0; i < offspring['data'].length; i++) {
-        for (let day = 0; day < 7; day++) {
-            for (let slot = 0; slot < 10; slot++) {
-                const { teacherid, classid } = offspring['data'][i].timetable[day][slot];
-
-                // Check for teacher conflicts
-                if (teacherid) {
-                    const teacherKey = `teacher-${teacherid}-${day}-${slot}`;
-                    if (teacherMap[teacherKey]) {
-                        reassignClass(offspring['data'][i].timetable, day, slot, teacherid, room); // Reassign the class to resolve conflict
-                    } else {
-                        teacherMap[teacherKey] = true;
-                    }
+        for (let j = 0; j < 7; j++) {
+            for (let k = 0; k < 10; k++) {
+                const { teacherid, roomid } = offspring['data'][i]['timetable'][j][k];
+                if (offspring['data'][i]['timetable'][j][k].teacherid == "" && offspring['data'][i]['timetable'][j][k].roomid == "") {         // if class is empty            
+                    continue;
                 }
+                else if (offspring['data'][i]['timetable'][j][k].teacherid && offspring['data'][i]['timetable'][j][k].roomid) {
+                    if (temp[("teacher" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].teacherid)] || temp[("class" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].roomid)]) {
+                        if (temp[("class" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].roomid)]) {
+                            //  if class is already assigned to a slot then find a new slot for the class and assign it to the slot
+                            let tempRoom = findNewRoom(j, k, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, room, temp);
+                            console.log("Class conflict " + offspring['data'][i]['timetable'][j][k].type + " " + offspring['data'][i]['timetable'][j][k].roomid + " " + i + " " + j + " " + k + " " + tempRoom);
+                            if (tempRoom == null) {
+                                console.log("are baba all rooms are full we need to find a new slot for the class");
+                                continue;
+                            }
 
-                // Check for room conflicts
-                if (classid) {
-                    const roomKey = `room-${classid}-${day}-${slot}`;
-                    if (roomMap[roomKey]) {
-                        reassignRoom(offspring['data'][i].timetable, day, slot, classid, room); // Reassign the room to resolve conflict
-                    } else {
-                        roomMap[roomKey] = true;
+                            if (offspring['data'][i]['timetable'][j][k].type == 'practical') {
+                                let offset = (k < 9) ? 1 : -1;
+                                temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false                 //remove the current class from the temp
+                                temp[('class' + ';' + j + ';' + (k + offset) + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false      //remove the current class from the temp
+                                offspring['data'][i]['timetable'][j][k].roomid = tempRoom;                                                         //assign the new room to the current class                          
+                                offspring['data'][i]['timetable'][j][k + offset].roomid = tempRoom;                                                //assign the new room to the next slot of the current class
+                                temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;                 //add the new class to the temp
+                                temp[('class' + ';' + j + ';' + (k + offset) + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;      //add the new class to the temp
+                            }
+                            else {
+                                temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false;                //remove the current class from the temp
+                                offspring['data'][i]['timetable'][j][k].roomid = tempRoom;                                                         //assign the new room to the current class
+                                temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;                 //add the new class to the temp
+                            }
+                        }
+                        if (temp[("teacher" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].teacherid)]) {
+                            // findNewSlot(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].roomid, room);
+                            // console.log("Teacher conflict found "+ i + " " + j + " " + k);
+                            return false;
+                        }
+                    }
+                    else {
+                        temp[("teacher" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].teacherid)] = true;
+                        temp[("class" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].roomid)] = true;
                     }
                 }
             }
@@ -81,19 +91,12 @@ const crossover = (parent1, parent2, room) => {
 
     // Select a random crossover point (section, day, time slot)
     const crossoverPoint = Math.floor(Math.random() * offspring1['data'].length); // Cross over between sections
-    const sectionCrossoverPoint = Math.floor(Math.random() * 7); // Days
-    const timeSlotCrossoverPoint = Math.floor(Math.random() * 10); // Time slots in a day
 
     // Perform crossover by swapping timetables after the crossover point
     for (let i = crossoverPoint; i < offspring1['data'].length; i++) {
-        for (let j = sectionCrossoverPoint; j < 7; j++) {
-            for (let k = timeSlotCrossoverPoint; k < 10; k++) {
-                // Swap the timetable slots between offspring1 and offspring2
-                const tempSlot = offspring1['data'][i].timetable[j][k];
-                offspring1['data'][i].timetable[j][k] = offspring2['data'][i].timetable[j][k];
-                offspring2['data'][i].timetable[j][k] = tempSlot;
-            }
-        }
+        let temp = offspring1['data'][i].timetable;
+        offspring1['data'][i].timetable = offspring2['data'][i].timetable;
+        offspring2['data'][i].timetable = temp;
     }
 
     // After crossover, resolve any conflicts in the offspring timetables
@@ -128,7 +131,7 @@ let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));            //  (cap
 let population = crossoverGeneration(alltimetable, room);
 for (let i = 0; i < population.length; i++) {
     population[i] = fitness_func(population[i]);
-    console.log("======== [ Validation : " + validate_timetable(population[i]) + " ] ========= [ Fitness : " + population[i]['fitness'] + " ] ==========");
+    // console.log("======== [ Validation : " + validate_timetable(population[i]) + " ] ========= [ Fitness : " + population[i]['fitness'] + " ] ==========");
 
 }
 population = population.sort((a, b) => b.fitness - a.fitness);
