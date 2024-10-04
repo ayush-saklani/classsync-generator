@@ -50,22 +50,23 @@ const resolveConflicts = (offspring, room) => {
                             console.log("Class conflict " + offspring['data'][i]['timetable'][j][k].type + " " + offspring['data'][i]['timetable'][j][k].roomid + " " + i + " " + j + " " + k + " " + tempRoom);
                             if (tempRoom == null) {
                                 console.log("are baba all rooms are full we need to find a new slot for the class");
-                                continue;
-                            }
-
-                            if (offspring['data'][i]['timetable'][j][k].type == 'practical') {
-                                let offset = (k < 9) ? 1 : -1;
-                                temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false                 //remove the current class from the temp
-                                temp[('class' + ';' + j + ';' + (k + offset) + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false      //remove the current class from the temp
-                                offspring['data'][i]['timetable'][j][k].roomid = tempRoom;                                                         //assign the new room to the current class                          
-                                offspring['data'][i]['timetable'][j][k + offset].roomid = tempRoom;                                                //assign the new room to the next slot of the current class
-                                temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;                 //add the new class to the temp
-                                temp[('class' + ';' + j + ';' + (k + offset) + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;      //add the new class to the temp
+                                findNewSlot(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, room);
                             }
                             else {
-                                temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false;                //remove the current class from the temp
-                                offspring['data'][i]['timetable'][j][k].roomid = tempRoom;                                                         //assign the new room to the current class
-                                temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;                 //add the new class to the temp
+                                if (offspring['data'][i]['timetable'][j][k].type == 'practical') {
+                                    let offset = (k < 9) ? 1 : -1;
+                                    temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false                 //remove the current class from the temp
+                                    temp[('class' + ';' + j + ';' + (k + offset) + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false      //remove the current class from the temp
+                                    offspring['data'][i]['timetable'][j][k].roomid = tempRoom;                                                         //assign the new room to the current class                          
+                                    offspring['data'][i]['timetable'][j][k + offset].roomid = tempRoom;                                                //assign the new room to the next slot of the current class
+                                    temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;                 //add the new class to the temp
+                                    temp[('class' + ';' + j + ';' + (k + offset) + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;      //add the new class to the temp
+                                }
+                                else {
+                                    temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false;                //remove the current class from the temp
+                                    offspring['data'][i]['timetable'][j][k].roomid = tempRoom;                                                         //assign the new room to the current class
+                                    temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;                 //add the new class to the temp
+                                }
                             }
                         }
                         if (temp[("teacher" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].teacherid)]) {

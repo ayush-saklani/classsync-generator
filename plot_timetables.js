@@ -87,6 +87,13 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
         let subjects = JSON.parse(JSON.stringify(alltimetable['data'][i].subjects));            // deep copy of subjects
         subjects = subjects.sort((a, b) => a.type.localeCompare(b.type));
         let timetable = JSON.parse(JSON.stringify(timetablestructure));                 // deep copy of timetablestructure
+        
+        
+        let slotmap = new Array(70).fill(false);                                    // slotmap to keep track of the slots that are already assigned
+        for(let i = max+1; i < 70; i++) {                                          
+            slotmap[i] = true;                                                      // mark the slots that are not to be assigned
+        }
+
         while (subjects.length > 0) {                                                   // loop until all subjects are assigned
             let temp_subject_index = (Math.floor(Math.random() * subjects.length));     // randomly choose subject
             temp_subject_index = 0;
@@ -99,13 +106,22 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
             let temp_room_index = (Math.floor(Math.random() * room[room_type].length));            // randomly choose room
 
             if (subjects[temp_subject_index] && room[room_type][temp_room_index]) {
+                let temp, temp_day, temp_slot;
+                while(true){
+                    temp = Math.floor(Math.random() * (max - min)) + min;           // randomly choose slot btwn 10 to 59 (just for testing)
+                    temp_day = Math.floor(temp / 10);                               // get the day from slot
+                    temp_slot = Math.floor(temp % 10);                              // get the slot from slot
 
-                let temp = Math.floor(Math.random() * (max - min)) + min;           // randomly choose slot btwn 10 to 59 (just for testing)
-                let temp_day = Math.floor(temp / 10);                               // get the day from slot
-                let temp_slot = Math.floor(temp % 10);                              // get the slot from slot
-
-                if (subjects[temp_subject_index].type == 'practical' && temp_slot % 2 != 0) {
-                    (temp_slot == 9) ? temp_slot-- : temp_slot++; // if slot is odd then make it even
+                    if (subjects[temp_subject_index].type == 'practical' && temp_slot % 2 != 0) {
+                        (temp_slot == 9) ? temp_slot-- : temp_slot++; // if slot is odd then make it even
+                        temp = temp_day * 10 + temp_slot;
+                    }
+                    if(slotmap[temp] != true) {
+                        break;
+                    }
+                    if (slotmap.every(slot => slot)) { 
+                        return null;
+                    }
                 }
 
                 if (timetable[temp_day][temp_slot].teacherid == "" && timetable[(temp_day)][temp_slot].roomid == "") { // if slot is empty only then assign the subject to that slot
@@ -119,6 +135,7 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
                             timetable[temp_day][temp_slot].roomid = room[room_type][temp_room_index].roomid;
                             timetable[temp_day][temp_slot].subjectid = subjects[temp_subject_index].subjectid;
                             timetable[temp_day][temp_slot].type = subjects[temp_subject_index].type;
+                            slotmap[(temp_day * 10) + temp_slot] = true;                    // mark the slot as assigned
 
                             // if subject is practical then assign the next slot to the teacher and room as well (this is for practical subjects) 
                             // the practical subjects are assigned in even slots only because the odd slots are best suited as they fit better 
@@ -129,6 +146,7 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
                                 timetable[temp_day][temp_slot + 1].subjectid = subjects[temp_subject_index].subjectid;
                                 timetable[temp_day][temp_slot + 1].type = subjects[temp_subject_index].type;
                                 subjects[temp_subject_index].weekly_hrs--;
+                                slotmap[(temp_day * 10) + temp_slot + 1] = true;            // mark the slot as assigned
                             }
 
                             subjects[temp_subject_index].weekly_hrs--;

@@ -30,4 +30,4 @@ const initialize_population_population = (showstats = false) => {
 let population = initialize_population_population(false);
 population = tournamentSelection(population, 3, 0.3);
 console.log(population.length);
-fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');
+// fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');
