@@ -29,8 +29,138 @@ const findNewRoom = (j, k, roomid, type, room, temp) => {
     return null;
 }
 
-const findNewSlot = (timetable, day, slot, teacherid, room) => {
-}
+const findNewSlot = (timetable, day, slot, teacherid, roomid, type, temp) => {
+    let temp_total_forward = (day * 10) + slot;
+    let temp_total_backward = (day * 10) + slot;
+
+    if (timetable[day][slot].teacherid === teacherid && timetable[day][slot].roomid === roomid) {
+        timetable[day][slot].teacherid = "";
+        timetable[day][slot].roomid = "";
+        if (type === 'practical' && slot < 9) {
+            if (timetable[day][slot + 1].teacherid === teacherid && timetable[day][slot + 1].roomid === roomid) {
+                timetable[day][slot + 1].teacherid = "";
+                timetable[day][slot + 1].roomid = "";
+            } else if (timetable[day][slot - 1].teacherid === teacherid && timetable[day][slot - 1].roomid === roomid) {
+                timetable[day][slot - 1].teacherid = "";
+                timetable[day][slot - 1].roomid = "";
+                temp_total_forward--;
+                temp_total_backward--;
+            }
+        }
+    }
+    let flag1 = true, flag2 = true;
+
+    while (flag1 || flag2) {
+        let temp_day_forward = Math.floor(temp_total_forward / 10);
+        let temp_slot_forward = temp_total_forward % 10;
+
+        let temp_day_backward = Math.floor(temp_total_backward / 10);
+        let temp_slot_backward = temp_total_backward % 10;
+
+
+        // Create conflict keys for forward and backward checking
+        let room_checker_forward = "class" + ";" + temp_day_forward + ";" + temp_slot_forward + ";" + roomid;
+        let room_checker_backward = "class" + ";" + temp_day_backward + ";" + temp_slot_backward + ";" + roomid;
+        let teacher_checker_forward = "teacher" + ";" + temp_day_forward + ";" + temp_slot_forward + ";" + teacherid;
+        let teacher_checker_backward = "teacher" + ";" + temp_day_backward + ";" + temp_slot_backward + ";" + teacherid;
+
+        let room_checker_forward_practical = "class" + ";" + temp_day_forward + ";" + (temp_slot_forward + 1) + ";" + roomid;
+        let room_checker_backward_practical = "class" + ";" + temp_day_backward + ";" + (temp_slot_backward + 1) + ";" + roomid;
+        let teacher_checker_forward_practical = "teacher" + ";" + temp_day_forward + ";" + (temp_slot_forward + 1) + ";" + teacherid;
+        let teacher_checker_backward_practical = "teacher" + ";" + temp_day_backward + ";" + (temp_slot_backward + 1) + ";" + teacherid;
+
+        // Check forward for practical subjects
+        if (type === 'practical') {
+            if (temp_slot_forward < 9 && (!temp[room_checker_forward] || true) && (!temp[room_checker_forward_practical] || true) &&
+                (!temp[teacher_checker_forward] || true) && (!temp[teacher_checker_forward_practical] || true) &&
+                timetable[temp_day_forward][temp_slot_forward].teacherid === "" &&
+                timetable[temp_day_forward][temp_slot_forward + 1].teacherid === "" &&
+                timetable[temp_day_forward][temp_slot_forward].roomid === "" &&
+                timetable[temp_day_forward][temp_slot_forward + 1].roomid === "") {
+
+                // Assign the new slot to the practical class
+                timetable[temp_day_forward][temp_slot_forward].teacherid = teacherid;
+                timetable[temp_day_forward][temp_slot_forward + 1].teacherid = teacherid;
+                timetable[temp_day_forward][temp_slot_forward].roomid = roomid;
+                timetable[temp_day_forward][temp_slot_forward + 1].roomid = roomid;
+                temp[room_checker_forward] = true;
+                temp[room_checker_forward_practical] = true;
+                temp[teacher_checker_forward] = true;
+                temp[teacher_checker_forward_practical] = true;
+                return { timetable, temp };
+            }
+        } else {
+            if ((!temp[room_checker_forward] || true) && (!temp[teacher_checker_forward] || true) &&
+                timetable[temp_day_forward][temp_slot_forward].teacherid === "" &&
+                timetable[temp_day_forward][temp_slot_forward].roomid === "") {
+
+                // Assign the new slot to the non-practical class
+                timetable[temp_day_forward][temp_slot_forward].teacherid = teacherid;
+                timetable[temp_day_forward][temp_slot_forward].roomid = roomid;
+                temp[room_checker_forward] = true;
+                temp[teacher_checker_forward] = true;
+                return { timetable, temp };
+            }
+        }
+
+        // Check backward for practical subjects
+        if (type === 'practical') {
+            if (temp_slot_backward < 9 && (!temp[room_checker_backward] || true) && (!temp[room_checker_backward_practical] || true) &&
+                (!temp[teacher_checker_backward] || true) && (!temp[teacher_checker_backward_practical] || true) &&
+                timetable[temp_day_backward][temp_slot_backward].teacherid === "" &&
+                timetable[temp_day_backward][temp_slot_backward + 1].teacherid === "" &&
+                timetable[temp_day_backward][temp_slot_backward].roomid === "" &&
+                timetable[temp_day_backward][temp_slot_backward + 1].roomid === "") {
+
+                // Assign the new slot to the practical class
+                timetable[temp_day_backward][temp_slot_backward].teacherid = teacherid;
+                timetable[temp_day_backward][temp_slot_backward + 1].teacherid = teacherid;
+                timetable[temp_day_backward][temp_slot_backward].roomid = roomid;
+                timetable[temp_day_backward][temp_slot_backward + 1].roomid = roomid;
+                temp[room_checker_backward] = true;
+                temp[room_checker_backward_practical] = true;
+                temp[teacher_checker_backward] = true;
+                temp[teacher_checker_backward_practical] = true;
+                return { timetable, temp };
+            }
+        } else {
+            if ((!temp[room_checker_backward] || true) && (!temp[teacher_checker_backward] || true) &&
+                timetable[temp_day_backward][temp_slot_backward].teacherid === "" &&
+                timetable[temp_day_backward][temp_slot_backward].roomid === "") {
+
+                // Assign the new slot to the non-practical class
+                timetable[temp_day_backward][temp_slot_backward].teacherid = teacherid;
+                timetable[temp_day_backward][temp_slot_backward].roomid = roomid;
+                temp[room_checker_backward] = true;
+                temp[teacher_checker_backward] = true;
+                return { timetable, temp };
+            }
+        }
+
+        // Move forward and backward in time
+        temp_total_forward++;
+        temp_total_backward--;
+        if (type === 'practical') {
+            temp_total_forward++;
+            temp_total_backward--;
+        }
+
+
+        if (temp_total_forward > 69) {
+            flag1 = false;
+            temp_total_forward = 0;
+        }
+        if (temp_total_backward < 0) {
+            flag2 = false;
+            temp_total_backward = 69;
+        }
+    }
+
+    // If no free slot was found, return null (no free slot available)
+    return null;
+};
+
+
 
 // Function to resolve conflicts (teacher/room clashes) in a timetable
 const resolveConflicts = (offspring, room) => {
@@ -50,7 +180,14 @@ const resolveConflicts = (offspring, room) => {
                             console.log("Class conflict " + offspring['data'][i]['timetable'][j][k].type + " " + offspring['data'][i]['timetable'][j][k].roomid + " " + i + " " + j + " " + k + " " + tempRoom);
                             if (tempRoom == null) {
                                 console.log("are baba all rooms are full we need to find a new slot for the class");
-                                findNewSlot(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, room);
+                                let newslottedtt = findNewSlot(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, temp);
+                                if (newslottedtt == null) {
+                                    console.log("TraahiMaam TraahiMaam, PaahiMaam PaahiMaam Jagat-Srishti-Pralay Vishva, Sankat tav Naashitaam");
+                                    return false;
+                                } else {
+                                    offspring['data'][i]['timetable'] = newslottedtt.timetable;
+                                    temp = newslottedtt.temp;
+                                }
                             }
                             else {
                                 if (offspring['data'][i]['timetable'][j][k].type == 'practical') {
@@ -70,9 +207,14 @@ const resolveConflicts = (offspring, room) => {
                             }
                         }
                         if (temp[("teacher" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].teacherid)]) {
-                            // findNewSlot(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].roomid, room);
-                            // console.log("Teacher conflict found "+ i + " " + j + " " + k);
-                            return false;
+                            let newslottedtt = findNewSlot(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, temp);
+                            if (newslottedtt == null) {
+                                console.log("TraahiMaam TraahiMaam, PaahiMaam PaahiMaam Jagat-Srishti-Pralay Vishva, Sankat tav Naashitaam");
+                                return false;
+                            } else {
+                                offspring['data'][i]['timetable'] = newslottedtt.timetable;
+                                temp = newslottedtt.temp;
+                            }
                         }
                     }
                     else {
@@ -91,8 +233,8 @@ const crossover = (parent1, parent2, room) => {
     const offspring2 = JSON.parse(JSON.stringify(parent2));
 
     // Select a random crossover point (section, day, time slot)
-    const crossoverPoint = Math.floor(Math.random() * offspring1['data'].length); // Cross over between sections
-
+    let crossoverPoint = Math.floor(Math.random() * offspring1['data'].length); // Cross over between sections
+    crossoverPoint = Math.floor(offspring1['data'][crossoverPoint]['timetable'].length / 2); // Cross over between days
     // Perform crossover by swapping timetables after the crossover point
     for (let i = crossoverPoint; i < offspring1['data'].length; i++) {
         let temp = offspring1['data'][i].timetable;
@@ -132,10 +274,9 @@ let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));            //  (cap
 let population = crossoverGeneration(alltimetable, room);
 for (let i = 0; i < population.length; i++) {
     population[i] = fitness_func(population[i]);
-    // console.log("======== [ Validation : " + validate_timetable(population[i]) + " ] ========= [ Fitness : " + population[i]['fitness'] + " ] ==========");
-
+    console.log("======== [ Validation : " + validate_timetable(population[i]) + " ] ========= [ Fitness : " + population[i]['fitness'] + " ] ==========");
 }
-population = population.sort((a, b) => b.fitness - a.fitness);
+// population = population.sort((a, b) => b.fitness - a.fitness);
 // console.log(population);
 
 fs.writeFileSync('population_crossover.json', JSON.stringify(population, null, 4), 'utf8');
