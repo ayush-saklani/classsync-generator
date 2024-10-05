@@ -153,19 +153,19 @@ const fitness_func = (alltimetable, showstats = false) => {
                 }
             }
             if ((day_start >= 0 && day_start <= 4) && (day_end <= 4 && day_end >= 0)) {
-                perfect_day_status = (day_load >= 3) ? 'PerfectDay' : 'GoodDay';
+                perfect_day_status = (day_load >= 3) ? 'PerfectDay' : 'PoorDay';
             }
             else if ((day_start >= 4 && day_start <= 9) && (day_end <= 9 && day_end >= 4)) {
-                perfect_day_status = (day_load >= 4) ? 'PerfectDay' : 'GoodDay';
+                perfect_day_status = (day_load >= 4) ? 'PerfectDay' : (day_load >= 2) ? 'GoodDay' : 'poorDay';
             }
             else if ((day_start >= 0 && day_start <= 7) && (day_end <= 7 && day_end >= 0)) {
-                perfect_day_status = (day_load >= 6) ? 'PerfectDay' : 'GoodDay';
+                perfect_day_status = (day_load >= 6) ? 'PerfectDay' : (day_load >= 4) ? 'GoodDay' : (day_load >= 2) ? 'AverageDay' : 'PoorDay';
             }
             else if (day_load == 0) {
                 perfect_day_status = 'Holiday';
             }
             else {
-                perfect_day_status = (day_load >= 6) ? 'AverageDay' : 'PoorDay';
+                perfect_day_status = (day_load >= 7) ? 'GoodDay' : (day_load >= 5) ? 'AverageDay' : 'PoorDay';
             }
             if (perfect_day_status != 'Holiday') {
                 perfect_day_status_arr.push(perfect_day_status);
@@ -178,13 +178,29 @@ const fitness_func = (alltimetable, showstats = false) => {
         alltimetable['data'][i].local_fitness += perfect_dat_reward_map[perfect_day_status_average];
         total_perfect_day_reward += perfect_dat_reward_map[perfect_day_status_average];
     }
-
     // ====================== perfect day reward calculation [experiment starts] ==================
     // ============================================================================================
 
-    let real_fitness_score = (100 * alltimetable.data.length) - (count_teacher_conflicts * 20) - (count_room_conflicts * 20) - (overload_penalty * 14) - (total_overload_penalty_student * 6);
+    // ============================================================================================
+    // ====================== Average Local Fitness Calculation [experiment starts] =================
+    let local_fitness_total = 0;
+    for(let i = 0; i < alltimetable['data'].length; i++){
+        local_fitness_total += alltimetable['data'][i].local_fitness;
+    }
+    let avg_local_fitness_total = local_fitness_total / alltimetable['data'].length;
+    // ====================== Average Local Fitness Calculation [experiment ends] ===================
+    // ============================================================================================
+
+    let real_fitness_score = 0;
+    real_fitness_score += (100 * alltimetable.data.length) 
+    real_fitness_score -= (count_teacher_conflicts * 20) 
+    real_fitness_score -= (count_room_conflicts * 20) 
+    real_fitness_score -= (overload_penalty * 14) 
+    real_fitness_score -= (total_overload_penalty_student * 6);
     real_fitness_score += (avg_active_day_count == 4 || avg_active_day_count == 5) ? 24 : -24;
     real_fitness_score += total_perfect_day_reward;
+    real_fitness_score += avg_local_fitness_total;
+    real_fitness_score = Math.ceil(real_fitness_score)
     alltimetable['fitness'] = real_fitness_score;
 
     if (showstats) {
@@ -204,8 +220,8 @@ const fitness_func = (alltimetable, showstats = false) => {
 export default fitness_func;
 
 // for testing purpose only
-// let alltimetable = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));        // for testing purpose only
-// for(let i=0; i<alltimetable.length; i++){
-//     alltimetable[i] = fitness_func(alltimetable[i]);
-// }                          
-// fs.writeFileSync('population_selected.json', JSON.stringify(alltimetable, null, 4), 'utf8');
+let alltimetable = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));        // for testing purpose only
+for(let i=0; i<alltimetable.length; i++){
+    alltimetable[i] = fitness_func(alltimetable[i]);
+}                          
+fs.writeFileSync('population_selected.json', JSON.stringify(alltimetable, null, 4), 'utf8');

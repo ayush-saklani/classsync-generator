@@ -7,7 +7,7 @@ const initialize_population_population = (showstats = false) => {
     let max = 50;
     let population = []
     let counter = 0;
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 300; i++) {
         counter += 1;
         // console.log("counter: ", counter + " i: ", i);
         let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));    //  timetable data with subjects and teachers already assigned
@@ -16,7 +16,7 @@ const initialize_population_population = (showstats = false) => {
         if(timetable == null){
             i--;
             continue;
-        }else if(timetable.fitness < -500){
+        }else if(timetable.fitness < -200){
             i--;
             continue;
         }else{
