@@ -2,6 +2,7 @@
 import fs from 'fs'
 import fitness_func from './fitness_func.js';
 import validate_timetable from './validate_timetable.js';
+import config from './config.js';
 
 const findNewRoom = (j, k, roomid, type, room, temp) => {
     let room_type = (type == 'practical') ? 'lab' : 'room';
@@ -30,7 +31,7 @@ const findNewRoom = (j, k, roomid, type, room, temp) => {
 }
 
 const findNewSlot = (timetable, day, slot, teacherid, roomid, type, temp) => {
-    let min = 0, max = 49;
+    let min = config.min, max = config.max;
     let temp_total_forward = (day * 10) + slot;
     let temp_total_backward = (day * 10) + slot;
 

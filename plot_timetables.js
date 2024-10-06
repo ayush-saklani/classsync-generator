@@ -1,6 +1,7 @@
 import fs from 'fs';
 import validate_timetable_set from './validate_timetable.js';
 import fitness_func from './fitness_func.js';
+import config from './config.js';
 
 //  structure of timetable as template
 let timetablestructure = [
@@ -80,17 +81,19 @@ const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, roomid, sub
         return true;
     }
 }
-const initialize_population = (alltimetable, room, min = 0, max = 49, showstats = false) => {
+const initialize_chromosome = (alltimetable, room, showstats = false) => {
+    let max = config.max;
+    let min = config.min;
     let flag = 0;   // flag to check the number of conflicts in the timetable generation
     let number_of_sections = alltimetable['data'].length;
     for (let i = 0; i < number_of_sections; i++) {
         let subjects = JSON.parse(JSON.stringify(alltimetable['data'][i].subjects));            // deep copy of subjects
         subjects = subjects.sort((a, b) => a.type.localeCompare(b.type));
         let timetable = JSON.parse(JSON.stringify(timetablestructure));                 // deep copy of timetablestructure
-        
-        
+
+
         let slotmap = new Array(70).fill(false);                                    // slotmap to keep track of the slots that are already assigned
-        for(let i = max+1; i < 70; i++) {                                          
+        for (let i = max + 1; i < 70; i++) {
             slotmap[i] = true;                                                      // mark the slots that are not to be assigned
         }
 
@@ -107,7 +110,7 @@ const initialize_population = (alltimetable, room, min = 0, max = 49, showstats 
 
             if (subjects[temp_subject_index] && room[room_type][temp_room_index]) {
                 let temp, temp_day, temp_slot;
-                while(true){
+                while (true) {
                     temp = Math.floor(Math.random() * (max - min + 1)) + min;           // randomly choose slot between min and max (inclusive)
                     temp_day = Math.floor(temp / 10);                               // get the day from slot
                     temp_slot = Math.floor(temp % 10);                              // get the slot from slot
@@ -116,10 +119,10 @@ const initialize_population = (alltimetable, room, min = 0, max = 49, showstats 
                         (temp_slot == 9) ? temp_slot-- : temp_slot++; // if slot is odd then make it even
                         temp = temp_day * 10 + temp_slot;
                     }
-                    if(slotmap[temp] != true) {
+                    if (slotmap[temp] != true) {
                         break;
                     }
-                    if (slotmap.every(slot => slot)) { 
+                    if (slotmap.every(slot => slot)) {
                         return null;
                     }
                 }
@@ -186,17 +189,16 @@ const initialize_population = (alltimetable, room, min = 0, max = 49, showstats 
     return alltimetable;
 }
 
-export default initialize_population;
+export default initialize_chromosome;
 
 
-// let min = 0;                             // if 10 then start from 10 (tuesday 9am)
-// let max = 49;                            // it 59 then end at 59  (saturday 6pm) 
+
 // let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 // let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
 // let showstats = true;
-// fs.writeFileSync('data2.json', JSON.stringify(initialize_population(alltimetable, room, min, max, showstats), null, 4), 'utf8');
+// fs.writeFileSync('data2.json', JSON.stringify(initialize_chromosome(alltimetable, room, showstats), null, 4), 'utf8');
 
-// initialize_population(alltimetable, room, min, max, true); // demo function call
+// initialize_chromosome(alltimetable, room, true); // demo function call
 
 
 
