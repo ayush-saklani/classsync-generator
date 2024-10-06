@@ -30,6 +30,7 @@ const findNewRoom = (j, k, roomid, type, room, temp) => {
 }
 
 const findNewSlot = (timetable, day, slot, teacherid, roomid, type, temp) => {
+    let min = 0, max = 49;
     let temp_total_forward = (day * 10) + slot;
     let temp_total_backward = (day * 10) + slot;
 
@@ -146,13 +147,13 @@ const findNewSlot = (timetable, day, slot, teacherid, roomid, type, temp) => {
         }
 
 
-        if (temp_total_forward > 69) {
+        if (temp_total_forward > max) {
             flag1 = false;
-            temp_total_forward = 0;
+            temp_total_forward = min;
         }
-        if (temp_total_backward < 0) {
+        if (temp_total_backward < min) {
             flag2 = false;
-            temp_total_backward = 69;
+            temp_total_backward = max;
         }
     }
 

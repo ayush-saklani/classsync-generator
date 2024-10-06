@@ -80,7 +80,7 @@ const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, roomid, sub
         return true;
     }
 }
-const initialize_population = (alltimetable, room, min = 0, max = 50, showstats = false) => {
+const initialize_population = (alltimetable, room, min = 0, max = 49, showstats = false) => {
     let flag = 0;   // flag to check the number of conflicts in the timetable generation
     let number_of_sections = alltimetable['data'].length;
     for (let i = 0; i < number_of_sections; i++) {
@@ -108,7 +108,7 @@ const initialize_population = (alltimetable, room, min = 0, max = 50, showstats 
             if (subjects[temp_subject_index] && room[room_type][temp_room_index]) {
                 let temp, temp_day, temp_slot;
                 while(true){
-                    temp = Math.floor(Math.random() * (max - min)) + min;           // randomly choose slot btwn 10 to 59 (just for testing)
+                    temp = Math.floor(Math.random() * (max - min + 1)) + min;           // randomly choose slot between min and max (inclusive)
                     temp_day = Math.floor(temp / 10);                               // get the day from slot
                     temp_slot = Math.floor(temp % 10);                              // get the slot from slot
 
@@ -190,7 +190,7 @@ export default initialize_population;
 
 
 // let min = 0;                             // if 10 then start from 10 (tuesday 9am)
-// let max = 50;                            // it 60 then end at 59  (saturday 6pm) (60 is not included)
+// let max = 49;                            // it 59 then end at 59  (saturday 6pm) 
 // let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 // let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
 // let showstats = true;
