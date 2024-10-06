@@ -1,6 +1,7 @@
 import fs from 'fs';
+import config from './config.js';
 
-const fitness_func = (alltimetable, showstats = false) => {
+const fitness_func = (alltimetable) => {
     // ============================================================================================
     // ====================== Teacher and Room Conflicts [experiment starts] ======================
     let count_teacher_conflicts = 0;
@@ -203,7 +204,7 @@ const fitness_func = (alltimetable, showstats = false) => {
     real_fitness_score = Math.ceil(real_fitness_score)
     alltimetable['fitness'] = real_fitness_score;
 
-    if (showstats) {
+    if (config.showstats) {
         console.log("Teacher Conflicts               ========  " + count_teacher_conflicts);
         console.log("Room Conflicts                  ========  " + count_room_conflicts);
         console.log("Student Overload Penalty        ========  " + overload_penalty_student_arr);

@@ -1,17 +1,16 @@
 import fs from 'fs';
 import initialize_chromosome from "./plot_timetables.js";
-import tournamentSelection from './selection.js';
 import config from './config.js';
 
-const generate_initialize_population = (showstats = false) => {
+const generate_initialize_population = () => {
     let population = []
     let counter = 0;
-    for (let i = 0; i < config.max_generation; i++) {
+    for (let i = 0; i < config.population_size; i++) {
         counter += 1;
         // console.log("counter: ", counter + " i: ", i);
         let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));    //  timetable data with subjects and teachers already assigned
         let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));            //  (capacity is not implemented in this code right now)
-        let timetable = initialize_chromosome(alltimetable, room, showstats);
+        let timetable = initialize_chromosome(alltimetable, room);
         if (timetable == null) {
             i--;
             continue;
@@ -26,7 +25,5 @@ const generate_initialize_population = (showstats = false) => {
     }
     return population;
 }
-let population = generate_initialize_population(false);
-// population = tournamentSelection(population, 3, 0.3);
-console.log(population.length);
-// fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');
+
+export default generate_initialize_population;

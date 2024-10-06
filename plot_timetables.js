@@ -81,7 +81,7 @@ const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, roomid, sub
         return true;
     }
 }
-const initialize_chromosome = (alltimetable, room, showstats = false) => {
+const initialize_chromosome = (alltimetable, room) => {
     let max = config.max;
     let min = config.min;
     let flag = 0;   // flag to check the number of conflicts in the timetable generation
@@ -181,8 +181,8 @@ const initialize_chromosome = (alltimetable, room, showstats = false) => {
         alltimetable['data'][i].timetable = timetable;
         flag = 0;
     }
-    alltimetable = fitness_func(alltimetable, showstats);
-    if (showstats) {
+    alltimetable = fitness_func(alltimetable);
+    if (config.showstats) {
         console.log("======== [ Validation : " + validate_timetable_set(alltimetable) + " ] ========= [ Fitness : " + alltimetable['fitness'] + " ] ==========");
     }
 
@@ -191,25 +191,7 @@ const initialize_chromosome = (alltimetable, room, showstats = false) => {
 
 export default initialize_chromosome;
 
-
-
 // let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 // let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
-// let showstats = true;
-// fs.writeFileSync('data2.json', JSON.stringify(initialize_chromosome(alltimetable, room, showstats), null, 4), 'utf8');
-
+// fs.writeFileSync('data2.json', JSON.stringify(initialize_chromosome(alltimetable, room), null, 4), 'utf8');
 // initialize_chromosome(alltimetable, room, true); // demo function call
-
-
-
-// Timtable in 2D-array (just for reference)
-//  0  1  2  3  4  5  6  7  8  9        monday
-// 10 11 12 13 14 15 16 17 18 19        tuesday
-// 20 21 22 23 24 25 26 27 28 29        wednesday
-// 30 31 32 33 34 35 36 37 38 39        thursday
-// 40 41 42 43 44 45 46 47 48 49        friday
-// 50 51 52 53 54 55 56 57 58 59        saturday
-// 60 61 62 63 64 65 66 67 68 69        sunday
-//              |
-//             \/
-//           index = [6,4] in 2D array   and yes i made it by myself not AI :P and yes it is copied from above :P, 

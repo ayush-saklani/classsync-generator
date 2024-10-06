@@ -4,7 +4,7 @@ import fitness_func from './fitness_func.js';
 import validate_timetable from './validate_timetable.js';
 import config from './config.js';
 
-const findNewRoom = (j, k, roomid, type, room, temp) => {
+const findNewRoom = (j, k, type, room, temp) => {
     let room_type = (type == 'practical') ? 'lab' : 'room';
 
     while (room[room_type].length > 0) {
@@ -162,8 +162,6 @@ const findNewSlot = (timetable, day, slot, teacherid, roomid, type, temp) => {
     return null;
 };
 
-
-
 // Function to resolve conflicts (teacher/room clashes) in a timetable
 const resolveConflicts = (offspring, room) => {
     let temp = {};
@@ -178,10 +176,14 @@ const resolveConflicts = (offspring, room) => {
                     if (temp[("teacher" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].teacherid)] || temp[("class" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].roomid)]) {
                         if (temp[("class" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].roomid)]) {
                             //  if class is already assigned to a slot then find a new slot for the class and assign it to the slot
-                            let tempRoom = findNewRoom(j, k, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, room, temp);
-                            console.log("Class conflict " + offspring['data'][i]['timetable'][j][k].type + " " + offspring['data'][i]['timetable'][j][k].roomid + " " + i + " " + j + " " + k + " " + tempRoom);
+                            let tempRoom = findNewRoom(j, k, offspring['data'][i]['timetable'][j][k].type, room, temp);
+                            if(config.showstats){
+                                console.log("Class conflict " + offspring['data'][i]['timetable'][j][k].type + " " + offspring['data'][i]['timetable'][j][k].roomid + " " + i + " " + j + " " + k + " " + tempRoom);
+                            }
                             if (tempRoom == null) {
-                                console.log("are baba all rooms are full we need to find a new slot for the class");
+                                if(config.showstats){
+                                    console.log("are baba all rooms are full we need to find a new slot for the class");
+                                }
                                 let newslottedtt = findNewSlot(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, temp);
                                 if (newslottedtt == null) {
                                     console.log("TraahiMaam TraahiMaam, PaahiMaam PaahiMaam Jagat-Srishti-Pralay Vishva, Sankat tav Naashitaam");
@@ -250,16 +252,60 @@ const crossover = (parent1, parent2, room) => {
 
     return [offspring1, offspring2];
 };
+const elitism = (population, eliteRate = 0.05) => {         // Default to 5% of the population
+    const eliteCount = Math.floor(population.length * eliteRate);
+    return population.slice(0, eliteCount);  // Return the top elite individuals
+};
+
+// Roulette wheel selection function
+const rouletteSelection = (population, selectionRate ) => {
+    const totalFitness = population.reduce((total, individual) => total + individual.fitness, 0);
+    const selectionProbabilities = population.map(individual => individual.fitness / totalFitness);
+
+    // Create cumulative probabilities
+    const cumulativeProbabilities = [];
+    selectionProbabilities.reduce((cumulative, currentProb, index) => {
+        cumulative += currentProb;
+        cumulativeProbabilities[index] = cumulative;
+        return cumulative;
+    }, 0);
+
+    // Select individuals based on their cumulative probabilities
+    const selectedIndividuals = [];
+    const numToSelect = Math.floor(population.length * selectionRate);
+
+    for (let i = 0; i < numToSelect; i++) {
+        const rand = Math.random();  // Spin the wheel (random number between 0 and 1)
+
+        for (let j = 0; j < population.length; j++) {
+            if (rand <= cumulativeProbabilities[j]) {
+                selectedIndividuals.push(population[j]);
+                break;
+            }
+        }
+    }
+
+    return selectedIndividuals;
+};
 
 // Function to perform crossover on a whole generation (population)
 const crossoverGeneration = (population, room) => {
-    const newGeneration = [];
+    let eliteRate = config.eliteRate;
+    let selectionRate = config.selectionRate;
 
-    // Pair up parents from the population
-    for (let i = 0; i < population.length; i += 2) {
-        // Select two parents
-        const parent1 = population[i];
-        const parent2 = population[i + 1] || population[0]; // In case of odd population, pair with first parent
+    let newGeneration = [];
+
+    const elites = elitism(population, eliteRate);      // Perform elitism (preserve the best solutions)
+    newGeneration.push(...elites);                      // Add the elites to the new generation (deep copy)
+
+    // Perform roulette wheel selection to select parents for crossover (excluding the elites)
+    const nonElites = population.slice(elites.length);
+    const selectedForCrossover = rouletteSelection(nonElites, selectionRate);
+
+    // Pair up parents from the selected population for crossover
+    for (let i = 0; i < selectedForCrossover.length; i += 2) {
+        const parent1 = selectedForCrossover[i];
+        const parent2 = selectedForCrossover[i + 1] || selectedForCrossover[0];  // Handle odd population size
 
         // Perform crossover
         const [offspring1, offspring2] = crossover(parent1, parent2, room);
@@ -267,19 +313,20 @@ const crossoverGeneration = (population, room) => {
         // Add offspring to the new generation
         newGeneration.push(offspring1, offspring2);
     }
-
+    // Evaluate fitness of the new population
+    for (let i = 0; i < newGeneration.length; i++) {
+        newGeneration[i] = fitness_func(newGeneration[i]);
+        if(config.showstats){
+            console.log("======== [ Validation : " + validate_timetable(newGeneration[i]) + " ] ========= [ Fitness : " + newGeneration[i]['fitness'] + " ] ==========");
+        }
+    }
+    newGeneration = newGeneration.sort(function (a, b) { return b.fitness - a.fitness; });
     return newGeneration;
 };
 
-let alltimetable = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));    //  timetable data with subjects and teachers already assigned
-let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));            //  (capacity is not implemented in this code right now)
-let population = crossoverGeneration(alltimetable, room);
-for (let i = 0; i < population.length; i++) {
-    population[i] = fitness_func(population[i]);
-    console.log("======== [ Validation : " + validate_timetable(population[i]) + " ] ========= [ Fitness : " + population[i]['fitness'] + " ] ==========");
-}
-// population = population.sort((a, b) => b.fitness - a.fitness);
-// console.log(population);
-
-fs.writeFileSync('population_crossover.json', JSON.stringify(population, null, 4), 'utf8');
+// Example usage:
+// let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
+// let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
+// population = crossoverGeneration(population, room);         // Apply elitism and roulette selection to the population
+// fs.writeFileSync('population_crossover.json', JSON.stringify(population, null, 4), 'utf8');     // Save the new population
 export default crossoverGeneration;
