@@ -47,7 +47,7 @@ const findNewSlot = (timetable, day, slot, teacherid, roomid, type, temp) => {
                 timetable[day][slot + 1].roomid = "";
                 timetable[day][slot + 1].subjectid = "";
                 timetable[day][slot + 1].type = "";
-            } else if (timetable[day][slot - 1].teacherid === teacherid && timetable[day][slot - 1].roomid === roomid) {
+            } else if (slot > 0 && timetable[day][slot - 1].teacherid === teacherid && timetable[day][slot - 1].roomid === roomid) {
                 timetable[day][slot - 1].teacherid = "";
                 timetable[day][slot - 1].roomid = "";
                 timetable[day][slot - 1].subjectid = "";
@@ -205,11 +205,11 @@ const resolveConflicts = (offspring, room) => {
                             //     }
                             // }
                             // room[roomtype].splice(tempRoomindex, 1);
-                            if(config.showstats){
+                            if (config.showstats) {
                                 console.log("Class conflict " + offspring['data'][i]['timetable'][j][k].type + " " + offspring['data'][i]['timetable'][j][k].roomid + " " + i + " " + j + " " + k + " " + tempRoom);
                             }
                             if (tempRoom == null) {
-                                if(config.showstats){
+                                if (config.showstats) {
                                     console.log("are baba all rooms are full we need to find a new slot for the class");
                                 }
                                 let newslottedtt = findNewSlot(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, temp);
@@ -286,7 +286,7 @@ const elitism = (population, eliteRate = 0.05) => {         // Default to 5% of 
 };
 
 // Roulette wheel selection function
-const rouletteSelection = (population, selectionRate ) => {
+const rouletteSelection = (population, selectionRate) => {
     const totalFitness = population.reduce((total, individual) => total + individual.fitness, 0);
     const selectionProbabilities = population.map(individual => individual.fitness / totalFitness);
 
@@ -344,7 +344,7 @@ const crossoverGeneration = (population, room) => {
     // Evaluate fitness of the new population
     for (let i = 0; i < newGeneration.length; i++) {
         newGeneration[i] = fitness_func(newGeneration[i]);
-        if(config.showstats){
+        if (config.showstats) {
             console.log("======== [ Validation : " + validate_timetable(newGeneration[i]) + " ] ========= [ Fitness : " + newGeneration[i]['fitness'] + " ] ==========");
         }
     }
@@ -353,8 +353,8 @@ const crossoverGeneration = (population, room) => {
 };
 
 // Example usage:
-// let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
-// let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
-// population = crossoverGeneration(population, room);         // Apply elitism and roulette selection to the population
-// fs.writeFileSync('population_crossover.json', JSON.stringify(population, null, 4), 'utf8');     // Save the new population
+let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
+let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
+population = crossoverGeneration(population, room);         // Apply elitism and roulette selection to the population
+fs.writeFileSync('population_crossover.json', JSON.stringify(population, null, 4), 'utf8');     // Save the new population
 export default crossoverGeneration;
