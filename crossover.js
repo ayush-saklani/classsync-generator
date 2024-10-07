@@ -34,17 +34,24 @@ const findNewSlot = (timetable, day, slot, teacherid, roomid, type, temp) => {
     let min = config.min, max = config.max;
     let temp_total_forward = (day * 10) + slot;
     let temp_total_backward = (day * 10) + slot;
-
+    let slotsubjectid = timetable[day][slot].subjectid;
+    let slottype = timetable[day][slot].type;
     if (timetable[day][slot].teacherid === teacherid && timetable[day][slot].roomid === roomid) {
         timetable[day][slot].teacherid = "";
         timetable[day][slot].roomid = "";
+        timetable[day][slot].subjectid = "";
+        timetable[day][slot].type = "";
         if (type === 'practical' && slot < 9) {
             if (timetable[day][slot + 1].teacherid === teacherid && timetable[day][slot + 1].roomid === roomid) {
                 timetable[day][slot + 1].teacherid = "";
                 timetable[day][slot + 1].roomid = "";
+                timetable[day][slot + 1].subjectid = "";
+                timetable[day][slot + 1].type = "";
             } else if (timetable[day][slot - 1].teacherid === teacherid && timetable[day][slot - 1].roomid === roomid) {
                 timetable[day][slot - 1].teacherid = "";
                 timetable[day][slot - 1].roomid = "";
+                timetable[day][slot - 1].subjectid = "";
+                timetable[day][slot - 1].type = "";
                 temp_total_forward--;
                 temp_total_backward--;
             }
@@ -85,6 +92,10 @@ const findNewSlot = (timetable, day, slot, teacherid, roomid, type, temp) => {
                 timetable[temp_day_forward][temp_slot_forward + 1].teacherid = teacherid;
                 timetable[temp_day_forward][temp_slot_forward].roomid = roomid;
                 timetable[temp_day_forward][temp_slot_forward + 1].roomid = roomid;
+                timetable[temp_day_forward][temp_slot_forward].subjectid = slotsubjectid;
+                timetable[temp_day_forward][temp_slot_forward + 1].subjectid = slotsubjectid;
+                timetable[temp_day_forward][temp_slot_forward].type = slottype;
+                timetable[temp_day_forward][temp_slot_forward + 1].type = slottype;
                 temp[room_checker_forward] = true;
                 temp[room_checker_forward_practical] = true;
                 temp[teacher_checker_forward] = true;
@@ -99,6 +110,8 @@ const findNewSlot = (timetable, day, slot, teacherid, roomid, type, temp) => {
                 // Assign the new slot to the non-practical class
                 timetable[temp_day_forward][temp_slot_forward].teacherid = teacherid;
                 timetable[temp_day_forward][temp_slot_forward].roomid = roomid;
+                timetable[temp_day_forward][temp_slot_forward].subjectid = slotsubjectid;
+                timetable[temp_day_forward][temp_slot_forward].type = slottype;
                 temp[room_checker_forward] = true;
                 temp[teacher_checker_forward] = true;
                 return { timetable, temp };
@@ -119,6 +132,10 @@ const findNewSlot = (timetable, day, slot, teacherid, roomid, type, temp) => {
                 timetable[temp_day_backward][temp_slot_backward + 1].teacherid = teacherid;
                 timetable[temp_day_backward][temp_slot_backward].roomid = roomid;
                 timetable[temp_day_backward][temp_slot_backward + 1].roomid = roomid;
+                timetable[temp_day_backward][temp_slot_backward].subjectid = slotsubjectid;
+                timetable[temp_day_backward][temp_slot_backward + 1].subjectid = slotsubjectid;
+                timetable[temp_day_backward][temp_slot_backward].type = slottype;
+                timetable[temp_day_backward][temp_slot_backward + 1].type = slottype;
                 temp[room_checker_backward] = true;
                 temp[room_checker_backward_practical] = true;
                 temp[teacher_checker_backward] = true;
@@ -133,6 +150,8 @@ const findNewSlot = (timetable, day, slot, teacherid, roomid, type, temp) => {
                 // Assign the new slot to the non-practical class
                 timetable[temp_day_backward][temp_slot_backward].teacherid = teacherid;
                 timetable[temp_day_backward][temp_slot_backward].roomid = roomid;
+                timetable[temp_day_backward][temp_slot_backward].subjectid = slotsubjectid;
+                timetable[temp_day_backward][temp_slot_backward].type = slottype;
                 temp[room_checker_backward] = true;
                 temp[teacher_checker_backward] = true;
                 return { timetable, temp };
