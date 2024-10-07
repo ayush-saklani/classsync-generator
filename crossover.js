@@ -177,6 +177,15 @@ const resolveConflicts = (offspring, room) => {
                         if (temp[("class" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].roomid)]) {
                             //  if class is already assigned to a slot then find a new slot for the class and assign it to the slot
                             let tempRoom = findNewRoom(j, k, offspring['data'][i]['timetable'][j][k].type, room, temp);
+                            let roomtype = offspring['data'][i]['timetable'][j][k].type == 'practical'?'lab': 'room';
+                            let tempRoomindex ;
+                            for(let i = 0; i < room[roomtype].length; i++){
+                                if(room[roomtype][i].roomid == offspring['data'][i]['timetable'][j][k].roomid){
+                                    tempRoomindex = i;
+                                    break;
+                                }
+                            }
+                            room[roomtype].splice(tempRoomindex, 1);
                             if(config.showstats){
                                 console.log("Class conflict " + offspring['data'][i]['timetable'][j][k].type + " " + offspring['data'][i]['timetable'][j][k].roomid + " " + i + " " + j + " " + k + " " + tempRoom);
                             }
