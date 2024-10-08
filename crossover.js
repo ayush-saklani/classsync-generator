@@ -41,8 +41,8 @@ const findNewSlot = (timetable, day, slot, teacherid, roomid, type, temp) => {
         timetable[day][slot].roomid = "";
         timetable[day][slot].subjectid = "";
         timetable[day][slot].type = "";
-        if (type === 'practical' && slot < 9) {
-            if (timetable[day][slot + 1].teacherid === teacherid && timetable[day][slot + 1].roomid === roomid) {
+        if (type === 'practical') {
+            if (slot < 9 && timetable[day][slot + 1].teacherid === teacherid && timetable[day][slot + 1].roomid === roomid) {
                 timetable[day][slot + 1].teacherid = "";
                 timetable[day][slot + 1].roomid = "";
                 timetable[day][slot + 1].subjectid = "";
@@ -353,8 +353,8 @@ const crossoverGeneration = (population, room) => {
 };
 
 // Example usage:
-let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
-let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
-population = crossoverGeneration(population, room);         // Apply elitism and roulette selection to the population
-fs.writeFileSync('population_crossover.json', JSON.stringify(population, null, 4), 'utf8');     // Save the new population
+// let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
+// let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
+// population = crossoverGeneration(population, room);         // Apply elitism and roulette selection to the population
+// fs.writeFileSync('population_crossover.json', JSON.stringify(population, null, 4), 'utf8');     // Save the new population
 export default crossoverGeneration;
