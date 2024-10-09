@@ -1,6 +1,7 @@
 import fs from 'fs';
 import initialize_chromosome from "./plot_timetables.js";
 import config from './config.js';
+import {fitness_func_generation} from './fitness_func.js';
 
 const generate_initialize_population = () => {
     let population = []
@@ -27,3 +28,7 @@ const generate_initialize_population = () => {
 }
 
 export default generate_initialize_population;
+
+// Example usage:
+// let population = generate_initialize_population();
+// fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');

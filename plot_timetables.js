@@ -1,6 +1,6 @@
 import fs from 'fs';
 import validate_timetable_set from './validate_timetable.js';
-import fitness_func from './fitness_func.js';
+import {fitness_func} from './fitness_func.js';
 import config from './config.js';
 
 //  structure of timetable as template

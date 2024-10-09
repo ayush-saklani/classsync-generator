@@ -1,5 +1,5 @@
 import fs from 'fs'
-import fitness_func from './fitness_func.js';
+import {fitness_func_generation} from './fitness_func.js';
 import validate_timetable from './validate_timetable.js';
 import config from './config.js';
 
@@ -251,7 +251,6 @@ const mutate_Population = (population, room) => {
             }
         }
         population[z] = mutate_Genome(population[z], room, mutationRate, temp);
-        population[z] = fitness_func(population[z]);
         number_of_genome_to_mutate--;
     }
     if (config.showstats) {
@@ -259,13 +258,12 @@ const mutate_Population = (population, room) => {
             console.log("======== [ Validation : " + validate_timetable(population[i]) + " ] ========= [ Fitness : " + population[i]['fitness'] + " ] ==========");
         }
     }
+    population = fitness_func_generation(population);
     population = population.sort(function (a, b) { return b.fitness - a.fitness; });
     return population;
 };
 
-
 export default mutate_Population;
-
 
 
 // let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
