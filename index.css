@@ -7,7 +7,10 @@ li {
     padding: 5px;
     display: flex;
 }
+article{
+    background-color: #c2b688 !important;
 
+}
 table {
     border: 5px solid black;
     border-collapse: collapse;
@@ -19,6 +22,7 @@ th {
     border: 3px solid black;
     height: 30px;
     width: 100px;
+    background-color: #FBF1C7 !important;
 }
 
 th {
