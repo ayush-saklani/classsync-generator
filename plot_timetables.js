@@ -81,7 +81,7 @@ const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, roomid, sub
         return true;
     }
 }
-const initialize_chromosome = (alltimetable, room) => {
+const initialize_gene = (alltimetable, room) => {
     let max = config.max;
     let min = config.min;
     let flag = 0;   // flag to check the number of conflicts in the timetable generation
@@ -189,9 +189,9 @@ const initialize_chromosome = (alltimetable, room) => {
     return alltimetable;
 }
 
-export default initialize_chromosome;
+export default initialize_gene;
 
 // let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 // let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
-// fs.writeFileSync('data2.json', JSON.stringify(initialize_chromosome(alltimetable, room), null, 4), 'utf8');
-// initialize_chromosome(alltimetable, room, true); // demo function call
+// fs.writeFileSync('data2.json', JSON.stringify(initialize_gene(alltimetable, room), null, 4), 'utf8');
+// initialize_gene(alltimetable, room, true); // demo function call
