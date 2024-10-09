@@ -16,6 +16,7 @@ let timetablestructure = [
 
 //  this function will validate the slot of timetable and flag out the room and teacher conflicts from that batch of timetables
 const validate_timetable_slot = (alltimetable, j, k, teacherid, roomid, type) => {
+    if(type == 'practical' && k%2 !== 0) return false;
     let temp = {}
     // if (alltimetable['data'].length == 0) { return true; }
     for (let i = 0; i < alltimetable['data'].length; i++) {        // all timetables
