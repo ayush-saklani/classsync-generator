@@ -1,6 +1,6 @@
 // import { cloneDeep } from 'lodash'; // For deep copying the timetables
 import fs from 'fs'
-import fitness_func from './fitness_func.js';
+import {fitness_func_generation} from './fitness_func.js';
 import validate_timetable from './validate_timetable.js';
 import config from './config.js';
 
@@ -328,12 +328,23 @@ const crossoverGeneration = (population, room) => {
 
     // Perform roulette wheel selection to select parents for crossover (excluding the elites)
     const nonElites = population.slice(elites.length);
-    const selectedForCrossover = rouletteSelection(nonElites, selectionRate);
-
+    // const selectedForCrossover = rouletteSelection(nonElites, selectionRate);
+    const selectedForCrossover = nonElites;
+    let crossover_map = {};
     // Pair up parents from the selected population for crossover
     for (let i = 0; i < selectedForCrossover.length; i += 2) {
-        const parent1 = selectedForCrossover[i];
-        const parent2 = selectedForCrossover[i + 1] || selectedForCrossover[0];  // Handle odd population size
+        let random1, random2;
+        while (true) {
+            random1 = Math.floor(Math.random() * selectedForCrossover.length);
+            random2 = Math.floor(Math.random() * selectedForCrossover.length);
+            if (random1 != random2 && !crossover_map[random1 + ";" + random2] && !crossover_map[random2 + ";" + random1]) {
+                crossover_map[random1 + ";" + random2] = true;
+                crossover_map[random2 + ";" + random1] = true;
+                break;
+            }
+        }
+        const parent1 = selectedForCrossover[random1];
+        const parent2 = selectedForCrossover[random2];
 
         // Perform crossover
         const [offspring1, offspring2] = crossover(parent1, parent2, room);
@@ -341,10 +352,10 @@ const crossoverGeneration = (population, room) => {
         // Add offspring to the new generation
         newGeneration.push(offspring1, offspring2);
     }
+    newGeneration = fitness_func_generation(newGeneration);
     // Evaluate fitness of the new population
-    for (let i = 0; i < newGeneration.length; i++) {
-        newGeneration[i] = fitness_func(newGeneration[i]);
-        if (config.showstats) {
+    if (config.showstats) {
+        for (let i = 0; i < newGeneration.length; i++) {
             console.log("======== [ Validation : " + validate_timetable(newGeneration[i]) + " ] ========= [ Fitness : " + newGeneration[i]['fitness'] + " ] ==========");
         }
     }
@@ -356,5 +367,5 @@ const crossoverGeneration = (population, room) => {
 // let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
 // let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
 // population = crossoverGeneration(population, room);         // Apply elitism and roulette selection to the population
-// fs.writeFileSync('population_crossover.json', JSON.stringify(population, null, 4), 'utf8');     // Save the new population
+// fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');     // Save the new population
 export default crossoverGeneration;
