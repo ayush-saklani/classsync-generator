@@ -187,6 +187,8 @@ const fitness_func = (alltimetable) => {
     temporary_var = teacher_and_room_conflicts(alltimetable);
     let count_teacher_conflicts = temporary_var.count_teacher_conflicts;
     let count_room_conflicts = temporary_var.count_room_conflicts;
+    console.log("Teacher Conflicts               ========  " + count_teacher_conflicts);
+    console.log("Room Conflicts                  ========  " + count_room_conflicts);
     // ============================================================================================
 
     //===================== Teacher Overload calculation [experiment starts]=======================

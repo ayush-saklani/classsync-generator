@@ -4,7 +4,7 @@ let config = {
     population_size: 10,
     min_local_fitness: 0,
     showstats: false,
-    min_global_fitness: 100,
+    min_global_fitness: 130,
     max_generation: 100,
     eliteRate: 0.05,
     selectionRate: 1,
