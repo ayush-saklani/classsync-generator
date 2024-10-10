@@ -53,13 +53,13 @@ const mutate_Single_Gene = (timetable, day, slot, teacherid, roomid, type, temp)
 
 
         // Create conflict keys for forward and backward checking
-        let room_checker_forward = "class" + ";" + temp_day_forward + ";" + temp_slot_forward + ";" + roomid;
-        let room_checker_backward = "class" + ";" + temp_day_backward + ";" + temp_slot_backward + ";" + roomid;
+        let room_checker_forward = "room" + ";" + temp_day_forward + ";" + temp_slot_forward + ";" + roomid;
+        let room_checker_backward = "room" + ";" + temp_day_backward + ";" + temp_slot_backward + ";" + roomid;
         let teacher_checker_forward = "teacher" + ";" + temp_day_forward + ";" + temp_slot_forward + ";" + teacherid;
         let teacher_checker_backward = "teacher" + ";" + temp_day_backward + ";" + temp_slot_backward + ";" + teacherid;
 
-        let room_checker_forward_practical = "class" + ";" + temp_day_forward + ";" + (temp_slot_forward + 1) + ";" + roomid;
-        let room_checker_backward_practical = "class" + ";" + temp_day_backward + ";" + (temp_slot_backward + 1) + ";" + roomid;
+        let room_checker_forward_practical = "room" + ";" + temp_day_forward + ";" + (temp_slot_forward + 1) + ";" + roomid;
+        let room_checker_backward_practical = "room" + ";" + temp_day_backward + ";" + (temp_slot_backward + 1) + ";" + roomid;
         let teacher_checker_forward_practical = "teacher" + ";" + temp_day_forward + ";" + (temp_slot_forward + 1) + ";" + teacherid;
         let teacher_checker_backward_practical = "teacher" + ";" + temp_day_backward + ";" + (temp_slot_backward + 1) + ";" + teacherid;
         // Check forward for practical subjects
@@ -243,7 +243,7 @@ const mutate_Population = (population, room) => {
         for (let i = 0; i < population[z]['data'].length; i++) {
             for (let j = 0; j < 7; j++) {
                 for (let k = 0; k < 10; k++) {
-                    let room_checker = "class" + ";" + j + ";" + k + ";" + population[z]['data'][i]['timetable'][j][k].roomid;
+                    let room_checker = "room" + ";" + j + ";" + k + ";" + population[z]['data'][i]['timetable'][j][k].roomid;
                     let teacher_checker = "teacher" + ";" + j + ";" + k + ";" + population[z]['data'][i]['timetable'][j][k].teacherid;
                     temp[room_checker] = true;
                     temp[teacher_checker] = true;

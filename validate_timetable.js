@@ -10,17 +10,17 @@ const validate_timetable = (timetable) => {
                 if (timetable['data'][i]['timetable'][j][k].roomid != "" || timetable['data'][i]['timetable'][j][k].teacherid != "") {
                     continue;
                 } else if (timetable['data'][i]['timetable'][j][k].teacherid && timetable['data'][i]['timetable'][j][k].roomid) {
-                    // if () {         // if class is empty
-                    if (temp[("teacher" + ";" + j + ";" + k + ";" + timetable['data'][i]['timetable'][j][k].teacherid)] || temp[("class" + ";" + j + ";" + k + ";" + timetable['data'][i]['timetable'][j][k].roomid)]) {
-                        process.stdout.write(temp[("class" + timetable['data'][i]['timetable'][j][k].roomid)] ? "class conflicts " : "class error safe");
+                    // if () {         // if room is empty
+                    if (temp[("teacher" + ";" + j + ";" + k + ";" + timetable['data'][i]['timetable'][j][k].teacherid)] || temp[("room" + ";" + j + ";" + k + ";" + timetable['data'][i]['timetable'][j][k].roomid)]) {
+                        process.stdout.write(temp[("room" + timetable['data'][i]['timetable'][j][k].roomid)] ? "room conflicts " : "room error safe");
                         process.stdout.write("    --------    ");
                         process.stdout.write(temp[("teacher" + timetable['data'][i]['timetable'][j][k].teacherid)] ? "teacher conflicts " : "teacher error safe");
                         process.stdout.write("    --------    ");
-                        process.stdout.write(i + " " + j + " " + k + " conflict at" + " Day : " + day[j] + " Period : " + slot[j] + " Class id : " + timetable['data'][i]['timetable'][j][k].roomid + " Teacher id : " + timetable['data'][i]['timetable'][j][k].teacherid);
+                        process.stdout.write(i + " " + j + " " + k + " conflict at" + " Day : " + day[j] + " Period : " + slot[j] + " room id : " + timetable['data'][i]['timetable'][j][k].roomid + " Teacher id : " + timetable['data'][i]['timetable'][j][k].teacherid);
                         console.log("");
                         return false;
                     } else {
-                        temp[("class" + ";" + j + ";" + k + ";" + timetable['data'][i]['timetable'][j][k].roomid)] = true;
+                        temp[("room" + ";" + j + ";" + k + ";" + timetable['data'][i]['timetable'][j][k].roomid)] = true;
                         temp[("teacher" + ";" + j + ";" + k + ";" + timetable['data'][i]['timetable'][j][k].teacherid)] = true;
                     }
                 }

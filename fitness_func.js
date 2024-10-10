@@ -13,21 +13,21 @@ const teacher_and_room_conflicts = (alltimetable) => {
                 if (alltimetable['data'][i]['timetable'][j][k].teacherid && alltimetable['data'][i]['timetable'][j][k].roomid) {
                     if (alltimetable['data'][i]['timetable'][j][k].roomid == "" || alltimetable['data'][i]['timetable'][j][k].teacherid == "") continue;
 
-                    if (temp[("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid)] || temp[("class" + alltimetable['data'][i]['timetable'][j][k].roomid)]) {
+                    if (temp[("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid)] || temp[("room" + alltimetable['data'][i]['timetable'][j][k].roomid)]) {
                         if (temp[("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid)]) count_teacher_conflicts++;
-                        if (temp[("class" + alltimetable['data'][i]['timetable'][j][k].roomid)]) count_room_conflicts++;
+                        if (temp[("room" + alltimetable['data'][i]['timetable'][j][k].roomid)]) count_room_conflicts++;
                     } else {
-                        temp[("class" + alltimetable['data'][i]['timetable'][j][k].roomid)] = true;
+                        temp[("room" + alltimetable['data'][i]['timetable'][j][k].roomid)] = true;
                         temp[("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid)] = true;
-                        temp[(("class" + alltimetable['data'][i]['timetable'][j][k].roomid) + ";" + ("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid))] = true;
+                        temp[(("room" + alltimetable['data'][i]['timetable'][j][k].roomid) + ";" + ("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid))] = true;
                     }
                 }
             }
         }
     }
     return {
-        "count_teacher_conflicts" :count_teacher_conflicts, 
-        "count_room_conflicts" : count_room_conflicts
+        "count_teacher_conflicts": count_teacher_conflicts,
+        "count_room_conflicts": count_room_conflicts
     };
 }
 const teacher_overload_penalty = (alltimetable) => {
@@ -111,10 +111,10 @@ const student_overload_penalty = (alltimetable) => {
     }
     let total_overload_penalty_student = (overload_penalty_student_arr.reduce((a, b) => a + b, 0)).toFixed(2);
     let avg_active_day_count = (active_day_count_arr.reduce((a, b) => a + b, 0)) / active_day_count_arr.length;
-    return { 
-        "total_overload_penalty_student" : total_overload_penalty_student,
-        "avg_active_day_count" : avg_active_day_count,
-        "alltimetable" : alltimetable
+    return {
+        "total_overload_penalty_student": total_overload_penalty_student,
+        "avg_active_day_count": avg_active_day_count,
+        "alltimetable": alltimetable
     }
 }
 const perfect_day_reward = (alltimetable) => {
@@ -182,7 +182,7 @@ const perfect_day_reward = (alltimetable) => {
     };
 }
 const fitness_func = (alltimetable) => {
-    let temporary_var ;
+    let temporary_var;
     // ====================== Teacher and Room Conflicts [experiment starts] ======================
     temporary_var = teacher_and_room_conflicts(alltimetable);
     let count_teacher_conflicts = temporary_var.count_teacher_conflicts;
@@ -221,9 +221,9 @@ const fitness_func = (alltimetable) => {
     real_fitness_score -= (count_room_conflicts * 20)
     real_fitness_score -= (total_overload_penalty_teacher * 14)
     real_fitness_score -= (total_overload_penalty_student * 6);
-    real_fitness_score += (avg_active_day_count == 4 || avg_active_day_count == 5) ? (24* alltimetable.data.length) : (-24* alltimetable.data.length);
+    real_fitness_score += (avg_active_day_count == 4 || avg_active_day_count == 5) ? (24 * alltimetable.data.length) : (-24 * alltimetable.data.length);
     real_fitness_score += total_perfect_day_reward;
-    real_fitness_score += (avg_local_fitness_total* alltimetable.data.length);
+    real_fitness_score += (avg_local_fitness_total * alltimetable.data.length);
     real_fitness_score = real_fitness_score / alltimetable.data.length;
     real_fitness_score = real_fitness_score.toFixed(6);
     alltimetable['fitness'] = real_fitness_score;

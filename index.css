@@ -50,26 +50,26 @@ article {
 .setclass {
     font-weight: 1000;
     font-size: larger;
-    background-color: rgb(62, 155, 191);
+    background-color: rgb(62, 155, 191) !important;
     border-right: 5px solid black;
 }
 
 .unacceptable {
     font-weight: 800;
-    background-color: red;
+    background-color: red !important;
 }
 
 .poor {
     font-weight: 800;
-    background-color: rgb(196, 196, 0);
+    background-color: rgb(196, 196, 0) !important;
 }
 
 .average {
     font-weight: 800;
-    background-color: rgb(196, 127, 0);
+    background-color: rgb(196, 127, 0) !important;
 }
 
 .good {
     font-weight: 800;
-    background-color: green;
+    background-color: green !important;
 }

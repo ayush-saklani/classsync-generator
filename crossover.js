@@ -13,14 +13,14 @@ const findNewRoom = (j, k, type, room, temp) => {
         // console.log("Room conflict " + temproom + " " + roomid + " " + j + " " + k + " " + type);
         if (type == 'practical') {
             let offset = (k < 9) ? 1 : -1;
-            if ((temp[('class' + ';' + j + ';' + k + ';' + temproom)] || false) || (temp[('class' + ';' + j + ';' + (k + offset) + ';' + temproom)] || false)) {
+            if ((temp[('room' + ';' + j + ';' + k + ';' + temproom)] || false) || (temp[('room' + ';' + j + ';' + (k + offset) + ';' + temproom)] || false)) {
                 room[room_type].splice(random_room_index, 1);
             } else {
                 return temproom;
             }
         }
         else {
-            if (temp[('class' + ';' + j + ';' + k + ';' + temproom)]) {
+            if (temp[('room' + ';' + j + ';' + k + ';' + temproom)]) {
                 room[room_type].splice(random_room_index, 1);
             } else {
                 return temproom;
@@ -68,13 +68,13 @@ const findNewSlot = (timetable, day, slot, teacherid, roomid, type, temp) => {
 
 
         // Create conflict keys for forward and backward checking
-        let room_checker_forward = "class" + ";" + temp_day_forward + ";" + temp_slot_forward + ";" + roomid;
-        let room_checker_backward = "class" + ";" + temp_day_backward + ";" + temp_slot_backward + ";" + roomid;
+        let room_checker_forward = "room" + ";" + temp_day_forward + ";" + temp_slot_forward + ";" + roomid;
+        let room_checker_backward = "room" + ";" + temp_day_backward + ";" + temp_slot_backward + ";" + roomid;
         let teacher_checker_forward = "teacher" + ";" + temp_day_forward + ";" + temp_slot_forward + ";" + teacherid;
         let teacher_checker_backward = "teacher" + ";" + temp_day_backward + ";" + temp_slot_backward + ";" + teacherid;
 
-        let room_checker_forward_practical = "class" + ";" + temp_day_forward + ";" + (temp_slot_forward + 1) + ";" + roomid;
-        let room_checker_backward_practical = "class" + ";" + temp_day_backward + ";" + (temp_slot_backward + 1) + ";" + roomid;
+        let room_checker_forward_practical = "room" + ";" + temp_day_forward + ";" + (temp_slot_forward + 1) + ";" + roomid;
+        let room_checker_backward_practical = "room" + ";" + temp_day_backward + ";" + (temp_slot_backward + 1) + ";" + roomid;
         let teacher_checker_forward_practical = "teacher" + ";" + temp_day_forward + ";" + (temp_slot_forward + 1) + ";" + teacherid;
         let teacher_checker_backward_practical = "teacher" + ";" + temp_day_backward + ";" + (temp_slot_backward + 1) + ";" + teacherid;
 
@@ -192,8 +192,8 @@ const resolveConflicts = (offspring, room) => {
                     continue;
                 }
                 else if (offspring['data'][i]['timetable'][j][k].teacherid && offspring['data'][i]['timetable'][j][k].roomid) {
-                    if (temp[("teacher" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].teacherid)] || temp[("class" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].roomid)]) {
-                        if (temp[("class" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].roomid)]) {
+                    if (temp[("teacher" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].teacherid)] || temp[("room" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].roomid)]) {
+                        if (temp[("room" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].roomid)]) {
                             //  if class is already assigned to a slot then find a new slot for the class and assign it to the slot
                             let tempRoom = findNewRoom(j, k, offspring['data'][i]['timetable'][j][k].type, room, temp);
                             // let roomtype = offspring['data'][i]['timetable'][j][k].type == 'practical'?'lab': 'room';
@@ -206,7 +206,7 @@ const resolveConflicts = (offspring, room) => {
                             // }
                             // room[roomtype].splice(tempRoomindex, 1);
                             if (config.showstats) {
-                                console.log("Class conflict " + offspring['data'][i]['timetable'][j][k].type + " " + offspring['data'][i]['timetable'][j][k].roomid + " " + i + " " + j + " " + k + " " + tempRoom);
+                                console.log("room conflict " + offspring['data'][i]['timetable'][j][k].type + " " + offspring['data'][i]['timetable'][j][k].roomid + " " + i + " " + j + " " + k + " " + tempRoom);
                             }
                             if (tempRoom == null) {
                                 if (config.showstats) {
@@ -224,17 +224,17 @@ const resolveConflicts = (offspring, room) => {
                             else {
                                 if (offspring['data'][i]['timetable'][j][k].type == 'practical') {
                                     let offset = (k < 9) ? 1 : -1;
-                                    temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false                 //remove the current class from the temp
-                                    temp[('class' + ';' + j + ';' + (k + offset) + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false      //remove the current class from the temp
+                                    temp[('room' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false                 //remove the current class from the temp
+                                    temp[('room' + ';' + j + ';' + (k + offset) + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false      //remove the current class from the temp
                                     offspring['data'][i]['timetable'][j][k].roomid = tempRoom;                                                         //assign the new room to the current class                          
                                     offspring['data'][i]['timetable'][j][k + offset].roomid = tempRoom;                                                //assign the new room to the next slot of the current class
-                                    temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;                 //add the new class to the temp
-                                    temp[('class' + ';' + j + ';' + (k + offset) + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;      //add the new class to the temp
+                                    temp[('room' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;                 //add the new class to the temp
+                                    temp[('room' + ';' + j + ';' + (k + offset) + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;      //add the new class to the temp
                                 }
                                 else {
-                                    temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false;                //remove the current class from the temp
+                                    temp[('room' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = false;                //remove the current class from the temp
                                     offspring['data'][i]['timetable'][j][k].roomid = tempRoom;                                                         //assign the new room to the current class
-                                    temp[('class' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;                 //add the new class to the temp
+                                    temp[('room' + ';' + j + ';' + k + ';' + offspring['data'][i]['timetable'][j][k].roomid)] = true;                 //add the new class to the temp
                                 }
                             }
                         }
@@ -251,7 +251,7 @@ const resolveConflicts = (offspring, room) => {
                     }
                     else {
                         temp[("teacher" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].teacherid)] = true;
-                        temp[("class" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].roomid)] = true;
+                        temp[("room" + ";" + j + ";" + k + ";" + offspring['data'][i]['timetable'][j][k].roomid)] = true;
                     }
                 }
             }
