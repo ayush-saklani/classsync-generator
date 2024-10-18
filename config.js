@@ -4,12 +4,13 @@ let config = {
     population_size: 10,
     min_local_fitness: 0,
     showstats: false,
-    min_global_fitness: 130,
+    min_global_fitness: 225,
     max_generation: 100,
     eliteRate: 0.05,
     selectionRate: 1,
     mutationRate: 0.01,
     max_streak : 4,
+    max_streak_student: 4,
 };
 
 export default config;

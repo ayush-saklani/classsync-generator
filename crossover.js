@@ -353,7 +353,7 @@ const crossoverGeneration = (population, room) => {
     newGeneration.push(...elites);                      // Add the elites to the new generation (deep copy)
 
     let nonElites = population.slice(elites.length);
-    let selectedForCrossover = nonElites;
+    let selectedForCrossover = population ; 
     let crossover_map = {};
 
 

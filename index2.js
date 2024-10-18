@@ -1,5 +1,5 @@
 const displayTimetableAsTables2 = (timetable) => {
-    const unacceptable = 60 , poor = 80 , average = 110 , good = 1000 ;
+    const unacceptable = 90 , poor = 100 , average = 115 , good = 1000 ;
     let listHTML = `<table style="width:100%; border: 2px solid black;">`;
     for (let i = 0; i < timetable.length; i++) {
         listHTML += `<tr><td class="setclass" style="text-align: center; padding 10px; margin : 0px">${timetable[i].fitness}</td>`;
