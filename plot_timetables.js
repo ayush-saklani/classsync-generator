@@ -68,8 +68,9 @@ const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, roomid, sub
     }
 }
 const check_teacher_overload = (j, k, teacherid, type, teacher_overload_map) => {
-    let curr_index = k + 1;
-    let streak = 1;
+    if (type == 'practical' && k % 2 !== 0) return false;
+    let curr_index = (type == 'practical') ? (k + 2) : (k + 1);
+    let streak = (type == 'practical') ? 2 : 1;
     let local_stream = 0;
     while (curr_index <= 9) {
         let teacher_overload_checker = 'teacher' + ';' + j + ';' + curr_index + ';' + teacherid;
@@ -95,7 +96,7 @@ const check_teacher_overload = (j, k, teacherid, type, teacher_overload_map) => 
     }
     streak += local_stream;
 
-    return streak > 4 ? false : true;
+    return streak > config.max_streak ? false : true;
 }
 const initialize_gene = (alltimetable, room) => {
     let max = config.max;

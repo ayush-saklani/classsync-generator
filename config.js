@@ -9,6 +9,7 @@ let config = {
     eliteRate: 0.05,
     selectionRate: 1,
     mutationRate: 0.01,
+    max_streak : 4,
 };
 
 export default config;

@@ -30,51 +30,42 @@ const teacher_and_room_conflicts = (alltimetable) => {
         "count_room_conflicts": count_room_conflicts
     };
 }
-const teacher_overload_penalty = (alltimetable) => {
-    let total_overload_penalty_teacher = 0;
-    let overload_teacher_map = {}
-    for (let i = 0; i < alltimetable['data'].length; i++) {
-        let timetable = alltimetable['data'][i].timetable;
-        for (let j = 0; j < timetable.length; j++) {
-            for (let k = 0; k < timetable[j].length; k++) {
-                if (timetable[j][k].teacherid == "") continue;
-                let curr_teacher_mark = j + ";" + k + ";" + timetable[j][k].teacherid;
-                overload_teacher_map[curr_teacher_mark] = 1;
+const calc_teacher_overload = (teacherid, overload_teacher_map) => {
+    let streak = 0;
+    for (let j = 0; j < 7; j++) {
+        let local_streak = 0;
+        for (let k = 0; k < 10; k++) {
+            let curr_teacher_mark = j + ";" + k + ";" + teacherid;
+            if (overload_teacher_map[curr_teacher_mark] == true) {
+                local_streak++;
+            } else if (overload_teacher_map[curr_teacher_mark] == false || overload_teacher_map[curr_teacher_mark] == undefined) {
+                if (local_streak > config.max_streak) {
+                    streak = streak + (local_streak - config.max_streak);
+                }
+                local_streak = 0;
             }
         }
     }
+    return streak;
+}
+const teacher_overload_penalty = (alltimetable) => {
+    let total_overload_penalty_teacher = 0;
+    let overload_teacher_map = {}
+    let teacher_map = {};
     for (let i = 0; i < alltimetable['data'].length; i++) {
         let timetable = alltimetable['data'][i].timetable;
         for (let j = 0; j < timetable.length; j++) {
             for (let k = 0; k < timetable[j].length; k++) {
                 if (timetable[j][k].teacherid == "") continue;
                 let curr_teacher_mark = j + ";" + k + ";" + timetable[j][k].teacherid;
-                if (overload_teacher_map[curr_teacher_mark] > 0) {
-                    let z = k;
-                    let streak = 0;
-                    while (1) {
-                        if (z >= timetable[j].length - 1) {
-                            if (streak > 2) {
-                                // console.log("Streak: " + streak);
-                                total_overload_penalty_teacher += streak;
-                            }
-                            break;
-                        }
-                        let check_curr_teacher_mark = j + ";" + z + ";" + timetable[j][k].teacherid;
-                        if (overload_teacher_map[check_curr_teacher_mark]) {
-                            streak++;
-                        } else {
-                            if (streak > 2) {
-                                // console.log("Streak: " + streak + " " + check_curr_teacher_mark);
-                                total_overload_penalty_teacher += streak;
-                            }
-                            break;
-                        }
-                        z++;
-                    }
-                }
+                overload_teacher_map[curr_teacher_mark] = true;
+                teacher_map[timetable[j][k].teacherid] = true;
             }
         }
+    }
+    for (let teacher in teacher_map) {
+        let streak = calc_teacher_overload(teacher, overload_teacher_map);
+        total_overload_penalty_teacher += streak;
     }
     return total_overload_penalty_teacher;
 }
@@ -187,8 +178,6 @@ const fitness_func = (alltimetable) => {
     temporary_var = teacher_and_room_conflicts(alltimetable);
     let count_teacher_conflicts = temporary_var.count_teacher_conflicts;
     let count_room_conflicts = temporary_var.count_room_conflicts;
-    console.log("Teacher Conflicts               ========  " + count_teacher_conflicts);
-    console.log("Room Conflicts                  ========  " + count_room_conflicts);
     // ============================================================================================
 
     //===================== Teacher Overload calculation [experiment starts]=======================
