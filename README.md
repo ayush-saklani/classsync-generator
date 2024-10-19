@@ -102,3 +102,12 @@ __(these are not used right now)__
 | Perfect Day Reward | 4-5 classes in a day              | +6        |
 | Active Day Count   | 4-5 active days                   | +20       |
 | Low Active Days    | Less than 3 active days           | -10       |
+
+## Terminology
+
+Table for common terminology.
+|Algorithm Terminology|Common Terminology|Description|Example|
+|--|--|--|--|
+|Generation|Population|**Represent a Set of probable group of Timtable (or genome)**|**20 set of 20 section's Timetable <br>(20 Genomes)**|
+|Genome or Chromosome|Timetable Set <br> or Person (or unit) of a generation|**It is the Set of probable Timtables (or Gene)**|**20 section's Timetable <br>(20 Genes)**|
+|Gene|Timtable|**It is the single Timetable**|**Timetable of section A**|
