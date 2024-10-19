@@ -39,7 +39,7 @@ const check_teacher_overload = (j, k, teacherid, type, teacher_room_clash_map) =
     }
     return streak > 4 ? false : true;
 }
-const findNewSlot = (timetable, day, slot, teacherid, roomid, type, teacher_room_clash_map, room) => {
+const find_new_slot_or_room = (timetable, day, slot, teacherid, roomid, type, teacher_room_clash_map, room) => {
     if (showstats) {
         console.log("\n============= " + type + "\t || Initial slot : " + day + " " + slot + " ====================")
     }
@@ -279,14 +279,14 @@ const resolveConflicts = (offspring, room) => {
                         let newslottedtt;
                         if (offspring['data'][i]['timetable'][j][k].type === 'practical' && k < 9 &&
                             offspring['data'][i]['timetable'][j][k + 1].teacherid === offspring['data'][i]['timetable'][j][k].teacherid) {
-                            newslottedtt = findNewSlot(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, teacher_room_clash_map, room);
+                            newslottedtt = find_new_slot_or_room(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, teacher_room_clash_map, room);
                         } else if (offspring['data'][i]['timetable'][j][k].type === 'practical' && k > 0 &&
                             offspring['data'][i]['timetable'][j][k - 1].teacherid === offspring['data'][i]['timetable'][j][k].teacherid) {
-                            newslottedtt = findNewSlot(offspring['data'][i]['timetable'], j, (k - 1), offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, teacher_room_clash_map, room);
+                            newslottedtt = find_new_slot_or_room(offspring['data'][i]['timetable'], j, (k - 1), offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, teacher_room_clash_map, room);
                         } else {
-                            newslottedtt = findNewSlot(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, teacher_room_clash_map, room);
+                            newslottedtt = find_new_slot_or_room(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, teacher_room_clash_map, room);
                         }
-                        // newslottedtt = findNewSlot(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, teacher_room_clash_map, room);
+                        // newslottedtt = find_new_slot_or_room(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, teacher_room_clash_map, room);
                         if (newslottedtt == null) {
                             if (showstats)
                                 console.log("TraahiMaam TraahiMaam, PaahiMaam PaahiMaam Jagat-Srishti-Pralay Vishva, Sankat tav Naashitaam");
