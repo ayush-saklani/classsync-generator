@@ -171,18 +171,18 @@ const mutate_Genome = (timetableset, room, mutationRate = 0.01, temp) => {
 
     let number_of_gene_to_mutate = Math.ceil(timetableset['data'].length * mutationRate);
     let rand_gene_index_map = {};
-    console.log("Number of Genes to mutate: " + number_of_gene_to_mutate );
+
     while (number_of_gene_to_mutate > 0) {
         // Randomly decide whether to mutate this section based on the mutation rate
-        let z;
+        let gene_index;
         while (true) {
-            z = Math.floor(Math.random() * timetableset['data'].length);
-            if (rand_gene_index_map[z] == undefined || rand_gene_index_map[z] == false) {
-                rand_gene_index_map[z] = true;
+            gene_index = Math.floor(Math.random() * timetableset['data'].length);
+            if (rand_gene_index_map[gene_index] == undefined || rand_gene_index_map[gene_index] == false) {
+                rand_gene_index_map[gene_index] = true;
                 break;
             }
         }
-        console.log("Currently Mutating gene: " + (z + 1));
+        console.log("Currently Mutating gene: " + (gene_index + 1));
         let slotmap = new Array(70).fill(false);
         for (let i = max + 1; i < 70; i++) {
             slotmap[i] = true;                                                      // mark the slots that are not to be assigned
@@ -192,12 +192,12 @@ const mutate_Genome = (timetableset, room, mutationRate = 0.01, temp) => {
             // Get the timetable for this section
             let randomDay, randomSlot;
             let mutating_timetable = timetableset['data'][0]['timetable'];
-            // let mutating_timetable = timetableset['data'][z]['timetable'];
+            // let mutating_timetable = timetableset['data'][gene_index]['timetable'];
 
             while (true) {
                 randomDay = Math.floor(Math.random() * 7);
                 randomSlot = Math.floor(Math.random() * 10);
-                if(timetableset['data'][z]['timetable'][randomDay][randomSlot].teacherid == "") {
+                if(timetableset['data'][gene_index]['timetable'][randomDay][randomSlot].teacherid == "") {
                     slotmap[((randomDay * 10) + randomSlot)] = true;
                 }
                 else if (!slotmap[((randomDay * 10) + randomSlot)]) {
@@ -214,7 +214,7 @@ const mutate_Genome = (timetableset, room, mutationRate = 0.01, temp) => {
                 if (randomSlot < 9 && mutating_timetable[randomDay][randomSlot + 1] == mutating_timetable[randomDay][randomSlot]) {
                 }
             }
-            timetableset['data'][z]['timetable'] = mutate_Single_Gene(mutating_timetable, randomDay, randomSlot, mutating_timetable[randomDay][randomSlot].teacherid, mutating_timetable[randomDay][randomSlot].roomid, mutating_timetable[randomDay][randomSlot].type, temp).timetable;
+            timetableset['data'][gene_index]['timetable'] = mutate_Single_Gene(mutating_timetable, randomDay, randomSlot, mutating_timetable[randomDay][randomSlot].teacherid, mutating_timetable[randomDay][randomSlot].roomid, mutating_timetable[randomDay][randomSlot].type, temp).timetable;
             number_of_slots_to_mutate--;
         }
         number_of_gene_to_mutate--;
@@ -223,34 +223,34 @@ const mutate_Genome = (timetableset, room, mutationRate = 0.01, temp) => {
     return timetableset;
 };
 
-const mutate_Population = (population, room) => {
+const mutate_Generation = (population, room) => {
     let mutationRate = config.mutationRate;
     let number_of_genome_to_mutate = Math.ceil(population.length * mutationRate);
     let rand_tt_index_map = {};
     console.log("Number of Genomes to mutate: " + number_of_genome_to_mutate);
     while (number_of_genome_to_mutate > 0) {
         // Randomly decide whether to mutate this section based on the mutation rate
-        let z;
+        let genome_index;
         while (true) {
-            z = Math.floor(Math.random() * population.length);
-            if (rand_tt_index_map[z] == undefined || rand_tt_index_map[z] == false) {
-                rand_tt_index_map[z] = true;
+            genome_index = Math.floor(Math.random() * population.length);
+            if (rand_tt_index_map[genome_index] == undefined || rand_tt_index_map[genome_index] == false) {
+                rand_tt_index_map[genome_index] = true;
                 break;
             }
         }
-        console.log("Currently Mutating genome: " + (z + 1));
+        console.log("Currently Mutating genome: " + (genome_index + 1));
         let temp = {};
-        for (let i = 0; i < population[z]['data'].length; i++) {
+        for (let i = 0; i < population[genome_index]['data'].length; i++) {
             for (let j = 0; j < 7; j++) {
                 for (let k = 0; k < 10; k++) {
-                    let room_checker = "room" + ";" + j + ";" + k + ";" + population[z]['data'][i]['timetable'][j][k].roomid;
-                    let teacher_checker = "teacher" + ";" + j + ";" + k + ";" + population[z]['data'][i]['timetable'][j][k].teacherid;
+                    let room_checker = "room" + ";" + j + ";" + k + ";" + population[genome_index]['data'][i]['timetable'][j][k].roomid;
+                    let teacher_checker = "teacher" + ";" + j + ";" + k + ";" + population[genome_index]['data'][i]['timetable'][j][k].teacherid;
                     temp[room_checker] = true;
                     temp[teacher_checker] = true;
                 }
             }
         }
-        population[z] = mutate_Genome(population[z], room, mutationRate, temp);
+        population[genome_index] = mutate_Genome(population[genome_index], room, mutationRate, temp);
         number_of_genome_to_mutate--;
     }
     if (config.showstats) {
@@ -263,10 +263,10 @@ const mutate_Population = (population, room) => {
     return population;
 };
 
-export default mutate_Population;
+export default mutate_Generation;
 
 
 // let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
 // let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
-// population = mutate_Population(population, room);  // Applying mutation with 1% probability
+// population = mutate_Generation(population, room);  // Applying mutation with 1% probability
 // fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');
