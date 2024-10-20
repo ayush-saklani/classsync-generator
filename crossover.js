@@ -2,7 +2,9 @@ import fs from 'fs';
 import { fitness_func_generation } from './fitness_func.js';
 import validate_timetable from './validate_timetable.js';
 import config from './config.js';
+import teacher_room_clash_map_generator from './teacher_room_clash_map_generator.js';
 let showstats = config.showstats;
+
 const check_teacher_overload = (j, k, teacherid, type, teacher_room_clash_map) => {
     let curr_index = k + 1;
     let streak = 1;
@@ -382,7 +384,7 @@ const crossoverGeneration = (population, room) => {
         newGeneration = newGeneration.slice(0, population.length);
     }
     newGeneration = fitness_func_generation(newGeneration);
-
+    newGeneration = teacher_room_clash_map_generator(newGeneration);
     newGeneration = newGeneration.sort(function (a, b) { return b.fitness - a.fitness; });
     for (let i = 0; i < newGeneration.length; i++) {
         // process.stdout.write(newGeneration[i].fitness + " ");
@@ -395,13 +397,13 @@ const crossoverGeneration = (population, room) => {
             console.log("======== [ Validation : " + validate_timetable(newGeneration[i]) + " ] ========= [ Fitness : " + newGeneration[i]['fitness'] + " ] ==========");
         }
     }
-    newGeneration = newGeneration.sort(function (a, b) { return b.fitness - a.fitness; });
     return newGeneration;
 };
 
-// Example usage:
-let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
-let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
-population = crossoverGeneration(population, room);         // Apply elitism and roulette selection to the population
-// fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');     // Save the new population
 export default crossoverGeneration;
+
+// Example usage:
+// let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
+// let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
+// population = crossoverGeneration(population, room);         // Apply elitism and roulette selection to the population
+// fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');     // Save the new population

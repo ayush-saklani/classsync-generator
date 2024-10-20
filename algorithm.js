@@ -1,8 +1,8 @@
 import fs from 'fs';
-import crossoverGeneration from './crossover.js';
+// import crossoverGeneration from './crossover.js';
 import generate_initialize_population from './generate_initial_population.js';
 import config from './config.js';
-import mutate_Population from './mutation.js';
+// import mutate_Population from './mutation.js';
 
 let population;
 let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
