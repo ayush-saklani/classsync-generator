@@ -19,6 +19,17 @@ const generate_initialize_population = () => {
             i--;
             continue;
         } else {
+            let flag = 0;
+            for(let j = 0; j < timetable.data.length; j++){
+                if(timetable.data[j].local_fitness < config.min_local_fitness){
+                    flag = 1;
+                    break;
+                }
+            }
+            if(flag == 1){
+                i--;
+                continue;
+            }
             console.log("counter: ", counter + " i: ", i);
             population.push(timetable);
         }

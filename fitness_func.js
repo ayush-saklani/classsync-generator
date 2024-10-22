@@ -142,19 +142,22 @@ const perfect_day_reward = (alltimetable) => {
                 }
             }
             if ((day_start >= 0 && day_start <= 4) && (day_end <= 4 && day_end >= 0)) {
-                perfect_day_status = (day_load >= 3) ? 'PerfectDay' : 'PoorDay';
+                perfect_day_status = (day_load >= 4) ? 'PerfectDay' : (day_load >= 3) ? 'GoodDay' : 'PoorDay';
+            }
+            else if ((day_start >= 4 && day_start <= 7 ) && (day_end <= 7 && day_end >= 4)) {
+                perfect_day_status = (day_load >= 3) ? 'PerfectDay' : (day_load >= 2) ? 'GoodDay' : 'PoorDay';
             }
             else if ((day_start >= 4 && day_start <= 9) && (day_end <= 9 && day_end >= 4)) {
-                perfect_day_status = (day_load >= 4) ? 'PerfectDay' : (day_load >= 2) ? 'GoodDay' : 'poorDay';
+                perfect_day_status = (day_load >= 4) ? 'PerfectDay' : (day_load >= 3) ? 'GoodDay' : 'PoorDay';
             }
             else if ((day_start >= 0 && day_start <= 7) && (day_end <= 7 && day_end >= 0)) {
-                perfect_day_status = (day_load >= 6) ? 'PerfectDay' : (day_load >= 4) ? 'GoodDay' : (day_load >= 2) ? 'AverageDay' : 'PoorDay';
+                perfect_day_status = (day_load >= 6) ? 'PerfectDay' : (day_load >= 5) ? 'GoodDay' : (day_load >= 4) ? 'AverageDay' : 'PoorDay';
             }
             else if (day_load == 0) {
                 perfect_day_status = 'Holiday';
             }
             else {
-                perfect_day_status = (day_load >= 7) ? 'GoodDay' : (day_load >= 5) ? 'AverageDay' : 'PoorDay';
+                perfect_day_status = (day_load >= 7) ? 'PerfectDay' : (day_load >= 6) ? 'GoodDay' : (day_load >= 5) ?'AverageDay' : 'PoorDay';
             }
             if (perfect_day_status != 'Holiday') {
                 perfect_day_status_arr.push(perfect_day_status);
@@ -234,6 +237,7 @@ const fitness_func_generation = (alltimetable) => {
     for (let i = 0; i < alltimetable.length; i++) {
         alltimetable[i] = fitness_func(alltimetable[i]);
     }
+    alltimetable = alltimetable.sort((a, b) => b.fitness - a.fitness);
     return alltimetable;
 };
 export { fitness_func, fitness_func_generation };
