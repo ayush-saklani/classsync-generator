@@ -335,29 +335,19 @@ const crossover = (parent1, parent2, room) => {
     }
     return res;
 };
-const elitism = (population, eliteRate = 0.05) => {         // Default to 5% of the population
-    const eliteCount = Math.ceil(population.length * eliteRate);
-    return population.slice(0, eliteCount);  // Return the top elite individuals
-};
 
 const crossoverGeneration = (population, room) => {
-    population = population.sort(function (a, b) { return b.fitness - a.fitness; });
-    fitness_func_generation(population);
-    for (let i = 0; i < population.length; i++) {
-        // process.stdout.write(population[i].fitness + " ");
-    }
-    console.log();
-    let eliteRate = config.eliteRate;
+    population = fitness_func_generation(population);
 
     let newGeneration = [];
 
-    let elites = elitism(population, eliteRate);      // Perform elitism (preserve the best solutions)
-    newGeneration.push(...elites);                      // Add the elites to the new generation (deep copy)
+    const eliteCount = Math.ceil(population.length * config.eliteRate);
+    let elites = population.slice(0, eliteCount);           // Perform elitism (preserve the best solutions)
+    let nonElites = population.slice(eliteCount);           // Remove the elites from the population
 
-    let nonElites = population.slice(elites.length);
-    let selectedForCrossover = population ; 
+    let selectedForCrossover = population;
     let crossover_map = {};
-
+    newGeneration.push(...elites);                          // Add the elites to the new generation (deep copy)
 
     while (newGeneration.length < population.length) {
         let random1, random2;
@@ -365,8 +355,8 @@ const crossoverGeneration = (population, room) => {
             random1 = Math.floor(Math.random() * selectedForCrossover.length);
             random2 = Math.floor(Math.random() * selectedForCrossover.length);
             if (random1 != random2 && !crossover_map[random1 + ";" + random2] && !crossover_map[random2 + ";" + random1]) {
-                crossover_map[random1 + ";" + random2] = true;
-                crossover_map[random2 + ";" + random1] = true;
+                crossover_map[(random1 + ";" + random2)] = true;
+                crossover_map[(random2 + ";" + random1)] = true;
                 break;
             }
         }
@@ -382,16 +372,20 @@ const crossoverGeneration = (population, room) => {
     }
     if (newGeneration.length > population.length) {
         newGeneration = newGeneration.slice(0, population.length);
+    } else if (newGeneration.length == eliteCount) {
+        // *************************** Logic Missing here ***************************
+        // generate new random timetables to fill the population as the crossover did not generate enough timetables and 
+        // old population will generate the same results again and again if we keep using the same population
+        console.log("Population size is less than expected after crossover logic to handle this is missing");
+    } else if (newGeneration.length < population.length) {
+        console.log("Population size is less than expected after crossover");
+        newGeneration.push(...nonElites.slice(0, population.length - newGeneration.length));
     }
     newGeneration = fitness_func_generation(newGeneration);
-    newGeneration = teacher_room_clash_map_generator(newGeneration);
+    newGeneration = teacher_room_clash_map_generator(newGeneration,showstats = false);
     newGeneration = newGeneration.sort(function (a, b) { return b.fitness - a.fitness; });
-    for (let i = 0; i < newGeneration.length; i++) {
-        // process.stdout.write(newGeneration[i].fitness + " ");
-    }
-    console.log();
     console.log(population.length, newGeneration.length);
-    // Evaluate fitness of the new population
+
     if (config.showstats) {
         for (let i = 0; i < newGeneration.length; i++) {
             console.log("======== [ Validation : " + validate_timetable(newGeneration[i]) + " ] ========= [ Fitness : " + newGeneration[i]['fitness'] + " ] ==========");
@@ -403,7 +397,7 @@ const crossoverGeneration = (population, room) => {
 export default crossoverGeneration;
 
 // Example usage:
-// let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
-// let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
-// population = crossoverGeneration(population, room);         // Apply elitism and roulette selection to the population
+let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
+let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
+population = crossoverGeneration(population, room);         // Apply elitism and roulette selection to the population
 // fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');     // Save the new population
