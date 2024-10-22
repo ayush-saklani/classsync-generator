@@ -1,15 +1,32 @@
 # **Class-Sync Generator** <img src="assets/img/new-logo-white.svg" height="55" align="left"/>
 **This is the all new addition to the classsync where we are introducing the automation in timetable generation using genetic algorithm.**<br>
-**_(currently in the intitial phase of designing)_** 
+**_(currently in the intitial-coding-ish phase of development)_** 
 
 # **Languages, Frameworks and Tools**
 <div align="left" style="margin: 10px;">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="75"/>
 <img src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png"height="75"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" height="75"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg" height="75"/>
+<!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" height="75"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg" height="75"/> -->
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg" height="75"/>
 </div>
+
+# Data and Algorithm Flow
+<img src="./assets/img/GA Flow diagram.png" />
+
+| **Step**                      | **Description**                                                                                                                        |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Data Collection               | Gather all necessary data including teacher availability, room availability, and subject requirements.                                 |
+| Initial Population Generation | Create an initial set of possible timetables (population).                                                                             |
+| Fitness Evaluation            | Evaluate each timetable based on predefined criteria such as teacher conflicts, room conflicts, and adherence to subject requirements. |
+| Selection                     | Select the best-performing timetables to serve as parents for the next generation.                                                     |
+| Crossover and Mutation        | Generate new timetables by combining parts of the selected parents and introducing small random changes (mutations).                   |
+| Iteration                     | Repeat the evaluation, selection, and crossover/mutation steps for several generations until an optimal timetable is found.            |
+| Final Timetable               | Select the best timetable from the final generation as the solution.                                                                   |
+
+___This process ensures that the generated timetable is optimized for the given constraints and requirements.___
+
+# Data Structure Used 
 
 ```
 data.JSON (example)
@@ -19,10 +36,8 @@ data.JSON (example)
         {
             "local_fitness": 0,
             "timetable": [
-                [{ "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" },  ........ for 10 periods ],
-                [{ "classid": "", "teacherid": "" }, { "classid": "", "teacherid": "" },  ........ for 10 periods ],
-                "
-                "
+                [{ "classid": "", "teacherid": "" }, ........ for 10 periods ],
+                [{ "classid": "", "teacherid": "" }, ........ for 10 periods ],
                 "
                 "
                 "
@@ -36,41 +51,42 @@ data.JSON (example)
                     "type": "theory"
                 },
                 {
-                    "subjectid": "TEST2",
-                    "teacherid": "2118529",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
-                    "subjectid": "TEST3",
-                    "teacherid": "2118555",
-                    "weekly_hrs": 3,
-                    "type": "theory"
-                },
-                {
                     "subjectid": "PTEST1",
                     "teacherid": "21185299",
                     "weekly_hrs": 2,
                     "type": "practical"
                 },
-                {
-                    "subjectid": "PTEST2",
-                    "teacherid": "21185269",
-                    "weekly_hrs": 2,
-                    "type": "practical"
-                }
+                ... as many subject as we want to plot
             ]
         },
         {
             "local_fitness": 0,
-            "timetable": [..........],
-            "subjects": [...........]
+            "timetable": [
+                [{ "classid": "", "teacherid": "" }, ........ for 10 periods ],
+                "
+                "
+                .... for 7 days a week 
+            ],
+            "subjects": [
+                {
+                    "subjectid": "TEST1",
+                    "teacherid": "2118526",
+                    "weekly_hrs": 3,
+                    "type": "theory"
+                },
+                ... as many subject as we want to plot
+            ]
         },
         .... as many sections as we need with predecided teacher and subjects 
     ]
 }
 ```
-## File Structure
+
+<img src="assets/img/structure.svg" width="100%"/>
+
+___This is an abstract representation of our data strucutre as timetable set___ 
+
+# File Structure *(Not updated)
 | **File Name**           | **Description**
 |--------------------|-----------------------------------|
 |`test.js`                    |  Function to build a generation
@@ -91,7 +107,7 @@ data.JSON (example)
 ||
 |`subjects.json`              |  Trash _(might delete later)_
 
-## Penalty and Reward System
+# Penalty and Reward System *(Not updated)
 __(these are not used right now)__ 
 | **Type**           | **Condition**                     | **Points**|
 |--------------------|-----------------------------------|-----------|
@@ -103,9 +119,7 @@ __(these are not used right now)__
 | Active Day Count   | 4-5 active days                   | +20       |
 | Low Active Days    | Less than 3 active days           | -10       |
 
-## Terminology
-
-Table for common terminology.
+# Terminology
 |Algorithm Terminology|Common Terminology|Description|Example|
 |--|--|--|--|
 |Generation|Population|**Represent a Set of probable group of Timtable (or genome)**|**20 set of 20 section's Timetable <br>(20 Genomes)**|
