@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const teacher_room_clash_map_generator = (population) => {
+const teacher_room_clash_map_generator = (population, showstats = false) => {
     for (let x = 0; x < population.length; x++) {
         let teacher_room_clash_map = {};
         for (let i = 0; i < population[x]['data'].length; i++) {
@@ -17,8 +17,13 @@ const teacher_room_clash_map_generator = (population) => {
                 }
             }
         }
-        process.stdout.write(Object.keys(teacher_room_clash_map).length + " ");
         population[x]['teacher_room_clash_map'] = teacher_room_clash_map;
+    }
+    if(showstats){
+        for(let i = 0; i < population.length; i++){
+            process.stdout.write(Object.keys( population[i]['teacher_room_clash_map']).length + " ");
+        }
+        console.log();
     }
     // console.log();
     return population;
