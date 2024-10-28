@@ -1,16 +1,18 @@
 let config = {
-    min: 0,
-    max: 49,
-    population_size: 10,
-    min_local_fitness: 100,
-    showstats: false,
-    min_global_fitness: 210,
-    max_generation: 100,
-    eliteRate: 0.05,
-    selectionRate: 1,
-    mutationRate: 0.01,
-    max_streak : 4,
-    max_streak_student: 4,
+    min: 0,                                     // if 10 then start from 10 (tuesday 9am)
+    max: 49,                                    // it 59 then end at 59  (saturday 6pm)
+    population_size: 10,                        // population size
+    showstats: false,                           // toggle to show stats of each generation // true for debugging // (not fine tuned yet)
+    min_local_fitness: 100,                     // minimum local fitness score which is bare minimum to be acceptable
+    min_global_fitness: 210,                    // minimum global fitness score which is bare minimum to be acceptable
+    max_generation: 100,                        // maximum generation limit to avoid infinite computation of poor offsprings
+    eliteRate: 0.05,                            // elite rate (5% of population) will be selected as elites for next generation
+    selectionRate: 1,                           // selection rate (100% of population) will be selected for crossover (not used rn)
+    mutationRate: 0.01,                         // mutation rate (1% of population) will be mutated for next generation
+    max_streak: 4,                              // maximum consecutive slot allocation allowed for a teacher 
+    max_streak_student: 4,                      // maximum consecutive slot allocation allowed for a student
+    acceptable_Global_Fitness_Score: 240,       // acceptable Global Fitness Score (Final Result)
+    acceptable_Local_Fitness_Score: 140         // acceptable Local Fitness Score (Final Result)
 };
 
 export default config;
