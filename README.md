@@ -102,10 +102,9 @@ ___This is an abstract representation of our data strucutre as timetable set___
 |`population_selected.json`   |  Selected timetable from this generation 
 ||
 |`index.html`                 |  For visualization of plotted set of timetable 
-|`index.js`                   |  JS for `index.html`
+|`index.js`<br>`index2.js`<br>`index3.js`|  JS for `index.html`
 |`README.md`                  |  Readme.md
-||
-|`subjects.json`              |  Trash _(might delete later)_
+
 
 # Penalty and Reward System *(Not updated)
 __(these are not used right now)__ 

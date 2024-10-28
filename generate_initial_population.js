@@ -30,11 +30,12 @@ const generate_initialize_population = () => {
                 i--;
                 continue;
             }
-            console.log("counter: ", counter + " i: ", i);
+            console.log("Iteration no : ", counter + "\tTimetable accepted : ", i+1);
             population.push(timetable);
         }
         // population.push(timetable);
     }
+    console.table(population);
     return population;
 }
 

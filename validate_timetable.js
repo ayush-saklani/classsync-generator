@@ -29,6 +29,9 @@ const validate_timetable = (timetable) => {
     }
     return true;
 }
+
+export default validate_timetable;
+
+// example usage:
 // let timetable = JSON.parse(fs.readFileSync('data2.json', 'utf8'));
 // validate_timetable(timetable);
-export default validate_timetable;

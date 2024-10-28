@@ -321,10 +321,10 @@ const mutate_Generation = (population, room) => {
 export default mutate_Generation;
 
 
-let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
-population = teacher_room_clash_map_generator(population);
-let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
-population = mutate_Generation(population, room);  // Applying mutation with 1% probability
-population = teacher_room_clash_map_generator(population);
+// let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
+// population = teacher_room_clash_map_generator(population);
+// let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
+// population = mutate_Generation(population, room);  // Applying mutation with 1% probability
+// population = teacher_room_clash_map_generator(population);
 
 // fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');

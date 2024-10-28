@@ -243,6 +243,6 @@ const fitness_func_generation = (alltimetable) => {
 export { fitness_func, fitness_func_generation };
 
 // for testing purpose only
-let alltimetable = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
-alltimetable = fitness_func_generation(alltimetable);
-fs.writeFileSync('population_selected.json', JSON.stringify(alltimetable, null, 4), 'utf8');
+// let alltimetable = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
+// alltimetable = fitness_func_generation(alltimetable);
+// fs.writeFileSync('population_selected.json', JSON.stringify(alltimetable, null, 4), 'utf8');
