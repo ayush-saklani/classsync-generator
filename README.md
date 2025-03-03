@@ -1,6 +1,6 @@
 # **Class-Sync Generator** <img src="assets/img/new-logo-white.svg" height="55" align="left"/>
-**This is the all new addition to the classsync where we are introducing the automation in timetable generation using genetic algorithm.**<br>
-**_(currently in the intitial-coding-ish phase of development)_** 
+**This is the all new addition to the ClassSync where we are introducing the automation in timetable generation using genetic algorithm.**<br>
+**_(currently in the initial-coding-ish phase of development)_** 
 
 # **Languages, Frameworks and Tools**
 <div align="left" style="margin: 10px;">
@@ -84,7 +84,7 @@ data.JSON (example)
 
 <img src="assets/img/structure.svg" width="100%"/>
 
-___This is an abstract representation of our data strucutre as timetable set___ 
+___This is an abstract representation of our data structure as timetable set___ 
 
 # File Structure *(Not updated)
 | **File Name**           | **Description**
@@ -121,6 +121,6 @@ __(these are not used right now)__
 # Terminology
 |Algorithm Terminology|Common Terminology|Description|Example|
 |--|--|--|--|
-|Generation|Population|**Represent a Set of probable group of Timtable (or genome)**|**20 set of 20 section's Timetable <br>(20 Genomes)**|
-|Genome or Chromosome|Timetable Set <br> or Person (or unit) of a generation|**It is the Set of probable Timtables (or Gene)**|**20 section's Timetable <br>(20 Genes)**|
-|Gene|Timtable|**It is the single Timetable**|**Timetable of section A**|
+|Generation|Population|**Represent a Set of probable group of Timetable (or genome)**|**20 set of 20 section's Timetable <br>(20 Genomes)**|
+|Genome or Chromosome|Timetable Set <br> or Person (or unit) of a generation|**It is the Set of probable Timetables (or Gene)**|**20 section's Timetable <br>(20 Genes)**|
+|Gene|Timetable|**It is the single Timetable**|**Timetable of section A**|
