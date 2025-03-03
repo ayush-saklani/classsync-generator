@@ -80,7 +80,7 @@ const displayTimetableAsTables = (timetable) => {
 const functiosn = async () => {
 
     let timetable = [];
-    await fetch('./population_selected.json')
+    await fetch('/population_selected.json')
         .then(response => response.json())
         .then(data => {
             let population = data;
