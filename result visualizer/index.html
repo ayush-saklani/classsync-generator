@@ -13,9 +13,24 @@
     <nav style="display: flex; align-items: center;">
         <img src="/assets/img/new-logo-white.svg" height="60px" style="padding-top: 15px; padding-left: 15px;">
         <h1 style="margin-left: 20px;">Timetable Visualizer</h1>
+        <form style="display: flex; margin-left: auto; padding-right: 15px;" id="script-selector">
+            <input type="radio" name="script" id="option1" value="index">
+            <label for="option1">Full View</label><br>
+            <input type="radio" name="script" id="option2" value="index2">
+            <label for="option2">Top View</label><br>
+        </form>
     </nav>
     <div id="timetable"></div>
-    <script src="/assets/js/index.js"></script>
+    <!-- <script src="/assets/js/index.js"></script> -->
+    <script>
+        document.getElementById('script-selector').addEventListener('change', function (event) {
+            const script = document.createElement('script');
+            script.src = `/assets/js/${event.target.value}.js`;
+            script.id = 'dynamic-script';
+            document.getElementById('script-selector').querySelectorAll('input').forEach(input => input.disabled = true);
+            document.body.appendChild(script);
+        });
+    </script>
 </body>
 
 </html>
