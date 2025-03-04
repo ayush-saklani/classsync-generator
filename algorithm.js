@@ -26,10 +26,10 @@ const check_acceptability = (population) => {
 }
 const algorithm = (room) => {
     // step 1: generate initial population
-    // let population = generate_initialize_population();
+    let population = generate_initialize_population();
 
     // step 1: read population from file (if exists) (alternate)
-    let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
+    // let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
 
     // Checkpoint: write population to file
     fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');
