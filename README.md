@@ -2,6 +2,14 @@
 **This is the all new addition to the ClassSync where we are introducing the automation in timetable generation using genetic algorithm.**<br>
 **_(currently in the initial-coding-ish phase of development)_** 
 
+# Steps to follow
+1.  **First get whole teacher allocated timetable from the mongoDB database _i.e. classsync.tables.json_**
+2. **Run _ABconvert.js_ which converts the Class-Sync data into the format required by this genetic algorithm. The converted timetable format is saved as _classsync.converted.tables.json_** 
+3. **Run _algorithm.js_ to run the algorithm and get the best solution saves as _acceptedsol.json_  _( this is the best solution to the TT scheduling problem at this moment )_** 
+4. **Run _BAconvert.js_ which converts the data format required by this genetic algorithm into the Class-Sync data format. _( the data is converted into 3 types of timetable i.e Room, faculty and section's timetable seperately )_** 
+5. **Upload this data back to the MongoDB database which can be reflected to the Class-sync Website or downloaded for recirculation. _(the data can be iron out from here)_**
+
+
 # **Languages, Frameworks and Tools**
 <div align="left" style="margin: 10px;">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="75"/>

@@ -1,0 +1,110 @@
+{
+    "room": [
+        {
+            "roomid": "2075",
+            "capacity": 1
+        },
+        {
+            "roomid": "2071",
+            "capacity": 1
+        },
+        {
+            "roomid": "2085",
+            "capacity": 1
+        },
+        {
+            "roomid": "2087",
+            "capacity": 1
+        },
+        {
+            "roomid": "2089",
+            "capacity": 1
+        },
+        {
+            "roomid": "2033",
+            "capacity": 1
+        },
+        {
+            "roomid": "2036",
+            "capacity": 1
+        },
+        {
+            "roomid": "2041",
+            "capacity": 4
+        },
+        {
+            "roomid": "2031",
+            "capacity": 4
+        },
+        {
+            "roomid": "3041",
+            "capacity": 4
+        },
+        {
+            "roomid": "3031",
+            "capacity": 4
+        },
+        {
+            "roomid": "1001",
+            "capacity": 1
+        },
+        {
+            "roomid": "1003",
+            "capacity": 1
+        },
+        {
+            "roomid": "6120",
+            "capacity": 2
+        },
+        {
+            "roomid": "6121",
+            "capacity": 3
+        },
+        {
+            "roomid": "6122",
+            "capacity": 1
+        },
+        {
+            "roomid": "6123",
+            "capacity": 1
+        }
+    ],
+    "lab": [
+        {
+            "roomid": "4071",
+            "capacity": 1
+        },
+        {
+            "roomid": "4087",
+            "capacity": 1
+        },
+        {
+            "roomid": "1069",
+            "capacity": 1
+        },
+        {
+            "roomid": "2069",
+            "capacity": 1
+        },
+        {
+            "roomid": "3069",
+            "capacity": 1
+        },
+        {
+            "roomid": "4069",
+            "capacity": 1
+        },
+        {
+            "roomid": "3101",
+            "capacity": 1
+        },
+        {
+            "roomid": "2101",
+            "capacity": 1
+        },
+        {
+            "roomid": "4085",
+            "capacity": 1
+        }
+    ]
+}
