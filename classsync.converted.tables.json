@@ -1,4 +1,509 @@
 {
     "fitness": 0,
-    "data": []
+    "data": [
+        {
+            "local_fitness": 0,
+            "course": "btechcse",
+            "semester": "5",
+            "section": "A1",
+            "timetable": [
+                [
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ],
+                [
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    },
+                    {
+                        "roomid": "",
+                        "teacherid": "",
+                        "subjectid": "",
+                        "type": ""
+                    }
+                ]
+            ],
+            "subjects": [
+                {
+                    "subjectid": "TCS509",
+                    "teacherid": "2118536",
+                    "weekly_hrs": "3",
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TCS502",
+                    "teacherid": "2118572",
+                    "weekly_hrs": "3",
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TCS503",
+                    "teacherid": "2118523",
+                    "weekly_hrs": "3",
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "TMA502",
+                    "teacherid": "2118526",
+                    "weekly_hrs": "3",
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "XCS501Q",
+                    "teacherid": "2118571",
+                    "weekly_hrs": "1",
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "XCS501V",
+                    "teacherid": "2118601",
+                    "weekly_hrs": "1",
+                    "type": "theory"
+                },
+                {
+                    "subjectid": "PCS502",
+                    "teacherid": 2119666,
+                    "weekly_hrs": "3",
+                    "type": "practical"
+                },
+                {
+                    "subjectid": "PCS503",
+                    "teacherid": "2118523",
+                    "weekly_hrs": "3",
+                    "type": "practical"
+                },
+                {
+                    "subjectid": "PMA502",
+                    "teacherid": "2118526",
+                    "weekly_hrs": "3",
+                    "type": "practical"
+                },
+                {
+                    "subjectid": "XCS510",
+                    "teacherid": "2118573",
+                    "weekly_hrs": "2",
+                    "type": "practical"
+                }
+            ]
+        }
+    ]
 }

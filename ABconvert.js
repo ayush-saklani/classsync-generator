@@ -14,7 +14,7 @@ let new_room_data = {
 // let days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 // let currcol = ["08-09", "09-10", "10-11", "11-12", "12-01", "01-02", "02-03", "03-04", "04-05", "05-06"];
 let spare_teacher_id = 2119666;
-
+let map = {}
 for (let i = 0; i < old_timetable_data.length; i++) {
     let tttemp3 = [];
     for (let j = 0; j < old_timetable_data[i].teacher_subject_data.length; j++) {
@@ -23,7 +23,7 @@ for (let i = 0; i < old_timetable_data.length; i++) {
         if (skiplist.includes(currsub)) {
             continue;
         }
-        old_timetable_data[i].teacher_subject_data[j]._id = "";
+        delete old_timetable_data[i].teacher_subject_data[j]['_id'];
 
         tttemp3.push({
             "subjectid": old_timetable_data[i].teacher_subject_data[j].subjectcode,
@@ -41,14 +41,10 @@ for (let i = 0; i < old_timetable_data.length; i++) {
         [{ "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }],
         [{ "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }]
     ];
-    
-    let subjectExists = old_timetable_data.some(timetable => {
-        return JSON.stringify(timetable.teacher_subject_data) === JSON.stringify(old_timetable_data[i].teacher_subject_data);
-    });
-
-    if (subjectExists) {
+    if (map[JSON.stringify(tttemp3)]) {
         console.log("Similar subjects set already exists for course:", old_timetable_data[i].course, "semester:", old_timetable_data[i].semester, "section:", old_timetable_data[i].section);
-    }else{
+    } else {
+        console.log("===============================  " + "section:", old_timetable_data[i].section);
         new_timetable_data.push({
             "local_fitness": 0,
             "course": old_timetable_data[i].course,
@@ -57,6 +53,9 @@ for (let i = 0; i < old_timetable_data.length; i++) {
             "timetable": tttemp,
             "subjects": tttemp3,
         });
+        map[
+            JSON.stringify(tttemp3)
+        ] = true;
     }
 }
 new_timetable_data = {
@@ -64,6 +63,7 @@ new_timetable_data = {
     "data": new_timetable_data
 }
 fs.writeFileSync('classsync.converted.tables.json', JSON.stringify(new_timetable_data, null, 4), 'utf8');
+// fs.writeFileSync('classsync.tables.json', JSON.stringify(old_timetable_data, null, 4), 'utf8');
 
 for (let i = 0; i < old_room_data.length; i++) {
     if (old_room_data[i].allowed_course.length > 0 &&
