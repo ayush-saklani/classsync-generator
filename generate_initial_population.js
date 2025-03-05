@@ -9,7 +9,7 @@ const generate_initialize_population = () => {
     for (let i = 0; i < config.population_size; i++) {
         counter += 1;
         // console.log("counter: ", counter + " i: ", i);
-        let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));    //  timetable data with subjects and teachers already assigned
+        let alltimetable = JSON.parse(fs.readFileSync('classsync.converted.tables.json', 'utf8'));    //  timetable data with subjects and teachers already assigned
         let room = JSON.parse(fs.readFileSync('classsync.converted.rooms.json', 'utf8'));            //  (capacity is not implemented in this code right now)
         let timetable = initialize_gene(alltimetable, room);
         if (timetable == null) {
@@ -42,5 +42,5 @@ const generate_initialize_population = () => {
 export default generate_initialize_population;
 
 // Example usage:
-let population = generate_initialize_population();
-fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');
+// let population = generate_initialize_population();
+// fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');
