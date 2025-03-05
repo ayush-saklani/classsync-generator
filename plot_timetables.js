@@ -121,7 +121,10 @@ const initialize_gene = (alltimetable, room) => {
             temp_subject_index = 0;
 
             let room_type = 'room';
-            if (subjects[temp_subject_index].type == 'theory') room_type = 'room';
+            if (subjects[temp_subject_index].type == 'theory') {
+                if (alltimetable['data'][i].joint) room_type = 'hall';
+                else room_type = 'room';
+            }
             else if (subjects[temp_subject_index].type == 'practical') room_type = 'lab';
             else room_type = 'room';
 

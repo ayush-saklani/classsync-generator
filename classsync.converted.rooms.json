@@ -29,6 +29,24 @@
             "capacity": 1
         },
         {
+            "roomid": "1001",
+            "capacity": 1
+        },
+        {
+            "roomid": "1003",
+            "capacity": 1
+        },
+        {
+            "roomid": "6122",
+            "capacity": 1
+        },
+        {
+            "roomid": "6123",
+            "capacity": 1
+        }
+    ],
+    "hall": [
+        {
             "roomid": "2041",
             "capacity": 4
         },
@@ -45,28 +63,12 @@
             "capacity": 4
         },
         {
-            "roomid": "1001",
-            "capacity": 1
-        },
-        {
-            "roomid": "1003",
-            "capacity": 1
-        },
-        {
             "roomid": "6120",
             "capacity": 2
         },
         {
             "roomid": "6121",
             "capacity": 3
-        },
-        {
-            "roomid": "6122",
-            "capacity": 1
-        },
-        {
-            "roomid": "6123",
-            "capacity": 1
         }
     ],
     "lab": [
