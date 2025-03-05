@@ -221,7 +221,7 @@ const initialize_gene = (alltimetable, room) => {
 
 export default initialize_gene;
 
-// let alltimetable = JSON.parse(fs.readFileSync('data.json', 'utf8'));
-// let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
+// let alltimetable = JSON.parse(fs.readFileSync('classsync.converted.tables.json', 'utf8'));
+// let room = JSON.parse(fs.readFileSync('classsync.converted.rooms.json', 'utf8'));
 // fs.writeFileSync('data2.json', JSON.stringify(initialize_gene(alltimetable, room), null, 4), 'utf8');
 // initialize_gene(alltimetable, room, true); // demo function call

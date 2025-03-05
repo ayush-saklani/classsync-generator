@@ -58,7 +58,7 @@ const algorithm = (room) => {
     }
     return null;
 }
-let room = JSON.parse(fs.readFileSync('room.json', 'utf8'));
+let room = JSON.parse(fs.readFileSync('classsync.converted.rooms.json', 'utf8'));
 let population = algorithm(room);
 
 if (population == null) console.log('No acceptable solution found');
