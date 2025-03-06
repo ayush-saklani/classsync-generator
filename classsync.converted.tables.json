@@ -7,6 +7,9 @@
             "semester": "5",
             "section": "A1",
             "joint": true,
+            "merged_section": [
+                "A2"
+            ],
             "timetable": [
                 [
                     {
@@ -512,6 +515,9 @@
             "semester": "5",
             "section": "B1",
             "joint": true,
+            "merged_section": [
+                "B2"
+            ],
             "timetable": [
                 [
                     {
@@ -1017,6 +1023,9 @@
             "semester": "5",
             "section": "C1",
             "joint": true,
+            "merged_section": [
+                "C2"
+            ],
             "timetable": [
                 [
                     {
@@ -1522,6 +1531,7 @@
             "semester": "5",
             "section": "D1",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -2027,6 +2037,7 @@
             "semester": "5",
             "section": "D2",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -2532,6 +2543,7 @@
             "semester": "5",
             "section": "E1",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -3037,6 +3049,7 @@
             "semester": "5",
             "section": "E2",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -3542,6 +3555,7 @@
             "semester": "5",
             "section": "F1",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -4047,6 +4061,7 @@
             "semester": "5",
             "section": "F2",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -4552,6 +4567,7 @@
             "semester": "5",
             "section": "G1",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -5057,6 +5073,7 @@
             "semester": "5",
             "section": "G2",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -5562,6 +5579,7 @@
             "semester": "5",
             "section": "H1",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -6067,6 +6085,7 @@
             "semester": "5",
             "section": "H2",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -6572,6 +6591,7 @@
             "semester": "5",
             "section": "J1",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -7077,6 +7097,7 @@
             "semester": "5",
             "section": "J2",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -7582,6 +7603,7 @@
             "semester": "5",
             "section": "K1",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -8087,6 +8109,7 @@
             "semester": "5",
             "section": "K2",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -8592,6 +8615,7 @@
             "semester": "5",
             "section": "L1",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -9097,6 +9121,7 @@
             "semester": "5",
             "section": "L2",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {
@@ -9602,6 +9627,7 @@
             "semester": "5",
             "section": "I1",
             "joint": false,
+            "merged_section": [],
             "timetable": [
                 [
                     {

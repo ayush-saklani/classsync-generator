@@ -11,16 +11,31 @@ let new_room_data = {
     "hall": [],
     "lab": []
 };
-
-// let days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
-// let currcol = ["08-09", "09-10", "10-11", "11-12", "12-01", "01-02", "02-03", "03-04", "04-05", "05-06"];
+let mergemap = {
+    "5": {
+        "A1": ["A2"],
+        "B1": ["B2"],
+        "C1": ["C2"],
+    }
+}
 let spare_teacher_id = 2119666;
-let map = {}
 for (let i = 0; i < old_timetable_data.length; i++) {
     let tttemp3 = [];
-    if (i % 2 != 0
-        && i < 6
-    ) { continue; } // skip alternate sections as they are same and joint classes are there
+    let skip = false;
+    if (mergemap[old_timetable_data[i].semester]) {
+        for (let x of Object.keys(mergemap[old_timetable_data[i].semester])) {
+            for (let y = 0; y < mergemap[old_timetable_data[i].semester][x].length; y++) {
+                if (old_timetable_data[i].section == mergemap[old_timetable_data[i].semester][x][y]) {
+                    skip = true;
+                    console.log("Skipping ", old_timetable_data[i].section);
+                    break;
+                }
+            }
+        }
+    }
+    if (skip) {
+        continue
+    }
     for (let j = 0; j < old_timetable_data[i].teacher_subject_data.length; j++) {
         let currsub = old_timetable_data[i].teacher_subject_data[j].subjectcode;
         let skiplist = ["TCS552", "TCS531", "TCS548", "TCS591", "TCS592", "TCS565", "TCS566", "TCS561", "TCS567", "TCS592", "TCS515", "ELECTIVE", "CSP501", "SCS501", "GP501", "PCS512"];
@@ -47,25 +62,29 @@ for (let i = 0; i < old_timetable_data.length; i++) {
         [{ "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }],
         [{ "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }]
     ];
-    if (map[JSON.stringify(tttemp3)]) {
-        console.log("Similar subjects set already exists for course:", old_timetable_data[i].course, "semester:", old_timetable_data[i].semester, "section:", old_timetable_data[i].section);
+    if (old_timetable_data[i].section in mergemap[old_timetable_data[i].semester]) {
+        console.log(mergemap[old_timetable_data[i].semester][old_timetable_data[i].section]);
+        new_timetable_data.push({
+            "local_fitness": 0,
+            "course": old_timetable_data[i].course,
+            "semester": old_timetable_data[i].semester,
+            "section": old_timetable_data[i].section,
+            "joint": true,
+            "merged_section": mergemap[old_timetable_data[i].semester][old_timetable_data[i].section],
+            "timetable": tttemp,
+            "subjects": tttemp3,
+        });
     } else {
-        console.log("===============================  " + "section:", old_timetable_data[i].section);
         new_timetable_data.push({
             "local_fitness": 0,
             "course": old_timetable_data[i].course,
             "semester": old_timetable_data[i].semester,
             "section": old_timetable_data[i].section,
             "joint": false,
+            "merged_section": [],
             "timetable": tttemp,
             "subjects": tttemp3,
         });
-        if (i < 6) {
-            new_timetable_data[new_timetable_data.length - 1].joint = true; // joint classes 
-        }
-        map[
-            JSON.stringify(tttemp3)
-        ] = true;
     }
 }
 new_timetable_data = {
