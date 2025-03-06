@@ -8,6 +8,7 @@ let new_timetable_data = [];
 let new_faculty_data = {};
 let new_room_data = {
     "room": [],
+    "hall": [],
     "lab": []
 };
 
@@ -17,6 +18,9 @@ let spare_teacher_id = 2119666;
 let map = {}
 for (let i = 0; i < old_timetable_data.length; i++) {
     let tttemp3 = [];
+    if (i % 2 != 0
+        && i < 6
+    ) { continue; } // skip alternate sections as they are same and joint classes are there
     for (let j = 0; j < old_timetable_data[i].teacher_subject_data.length; j++) {
         let currsub = old_timetable_data[i].teacher_subject_data[j].subjectcode;
         let skiplist = ["TCS552", "TCS531", "TCS548", "TCS591", "TCS592", "TCS565", "TCS566", "TCS561", "TCS567", "TCS592", "TCS515", "ELECTIVE", "CSP501", "SCS501", "GP501", "PCS512"];
@@ -28,7 +32,9 @@ for (let i = 0; i < old_timetable_data.length; i++) {
         tttemp3.push({
             "subjectid": old_timetable_data[i].teacher_subject_data[j].subjectcode,
             "teacherid": old_timetable_data[i].teacher_subject_data[j].teacherid == 0 ? spare_teacher_id++ : old_timetable_data[i].teacher_subject_data[j].teacherid,
-            "weekly_hrs": old_timetable_data[i].teacher_subject_data[j].weekly_hrs,
+            "weekly_hrs": old_timetable_data[i].teacher_subject_data[j].theory_practical == "PRACTICAL" ? 2 : old_timetable_data[i].teacher_subject_data[j].weekly_hrs,
+            // 3hrs for practicals not allowed
+            // it can be changed to 4 if needed
             "type": old_timetable_data[i].teacher_subject_data[j].theory_practical == "PRACTICAL" ? "practical" : "theory"
         });
     }
@@ -50,9 +56,13 @@ for (let i = 0; i < old_timetable_data.length; i++) {
             "course": old_timetable_data[i].course,
             "semester": old_timetable_data[i].semester,
             "section": old_timetable_data[i].section,
+            "joint": false,
             "timetable": tttemp,
             "subjects": tttemp3,
         });
+        if (i < 6) {
+            new_timetable_data[new_timetable_data.length - 1].joint = true; // joint classes 
+        }
         map[
             JSON.stringify(tttemp3)
         ] = true;
@@ -71,10 +81,17 @@ for (let i = 0; i < old_room_data.length; i++) {
         old_room_data[i].roomid != "0"
     ) {
         if (old_room_data[i].type == "class") {
-            new_room_data.room.push({
-                "roomid": old_room_data[i].roomid,
-                "capacity": old_room_data[i].capacity
-            });
+            if (old_room_data[i].capacity > 1) {
+                new_room_data.hall.push({
+                    "roomid": old_room_data[i].roomid,
+                    "capacity": old_room_data[i].capacity
+                });
+            } else {
+                new_room_data.room.push({
+                    "roomid": old_room_data[i].roomid,
+                    "capacity": old_room_data[i].capacity
+                });
+            }
         } else if (old_room_data[i].type == "lab") {
             new_room_data.lab.push({
                 "roomid": old_room_data[i].roomid,
