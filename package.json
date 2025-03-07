@@ -10,6 +10,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "mathjs": "^13.1.1"
+    "dotenv": "^16.4.7",
+    "mathjs": "^13.1.1",
+    "mongoose": "^8.12.1"
   }
 }

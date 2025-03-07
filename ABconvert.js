@@ -33,6 +33,9 @@ for (let i = 0; i < old_timetable_data.length; i++) {
             }
         }
     }
+    for (let j = 0; j < old_timetable_data[i].teacher_subject_data.length; j++) {
+        delete old_timetable_data[i].teacher_subject_data[j]['_id'];
+    }
     if (skip) {
         continue
     }
@@ -42,7 +45,6 @@ for (let i = 0; i < old_timetable_data.length; i++) {
         if (skiplist.includes(currsub)) {
             continue;
         }
-        delete old_timetable_data[i].teacher_subject_data[j]['_id'];
 
         tttemp3.push({
             "subjectid": old_timetable_data[i].teacher_subject_data[j].subjectcode,
@@ -92,7 +94,7 @@ new_timetable_data = {
     "data": new_timetable_data
 }
 fs.writeFileSync('classsync.converted.tables.json', JSON.stringify(new_timetable_data, null, 4), 'utf8');
-// fs.writeFileSync('classsync.tables.json', JSON.stringify(old_timetable_data, null, 4), 'utf8');
+fs.writeFileSync('classsync.tables.json', JSON.stringify(old_timetable_data, null, 4), 'utf8');//removes _id from the data
 
 for (let i = 0; i < old_room_data.length; i++) {
     if (old_room_data[i].allowed_course.length > 0 &&
