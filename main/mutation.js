@@ -175,22 +175,8 @@ const mutate_Single_timetable = (
       for (let i = 0; i < room[room_type].length; i++) {
         if (showstats) process.stdout.write(room[room_type][i].roomid + " ");
 
-        let room_checker_forward =
-          "room" +
-          ";" +
-          temp_day +
-          ";" +
-          temp_slot +
-          ";" +
-          room[room_type][i].roomid;
-        let room_checker_forward_practical =
-          "room" +
-          ";" +
-          temp_day +
-          ";" +
-          (temp_slot + 1) +
-          ";" +
-          room[room_type][i].roomid;
+        let room_checker_forward = "room" + ";" + temp_day + ";" + temp_slot + ";" + room[room_type][i].roomid;
+        let room_checker_forward_practical = "room" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + room[room_type][i].roomid;
 
         if (
           !teacher_room_clash_map[room_checker_forward] &&
@@ -244,14 +230,7 @@ const mutate_Single_timetable = (
       for (let i = 0; i < room[room_type].length; i++) {
         if (showstats) process.stdout.write(room[room_type][i].roomid + " ");
 
-        let room_checker_forward =
-          "room" +
-          ";" +
-          temp_day +
-          ";" +
-          temp_slot +
-          ";" +
-          room[room_type][i].roomid;
+        let room_checker_forward = "room" + ";" + temp_day + ";" + temp_slot + ";" + room[room_type][i].roomid;
 
         if (!teacher_room_clash_map[room_checker_forward]) {
           // Assign the new slot to the theory class
@@ -267,9 +246,7 @@ const mutate_Single_timetable = (
             process.stdout.write(
               " || slot found at " + temp_day + " " + temp_slot,
             );
-            console.log(
-              "\n===================================================================",
-            );
+            console.log("\n===================================================================",);
           }
           return { timetable, teacher_room_clash_map };
         }
@@ -332,69 +309,31 @@ const mutate_timtable_set = (timetableset, room, teacher_room_clash_map) => {
         if (
           randomDay > 0 &&
           mutating_timetable[randomDay - 1][0] ==
-            mutating_timetable[randomDay][randomSlot]
+          mutating_timetable[randomDay][randomSlot]
         ) {
           randomDay = randomDay - 1;
         } else if (
           randomSlot < 9 &&
           mutating_timetable[randomDay][randomSlot + 1] ==
-            mutating_timetable[randomDay][randomSlot]
+          mutating_timetable[randomDay][randomSlot]
         ) {
         }
       }
 
-      let mutated_timetable = mutate_Single_timetable(
-        mutating_timetable,
-        randomDay,
-        randomSlot,
-        teacher_room_clash_map,
-        room,
-      );
+      let mutated_timetable = mutate_Single_timetable(mutating_timetable, randomDay, randomSlot, teacher_room_clash_map, room,);
       if (mutated_timetable == null) {
         continue;
       } else {
         timetableset["data"][gene_index]["timetable"] =
           mutated_timetable.timetable;
         teacher_room_clash_map = mutated_timetable.teacher_room_clash_map;
-        delete teacher_room_clash_map[
-          "teacher" +
-            ";" +
-            randomDay +
-            ";" +
-            randomSlot +
-            ";" +
-            mutated_timetable.timetable[randomDay][randomSlot].teacherid
-        ];
-        delete teacher_room_clash_map[
-          "room" +
-            ";" +
-            randomDay +
-            ";" +
-            randomSlot +
-            ";" +
-            mutated_timetable.timetable[randomDay][randomSlot].roomid
-        ];
+        delete teacher_room_clash_map["teacher" + ";" + randomDay + ";" + randomSlot + ";" + mutated_timetable.timetable[randomDay][randomSlot].teacherid];
+        delete teacher_room_clash_map["room" + ";" + randomDay + ";" + randomSlot + ";" + mutated_timetable.timetable[randomDay][randomSlot].roomid];
         if (
           mutated_timetable.timetable[randomDay][randomSlot].type == "practical"
         ) {
-          delete teacher_room_clash_map[
-            "teacher" +
-              ";" +
-              randomDay +
-              ";" +
-              (randomSlot + 1) +
-              ";" +
-              mutated_timetable.timetable[randomDay][randomSlot + 1].teacherid
-          ];
-          delete teacher_room_clash_map[
-            "room" +
-              ";" +
-              randomDay +
-              ";" +
-              (randomSlot + 1) +
-              ";" +
-              mutated_timetable.timetable[randomDay][randomSlot + 1].roomid
-          ];
+          delete teacher_room_clash_map["teacher" + ";" + randomDay + ";" + (randomSlot + 1) + ";" + mutated_timetable.timetable[randomDay][randomSlot + 1].teacherid];
+          delete teacher_room_clash_map["room" + ";" + randomDay + ";" + (randomSlot + 1) + ";" + mutated_timetable.timetable[randomDay][randomSlot + 1].roomid];
         }
       }
       number_of_slots_to_mutate--;
@@ -413,10 +352,7 @@ const mutate_Generation = (population, room) => {
     let genome_index;
     while (true) {
       genome_index = Math.floor(Math.random() * population.length);
-      if (
-        random_genome_index_map[genome_index] == undefined ||
-        random_genome_index_map[genome_index] == false
-      ) {
+      if (random_genome_index_map[genome_index] == undefined || random_genome_index_map[genome_index] == false) {
         random_genome_index_map[genome_index] = true;
         break;
       }
@@ -426,22 +362,8 @@ const mutate_Generation = (population, room) => {
     for (let i = 0; i < population[genome_index]["data"].length; i++) {
       for (let j = 0; j < 7; j++) {
         for (let k = 0; k < 10; k++) {
-          let room_checker =
-            "room" +
-            ";" +
-            j +
-            ";" +
-            k +
-            ";" +
-            population[genome_index]["data"][i]["timetable"][j][k].roomid;
-          let teacher_checker =
-            "teacher" +
-            ";" +
-            j +
-            ";" +
-            k +
-            ";" +
-            population[genome_index]["data"][i]["timetable"][j][k].teacherid;
+          let room_checker = "room" + ";" + j + ";" + k + ";" + population[genome_index]["data"][i]["timetable"][j][k].roomid;
+          let teacher_checker = "teacher" + ";" + j + ";" + k + ";" + population[genome_index]["data"][i]["timetable"][j][k].teacherid;
           teacher_room_clash_map[room_checker] = true;
           teacher_room_clash_map[teacher_checker] = true;
         }
@@ -461,13 +383,7 @@ const mutate_Generation = (population, room) => {
   }
   if (config.showstats) {
     for (let i = 0; i < population.length; i++) {
-      console.log(
-        "======== [ Validation : " +
-          validate_timetable(population[i]) +
-          " ] ========= [ Fitness : " +
-          population[i]["fitness"] +
-          " ] ==========",
-      );
+      console.log("======== [ Validation : " + validate_timetable(population[i]) + " ] ========= [ Fitness : " + population[i]["fitness"] + " ] ==========",);
     }
   }
   population = fitness_func_generation(population);

@@ -3,24 +3,14 @@ import initialize_gene from "./plot_timetables.js";
 import config from "./config.js";
 import { fitness_func_generation } from "./fitness_func.js";
 
-const generate_initialize_population = () => {
+const generate_initialize_population = (alltimetable_sent, room_sent) => {
   let population = [];
   let counter = 0;
   for (let i = 0; i < config.population_size; i++) {
     counter += 1;
     // console.log("counter: ", counter + " i: ", i);
-    let alltimetable = JSON.parse(
-      fs.readFileSync(
-        "../classsync_utils/classsync.converted.tables.json",
-        "utf8",
-      ),
-    ); //  timetable data with subjects and teachers already assigned
-    let room = JSON.parse(
-      fs.readFileSync(
-        "../classsync_utils/classsync.converted.rooms.json",
-        "utf8",
-      ),
-    ); //  (capacity is not implemented in this code right now)
+    let alltimetable = JSON.parse(JSON.stringify(alltimetable_sent)); //  timetable data with subjects and teachers already assigned
+    let room = JSON.parse(JSON.stringify((room_sent))); //  (capacity is not implemented in this code right now)
     let timetable = initialize_gene(alltimetable, room);
     if (timetable == null) {
       i--;
