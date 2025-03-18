@@ -52,7 +52,7 @@ const teacher_room_clash_map_generator = (population, showstats = false) => {
 export default teacher_room_clash_map_generator;
 
 // example usage:
-// let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
+// let population = JSON.parse(fs.readFileSync('./JSON/population_selected.json', 'utf8'));
 // population = teacher_room_clash_map_generator(population);
 // fs.writeFileSync('./JSONdata/teacher_room_clash_map.json', JSON.stringify(population, null, 4), 'utf8');
 

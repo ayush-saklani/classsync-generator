@@ -21,8 +21,8 @@ const check_acceptability = (population) => {
       }
     } else flag = false;
     if (flag == true) {
-      fs.writeFileSync("./classsync_utils/classsync.Win.perfect.tables.json", JSON.stringify(population, null, 4), "utf8",);
-      fs.writeFileSync("accepetedsol.json", JSON.stringify([population[i]], null, 4), "utf8",);
+      fs.writeFileSync("./JSON/classsync.Win.perfect.tables.json", JSON.stringify(population, null, 4), "utf8",);
+      fs.writeFileSync("./JSON/accepetedsol.json", JSON.stringify([population[i]], null, 4), "utf8",);
       return true;
     }
   }
@@ -30,14 +30,14 @@ const check_acceptability = (population) => {
 };
 const algorithm = (room) => {
   // step 1: generate initial population
-  let alltimetable = JSON.parse(fs.readFileSync("./classsync_utils/classsync.converted.tables.json", "utf8")); //  timetable data with subjects and teachers already assigned
+  let alltimetable = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8")); //  timetable data with subjects and teachers already assigned
   let population = generate_initialize_population(alltimetable, room);
 
   // step 1: read population from file (if exists) (alternate)
-  // let population = JSON.parse(fs.readFileSync('./classsync_utils/classsync.win.selected.tables.json', 'utf8'));
+  // let population = JSON.parse(fs.readFileSync('./JSON/classsync.win.selected.tables.json', 'utf8'));
 
   // Checkpoint: write population to file
-  fs.writeFileSync("./classsync_utils/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8",);
+  fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8",);
 
   // The loop is Technically infinite, and it will break when acceptable solution is found
   // but we have set a max_generation limit to avoid infinite computation of poor offsprings
@@ -50,7 +50,7 @@ const algorithm = (room) => {
 
     // checkpoint: write population to file per 10 iterations
     if (i % 10 == 0)
-      fs.writeFileSync("./classsync_utils/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8",);
+      fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8",);
 
     // step 4: calculate fitness score
     population = fitness_func_generation(population, room);
@@ -64,9 +64,9 @@ const algorithm = (room) => {
   }
   return null;
 };
-let room = JSON.parse(fs.readFileSync("./classsync_utils/classsync.converted.rooms.json", "utf8")); //  (capacity is not implemented in this code right now)
+let room = JSON.parse(fs.readFileSync("./JSON/classsync.converted.rooms.json", "utf8")); //  (capacity is not implemented in this code right now)
 let population = algorithm(room);
 
 if (population == null) console.log("No acceptable solution found");
-else fs.writeFileSync("./classsync_utils/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8",);
+else fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8",);
 

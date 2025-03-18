@@ -705,8 +705,8 @@ const crossoverGeneration = (population, room) => {
 export default crossoverGeneration;
 
 // Example usage:
-// let population = JSON.parse(fs.readFileSync('population_selected.json', 'utf8'));
-// let room = JSON.parse(fs.readFileSync('../classsync_utils/classsync.converted.rooms.json', 'utf8'));
+// let population = JSON.parse(fs.readFileSync('./JSON/population_selected.json', 'utf8'));
+// let room = JSON.parse(fs.readFileSync('../JSON/classsync.converted.rooms.json', 'utf8'));
 // population = crossoverGeneration(population, room);         // Apply elitism and roulette selection to the population
-// fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');     // Save the new population
+// fs.writeFileSync('./JSON/population_selected.json', JSON.stringify(population, null, 4), 'utf8');     // Save the new population
 

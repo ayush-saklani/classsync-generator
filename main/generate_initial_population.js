@@ -47,5 +47,5 @@ export default generate_initialize_population;
 
 // Example usage:
 // let population = generate_initialize_population();
-// fs.writeFileSync('population_selected.json', JSON.stringify(population, null, 4), 'utf8');
+// fs.writeFileSync('./JSON/population_selected.json', JSON.stringify(population, null, 4), 'utf8');
 
