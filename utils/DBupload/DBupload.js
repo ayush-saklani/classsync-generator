@@ -1,4 +1,5 @@
 import Tables from "./table.model.js";
+import Rooms from "./room.model.js";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import fs from "fs";
@@ -49,6 +50,41 @@ const save_timetable = async (wholeAssTimetableData) => {
     console.error("Error saving timetable:", error);
   }
 };
+const save_room = async (wholeAssRoomData) => {
+  try {
+    const { roomid, name, type, capacity, schedule, allowed_course } = wholeAssRoomData;
+
+    const roomExists = await Rooms.findOne({ roomid: roomid });
+    if (roomExists) {
+      await Rooms.findOneAndUpdate(
+        { roomid: roomid },
+        {
+          $set: {
+            name: name,
+            type: type,
+            capacity: capacity,
+            schedule: schedule,
+            allowed_course: allowed_course,
+          },
+        }
+      );
+      console.log(`======================== Updated ======================: ${roomid}`,);
+    } else {
+      await Rooms.create({
+        roomid: roomid,
+        name: name,
+        type: type,
+        capacity: capacity,
+        schedule: schedule,
+        allowed_course: allowed_course,
+      });
+      await newRoom.save();
+      console.log(`======================== Created ======================: ${roomid}`,);
+    }
+  } catch (error) {
+    console.error("Error saving room:", error);
+  }
+};
 let new_timetable_data = JSON.parse(
   fs.readFileSync("../classsync.backtonormal.tables.json", "utf8"),
 );
@@ -59,6 +95,15 @@ if (new_timetable_data.length != 0) {
   }
   mongoose.connection.close(); // Close connection after operation
 }
-
-export default save_timetable;
-
+let new_room_data = JSON.parse(
+  fs.readFileSync("./JSON/classsync.backtonormal.rooms.json", "utf8"),
+);
+if (new_room_data.length != 0) {
+  console.log("Room data found:", new_room_data.length);
+  await connectDB(); // Ensure DB connection
+  for (let i = 0; i < new_room_data.length; i++) {
+    await save_room(new_room_data[i]);
+  }
+  mongoose.connection.close(); // Close connection after operation
+}
+export {save_timetable, save_room};
