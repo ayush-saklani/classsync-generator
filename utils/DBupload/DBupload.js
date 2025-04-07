@@ -1,5 +1,6 @@
 import Tables from "./table.model.js";
 import Rooms from "./room.model.js";
+import Faculties from "./faculty.model.js";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import fs from "fs";
@@ -85,9 +86,32 @@ const save_room = async (wholeAssRoomData) => {
     console.error("Error saving room:", error);
   }
 };
-let new_timetable_data = JSON.parse(
-  fs.readFileSync("../classsync.backtonormal.tables.json", "utf8"),
-);
+const save_faculty = async (wholeAssFacultyData) => {
+  try {
+    const { teacherid, name, schedule } = wholeAssFacultyData;
+
+    const facultyExists = await Faculties.findOne({ teacherid: teacherid });
+    if (facultyExists) {
+      await Faculties.findOneAndUpdate(
+        { teacherid: teacherid },
+        { $set: { name: name, schedule: schedule } },
+      );
+      console.log(`======================== Updated ======================: ${teacherid}`,);
+    } else {
+      await Faculties.create({
+        teacherid: teacherid,
+        name: name,
+        schedule: schedule,
+      });
+      console.log(`======================== Created ======================: ${teacherid}`,);
+    }
+  } catch (error) {
+    console.error("Error saving faculty:", error);
+  }
+};
+
+
+let new_timetable_data = JSON.parse(fs.readFileSync("../classsync.backtonormal.tables.json", "utf8"),);
 if (new_timetable_data.length != 0) {
   await connectDB(); // Ensure DB connection
   for (let i = 0; i < new_timetable_data.length; i++) {
@@ -95,15 +119,23 @@ if (new_timetable_data.length != 0) {
   }
   mongoose.connection.close(); // Close connection after operation
 }
-let new_room_data = JSON.parse(
-  fs.readFileSync("./JSON/classsync.backtonormal.rooms.json", "utf8"),
-);
+
+let new_room_data = JSON.parse(fs.readFileSync("./JSON/classsync.backtonormal.rooms.json", "utf8"),);
 if (new_room_data.length != 0) {
   console.log("Room data found:", new_room_data.length);
-  await connectDB(); // Ensure DB connection
+  await connectDB();
   for (let i = 0; i < new_room_data.length; i++) {
     await save_room(new_room_data[i]);
   }
-  mongoose.connection.close(); // Close connection after operation
+  mongoose.connection.close();
 }
-export {save_timetable, save_room};
+
+let new_faculty_data = JSON.parse(fs.readFileSync("./JSON/classsync.backtonormal.faculties.json", "utf8"),);
+if (new_faculty_data.length != 0) {
+  console.log("Faculty data found:", new_faculty_data.length);
+  await connectDB();
+  for (let i = 0; i < new_faculty_data.length; i++) {
+    await save_faculty(new_faculty_data[i]);
+  }
+  mongoose.connection.close();
+}

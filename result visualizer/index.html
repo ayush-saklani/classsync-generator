@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timetable Visualizer</title>
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="shortcut icon" href="/assets/img/new-logo-white.svg" type="image/x-icon">
 </head>
 
@@ -21,11 +21,11 @@
         </form>
     </nav>
     <div id="timetable"></div>
-    <script src="/assets/js/index.js"></script>
+    <script src="./js/index.js"></script>
     <script>
         document.getElementById('script-selector').addEventListener('change', function (event) {
             const script = document.createElement('script');
-            script.src = `/assets/js/${event.target.value}.js`;
+            script.src = `./js/${event.target.value}.js`;
             script.id = 'dynamic-script';
             document.getElementById('script-selector').querySelectorAll('input').forEach(input => input.disabled = true);
             document.body.appendChild(script);
