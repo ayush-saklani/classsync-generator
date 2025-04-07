@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { room_schedule_sample } from './constant.js';
 
 let old_timetable_data = JSON.parse(fs.readFileSync('classsync.tables.json', 'utf8'));
 let old_room_data = JSON.parse(fs.readFileSync('classsync.rooms.json', 'utf8'));
@@ -122,7 +123,11 @@ for (let i = 0; i < old_room_data.length; i++) {
             console.log("Invalid room type: ", old_room_data[i].type);
         }
     }
+    // delete old_room_data[i]['_id'];
+    // delete old_room_data[i]['__v'];
+    // old_room_data[i]['schedule'] = room_schedule_sample;
 }
+// fs.writeFileSync('classsync.rooms.json', JSON.stringify(old_room_data, null, 4), 'utf8');//removes _id from the data
 fs.writeFileSync('classsync.converted.rooms.json', JSON.stringify(new_room_data, null, 4), 'utf8');
 
 
