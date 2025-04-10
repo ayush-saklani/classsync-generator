@@ -59,7 +59,7 @@ const mutate_Single_timetable = (
   let roomid = timetable[day][slot].roomid;
   let type = timetable[day][slot].type;
 
-  let room_type = type === "practical" ? "lab" : "room";
+  let room_type = type === "practical" ? "lab" : "room";/// this is not correct and several room types are there
   let min = config.min;
   let max = config.max;
   let temp_total_forward = day * 10 + slot;

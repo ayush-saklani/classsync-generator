@@ -70,7 +70,7 @@ const find_new_slot_or_room = (
         " ====================",
     );
   }
-  let room_type = type === "practical" ? "lab" : "room";
+  let room_type = type === "practical" ? "lab" : "room"; /// there are several types of rooms, so we need to check the type of room required
   let min = config.min,
     max = config.max;
   let temp_total_forward = day * 10 + slot;

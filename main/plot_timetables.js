@@ -92,44 +92,18 @@ let timetablestructure = [
 ];
 
 //  this function will validate the slot of timetable and flag out the room and teacher conflicts from that batch of timetables
-const validate_timetable_slot = (
-  j,
-  k,
-  teacherid,
-  roomid,
-  type,
-  teacher_overload_map,
-  room_overload_map,
-) => {
+const validate_timetable_slot = (j, k, teacherid, roomid, type, teacher_overload_map, room_overload_map,) => {
   if (type == "practical" && k % 2 !== 0) return false;
-  if (
-    teacher_overload_map["teacher" + ";" + j + ";" + k + ";" + teacherid] ||
-    room_overload_map["room" + ";" + j + ";" + k + ";" + roomid]
-  ) {
+  if (teacher_overload_map["teacher" + ";" + j + ";" + k + ";" + teacherid] || room_overload_map["room" + ";" + j + ";" + k + ";" + roomid]) {
     return false;
   }
-  if (
-    type == "practical" &&
-    (teacher_overload_map[
-      "teacher" + ";" + j + ";" + (k + 1) + ";" + teacherid
-    ] == true ||
-      room_overload_map["room" + ";" + j + ";" + (k + 1) + ";" + roomid] ==
-        true)
-  ) {
+  if (type == "practical" && (teacher_overload_map["teacher" + ";" + j + ";" + (k + 1) + ";" + teacherid] == true || room_overload_map["room" + ";" + j + ";" + (k + 1) + ";" + roomid] == true)) {
     return false;
   }
   return true;
 };
 // this function will prevent the teacher to teach in multiple slots in a day
-const validate_multiple_slot_in_a_day = (
-  timetable,
-  j,
-  k,
-  teacherid,
-  roomid,
-  subjectid,
-  type,
-) => {
+const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, roomid, subjectid, type,) => {
   // this function will prevent the teacher to teach in multiple slots in a day
   let map = {};
   // testing code for day reward for bus students
@@ -170,20 +144,13 @@ const validate_multiple_slot_in_a_day = (
     return true;
   }
 };
-const check_teacher_overload = (
-  j,
-  k,
-  teacherid,
-  type,
-  teacher_overload_map,
-) => {
+const check_teacher_overload = (j, k, teacherid, type, teacher_overload_map,) => {
   if (type == "practical" && k % 2 !== 0) return false;
   let curr_index = type == "practical" ? k + 2 : k + 1;
   let streak = type == "practical" ? 2 : 1;
   let local_stream = 0;
   while (curr_index <= 9) {
-    let teacher_overload_checker =
-      "teacher" + ";" + j + ";" + curr_index + ";" + teacherid;
+    let teacher_overload_checker = "teacher" + ";" + j + ";" + curr_index + ";" + teacherid;
     if (teacher_overload_map[teacher_overload_checker] == true) {
       local_stream++;
     } else {
@@ -196,8 +163,7 @@ const check_teacher_overload = (
 
   curr_index = k - 1;
   while (curr_index >= 0) {
-    let teacher_overload_checker =
-      "teacher" + ";" + j + ";" + curr_index + ";" + teacherid;
+    let teacher_overload_checker = "teacher" + ";" + j + ";" + curr_index + ";" + teacherid;
     if (teacher_overload_map[teacher_overload_checker] == true) {
       local_stream++;
     } else {
@@ -231,13 +197,7 @@ const initialize_gene = (alltimetable, room) => {
       let temp_subject_index = Math.floor(Math.random() * subjects.length); // randomly choose subject
       temp_subject_index = 0;
 
-      let room_type = "room";
-      if (subjects[temp_subject_index].type == "theory") {
-        if (alltimetable["data"][i].joint) room_type = "hall";
-        else room_type = "room";
-      } else if (subjects[temp_subject_index].type == "practical")
-        room_type = "lab";
-      else room_type = "room";
+      let room_type = subjects[temp_subject_index].room_type; // get the room type from subject
 
       let temp_room_index = Math.floor(Math.random() * room[room_type].length); // randomly choose room
 
@@ -248,10 +208,7 @@ const initialize_gene = (alltimetable, room) => {
           temp_day = Math.floor(temp / 10); // get the day from slot
           temp_slot = Math.floor(temp % 10); // get the slot from slot
 
-          if (
-            subjects[temp_subject_index].type == "practical" &&
-            temp_slot % 2 != 0
-          ) {
+          if (subjects[temp_subject_index].type == "practical" && temp_slot % 2 != 0) {
             temp_slot == 9 ? temp_slot-- : temp_slot++; // if slot is odd then make it even
             temp = temp_day * 10 + temp_slot;
           }
@@ -292,76 +249,28 @@ const initialize_gene = (alltimetable, room) => {
             ) {
               // if validation in a day is true then assign the subject to that slot (this will prevent the teacher to teach in multiple slots in a day)
               if (
-                validate_multiple_slot_in_a_day(
-                  timetable,
-                  temp_day,
-                  temp_slot,
-                  subjects[temp_subject_index].teacherid,
-                  room[room_type][temp_room_index].roomid,
-                  subjects[temp_subject_index].subjectid,
-                  subjects[temp_subject_index].type,
-                )
+                validate_multiple_slot_in_a_day(timetable, temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[room_type][temp_room_index].roomid, subjects[temp_subject_index].subjectid, subjects[temp_subject_index].type,)
               ) {
-                timetable[temp_day][temp_slot].teacherid =
-                  subjects[temp_subject_index].teacherid;
-                timetable[temp_day][temp_slot].roomid =
-                  room[room_type][temp_room_index].roomid;
-                timetable[temp_day][temp_slot].subjectid =
-                  subjects[temp_subject_index].subjectid;
-                timetable[temp_day][temp_slot].type =
-                  subjects[temp_subject_index].type;
+                timetable[temp_day][temp_slot].teacherid = subjects[temp_subject_index].teacherid;
+                timetable[temp_day][temp_slot].roomid = room[room_type][temp_room_index].roomid;
+                timetable[temp_day][temp_slot].subjectid = subjects[temp_subject_index].subjectid;
+                timetable[temp_day][temp_slot].type = subjects[temp_subject_index].type;
                 slotmap[temp_day * 10 + temp_slot] = true; // mark the slot as assigned
-                teacher_overload_map[
-                  "teacher" +
-                    ";" +
-                    temp_day +
-                    ";" +
-                    temp_slot +
-                    ";" +
-                    timetable[temp_day][temp_slot].teacherid
-                ] = true;
-                room_overload_map[
-                  "room" +
-                    ";" +
-                    temp_day +
-                    ";" +
-                    temp_slot +
-                    ";" +
-                    room[room_type][temp_room_index].roomid
-                ] = true;
+                teacher_overload_map["teacher" + ";" + temp_day + ";" + temp_slot + ";" + timetable[temp_day][temp_slot].teacherid] = true;
+                room_overload_map["room" + ";" + temp_day + ";" + temp_slot + ";" + room[room_type][temp_room_index].roomid] = true;
 
                 // if subject is practical then assign the next slot to the teacher and room as well (this is for practical subjects)
                 // the practical subjects are assigned in even slots only because the odd slots are best suited as they fit better
                 // and practical subjects are assigned first so that the clashes can be minimized
                 if (subjects[temp_subject_index].type == "practical") {
-                  timetable[temp_day][temp_slot + 1].teacherid =
-                    subjects[temp_subject_index].teacherid;
-                  timetable[temp_day][temp_slot + 1].roomid =
-                    room[room_type][temp_room_index].roomid;
-                  timetable[temp_day][temp_slot + 1].subjectid =
-                    subjects[temp_subject_index].subjectid;
-                  timetable[temp_day][temp_slot + 1].type =
-                    subjects[temp_subject_index].type;
+                  timetable[temp_day][temp_slot + 1].teacherid = subjects[temp_subject_index].teacherid;
+                  timetable[temp_day][temp_slot + 1].roomid = room[room_type][temp_room_index].roomid;
+                  timetable[temp_day][temp_slot + 1].subjectid = subjects[temp_subject_index].subjectid;
+                  timetable[temp_day][temp_slot + 1].type = subjects[temp_subject_index].type;
                   subjects[temp_subject_index].weekly_hrs--;
                   slotmap[temp_day * 10 + (temp_slot + 1)] = true; // mark the slot as assigned
-                  teacher_overload_map[
-                    "teacher" +
-                      ";" +
-                      temp_day +
-                      ";" +
-                      (temp_slot + 1) +
-                      ";" +
-                      timetable[temp_day][temp_slot].teacherid
-                  ] = true;
-                  room_overload_map[
-                    "room" +
-                      ";" +
-                      temp_day +
-                      ";" +
-                      (temp_slot + 1) +
-                      ";" +
-                      room[room_type][temp_room_index].roomid
-                  ] = true;
+                  teacher_overload_map["teacher" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + timetable[temp_day][temp_slot].teacherid] = true;
+                  room_overload_map["room" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + room[room_type][temp_room_index].roomid] = true;
                 }
 
                 subjects[temp_subject_index].weekly_hrs--;
@@ -375,33 +284,21 @@ const initialize_gene = (alltimetable, room) => {
               } else {
                 flag++;
                 if (flag > 30000) {
-                  console.log(
-                    "Too many conflicts for section " +
-                      i +
-                      ". Resetting timetable.",
-                  );
+                  console.log("Too many conflicts for section " + i + ". Resetting timetable.",);
                   return null;
                 }
               }
             } else {
               flag++;
               if (flag > 30000) {
-                console.log(
-                  "Too many conflicts for section " +
-                    i +
-                    ". Resetting timetable.",
-                );
+                console.log("Too many conflicts for section " + i + ". Resetting timetable.",);
                 return null;
               }
             }
           } else {
             flag++;
             if (flag > 30000) {
-              console.log(
-                "Too many conflicts for section " +
-                  i +
-                  ". Resetting timetable.",
-              );
+              console.log("Too many conflicts for section " + i + ". Resetting timetable.",);
               return null;
             }
           }
@@ -413,13 +310,7 @@ const initialize_gene = (alltimetable, room) => {
   }
   alltimetable = fitness_func(alltimetable);
   if (config.showstats) {
-    console.log(
-      "======== [ Validation : " +
-        validate_timetable_set(alltimetable) +
-        " ] ========= [ Fitness : " +
-        alltimetable["fitness"] +
-        " ] ==========",
-    );
+    console.log("======== [ Validation : " + validate_timetable_set(alltimetable) + " ] ========= [ Fitness : " + alltimetable["fitness"] + " ] ==========",);
   }
 
   return alltimetable;
