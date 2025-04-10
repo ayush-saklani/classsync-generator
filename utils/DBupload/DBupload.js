@@ -111,7 +111,7 @@ const save_faculty = async (wholeAssFacultyData) => {
 };
 
 
-let new_timetable_data = JSON.parse(fs.readFileSync("../classsync.backtonormal.tables.json", "utf8"),);
+let new_timetable_data = JSON.parse(fs.readFileSync("./JSON/classsync.backtonormal.tables.json", "utf8"),);
 if (new_timetable_data.length != 0) {
   await connectDB(); // Ensure DB connection
   for (let i = 0; i < new_timetable_data.length; i++) {
