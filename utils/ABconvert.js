@@ -1,17 +1,6 @@
 import fs from 'fs';
 import { room_schedule_sample } from './constant.js';
 
-let old_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.tables.json', 'utf8'));
-let old_room_data = JSON.parse(fs.readFileSync('./JSON/classsync.rooms.json', 'utf8'));
-let old_faculty_data = JSON.parse(fs.readFileSync('./JSON/classsync.faculties.json', 'utf8'));
-
-let new_timetable_data = [];
-let new_faculty_data = {};
-let new_room_data = {
-    "room": [],
-    "hall": [],
-    "lab": []
-};
 let mergemap = {
     "5": {
         "A1": ["A2"],
@@ -19,6 +8,10 @@ let mergemap = {
         "C1": ["C2"],
     }
 }
+
+
+let old_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.tables.json', 'utf8'));
+let new_timetable_data = [];
 let spare_teacher_id = 2119666;
 for (let i = 0; i < old_timetable_data.length; i++) {
     let tttemp3 = [];
@@ -53,7 +46,8 @@ for (let i = 0; i < old_timetable_data.length; i++) {
             "weekly_hrs": old_timetable_data[i].teacher_subject_data[j].theory_practical == "PRACTICAL" ? 2 : old_timetable_data[i].teacher_subject_data[j].weekly_hrs,
             // 3hrs for practicals not allowed
             // it can be changed to 4 if needed
-            "type": old_timetable_data[i].teacher_subject_data[j].theory_practical == "PRACTICAL" ? "practical" : "theory"
+            "type": old_timetable_data[i].teacher_subject_data[j].theory_practical == "PRACTICAL" ? "practical" : "theory",
+            "room_type": old_timetable_data[i].teacher_subject_data[j].room_type,
         });
     }
     let tttemp = [
@@ -97,30 +91,23 @@ new_timetable_data = {
 fs.writeFileSync('./JSON/classsync.converted.tables.json', JSON.stringify(new_timetable_data, null, 4), 'utf8');
 fs.writeFileSync('./JSON/classsync.tables.json', JSON.stringify(old_timetable_data, null, 4), 'utf8');//removes _id from the data
 
+
+
+let old_room_data = JSON.parse(fs.readFileSync('./JSON/classsync.rooms.json', 'utf8'));
+let new_room_data = {};
 for (let i = 0; i < old_room_data.length; i++) {
     if (old_room_data[i].allowed_course.length > 0 &&
         old_room_data[i].allowed_course.includes("btechcse") &&
         old_room_data[i].roomid != "0"
     ) {
-        if (old_room_data[i].type == "class") {
-            if (old_room_data[i].capacity > 1) {
-                new_room_data.hall.push({
-                    "roomid": old_room_data[i].roomid,
-                    "capacity": old_room_data[i].capacity
-                });
-            } else {
-                new_room_data.room.push({
-                    "roomid": old_room_data[i].roomid,
-                    "capacity": old_room_data[i].capacity
-                });
-            }
-        } else if (old_room_data[i].type == "lab") {
-            new_room_data.lab.push({
+        if (old_room_data[i].type) {
+            new_room_data[old_room_data[i].type] = new_room_data[old_room_data[i].type] || [];
+            new_room_data[old_room_data[i].type].push({
                 "roomid": old_room_data[i].roomid,
                 "capacity": old_room_data[i].capacity
             });
         } else {
-            console.log("Invalid room type: ", old_room_data[i].type);
+            console.log("Invalid room type: ");
         }
     }
     // delete old_room_data[i]['_id'];
@@ -131,8 +118,11 @@ for (let i = 0; i < old_room_data.length; i++) {
 fs.writeFileSync('./JSON/classsync.converted.rooms.json', JSON.stringify(new_room_data, null, 4), 'utf8');
 
 
+
+let old_faculty_data = JSON.parse(fs.readFileSync('./JSON/classsync.faculties.json', 'utf8'));
+let new_faculty_data = {};
 for (let i = 0; i < old_faculty_data.length; i++) {
-    if(old_faculty_data[i].teacherid == 0) {
+    if (old_faculty_data[i].teacherid == 0) {
         continue;
     }
     new_faculty_data[old_faculty_data[i].teacherid] = {
