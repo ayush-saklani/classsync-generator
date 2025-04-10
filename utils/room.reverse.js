@@ -16,11 +16,11 @@ const timeSlots = [
 ];
 
 let old_room_data = JSON.parse(
-  fs.readFileSync("../JSON/classsync.rooms.json", "utf8"),
+  fs.readFileSync("./JSON/classsync.rooms.json", "utf8"),
 );
 // genetic to classsync table
 let genetic_reverted_timetable = JSON.parse(
-  fs.readFileSync("../JSON/classsync.backtonormal.tables.json", "utf8"),
+  fs.readFileSync("./JSON/classsync.backtonormal.tables.json", "utf8"),
 );
 
 // code to create room data for classsync from genetic algorithm output jsons
@@ -86,7 +86,7 @@ for (let i = 0; i < genetic_reverted_timetable.length; i++) {
 
 // Save the converted room data to a JSON file
 fs.writeFileSync(
-  "../JSON/classsync.backtonormal.rooms.json",
+  "./JSON/classsync.backtonormal.rooms.json",
   JSON.stringify(new_converted_room_data, null, 2),
   "utf8",
 );

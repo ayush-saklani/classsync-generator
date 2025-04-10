@@ -1,9 +1,9 @@
 import fs from 'fs';
 import { room_schedule_sample } from './constant.js';
 
-let old_timetable_data = JSON.parse(fs.readFileSync('classsync.tables.json', 'utf8'));
-let old_room_data = JSON.parse(fs.readFileSync('classsync.rooms.json', 'utf8'));
-let old_faculty_data = JSON.parse(fs.readFileSync('classsync.faculties.json', 'utf8'));
+let old_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.tables.json', 'utf8'));
+let old_room_data = JSON.parse(fs.readFileSync('./JSON/classsync.rooms.json', 'utf8'));
+let old_faculty_data = JSON.parse(fs.readFileSync('./JSON/classsync.faculties.json', 'utf8'));
 
 let new_timetable_data = [];
 let new_faculty_data = {};
@@ -94,8 +94,8 @@ new_timetable_data = {
     "fitness": 0,
     "data": new_timetable_data
 }
-fs.writeFileSync('classsync.converted.tables.json', JSON.stringify(new_timetable_data, null, 4), 'utf8');
-fs.writeFileSync('classsync.tables.json', JSON.stringify(old_timetable_data, null, 4), 'utf8');//removes _id from the data
+fs.writeFileSync('./JSON/classsync.converted.tables.json', JSON.stringify(new_timetable_data, null, 4), 'utf8');
+fs.writeFileSync('./JSON/classsync.tables.json', JSON.stringify(old_timetable_data, null, 4), 'utf8');//removes _id from the data
 
 for (let i = 0; i < old_room_data.length; i++) {
     if (old_room_data[i].allowed_course.length > 0 &&
@@ -128,21 +128,24 @@ for (let i = 0; i < old_room_data.length; i++) {
     // old_room_data[i]['schedule'] = room_schedule_sample;
 }
 // fs.writeFileSync('classsync.rooms.json', JSON.stringify(old_room_data, null, 4), 'utf8');//removes _id from the data
-fs.writeFileSync('classsync.converted.rooms.json', JSON.stringify(new_room_data, null, 4), 'utf8');
+fs.writeFileSync('./JSON/classsync.converted.rooms.json', JSON.stringify(new_room_data, null, 4), 'utf8');
 
 
 for (let i = 0; i < old_faculty_data.length; i++) {
+    if(old_faculty_data[i].teacherid == 0) {
+        continue;
+    }
     new_faculty_data[old_faculty_data[i].teacherid] = {
         "teacherid": old_faculty_data[i].teacherid,
         "name": old_faculty_data[i].name,
     };
 }
-fs.writeFileSync('classsync.converted.faculties.json', JSON.stringify(new_faculty_data, null, 4), 'utf8');
+fs.writeFileSync('./JSON/classsync.converted.faculties.json', JSON.stringify(new_faculty_data, null, 4), 'utf8');
 
 // This takes the teacher allocated timetables, faculty data, and room data from the mongodb database in the following files:
 // classsync.tables.json, classsync.faculties.json, classsync.rooms.json
 // Then it converts the data into the format required by the genetic algorithm.
 // The converted timetable is saved in the following files:
-// classsync.converted.tables.json, classsync.converted.faculties.json, classsync.converted.rooms.json
+// ./JSON/classsync.converted.tables.json, ./JSON/classsync.converted.faculties.json, ./JSON/classsync.converted.rooms.json
 // The converted timetable can be used as an input to the genetic algorithm.
 // The genetic algorithm is implemented in ABconvert.js 

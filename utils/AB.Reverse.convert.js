@@ -1,11 +1,11 @@
 import fs from 'fs';
 import { schedule_sample } from './constant.js';
 
-let new_timetable_data = JSON.parse(fs.readFileSync('classsync.converted.tables.json', 'utf8'));
-let old_timetable_data = JSON.parse(fs.readFileSync('classsync.tables.json', 'utf8'));
+let new_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.converted.tables.json', 'utf8'));
+let old_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.tables.json', 'utf8'));
 new_timetable_data = new_timetable_data.data;
-let room_data = JSON.parse(fs.readFileSync('classsync.converted.rooms.json', 'utf8'));
-let faculty_data = JSON.parse(fs.readFileSync('classsync.converted.faculties.json', 'utf8'));
+let room_data = JSON.parse(fs.readFileSync('./JSON/classsync.converted.rooms.json', 'utf8'));
+let faculty_data = JSON.parse(fs.readFileSync('./JSON/classsync.converted.faculties.json', 'utf8'));
 
 let new_converted_data = [];
 const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
@@ -45,14 +45,14 @@ for (let i = 0; i < new_timetable_data.length; i++) {
         }
     }
 }
-fs.writeFileSync('classsync.backtonormal.tables.json', JSON.stringify(new_converted_data, null, 4), 'utf8');
+fs.writeFileSync('./JSON/classsync.backtonormal.tables.json', JSON.stringify(new_converted_data, null, 4), 'utf8');
 
 // This does exactly the opposite of what ABconvert.js does or what is written below lol.
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 // This takes the teacher allocated timetables, faculty data, and room data from the mongodb database in the following files:
-// classsync.tables.json, classsync.faculties.json, classsync.rooms.json
+// ./JSON/classsync.tables.json, ./JSON/classsync.faculties.json, ./JSON/classsync.rooms.json
 // Then it converts the data into the format required by the genetic algorithm.
 // The converted timetable is saved in the following files:
-// classsync.converted.tables.json, classsync.converted.faculties.json, classsync.converted.rooms.json
+// ./JSON/classsync.converted.tables.json, ./JSON/classsync.converted.faculties.json, ./JSON/classsync.converted.rooms.json
 // The converted timetable can be used as an input to the genetic algorithm.
 // The genetic algorithm is implemented in ABconvert.js 
