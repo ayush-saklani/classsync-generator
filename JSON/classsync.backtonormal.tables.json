@@ -11,18 +11,18 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6120",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -36,13 +36,13 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -51,8 +51,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 }
             },
@@ -63,8 +63,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6120",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -78,8 +78,8 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -103,20 +103,20 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 }
             },
             "wed": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -150,13 +150,13 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 }
             },
@@ -187,8 +187,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -207,8 +207,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 }
             },
@@ -219,18 +219,18 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -244,23 +244,23 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 }
             },
@@ -584,18 +584,18 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6120",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -624,8 +624,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 }
             },
@@ -636,8 +636,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6120",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -651,8 +651,8 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -676,20 +676,20 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 }
             },
             "wed": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -723,13 +723,13 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 }
             },
@@ -760,8 +760,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -780,8 +780,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 }
             },
@@ -792,8 +792,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -1187,18 +1187,18 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 }
             },
@@ -1209,8 +1209,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -1239,35 +1239,35 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 }
             },
             "wed": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -1276,18 +1276,18 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -1296,20 +1296,20 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 }
             },
             "thu": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -1353,8 +1353,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 }
             },
@@ -1365,8 +1365,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -1380,18 +1380,18 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -1400,8 +1400,8 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6120",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -1760,18 +1760,18 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 }
             },
@@ -1782,8 +1782,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -1812,8 +1812,8 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -1839,8 +1839,8 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -1849,18 +1849,18 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -1881,8 +1881,8 @@
             },
             "thu": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -1926,8 +1926,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 }
             },
@@ -1938,8 +1938,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -1963,8 +1963,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -1973,8 +1973,8 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6120",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -2308,8 +2308,8 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6120",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -2318,8 +2318,8 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -2338,8 +2338,8 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -2355,18 +2355,18 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -2375,28 +2375,28 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6120",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 }
             },
@@ -2422,18 +2422,18 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -2469,8 +2469,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -2484,8 +2484,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -2511,23 +2511,23 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6120",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -2546,13 +2546,13 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 }
             },
@@ -2881,8 +2881,8 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6120",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -2891,8 +2891,8 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -2911,8 +2911,8 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -2928,18 +2928,18 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6121",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -2948,18 +2948,18 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6120",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -3005,8 +3005,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2041",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -3042,8 +3042,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2031",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -3057,8 +3057,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3041",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -3084,8 +3084,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6120",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -3099,8 +3099,8 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3031",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -3444,23 +3444,23 @@
         "schedule": {
             "mon": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -3474,13 +3474,13 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -3496,18 +3496,18 @@
             },
             "tue": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -3521,8 +3521,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -3531,8 +3531,8 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -3541,15 +3541,15 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 }
             },
             "wed": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -3558,18 +3558,18 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -3593,8 +3593,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 }
             },
@@ -3625,13 +3625,13 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -3652,8 +3652,8 @@
             },
             "fri": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -3682,8 +3682,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -3692,8 +3692,8 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -4032,18 +4032,18 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -4052,18 +4052,18 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 }
             },
@@ -4074,18 +4074,18 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -4094,8 +4094,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -4104,8 +4104,8 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -4141,13 +4141,13 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -4178,18 +4178,18 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -4198,8 +4198,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -4208,8 +4208,8 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -4235,8 +4235,8 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -4245,8 +4245,8 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -4255,8 +4255,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -4265,8 +4265,8 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -4590,13 +4590,13 @@
         "schedule": {
             "mon": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -4625,25 +4625,25 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 }
             },
             "tue": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -4704,8 +4704,8 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -4714,23 +4714,23 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -4746,13 +4746,13 @@
             },
             "thu": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -4761,8 +4761,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -4771,8 +4771,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -4781,13 +4781,13 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -4803,8 +4803,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -4818,23 +4818,23 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -5173,8 +5173,8 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -5183,23 +5183,23 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -5235,8 +5235,8 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -5245,45 +5245,45 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 }
             },
             "wed": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -5297,8 +5297,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -5307,8 +5307,8 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -5319,13 +5319,13 @@
             },
             "thu": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -5339,8 +5339,8 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -5364,15 +5364,15 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 }
             },
             "fri": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -5411,8 +5411,8 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -5741,8 +5741,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -5761,8 +5761,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -5776,8 +5776,8 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -5793,13 +5793,13 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -5818,18 +5818,18 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -5840,18 +5840,18 @@
             },
             "wed": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -5865,18 +5865,18 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -5892,13 +5892,13 @@
             },
             "thu": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -5912,8 +5912,8 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -5932,25 +5932,25 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 }
             },
             "fri": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -5979,8 +5979,8 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -6319,8 +6319,8 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -6329,18 +6329,18 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -6376,13 +6376,13 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -6391,13 +6391,13 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -6413,13 +6413,13 @@
             },
             "wed": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -6443,13 +6443,13 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -6458,8 +6458,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 }
             },
@@ -6475,8 +6475,8 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -6485,18 +6485,18 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -6505,8 +6505,8 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -6527,13 +6527,13 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -6552,8 +6552,8 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -6562,8 +6562,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 }
             },
@@ -6882,13 +6882,13 @@
         "schedule": {
             "mon": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -6902,18 +6902,18 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -6944,18 +6944,18 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -6964,23 +6964,23 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 }
             },
@@ -6991,8 +6991,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -7021,8 +7021,8 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -7038,8 +7038,8 @@
             },
             "thu": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -7053,8 +7053,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -7068,8 +7068,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -7078,13 +7078,13 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 }
             },
@@ -7095,8 +7095,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -7110,8 +7110,8 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -7125,8 +7125,8 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -7455,8 +7455,8 @@
         "schedule": {
             "mon": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -7465,13 +7465,13 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -7480,8 +7480,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -7495,8 +7495,8 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -7507,8 +7507,8 @@
             },
             "tue": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -7522,8 +7522,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -7537,8 +7537,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -7569,13 +7569,13 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -7594,13 +7594,13 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -7611,18 +7611,18 @@
             },
             "thu": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -7651,13 +7651,13 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 }
             },
@@ -7688,28 +7688,28 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 }
             },
@@ -8028,8 +8028,8 @@
         "schedule": {
             "mon": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -8043,18 +8043,18 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -8068,13 +8068,13 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 }
             },
@@ -8085,8 +8085,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -8100,13 +8100,13 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -8125,8 +8125,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 }
             },
@@ -8137,18 +8137,18 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -8162,8 +8162,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -8194,13 +8194,13 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -8209,8 +8209,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -8219,8 +8219,8 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -8246,23 +8246,23 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -8616,8 +8616,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -8631,13 +8631,13 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -8646,20 +8646,20 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 }
             },
             "tue": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -8683,18 +8683,18 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -8705,8 +8705,8 @@
             },
             "wed": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -8725,18 +8725,18 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -8745,13 +8745,13 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 }
             },
@@ -8767,8 +8767,8 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -8792,8 +8792,8 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -8802,8 +8802,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 }
             },
@@ -8819,13 +8819,13 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -8834,13 +8834,13 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -9174,13 +9174,13 @@
         "schedule": {
             "mon": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -9204,13 +9204,13 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -9219,20 +9219,20 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 }
             },
             "tue": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -9256,8 +9256,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -9293,13 +9293,13 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -9308,8 +9308,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -9318,30 +9318,30 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 }
             },
             "thu": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -9350,8 +9350,8 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -9360,13 +9360,13 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -9392,13 +9392,13 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -9427,8 +9427,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 }
             },
@@ -9747,13 +9747,13 @@
         "schedule": {
             "mon": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -9762,8 +9762,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -9772,23 +9772,23 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -9799,8 +9799,8 @@
             },
             "tue": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -9834,18 +9834,18 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 }
             },
@@ -9866,8 +9866,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -9876,8 +9876,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -9886,8 +9886,8 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -9896,8 +9896,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 }
             },
@@ -9913,13 +9913,13 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -9955,13 +9955,13 @@
             },
             "fri": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -9985,8 +9985,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -9995,13 +9995,13 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 }
             },
@@ -10345,8 +10345,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -10360,13 +10360,13 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 }
             },
@@ -10392,8 +10392,8 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -10402,8 +10402,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -10444,33 +10444,33 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 }
             },
@@ -10481,8 +10481,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -10491,8 +10491,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -10506,18 +10506,18 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -10528,8 +10528,8 @@
             },
             "fri": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -10538,23 +10538,23 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -10573,8 +10573,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 }
             },
@@ -10903,18 +10903,18 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4071",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -10923,13 +10923,13 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4085",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -10955,8 +10955,8 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -10970,13 +10970,13 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -10990,8 +10990,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 }
             },
@@ -11002,8 +11002,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -11017,8 +11017,8 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -11032,25 +11032,25 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2101",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 }
             },
             "thu": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -11074,8 +11074,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -11089,20 +11089,20 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 }
             },
             "fri": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -11116,8 +11116,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -11136,13 +11136,13 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -11476,18 +11476,18 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "01-02": {
@@ -11511,20 +11511,20 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 }
             },
             "tue": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -11533,8 +11533,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -11548,8 +11548,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -11563,8 +11563,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 }
             },
@@ -11585,8 +11585,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -11595,8 +11595,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -11610,13 +11610,13 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 }
             },
@@ -11627,8 +11627,8 @@
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -11647,13 +11647,13 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -11667,8 +11667,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2089",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 }
             },
@@ -11684,8 +11684,8 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -11694,13 +11694,13 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -11709,13 +11709,13 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -12039,18 +12039,18 @@
         "schedule": {
             "mon": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -12069,13 +12069,13 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -12084,8 +12084,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6122",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 }
             },
@@ -12101,8 +12101,8 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -12111,23 +12111,23 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "04-05": {
@@ -12153,8 +12153,8 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "11-12": {
@@ -12163,13 +12163,13 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -12195,8 +12195,8 @@
             },
             "thu": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "09-10": {
@@ -12205,23 +12205,23 @@
                     "slotdata": ""
                 },
                 "10-11": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -12262,8 +12262,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -12272,8 +12272,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -12287,8 +12287,8 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -12627,8 +12627,8 @@
                     "slotdata": ""
                 },
                 "11-12": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "12-01": {
@@ -12637,8 +12637,8 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -12657,8 +12657,8 @@
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2087",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 }
             },
@@ -12689,23 +12689,23 @@
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "XCS501Q",
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2071",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1001",
+                    "subjectcode": "TCS509",
                     "slotdata": ""
                 },
                 "05-06": {
@@ -12716,13 +12716,13 @@
             },
             "wed": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2069",
+                    "subjectcode": "PMA502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -12746,8 +12746,8 @@
                     "slotdata": ""
                 },
                 "02-03": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "XCS501V",
                     "slotdata": ""
                 },
                 "03-04": {
@@ -12768,13 +12768,13 @@
             },
             "thu": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4069",
+                    "subjectcode": "XCS510",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -12788,13 +12788,13 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "6123",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2085",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -12803,30 +12803,30 @@
                     "slotdata": ""
                 },
                 "03-04": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2036",
+                    "subjectcode": "TCS502",
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 },
                 "05-06": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "3101",
+                    "subjectcode": "PCS502",
                     "slotdata": ""
                 }
             },
             "fri": {
                 "08-09": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2075",
+                    "subjectcode": "TCS503",
                     "slotdata": ""
                 },
                 "09-10": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "2033",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "10-11": {
@@ -12840,13 +12840,13 @@
                     "slotdata": ""
                 },
                 "12-01": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "01-02": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "4087",
+                    "subjectcode": "PCS503",
                     "slotdata": ""
                 },
                 "02-03": {
@@ -12860,8 +12860,8 @@
                     "slotdata": ""
                 },
                 "04-05": {
-                    "class_id": "",
-                    "subjectcode": "",
+                    "class_id": "1003",
+                    "subjectcode": "TMA502",
                     "slotdata": ""
                 },
                 "05-06": {

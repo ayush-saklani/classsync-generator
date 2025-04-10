@@ -38492,25 +38492,31 @@
     "schedule": {
       "mon": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "TCS502"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "11-12": {
           "course": "",
@@ -38541,11 +38547,13 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "04-05": {
           "course": "",
@@ -38555,27 +38563,33 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         }
       },
       "tue": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "TMA502"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118571",
+          "subjectcode": "XCS501Q"
         },
         "10-11": {
           "course": "",
@@ -38592,32 +38606,40 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "TCS503"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118600",
+          "subjectcode": "XCS501Q"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118521",
+          "subjectcode": "TCS503"
         },
         "04-05": {
           "course": "",
@@ -38636,18 +38658,22 @@
       },
       "wed": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "10-11": {
           "course": "",
@@ -38657,25 +38683,31 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "TCS503"
         },
         "02-03": {
           "course": "",
@@ -38685,55 +38717,69 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "TMA502"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         }
       },
       "thu": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118600",
+          "subjectcode": "XCS501Q"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         },
         "12-01": {
           "course": "",
@@ -38757,11 +38803,13 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "TCS503"
         },
         "04-05": {
           "course": "",
@@ -38771,20 +38819,24 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         }
       },
       "fri": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118520",
+          "subjectcode": "TCS503"
         },
         "09-10": {
           "course": "",
@@ -38801,11 +38853,13 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "12-01": {
           "course": "",
@@ -38829,25 +38883,31 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         }
       },
       "sat": {
@@ -39009,18 +39069,22 @@
     "schedule": {
       "mon": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "10-11": {
           "course": "",
@@ -39030,53 +39094,67 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118600",
+          "subjectcode": "XCS501Q"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "TMA502"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118536",
+          "subjectcode": "TCS509"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         }
       },
       "tue": {
@@ -39088,11 +39166,13 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "TCS503"
         },
         "10-11": {
           "course": "",
@@ -39123,18 +39203,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118536",
+          "subjectcode": "TCS509"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "04-05": {
           "course": "",
@@ -39153,11 +39237,13 @@
       },
       "wed": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "09-10": {
           "course": "",
@@ -39188,18 +39274,22 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "03-04": {
           "course": "",
@@ -39209,41 +39299,51 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         }
       },
       "thu": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118531",
+          "subjectcode": "TCS509"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "11-12": {
           "course": "",
@@ -39260,11 +39360,13 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "02-03": {
           "course": "",
@@ -39281,11 +39383,13 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "05-06": {
           "course": "",
@@ -39297,25 +39401,31 @@
       },
       "fri": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118568",
+          "subjectcode": "XCS501Q"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "11-12": {
           "course": "",
@@ -39325,11 +39435,13 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         },
         "01-02": {
           "course": "",
@@ -39339,25 +39451,31 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118576",
+          "subjectcode": "TCS503"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "TCS503"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "05-06": {
           "course": "",
@@ -39540,18 +39658,22 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "TCS503"
         },
         "12-01": {
           "course": "",
@@ -39561,11 +39683,13 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         },
         "02-03": {
           "course": "",
@@ -39575,34 +39699,42 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "TCS503"
         }
       },
       "tue": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "09-10": {
           "course": "",
@@ -39619,18 +39751,22 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "01-02": {
           "course": "",
@@ -39640,18 +39776,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "TCS502"
         },
         "04-05": {
           "course": "",
@@ -39661,20 +39801,24 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "TCS503"
         }
       },
       "wed": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "TMA502"
         },
         "09-10": {
           "course": "",
@@ -39684,18 +39828,22 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "12-01": {
           "course": "",
@@ -39712,18 +39860,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "04-05": {
           "course": "",
@@ -39733,20 +39885,24 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "TCS503"
         }
       },
       "thu": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "TCS503"
         },
         "09-10": {
           "course": "",
@@ -39777,11 +39933,13 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "02-03": {
           "course": "",
@@ -39821,11 +39979,13 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "10-11": {
           "course": "",
@@ -39877,11 +40037,13 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "TCS503"
         }
       },
       "sat": {
@@ -40043,11 +40205,13 @@
     "schedule": {
       "mon": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "09-10": {
           "course": "",
@@ -40078,11 +40242,13 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "02-03": {
           "course": "",
@@ -40106,11 +40272,13 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118520",
+          "subjectcode": "TCS503"
         }
       },
       "tue": {
@@ -40122,11 +40290,13 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "TMA502"
         },
         "10-11": {
           "course": "",
@@ -40150,18 +40320,22 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "03-04": {
           "course": "",
@@ -40171,11 +40345,13 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "05-06": {
           "course": "",
@@ -40194,11 +40370,13 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "10-11": {
           "course": "",
@@ -40215,11 +40393,13 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "TCS503"
         },
         "01-02": {
           "course": "",
@@ -40287,25 +40467,31 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "TCS503"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "03-04": {
           "course": "",
@@ -40322,11 +40508,13 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         }
       },
       "fri": {
@@ -40338,25 +40526,31 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118531",
+          "subjectcode": "TCS509"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "12-01": {
           "course": "",
@@ -40380,18 +40574,22 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "TCS503"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "05-06": {
           "course": "",
@@ -40567,32 +40765,40 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "TCS503"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "01-02": {
           "course": "",
@@ -40602,25 +40808,31 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118536",
+          "subjectcode": "TCS509"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118531",
+          "subjectcode": "TCS509"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "05-06": {
           "course": "",
@@ -40646,11 +40858,13 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "11-12": {
           "course": "",
@@ -40718,11 +40932,13 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "TMA502"
         },
         "11-12": {
           "course": "",
@@ -40732,11 +40948,13 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "01-02": {
           "course": "",
@@ -40753,11 +40971,13 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "04-05": {
           "course": "",
@@ -40783,11 +41003,13 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "10-11": {
           "course": "",
@@ -40797,11 +41019,13 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "TCS502"
         },
         "12-01": {
           "course": "",
@@ -40811,11 +41035,13 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "02-03": {
           "course": "",
@@ -40832,18 +41058,22 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118602",
+          "subjectcode": "XCS501V"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         }
       },
       "fri": {
@@ -40876,25 +41106,31 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "TCS503"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "TCS502"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "TCS502"
         },
         "03-04": {
           "course": "",
@@ -40904,11 +41140,13 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "05-06": {
           "course": "",
@@ -41098,11 +41336,13 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118536",
+          "subjectcode": "TCS509"
         },
         "12-01": {
           "course": "",
@@ -41119,11 +41359,13 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118568",
+          "subjectcode": "XCS501Q"
         },
         "03-04": {
           "course": "",
@@ -41140,34 +41382,42 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "TCS503"
         }
       },
       "tue": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118568",
+          "subjectcode": "XCS501Q"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "TCS502"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "TCS503"
         },
         "11-12": {
           "course": "",
@@ -41191,18 +41441,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "04-05": {
           "course": "",
@@ -41235,25 +41489,31 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "TMA502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118600",
+          "subjectcode": "XCS501Q"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118602",
+          "subjectcode": "XCS501V"
         },
         "01-02": {
           "course": "",
@@ -41263,11 +41523,13 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         },
         "03-04": {
           "course": "",
@@ -41277,11 +41539,13 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         },
         "05-06": {
           "course": "",
@@ -41300,11 +41564,13 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "TMA502"
         },
         "10-11": {
           "course": "",
@@ -41314,11 +41580,13 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118531",
+          "subjectcode": "TCS509"
         },
         "12-01": {
           "course": "",
@@ -41335,18 +41603,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "04-05": {
           "course": "",
@@ -41356,27 +41628,33 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         }
       },
       "fri": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "10-11": {
           "course": "",
@@ -41386,11 +41664,13 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "TCS502"
         },
         "12-01": {
           "course": "",
@@ -41400,18 +41680,22 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "03-04": {
           "course": "",
@@ -41428,11 +41712,13 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         }
       },
       "sat": {
@@ -41629,18 +41915,22 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118520",
+          "subjectcode": "TCS503"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118600",
+          "subjectcode": "XCS501Q"
         },
         "03-04": {
           "course": "",
@@ -41666,11 +41956,13 @@
       },
       "tue": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "09-10": {
           "course": "",
@@ -41687,11 +41979,13 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "TMA502"
         },
         "12-01": {
           "course": "",
@@ -41708,11 +42002,13 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "TCS503"
         },
         "03-04": {
           "course": "",
@@ -41745,11 +42041,13 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118576",
+          "subjectcode": "TCS503"
         },
         "10-11": {
           "course": "",
@@ -41773,18 +42071,22 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "03-04": {
           "course": "",
@@ -41794,11 +42096,13 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "TCS503"
         },
         "05-06": {
           "course": "",
@@ -41845,32 +42149,40 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "TCS503"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "05-06": {
           "course": "",
@@ -41896,11 +42208,13 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118576",
+          "subjectcode": "TCS503"
         },
         "11-12": {
           "course": "",
@@ -41917,32 +42231,40 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118602",
+          "subjectcode": "XCS501V"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "TCS503"
         },
         "05-06": {
           "course": "",
@@ -42109,32 +42431,40 @@
     "schedule": {
       "mon": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "PMA502"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "PMA502"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "12-01": {
           "course": "",
@@ -42151,18 +42481,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "PCS503"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "PCS503"
         },
         "04-05": {
           "course": "",
@@ -42223,18 +42557,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "PCS503"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "PCS503"
         },
         "04-05": {
           "course": "",
@@ -42267,18 +42605,22 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "PCS502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "PCS502"
         },
         "12-01": {
           "course": "",
@@ -42295,18 +42637,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "PCS503"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "PCS503"
         },
         "04-05": {
           "course": "",
@@ -42367,18 +42713,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "PCS503"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "PCS503"
         },
         "04-05": {
           "course": "",
@@ -42397,18 +42747,22 @@
       },
       "fri": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "10-11": {
           "course": "",
@@ -42425,18 +42779,22 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         },
         "02-03": {
           "course": "",
@@ -42453,18 +42811,22 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "PMA502"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "PMA502"
         }
       },
       "sat": {
@@ -42696,18 +43058,22 @@
       },
       "tue": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "PCS503"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "PCS503"
         },
         "10-11": {
           "course": "",
@@ -42752,18 +43118,22 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         }
       },
       "wed": {
@@ -42782,18 +43152,22 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "PCS503"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "PCS503"
         },
         "12-01": {
           "course": "",
@@ -42824,48 +43198,60 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118604",
+          "subjectcode": "XCS510"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118604",
+          "subjectcode": "XCS510"
         }
       },
       "thu": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "PCS502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "PCS502"
         },
         "12-01": {
           "course": "",
@@ -42896,18 +43282,22 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         }
       },
       "fri": {
@@ -42940,18 +43330,22 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118520",
+          "subjectcode": "PCS503"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118520",
+          "subjectcode": "PCS503"
         },
         "02-03": {
           "course": "",
@@ -43139,18 +43533,22 @@
     "schedule": {
       "mon": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "10-11": {
           "course": "",
@@ -43167,32 +43565,40 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "PCS502"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "PCS502"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "04-05": {
           "course": "",
@@ -43239,18 +43645,22 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "PCS503"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "PCS503"
         },
         "02-03": {
           "course": "",
@@ -43283,18 +43693,22 @@
       },
       "wed": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         },
         "10-11": {
           "course": "",
@@ -43325,18 +43739,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "PCS502"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "PCS502"
         },
         "04-05": {
           "course": "",
@@ -43383,18 +43801,22 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "02-03": {
           "course": "",
@@ -43441,18 +43863,22 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "12-01": {
           "course": "",
@@ -43469,18 +43895,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         },
         "04-05": {
           "course": "",
@@ -43668,18 +44098,22 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "12-01": {
           "course": "",
@@ -43696,18 +44130,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1"
+          ],
+          "teacherid": "2118573",
+          "subjectcode": "XCS510"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1"
+          ],
+          "teacherid": "2118573",
+          "subjectcode": "XCS510"
         },
         "04-05": {
           "course": "",
@@ -43782,34 +44220,42 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "PCS502"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "PCS502"
         }
       },
       "wed": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "10-11": {
           "course": "",
@@ -43840,18 +44286,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "PCS502"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "PCS502"
         },
         "04-05": {
           "course": "",
@@ -43926,18 +44376,22 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118604",
+          "subjectcode": "XCS510"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118604",
+          "subjectcode": "XCS510"
         }
       },
       "fri": {
@@ -43956,32 +44410,40 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "02-03": {
           "course": "",
@@ -44183,32 +44645,40 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "PMA502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "PMA502"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "PMA502"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "PMA502"
         },
         "02-03": {
           "course": "",
@@ -44225,18 +44695,22 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         }
       },
       "tue": {
@@ -44269,46 +44743,58 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "PMA502"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "PMA502"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "PMA502"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "PMA502"
         }
       },
       "wed": {
@@ -44341,32 +44827,40 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118604",
+          "subjectcode": "XCS510"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118604",
+          "subjectcode": "XCS510"
         },
         "04-05": {
           "course": "",
@@ -44399,18 +44893,22 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "PCS502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "PCS502"
         },
         "12-01": {
           "course": "",
@@ -44471,60 +44969,76 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118521",
+          "subjectcode": "PCS503"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118521",
+          "subjectcode": "PCS503"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "PMA502"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "PMA502"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "PCS502"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "PCS502"
         }
       },
       "sat": {
@@ -44812,62 +45326,78 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "PMA502"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "PMA502"
         }
       },
       "wed": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "PMA502"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "PMA502"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "PCS503"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "PCS503"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "02-03": {
           "course": "",
@@ -44900,32 +45430,40 @@
       },
       "thu": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118604",
+          "subjectcode": "XCS510"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118604",
+          "subjectcode": "XCS510"
         },
         "12-01": {
           "course": "",
@@ -44956,18 +45494,22 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "PCS502"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "PCS502"
         }
       },
       "fri": {
@@ -45227,18 +45769,22 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "02-03": {
           "course": "",
@@ -45255,48 +45801,60 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "PMA502"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "PMA502"
         }
       },
       "tue": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118520",
+          "subjectcode": "PCS503"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118520",
+          "subjectcode": "PCS503"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "PCS503"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "PCS503"
         },
         "12-01": {
           "course": "",
@@ -45371,18 +45929,22 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "PCS503"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "PCS503"
         },
         "02-03": {
           "course": "",
@@ -45399,34 +45961,42 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1"
+          ],
+          "teacherid": "2118520",
+          "subjectcode": "PCS503"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1"
+          ],
+          "teacherid": "2118520",
+          "subjectcode": "PCS503"
         }
       },
       "thu": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "PCS502"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "PCS502"
         },
         "10-11": {
           "course": "",
@@ -45443,18 +46013,22 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "XCS510"
         },
         "02-03": {
           "course": "",
@@ -45471,18 +46045,22 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         }
       },
       "fri": {
@@ -45515,18 +46093,22 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118576",
+          "subjectcode": "PCS503"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118576",
+          "subjectcode": "PCS503"
         },
         "02-03": {
           "course": "",
@@ -45543,18 +46125,22 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118521",
+          "subjectcode": "PCS503"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118521",
+          "subjectcode": "PCS503"
         }
       },
       "sat": {
@@ -45714,18 +46300,22 @@
     "schedule": {
       "mon": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         },
         "10-11": {
           "course": "",
@@ -45828,18 +46418,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "PMA502"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "PMA502"
         },
         "04-05": {
           "course": "",
@@ -45914,34 +46508,42 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         }
       },
       "thu": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "10-11": {
           "course": "",
@@ -46016,18 +46618,22 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "12-01": {
           "course": "",
@@ -46044,32 +46650,40 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PCS502"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1"
+          ],
+          "teacherid": "2118576",
+          "subjectcode": "PCS503"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1"
+          ],
+          "teacherid": "2118576",
+          "subjectcode": "PCS503"
         }
       },
       "sat": {
@@ -46257,32 +46871,40 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "PMA502"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "PMA502"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "PCS503"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "PCS503"
         },
         "04-05": {
           "course": "",
@@ -46343,32 +46965,40 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "0",
+          "subjectcode": "PMA502"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118605",
+          "subjectcode": "XCS510"
         }
       },
       "wed": {
@@ -46401,18 +47031,22 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118576",
+          "subjectcode": "PCS503"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118576",
+          "subjectcode": "PCS503"
         },
         "02-03": {
           "course": "",
@@ -46429,18 +47063,22 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "PCS502"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "PCS502"
         }
       },
       "thu": {
@@ -46531,18 +47169,22 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "PCS503"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "PCS503"
         },
         "12-01": {
           "course": "",
@@ -46774,11 +47416,14 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "01-02": {
           "course": "",
@@ -46825,11 +47470,14 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118531",
+          "subjectcode": "TCS509"
         },
         "10-11": {
           "course": "",
@@ -46932,11 +47580,14 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118571",
+          "subjectcode": "XCS501Q"
         },
         "03-04": {
           "course": "",
@@ -46946,18 +47597,24 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "TCS503"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118572",
+          "subjectcode": "TCS502"
         }
       },
       "thu": {
@@ -46997,11 +47654,14 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118536",
+          "subjectcode": "TCS509"
         },
         "02-03": {
           "course": "",
@@ -47076,11 +47736,14 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118520",
+          "subjectcode": "TCS503"
         },
         "03-04": {
           "course": "",
@@ -47326,11 +47989,14 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         }
       },
       "tue": {
@@ -47377,18 +48043,24 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "TMA502"
         },
         "04-05": {
           "course": "",
@@ -47435,25 +48107,34 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "TMA502"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118573",
+          "subjectcode": "XCS501V"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118568",
+          "subjectcode": "XCS501Q"
         },
         "03-04": {
           "course": "",
@@ -47500,11 +48181,14 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118521",
+          "subjectcode": "TCS503"
         },
         "12-01": {
           "course": "",
@@ -47787,11 +48471,14 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "TCS503"
         },
         "10-11": {
           "course": "",
@@ -47829,11 +48516,14 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "04-05": {
           "course": "",
@@ -47859,11 +48549,14 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "10-11": {
           "course": "",
@@ -47915,11 +48608,14 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118572",
+          "subjectcode": "TCS502"
         }
       },
       "wed": {
@@ -47931,11 +48627,14 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118572",
+          "subjectcode": "TCS502"
         },
         "10-11": {
           "course": "",
@@ -48038,11 +48737,14 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "TMA502"
         },
         "03-04": {
           "course": "",
@@ -48059,11 +48761,14 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         }
       },
       "fri": {
@@ -48353,18 +49058,24 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118520",
+          "subjectcode": "TCS503"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "TMA502"
         }
       },
       "tue": {
@@ -48383,11 +49094,14 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "TMA502"
         },
         "11-12": {
           "course": "",
@@ -48397,11 +49111,14 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118571",
+          "subjectcode": "XCS501Q"
         },
         "01-02": {
           "course": "",
@@ -48418,11 +49135,14 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118531",
+          "subjectcode": "TCS509"
         },
         "04-05": {
           "course": "",
@@ -48455,11 +49175,14 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "11-12": {
           "course": "",
@@ -48592,11 +49315,14 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118536",
+          "subjectcode": "TCS509"
         },
         "10-11": {
           "course": "",
@@ -48613,11 +49339,14 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "TMA502"
         },
         "01-02": {
           "course": "",
@@ -48812,18 +49541,22 @@
     "schedule": {
       "mon": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "TCS503"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "10-11": {
           "course": "",
@@ -48861,11 +49594,13 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "04-05": {
           "course": "",
@@ -48912,25 +49647,31 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118601",
+          "subjectcode": "XCS501V"
         },
         "03-04": {
           "course": "",
@@ -48940,11 +49681,13 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118536",
+          "subjectcode": "TCS509"
         },
         "05-06": {
           "course": "",
@@ -48991,25 +49734,31 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118576",
+          "subjectcode": "TCS503"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118600",
+          "subjectcode": "XCS501Q"
         },
         "04-05": {
           "course": "",
@@ -49028,11 +49777,13 @@
       },
       "thu": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F1"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "09-10": {
           "course": "",
@@ -49042,46 +49793,58 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "TCS503"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118576",
+          "subjectcode": "TCS503"
         },
         "04-05": {
           "course": "",
@@ -49100,11 +49863,13 @@
       },
       "fri": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118600",
+          "subjectcode": "XCS501Q"
         },
         "09-10": {
           "course": "",
@@ -49114,11 +49879,13 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "TCS503"
         },
         "11-12": {
           "course": "",
@@ -49149,11 +49916,13 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "04-05": {
           "course": "",
@@ -49348,11 +50117,13 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "12-01": {
           "course": "",
@@ -49376,18 +50147,22 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "TCS503"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E1"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "TCS503"
         },
         "05-06": {
           "course": "",
@@ -49399,39 +50174,49 @@
       },
       "tue": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "TCS503"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "TCS503"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118600",
+          "subjectcode": "XCS501Q"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118521",
+          "subjectcode": "TCS503"
         },
         "01-02": {
           "course": "",
@@ -49441,18 +50226,22 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118600",
+          "subjectcode": "XCS501Q"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "04-05": {
           "course": "",
@@ -49462,34 +50251,42 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "TMA502"
         }
       },
       "wed": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "TMA502"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118602",
+          "subjectcode": "XCS501V"
         },
         "11-12": {
           "course": "",
@@ -49571,18 +50368,22 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "TCS503"
         },
         "02-03": {
           "course": "",
@@ -49671,11 +50472,13 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "05-06": {
           "course": "",
@@ -49856,18 +50659,24 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118521",
+          "subjectcode": "TCS503"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "TMA502"
         },
         "12-01": {
           "course": "",
@@ -49921,11 +50730,14 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118526",
+          "subjectcode": "TMA502"
         },
         "10-11": {
           "course": "",
@@ -49949,11 +50761,14 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118573",
+          "subjectcode": "XCS501V"
         },
         "02-03": {
           "course": "",
@@ -50137,11 +50952,14 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118521",
+          "subjectcode": "TCS503"
         },
         "10-11": {
           "course": "",
@@ -50186,11 +51004,14 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "05-06": {
           "course": "",
@@ -50371,11 +51192,14 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "TCS503"
         },
         "11-12": {
           "course": "",
@@ -50413,11 +51237,14 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "05-06": {
           "course": "",
@@ -50450,11 +51277,14 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "C1",
+            "C2"
+          ],
+          "teacherid": "2118531",
+          "subjectcode": "TCS509"
         },
         "12-01": {
           "course": "",
@@ -50501,11 +51331,14 @@
       },
       "wed": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "A1",
+            "A2"
+          ],
+          "teacherid": "2118536",
+          "subjectcode": "TCS509"
         },
         "09-10": {
           "course": "",
@@ -50573,11 +51406,14 @@
       },
       "thu": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         },
         "09-10": {
           "course": "",
@@ -50636,11 +51472,14 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "TMA502"
         }
       },
       "fri": {
@@ -50652,11 +51491,14 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "B1",
+            "B2"
+          ],
+          "teacherid": "2118520",
+          "subjectcode": "TCS503"
         },
         "10-11": {
           "course": "",
@@ -50872,11 +51714,13 @@
     "schedule": {
       "mon": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118536",
+          "subjectcode": "TCS509"
         },
         "09-10": {
           "course": "",
@@ -50886,11 +51730,13 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118536",
+          "subjectcode": "TCS509"
         },
         "11-12": {
           "course": "",
@@ -50907,18 +51753,22 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118600",
+          "subjectcode": "XCS501Q"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "03-04": {
           "course": "",
@@ -50928,18 +51778,22 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118537",
+          "subjectcode": "TCS509"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118515",
+          "subjectcode": "TCS509"
         }
       },
       "tue": {
@@ -50958,18 +51812,22 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118518",
+          "subjectcode": "TCS502"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "12-01": {
           "course": "",
@@ -50979,11 +51837,13 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "02-03": {
           "course": "",
@@ -51007,11 +51867,13 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         }
       },
       "wed": {
@@ -51044,11 +51906,13 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118606",
+          "subjectcode": "TMA502"
         },
         "01-02": {
           "course": "",
@@ -51079,34 +51943,42 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118528",
+          "subjectcode": "TMA502"
         }
       },
       "thu": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118536",
+          "subjectcode": "TCS509"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118568",
+          "subjectcode": "XCS501Q"
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118521",
+          "subjectcode": "TCS503"
         },
         "11-12": {
           "course": "",
@@ -51130,25 +52002,31 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "F2"
+          ],
+          "teacherid": "2118571",
+          "subjectcode": "XCS501Q"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "05-06": {
           "course": "",
@@ -51160,11 +52038,13 @@
       },
       "fri": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118531",
+          "subjectcode": "TCS509"
         },
         "09-10": {
           "course": "",
@@ -51195,11 +52075,13 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118536",
+          "subjectcode": "TCS509"
         },
         "02-03": {
           "course": "",
@@ -51216,11 +52098,13 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118542",
+          "subjectcode": "TCS503"
         },
         "05-06": {
           "course": "",
@@ -51408,32 +52292,40 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "E2"
+          ],
+          "teacherid": "2118531",
+          "subjectcode": "TCS509"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "TCS503"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "TCS503"
         },
         "03-04": {
           "course": "",
@@ -51450,11 +52342,13 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "TCS502"
         }
       },
       "tue": {
@@ -51473,11 +52367,13 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L2"
+          ],
+          "teacherid": "2118600",
+          "subjectcode": "XCS501Q"
         },
         "11-12": {
           "course": "",
@@ -51508,25 +52404,31 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D2"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H2"
+          ],
+          "teacherid": "2118576",
+          "subjectcode": "TCS503"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "TCS503"
         }
       },
       "wed": {
@@ -51538,11 +52440,13 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "TCS503"
         },
         "10-11": {
           "course": "",
@@ -51552,11 +52456,13 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118577",
+          "subjectcode": "TCS502"
         },
         "12-01": {
           "course": "",
@@ -51566,11 +52472,13 @@
           "subjectcode": ""
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "TCS503"
         },
         "02-03": {
           "course": "",
@@ -51594,11 +52502,13 @@
           "subjectcode": ""
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "D1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         }
       },
       "thu": {
@@ -51617,11 +52527,13 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "TCS503"
         },
         "11-12": {
           "course": "",
@@ -51631,11 +52543,13 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118541",
+          "subjectcode": "TCS502"
         },
         "01-02": {
           "course": "",
@@ -51652,11 +52566,13 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "J1"
+          ],
+          "teacherid": "2118549",
+          "subjectcode": "TCS503"
         },
         "04-05": {
           "course": "",
@@ -51675,11 +52591,13 @@
       },
       "fri": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K1"
+          ],
+          "teacherid": "2118538",
+          "subjectcode": "TMA502"
         },
         "09-10": {
           "course": "",
@@ -51696,18 +52614,22 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "K2"
+          ],
+          "teacherid": "2118547",
+          "subjectcode": "TCS503"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "5",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118510",
+          "subjectcode": "TCS502"
         },
         "01-02": {
           "course": "",
