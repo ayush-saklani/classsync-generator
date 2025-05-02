@@ -2,10 +2,13 @@ import fs from 'fs';
 import { room_schedule_sample } from './constant.js';
 
 let mergemap = {
-    "5": {
+    "4": {
         "A1": ["A2"],
         "B1": ["B2"],
         "C1": ["C2"],
+        "D1": ["D2"],
+        "E1": ["E2"],
+        "F1": ["F2"],
     }
 }
 
@@ -39,10 +42,17 @@ for (let i = 0; i < old_timetable_data.length; i++) {
         if (skiplist.includes(currsub)) {
             continue;
         }
+        let teacher_temp_var = old_timetable_data[i].teacher_subject_data[j].teacherid;
+        if (teacher_temp_var == 0 || teacher_temp_var == '0' || teacher_temp_var == '' || teacher_temp_var == undefined) {
+            continue;
+        }
+        if (old_timetable_data[i].teacher_subject_data[j].weekly_hrs == 0) {
+            continue;
+        }
 
         tttemp3.push({
             "subjectid": old_timetable_data[i].teacher_subject_data[j].subjectcode,
-            "teacherid": old_timetable_data[i].teacher_subject_data[j].teacherid == 0 ? spare_teacher_id++ : old_timetable_data[i].teacher_subject_data[j].teacherid,
+            "teacherid": old_timetable_data[i].teacher_subject_data[j].teacherid,
             "weekly_hrs": old_timetable_data[i].teacher_subject_data[j].theory_practical == "PRACTICAL" ? 2 : old_timetable_data[i].teacher_subject_data[j].weekly_hrs,
             // 3hrs for practicals not allowed
             // it can be changed to 4 if needed

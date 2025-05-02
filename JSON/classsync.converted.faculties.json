@@ -35,10 +35,6 @@
         "teacherid": "2118508",
         "name": "Mr. A. B. Desai"
     },
-    "2118509": {
-        "teacherid": "2118509",
-        "name": "Dr. Gunjan Chhabra"
-    },
     "2118510": {
         "teacherid": "2118510",
         "name": "Dr. Susheela Dahiya"
@@ -138,10 +134,6 @@
     "2118535": {
         "teacherid": "2118535",
         "name": "Mr. Rahul Chauhan"
-    },
-    "2118536": {
-        "teacherid": "2118536",
-        "name": "Dr. Satvik Vats"
     },
     "2118537": {
         "teacherid": "2118537",
@@ -417,10 +409,34 @@
     },
     "2118607": {
         "teacherid": "2118607",
-        "name": "test teacher 2"
+        "name": "Mr. Anshuman Sharma"
     },
     "2118608": {
         "teacherid": "2118608",
-        "name": "test teacher 3"
+        "name": "Mr. Gaurav (quant)"
+    },
+    "2118609": {
+        "teacherid": "2118609",
+        "name": "Mr. Nishant Bhandari"
+    },
+    "2118610": {
+        "teacherid": "2118610",
+        "name": "Mr. Siddhant Thapliyal"
+    },
+    "2118611": {
+        "teacherid": "2118611",
+        "name": "Ms. Stuti Bhatt"
+    },
+    "2118612": {
+        "teacherid": "2118612",
+        "name": "Dr. Bina Bhandari"
+    },
+    "2118613": {
+        "teacherid": "2118613",
+        "name": "Ms. Meenakshi Maindola"
+    },
+    "2118614": {
+        "teacherid": "2118614",
+        "name": "Ms. Sakshi Pundir"
     }
 }
