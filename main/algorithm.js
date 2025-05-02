@@ -2,9 +2,9 @@ import fs from "fs";
 import config from "./config.js";
 import generate_initialize_population from "./generate_initial_population.js";
 import { fitness_func_generation } from "./fitness_func.js";
-// import crossoverGeneration from './crossover.js';
-// import mutate_Population from './mutation.js';
-const art = await fs.promises.readFile("./main/art.txt", "utf-8");  // specify encoding
+import crossoverGeneration from './crossover.js';
+import mutate_Population from './mutation.js';
+const art = await fs.promises.readFile("./assets/art.txt", "utf-8");  // specify encoding
 
 const check_acceptability = (population) => {
   let flag = true;
@@ -31,11 +31,11 @@ const check_acceptability = (population) => {
 };
 const algorithm = (room) => {
   // step 1: generate initial population
-  let alltimetable = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8")); //  timetable data with subjects and teachers already assigned
-  let population = generate_initialize_population(alltimetable, room);
+  // let alltimetable = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8")); //  timetable data with subjects and teachers already assigned
+  // let population = generate_initialize_population(alltimetable, room);
 
   // step 1: read population from file (if exists) (alternate)
-  // let population = JSON.parse(fs.readFileSync('./JSON/classsync.win.selected.tables.json', 'utf8'));
+  let population = JSON.parse(fs.readFileSync('./JSON/classsync.win.selected.tables.json', 'utf8'));
 
   // Checkpoint: write population to file
   fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8",);
@@ -44,14 +44,17 @@ const algorithm = (room) => {
   // but we have set a max_generation limit to avoid infinite computation of poor offsprings
   for (let i = 0; i < config.max_generation; i++) {
     // step 2: crossover population
-    // population = crossoverGeneration(population, room);
+    population = crossoverGeneration(population, room);
 
     // step 3: mutate population
-    // population = mutate_Population(population, room);
+    population = mutate_Population(population, room);
 
     // checkpoint: write population to file per 10 iterations
     if (i % 10 == 0)
-      fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8",);
+      setTimeout(() => {
+        fs.writeFileSync("./JSON/population_selected.json", JSON.stringify(population, null, 4), "utf8",);
+
+      }, 1000);
 
     // step 4: calculate fitness score
     population = fitness_func_generation(population, room);
@@ -74,7 +77,7 @@ let population = algorithm(room);
 
 if (population == null) {
   console.log("No acceptable solution found. Try again with a larger generation limit.");
-  console.log("Population data is saved in classsync.win.selected.tables.json file.\n"); 
+  console.log("Population data is saved in classsync.win.selected.tables.json file.\n");
 }
 else fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8",);
 console.timeEnd("Execution Time");
