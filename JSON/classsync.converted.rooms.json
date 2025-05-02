@@ -1,4 +1,18 @@
 {
+    "englishlab": [
+        {
+            "roomid": "1033",
+            "capacity": 1
+        },
+        {
+            "roomid": "4122",
+            "capacity": 1
+        },
+        {
+            "roomid": "1041",
+            "capacity": 1
+        }
+    ],
     "class": [
         {
             "roomid": "2075",

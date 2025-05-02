@@ -1513,7 +1513,9 @@
   "name": "Bosch Lab",
   "type": "englishlab",
   "capacity": 1,
-  "allowed_course": [],
+  "allowed_course": [
+    "btechcse"
+  ],
   "schedule": {
     "mon": {
       "08-09": {
@@ -3766,7 +3768,9 @@
   "name": "Conference Hall",
   "type": "englishlab",
   "capacity": 1,
-  "allowed_course": [],
+  "allowed_course": [
+    "btechcse"
+  ],
   "schedule": {
     "mon": {
       "08-09": {
@@ -78928,7 +78932,9 @@
   "name": "meeting hall",
   "type": "englishlab",
   "capacity": 1,
-  "allowed_course": [],
+  "allowed_course": [
+    "btechcse"
+  ],
   "schedule": {
     "mon": {
       "08-09": {
