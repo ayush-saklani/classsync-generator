@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./rastanty-cortez.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cursive {
+    font-family: 'CustomFont', cursive;
+    color: white;
+    font-weight: 600;
+    font-size: 4rem;
+    padding-left: 15px;
+    text-decoration: none;
+}
+
 body {
     font-family: consolas;
     background-color: #1A1A1A;
