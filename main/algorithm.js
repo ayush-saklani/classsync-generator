@@ -4,6 +4,7 @@ import generate_initialize_population from "./generate_initial_population.js";
 import { fitness_func_generation } from "./fitness_func.js";
 // import crossoverGeneration from './crossover.js';
 // import mutate_Population from './mutation.js';
+const art = await fs.promises.readFile("./main/art.txt", "utf-8");  // specify encoding
 
 const check_acceptability = (population) => {
   let flag = true;
@@ -64,9 +65,16 @@ const algorithm = (room) => {
   }
   return null;
 };
+
+console.log(art);
+console.time("Execution Time");
+
 let room = JSON.parse(fs.readFileSync("./JSON/classsync.converted.rooms.json", "utf8")); //  (capacity is not implemented in this code right now)
 let population = algorithm(room);
 
-if (population == null) console.log("No acceptable solution found");
+if (population == null) {
+  console.log("No acceptable solution found. Try again with a larger generation limit.");
+  console.log("Population data is saved in classsync.win.selected.tables.json file.\n"); 
+}
 else fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8",);
-
+console.timeEnd("Execution Time");
