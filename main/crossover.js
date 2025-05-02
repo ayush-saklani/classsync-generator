@@ -41,11 +41,12 @@ const check_teacher_overload = (j, k, teacherid, type, teacher_room_clash_map,) 
   }
   return streak > 4 ? false : true;
 };
-const find_new_slot_or_room = (timetable, day, slot, teacherid, roomid, type, teacher_room_clash_map, room,) => {
+const find_new_slot_or_room = (timetable, day, slot, teacherid, roomid, type, teacher_room_clash_map, room, teacher_subject_data) => {
   if (showstats) {
     console.log("\n============= " + type + "\t || Initial slot : " + day + " " + slot + " ====================",);
   }
   let room_type = type === "practical" ? "lab" : "room"; /// there are several types of rooms, so we need to check the type of room required
+  room_type = teacher_subject_data.find((subject) => subject.subjectid === timetable[day][slot].subjectid).room_type // get the room type from the subject data
   let min = config.min, max = config.max;
   let temp_total_forward = day * 10 + slot;
   let temp_total_backward = day * 10 + slot;
@@ -260,11 +261,11 @@ const resolveConflicts = (offspring, room) => {
           if (teacher_room_clash_map["teacher" + ";" + j + ";" + k + ";" + offspring["data"][i]["timetable"][j][k].teacherid] || teacher_room_clash_map["room" + ";" + j + ";" + k + ";" + offspring["data"][i]["timetable"][j][k].roomid]) {
             let newslottedtt;
             if (offspring["data"][i]["timetable"][j][k].type === "practical" && k < 9 && offspring["data"][i]["timetable"][j][k + 1].teacherid === offspring["data"][i]["timetable"][j][k].teacherid) {
-              newslottedtt = find_new_slot_or_room(offspring["data"][i]["timetable"], j, k, offspring["data"][i]["timetable"][j][k].teacherid, offspring["data"][i]["timetable"][j][k].roomid, offspring["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room,);
+              newslottedtt = find_new_slot_or_room(offspring["data"][i]["timetable"], j, k, offspring["data"][i]["timetable"][j][k].teacherid, offspring["data"][i]["timetable"][j][k].roomid, offspring["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room, offspring['data'][i].subjects);
             } else if (offspring["data"][i]["timetable"][j][k].type === "practical" && k > 0 && offspring["data"][i]["timetable"][j][k - 1].teacherid === offspring["data"][i]["timetable"][j][k].teacherid) {
-              newslottedtt = find_new_slot_or_room(offspring["data"][i]["timetable"], j, k - 1, offspring["data"][i]["timetable"][j][k].teacherid, offspring["data"][i]["timetable"][j][k].roomid, offspring["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room,);
+              newslottedtt = find_new_slot_or_room(offspring["data"][i]["timetable"], j, k - 1, offspring["data"][i]["timetable"][j][k].teacherid, offspring["data"][i]["timetable"][j][k].roomid, offspring["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room, offspring['data'][i].subjects);
             } else {
-              newslottedtt = find_new_slot_or_room(offspring["data"][i]["timetable"], j, k, offspring["data"][i]["timetable"][j][k].teacherid, offspring["data"][i]["timetable"][j][k].roomid, offspring["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room,);
+              newslottedtt = find_new_slot_or_room(offspring["data"][i]["timetable"], j, k, offspring["data"][i]["timetable"][j][k].teacherid, offspring["data"][i]["timetable"][j][k].roomid, offspring["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room, offspring['data'][i].subjects);
             }
             // newslottedtt = find_new_slot_or_room(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, teacher_room_clash_map, room);
             if (newslottedtt == null) {
@@ -361,7 +362,7 @@ const crossoverGeneration = (population, room) => {
   newGeneration = fitness_func_generation(newGeneration);
   newGeneration = teacher_room_clash_map_generator(newGeneration, (showstats = false),);
   newGeneration = newGeneration.sort(function (a, b) { return b.fitness - a.fitness; });
-  console.log(population.length, newGeneration.length);
+  // console.log(population.length, newGeneration.length);
 
   if (config.showstats) {
     for (let i = 0; i < newGeneration.length; i++) {
