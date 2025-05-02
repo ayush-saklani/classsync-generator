@@ -13,24 +13,16 @@
     <nav style="display: flex; align-items: center;">
         <img src="/assets/img/new-logo-white.svg" height="60px" style="padding-top: 15px; padding-left: 15px;">
         <h1 style="margin-left: 20px;">Timetable Visualizer</h1>
-        <form style="display: flex; margin-left: auto; padding-right: 15px;" id="script-selector">
-            <input type="radio" name="script" id="option1" value="index">
-            <label for="option1">Full View</label><br>
-            <input type="radio" name="script" id="option2" value="index2">
-            <label for="option2">Top View</label><br>
-        </form>
     </nav>
+    <div
+        style="display: flex; flex-direction: column; align-items: center; margin-top: 20px; color: white; font-size: 30px; font-weight: bold;">
+        <h2 style="margin-left: 20px;">Select View:</h2>
+        <div style="display: flex; gap: 20px; margin-left: 20px;">
+            <a style="color: white; font-weight: 900;" href="./viewtop/index.html" class="button">Top View</a>
+            <a style="color: white; font-weight: 900;" href="./viewfull/index.html" class="button">Full View</a>
+        </div>
+    </div>
     <div id="timetable"></div>
-    <script src="./js/index.js"></script>
-    <script>
-        document.getElementById('script-selector').addEventListener('change', function (event) {
-            const script = document.createElement('script');
-            script.src = `./js/${event.target.value}.js`;
-            script.id = 'dynamic-script';
-            document.getElementById('script-selector').querySelectorAll('input').forEach(input => input.disabled = true);
-            document.body.appendChild(script);
-        });
-    </script>
 </body>
 
 </html>
