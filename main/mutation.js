@@ -40,12 +40,14 @@ const check_teacher_overload = (j, k, teacherid, type, teacher_room_clash_map) =
   }
   return streak > 4 ? false : true;
 };
-const mutate_Single_timetable = (timetable, day, slot, teacher_room_clash_map, room,) => {
+const mutate_Single_timetable = (timetable, day, slot, teacher_room_clash_map, room,teacher_subject_data) => {
   let teacherid = timetable[day][slot].teacherid;
   let roomid = timetable[day][slot].roomid;
   let type = timetable[day][slot].type;
 
   let room_type = type === "practical" ? "lab" : "room";/// this is not correct and several room types are there
+  room_type = teacher_subject_data.find((subject) => subject.subjectid === timetable[day][slot].subjectid).room_type // get the room type from the subject data
+
   let min = config.min;
   let max = config.max;
   let temp_total_forward = day * 10 + slot;
@@ -239,7 +241,7 @@ const mutate_timtable_set = (timetableset, room, teacher_room_clash_map) => {
         }
       }
 
-      let mutated_timetable = mutate_Single_timetable(mutating_timetable, randomDay, randomSlot, teacher_room_clash_map, room,);
+      let mutated_timetable = mutate_Single_timetable(mutating_timetable, randomDay, randomSlot, teacher_room_clash_map, room, timetableset["data"][gene_index].subjects);
       if (mutated_timetable == null) {
         continue;
       } else {
