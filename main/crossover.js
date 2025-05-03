@@ -77,8 +77,7 @@ const find_new_slot_or_room = (timetable, day, slot, teacherid, roomid, type, te
     }
   }
 
-  let flag1 = true,
-    flag2 = true;
+  let flag1 = true, flag2 = true;
 
   while (flag1 || flag2) {
     let temp_day_forward = Math.floor(temp_total_forward / 10);
@@ -249,87 +248,86 @@ const find_new_slot_or_room = (timetable, day, slot, teacherid, roomid, type, te
 };
 
 // Function to resolve conflicts (teacher/room clashes) in a timetable
-const resolveConflicts = (offspring, room) => {
+const resolveConflicts = (timetable_set, room) => {
   let teacher_room_clash_map = {};
-  for (let i = 0; i < offspring["data"].length; i++) {
+  for (let i = 0; i < timetable_set["data"].length; i++) {
     for (let j = 0; j < 7; j++) {
       for (let k = 0; k < 10; k++) {
-        if (offspring["data"][i]["timetable"][j][k].teacherid == "" && offspring["data"][i]["timetable"][j][k].roomid == "") {
-          // if class is empty
-          continue;
-        } else if (offspring["data"][i]["timetable"][j][k].teacherid && offspring["data"][i]["timetable"][j][k].roomid) {
-          if (teacher_room_clash_map["teacher" + ";" + j + ";" + k + ";" + offspring["data"][i]["timetable"][j][k].teacherid] || teacher_room_clash_map["room" + ";" + j + ";" + k + ";" + offspring["data"][i]["timetable"][j][k].roomid]) {
+        if (timetable_set["data"][i]["timetable"][j][k].teacherid == "" && timetable_set["data"][i]["timetable"][j][k].roomid == "") {
+          continue;          // if class is empty, skip it
+        } else if (timetable_set["data"][i]["timetable"][j][k].teacherid && timetable_set["data"][i]["timetable"][j][k].roomid) {
+          if (teacher_room_clash_map["teacher" + ";" + j + ";" + k + ";" + timetable_set["data"][i]["timetable"][j][k].teacherid] || teacher_room_clash_map["room" + ";" + j + ";" + k + ";" + timetable_set["data"][i]["timetable"][j][k].roomid]) {
             let newslottedtt;
-            if (offspring["data"][i]["timetable"][j][k].type === "practical" && k < 9 && offspring["data"][i]["timetable"][j][k + 1].teacherid === offspring["data"][i]["timetable"][j][k].teacherid) {
-              newslottedtt = find_new_slot_or_room(offspring["data"][i]["timetable"], j, k, offspring["data"][i]["timetable"][j][k].teacherid, offspring["data"][i]["timetable"][j][k].roomid, offspring["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room, offspring['data'][i].subjects);
-            } else if (offspring["data"][i]["timetable"][j][k].type === "practical" && k > 0 && offspring["data"][i]["timetable"][j][k - 1].teacherid === offspring["data"][i]["timetable"][j][k].teacherid) {
-              newslottedtt = find_new_slot_or_room(offspring["data"][i]["timetable"], j, k - 1, offspring["data"][i]["timetable"][j][k].teacherid, offspring["data"][i]["timetable"][j][k].roomid, offspring["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room, offspring['data'][i].subjects);
+            if (timetable_set["data"][i]["timetable"][j][k].type === "practical" && k < 9 && timetable_set["data"][i]["timetable"][j][k + 1].teacherid === timetable_set["data"][i]["timetable"][j][k].teacherid) {
+              newslottedtt = find_new_slot_or_room(timetable_set["data"][i]["timetable"], j, k, timetable_set["data"][i]["timetable"][j][k].teacherid, timetable_set["data"][i]["timetable"][j][k].roomid, timetable_set["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room, timetable_set['data'][i].subjects);
+            } else if (timetable_set["data"][i]["timetable"][j][k].type === "practical" && k > 0 && timetable_set["data"][i]["timetable"][j][k - 1].teacherid === timetable_set["data"][i]["timetable"][j][k].teacherid) {
+              newslottedtt = find_new_slot_or_room(timetable_set["data"][i]["timetable"], j, k - 1, timetable_set["data"][i]["timetable"][j][k].teacherid, timetable_set["data"][i]["timetable"][j][k].roomid, timetable_set["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room, timetable_set['data'][i].subjects);
             } else {
-              newslottedtt = find_new_slot_or_room(offspring["data"][i]["timetable"], j, k, offspring["data"][i]["timetable"][j][k].teacherid, offspring["data"][i]["timetable"][j][k].roomid, offspring["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room, offspring['data'][i].subjects);
+              newslottedtt = find_new_slot_or_room(timetable_set["data"][i]["timetable"], j, k, timetable_set["data"][i]["timetable"][j][k].teacherid, timetable_set["data"][i]["timetable"][j][k].roomid, timetable_set["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room, timetable_set['data'][i].subjects);
             }
-            // newslottedtt = find_new_slot_or_room(offspring['data'][i]['timetable'], j, k, offspring['data'][i]['timetable'][j][k].teacherid, offspring['data'][i]['timetable'][j][k].roomid, offspring['data'][i]['timetable'][j][k].type, teacher_room_clash_map, room);
+            // newslottedtt = find_new_slot_or_room(timetable_set['data'][i]['timetable'], j, k, timetable_set['data'][i]['timetable'][j][k].teacherid, timetable_set['data'][i]['timetable'][j][k].roomid, timetable_set['data'][i]['timetable'][j][k].type, teacher_room_clash_map, room);
             if (newslottedtt == null) {
               if (showstats)
                 console.log("TraahiMaam TraahiMaam, PaahiMaam PaahiMaam Jagat-Srishti-Pralay Vishva, Sankat tav Naashitaam",);
               return false;
             } else {
-              offspring["data"][i]["timetable"] = newslottedtt.timetable;
+              timetable_set["data"][i]["timetable"] = newslottedtt.timetable;
               teacher_room_clash_map = newslottedtt.teacher_room_clash_map;
             }
           } else {
-            teacher_room_clash_map["teacher" + ";" + j + ";" + k + ";" + offspring["data"][i]["timetable"][j][k].teacherid] = true;
-            teacher_room_clash_map["room" + ";" + j + ";" + k + ";" + offspring["data"][i]["timetable"][j][k].roomid] = true;
+            teacher_room_clash_map["teacher" + ";" + j + ";" + k + ";" + timetable_set["data"][i]["timetable"][j][k].teacherid] = true;
+            teacher_room_clash_map["room" + ";" + j + ";" + k + ";" + timetable_set["data"][i]["timetable"][j][k].roomid] = true;
           }
         }
       }
     }
   }
-  return offspring;
+  return timetable_set;
 };
 // Function to perform crossover between two timetables (parents)
 const crossover = (parent1, parent2, room) => {
   // Deep copy parent timetables to avoid modifying the original ones
-  let offspring1 = JSON.parse(JSON.stringify(parent1));
-  let offspring2 = JSON.parse(JSON.stringify(parent2));
+  let Timetable_set_1 = JSON.parse(JSON.stringify(parent1));
+  let Timetable_set_2 = JSON.parse(JSON.stringify(parent2));
 
   // Select a random crossover point (section, day, time slot)
-  let crossoverPoint = Math.floor(Math.random() * offspring1["data"].length); // Cross over between sections
+  let crossoverPoint = Math.floor(Math.random() * Timetable_set_1["data"].length); // Cross over between sections
 
   // Perform crossover by swapping timetables after the crossover point
-  for (let i = crossoverPoint; i < offspring1["data"].length; i++) {
-    let teacher_room_clash_map = offspring1["data"][i].timetable;
-    offspring1["data"][i].timetable = offspring2["data"][i].timetable;
-    offspring2["data"][i].timetable = teacher_room_clash_map;
+  for (let i = crossoverPoint; i < Timetable_set_1["data"].length; i++) {
+    let placeholdervar = Timetable_set_1["data"][i]
+    Timetable_set_1["data"][i] = Timetable_set_2["data"][i]
+    Timetable_set_2["data"][i] = placeholdervar;
   }
 
-  offspring1 = resolveConflicts(offspring1, room);
-  offspring2 = resolveConflicts(offspring2, room);
+  Timetable_set_1 = resolveConflicts(Timetable_set_1, room);
+  Timetable_set_2 = resolveConflicts(Timetable_set_2, room);
   let res = [];
-  if (offspring1 !== false) {
-    res.push(offspring1);
+  if (Timetable_set_1 !== false) {
+    res.push(Timetable_set_1);
   }
-  if (offspring2 !== false) {
-    res.push(offspring2);
+  if (Timetable_set_2 !== false) {
+    res.push(Timetable_set_2);
   }
   return res;
 };
 
 const crossoverGeneration = (population, room) => {
   population = fitness_func_generation(population);
-
+  population.sort(function (a, b) { return b.fitness - a.fitness; });     // Sort population by fitness score (descending order)
   let newGeneration = [];
 
   const eliteCount = Math.ceil(population.length * config.eliteRate);
-  let elites = population.slice(0, eliteCount); // Perform elitism (preserve the best solutions)
-  let nonElites = population.slice(eliteCount); // Remove the elites from the population
+  let elites = JSON.parse(JSON.stringify(population.slice(0, eliteCount))); // Deep copy the top N
+  let nonElites = JSON.parse(JSON.stringify(population.slice(eliteCount))); // Deep copy the bottom N
 
   let selectedForCrossover = population;
-  let crossover_map = {};
+  let crossover_map = {};         // Map to keep track of crossover pairs
   newGeneration.push(...elites); // Add the elites to the new generation (deep copy)
 
   while (newGeneration.length < population.length) {
     let random1, random2;
-    while (true) {
+    while (true) {        // check for unique random pairs of timetables for crossover
       random1 = Math.floor(Math.random() * selectedForCrossover.length);
       random2 = Math.floor(Math.random() * selectedForCrossover.length);
       if (random1 != random2 && !crossover_map[random1 + ";" + random2] && !crossover_map[random2 + ";" + random1]) {
@@ -348,6 +346,7 @@ const crossoverGeneration = (population, room) => {
       break;
     }
   }
+  newGeneration = newGeneration.sort(function (a, b) { return b.fitness - a.fitness; });
   if (newGeneration.length > population.length) {
     newGeneration = newGeneration.slice(0, population.length);
   } else if (newGeneration.length == eliteCount) {
