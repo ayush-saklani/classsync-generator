@@ -81,29 +81,35 @@ article {
 .setclass {
     font-weight: 1000;
     font-size: larger;
-    background: linear-gradient(90deg, #4591c5, #8c76da) !important;
+    /* background: linear-gradient(90deg, #4591c5, #8c76da) !important; */
+    background-color: rgb(62, 155, 191) !important;
     border-right: 5px solid black;
 }
 
 .unacceptable {
     font-weight: 800;
-    background: linear-gradient(90deg, #d31027, #a00013) !important;
+    /* background: linear-gradient(90deg, #d31027, #a00013) !important; */
+    background-color: red !important;
+
 }
 
 .poor {
     font-weight: 800;
-    background: linear-gradient(90deg, #f7971e, #ffd200) !important;
+    /* background: linear-gradient(90deg, #f7971e, #ffd200) !important; */
+    background-color: rgb(196, 196, 0) !important;
 }
 
 .average {
     font-weight: 800;
-    background: linear-gradient(90deg, #c47f00, #f39e01) !important;
+    /* background: linear-gradient(90deg, #c47f00, #f39e01) !important; */
+    background-color: rgb(196, 127, 0) !important;
 
 }
 
 .good {
     font-weight: 800;
-    background: linear-gradient(90deg, #008000, #02b402) !important;
+    /* background: linear-gradient(90deg, #008000, #02b402) !important; */
+    background-color: green !important;
 }
 
 
