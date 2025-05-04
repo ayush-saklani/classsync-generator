@@ -12,7 +12,9 @@ let config = {
   max_streak: 4,                                // maximum consecutive slot allocation allowed for a teacher
   max_streak_student: 4,                        // maximum consecutive slot allocation allowed for a student
   acceptable_Global_Fitness_Score: 225,         // acceptable Global Fitness Score (Final Result)
-  acceptable_Local_Fitness_Score: 110,          // acceptable Local Fitness Score (Final Result)
+  acceptable_Local_Fitness_Score_min: 110,      // acceptable Local Fitness Score (Final Result)
+  acceptable_Local_Fitness_Score_bareminimum: 100,// acceptable Local Fitness Score (Final Result)
+  acceptable_Local_Fitness_Score_percentage: 0.6, // acceptable Local Fitness Score (Final Result)
 };
 
 export default config;

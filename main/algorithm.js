@@ -26,6 +26,15 @@ const check_acceptability = (population) => {
   }
   return false;
 };
+
+const real_checkpoint_save = (population) => {  // Checkpoint: write population to file if current population is better than previous population
+  let previous_population = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
+  if (population[0].fitness > previous_population[0].fitness) {
+    console.log("Ka-Chow! New checkpoint saved.");
+    fs.writeFileSync("./JSON/classsync.win.chechpoint.tables.json", JSON.stringify(population, null, 4), "utf8",);
+  }
+}
+
 const algorithm = (room) => {
   //  timetable data with subjects and teachers already assigned
   let alltimetable = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8"));                 // step 1: generate initial population
@@ -44,6 +53,7 @@ const algorithm = (room) => {
       console.log("Checkpoint: writing population to file...");
       fs.writeFileSync("./JSON/population_selected.json", JSON.stringify(population, null, 4), "utf8",);
     }
+    real_checkpoint_save(population);                                                                          // Checkpoint: write population to file if current population is better than previous population
 
     population = fitness_func_generation(population, room);                                                         // step 4: calculate fitness score
 
