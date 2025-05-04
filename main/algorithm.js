@@ -11,13 +11,25 @@ const check_acceptability = (population) => {
   for (let i = 0; i < population.length; i++) {
     flag = true;
     if (population[i].fitness >= config.acceptable_Global_Fitness_Score) {
+      let count = 0;
       for (let j = 0; j < population[i].data.length; j++) {
         // console.log(population[i].data[j].local_fitness);
-        if (population[i].data[j].local_fitness < config.acceptable_Local_Fitness_Score) {
+        if (population[i].data[j].local_fitness < config.acceptable_Local_Fitness_Score_bareminimum) {
           flag = false;
+        } else {
+          if (population[i].data[j].local_fitness >= config.acceptable_Local_Fitness_Score_min) {
+            count++;
+          }
         }
       }
-    } else flag = false;
+      if (count >= config.acceptable_Local_Fitness_Score_percentage * population[i].data.length) {
+        flag = true;
+      } else {
+        flag = false;
+      }
+    } else {
+      flag = false;
+    }
     if (flag == true) {
       fs.writeFileSync("./JSON/classsync.Win.perfect.tables.json", JSON.stringify(population, null, 4), "utf8",);
       fs.writeFileSync("./JSON/accepetedsol.json", JSON.stringify([population[i]], null, 4), "utf8",);
@@ -28,9 +40,14 @@ const check_acceptability = (population) => {
 };
 
 const real_checkpoint_save = (population) => {  // Checkpoint: write population to file if current population is better than previous population
-  let previous_population = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
-  if (population[0].fitness > previous_population[0].fitness) {
+  let previous_population = [];
+  if (fs.existsSync('./JSON/classsync.win.chechpoint.tables.json')) {
+    previous_population = JSON.parse(fs.readFileSync('./JSON/classsync.win.chechpoint.tables.json', 'utf8'));
+  }
+  if (previous_population.length >= 1 && population[0].fitness > previous_population[0].fitness) {
     console.log("Ka-Chow! New checkpoint saved.");
+    fs.writeFileSync("./JSON/classsync.win.chechpoint.tables.json", JSON.stringify(population, null, 4), "utf8",);
+  } else {
     fs.writeFileSync("./JSON/classsync.win.chechpoint.tables.json", JSON.stringify(population, null, 4), "utf8",);
   }
 }
