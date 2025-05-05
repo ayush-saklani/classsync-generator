@@ -5,6 +5,8 @@ import { fitness_func_generation } from "./fitness_func.js";
 import crossoverGeneration from "./crossover.js";
 import mutate_Population from "./mutation.js";
 const art = await fs.promises.readFile("./assets/art.txt", "utf-8");
+const runId = process.argv[2] || "default";
+const runCounter = process.argv[3] || 1;
 
 const check_acceptability = (population) => {
   let flag = true;
@@ -47,22 +49,36 @@ const real_checkpoint_save = (population) => {
   }
   if (previous_population.length >= 1 && population[0].fitness > previous_population[0].fitness) {
     console.log("Ka-Chow! New checkpoint saved.");
-    const runId = process.argv[2] || "default";
 
-    fs.writeFileSync(`./results/solution_${runId}.json`, JSON.stringify(population, null, 4), "utf8");
     fs.writeFileSync("./JSON/classsync.win.chechpoint.tables.json", JSON.stringify(population, null, 4), "utf8");
   } else if (previous_population.length == 0) {
     fs.writeFileSync("./JSON/classsync.win.chechpoint.tables.json", JSON.stringify(population, null, 4), "utf8");
   }
+
+  const solutionPath = `./results/solution_${runId}.json`;
+  if (fs.existsSync(solutionPath)) {
+    let previous_current_instance_population = JSON.parse(fs.readFileSync(solutionPath, "utf8"));
+    if (previous_current_instance_population[0].fitness < population[0].fitness) {
+      fs.writeFileSync(solutionPath, JSON.stringify(population, null, 4), "utf8");
+    }
+  } else {
+    fs.writeFileSync(solutionPath, JSON.stringify(population, null, 4), "utf8");
+  }
 };
 
 const algorithm = (room) => {
+  console.log("Run ID of current run instance: ", runId, "Current Run Number: ", runCounter);
   //  timetable data with subjects and teachers already assigned
   let alltimetable = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8")); // step 1: generate initial population
-  let population = generate_initialize_population(alltimetable, room);
-  fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8"); // Checkpoint: write population to file
+  let population;
 
-  // let population = JSON.parse(fs.readFileSync('./JSON/classsync.win.selected.tables.json', 'utf8'));             // step 1: read population from file (if exists) (alternate)
+  // if (runCounter == 1) {
+  //   population = generate_initialize_population(alltimetable, room);
+  //   fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8"); // Checkpoint: write population to file
+  // } else {
+  //   population = JSON.parse(fs.readFileSync("./JSON/best_instance_result_featuring_kanye_west.json", "utf8"));
+  // }
+  population = JSON.parse(fs.readFileSync("./JSON/population_selected.json", "utf8")); // step 1: read population from file (if exists) (alternate)
 
   // The loop is Technically infinite, and it will break when acceptable solution is found
   // but we have set a max_generation limit to avoid infinite computation of poor offsprings
@@ -88,7 +104,7 @@ const algorithm = (room) => {
   return null;
 };
 
-console.log(art);
+//console.log(art);
 console.time("Execution Time");
 
 let room = JSON.parse(fs.readFileSync("./JSON/classsync.converted.rooms.json", "utf8")); //  (capacity is not implemented in this code right now)
