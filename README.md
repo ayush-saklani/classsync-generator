@@ -1,4 +1,4 @@
-# **Class-Sync Generator** <img src="assets/img/new-logo-white.svg" height="55" align="left"/>
+# <img src="assets/img/new-logo-white-2.png" height="70"/>
 
 **This is the all new addition to the ClassSync where we are introducing the automation in timetable generation using genetic algorithm.**<br>
 **_(currently in the Finalizing-coding-ish phase of development)_**
