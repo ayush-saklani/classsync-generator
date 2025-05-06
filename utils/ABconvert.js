@@ -12,6 +12,10 @@ let mergemap = {
     }
 }
 
+console.log("===========================================================================================");
+console.log("================== Converting from class-sync format to algorithm format ==================");
+console.log("===========================================================================================");
+
 console.group("\n================================ Converting timetable data ================================");
 let old_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.tables.json', 'utf8'));
 let new_timetable_data = [];
@@ -147,7 +151,12 @@ for (let i = 0; i < old_faculty_data.length; i++) {
     };
 }
 fs.writeFileSync('./JSON/classsync.converted.faculties.json', JSON.stringify(new_faculty_data, null, 4), 'utf8');
-console.log("=========== Converted faculty data saved to classsync.converted.faculties.json  ===========");
+console.log("=========== Converted faculty data saved to classsync.converted.faculties.json  ===========\n");
+
+console.log("===========================================================================================");
+console.log("================ Finished converting to class-sync format from algorithm format  ==========");
+console.log("===========================================================================================");
+
 // This takes the teacher allocated timetables, faculty data, and room data from the mongodb database in the following files:
 // classsync.tables.json, classsync.faculties.json, classsync.rooms.json
 // Then it converts the data into the format required by the genetic algorithm.
