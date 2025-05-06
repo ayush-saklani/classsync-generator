@@ -10,6 +10,8 @@ let faculty_data = JSON.parse(fs.readFileSync('./JSON/classsync.converted.facult
 let new_converted_data = [];
 const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 const timeSlots = ["08-09", "09-10", "10-11", "11-12", "12-01", "01-02", "02-03", "03-04", "04-05", "05-06"];
+
+console.log("\n================================ Converting timetable data ================================");
 for (let i = 0; i < new_timetable_data.length; i++) {
     let current_timetable = JSON.parse(JSON.stringify({
         "course": new_timetable_data[i].course,
@@ -46,6 +48,9 @@ for (let i = 0; i < new_timetable_data.length; i++) {
     }
 }
 fs.writeFileSync('./JSON/classsync.backtonormal.tables.json', JSON.stringify(new_converted_data, null, 4), 'utf8');
+console.log("========== Converted timetable data saved to classsync.backtonormal.tables.json  ==========\n");
+
+
 
 // This does exactly the opposite of what ABconvert.js does or what is written below lol.
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

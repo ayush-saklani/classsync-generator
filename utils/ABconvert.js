@@ -12,10 +12,10 @@ let mergemap = {
     }
 }
 
-
+console.group("\n================================ Converting timetable data ================================");
 let old_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.tables.json', 'utf8'));
 let new_timetable_data = [];
-let spare_teacher_id = 2119666;
+process.stdout.write("Skipping | ");
 for (let i = 0; i < old_timetable_data.length; i++) {
     let tttemp3 = [];
     let skip = false;
@@ -24,7 +24,7 @@ for (let i = 0; i < old_timetable_data.length; i++) {
             for (let y = 0; y < mergemap[old_timetable_data[i].semester][x].length; y++) {
                 if (old_timetable_data[i].section == mergemap[old_timetable_data[i].semester][x][y]) {
                     skip = true;
-                    console.log("Skipping ", old_timetable_data[i].section);
+                    process.stdout.write(old_timetable_data[i].section + " | ");
                     break;
                 }
             }
@@ -73,7 +73,7 @@ for (let i = 0; i < old_timetable_data.length; i++) {
         [{ "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }, { "roomid": "", "teacherid": "", "subjectid": "", "type": "" }]
     ];
     if (old_timetable_data[i].section in mergemap[old_timetable_data[i].semester]) {
-        console.log(mergemap[old_timetable_data[i].semester][old_timetable_data[i].section]);
+        // console.log(mergemap[old_timetable_data[i].semester][old_timetable_data[i].section]);
         new_timetable_data.push({
             "local_fitness": 0,
             "course": old_timetable_data[i].course,
@@ -103,9 +103,11 @@ new_timetable_data = {
 }
 fs.writeFileSync('./JSON/classsync.converted.tables.json', JSON.stringify(new_timetable_data, null, 4), 'utf8');
 fs.writeFileSync('./JSON/classsync.tables.json', JSON.stringify(old_timetable_data, null, 4), 'utf8');//removes _id from the data
+console.groupEnd();
+console.log("\n============ Converted timetable data saved to classsync.converted.tables.json ============\n");
 
 
-
+console.log("---------------------------------- Converting room data  ----------------------------------");
 let old_room_data = JSON.parse(fs.readFileSync('./JSON/classsync.rooms.json', 'utf8'));
 let new_room_data = {};
 for (let i = 0; i < old_room_data.length; i++) {
@@ -129,9 +131,10 @@ for (let i = 0; i < old_room_data.length; i++) {
 }
 // fs.writeFileSync('classsync.rooms.json', JSON.stringify(old_room_data, null, 4), 'utf8');//removes _id from the data
 fs.writeFileSync('./JSON/classsync.converted.rooms.json', JSON.stringify(new_room_data, null, 4), 'utf8');
+console.log("--------------- Converted room data saved to classsync.converted.rooms.json ---------------\n");
 
 
-
+console.log("================================= Converting faculty data =================================");
 let old_faculty_data = JSON.parse(fs.readFileSync('./JSON/classsync.faculties.json', 'utf8'));
 let new_faculty_data = {};
 for (let i = 0; i < old_faculty_data.length; i++) {
@@ -144,7 +147,7 @@ for (let i = 0; i < old_faculty_data.length; i++) {
     };
 }
 fs.writeFileSync('./JSON/classsync.converted.faculties.json', JSON.stringify(new_faculty_data, null, 4), 'utf8');
-
+console.log("=========== Converted faculty data saved to classsync.converted.faculties.json  ===========");
 // This takes the teacher allocated timetables, faculty data, and room data from the mongodb database in the following files:
 // classsync.tables.json, classsync.faculties.json, classsync.rooms.json
 // Then it converts the data into the format required by the genetic algorithm.

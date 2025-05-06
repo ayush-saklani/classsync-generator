@@ -4,12 +4,12 @@ import { faculty_schedule_sample } from "./constant.js";
 const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 const timeSlots = ["08-09", "09-10", "10-11", "11-12", "12-01", "01-02", "02-03", "03-04", "04-05", "05-06"];
 
+console.log("================================= Converting faculty data =================================");
 let old_faculty_data = JSON.parse(fs.readFileSync("./JSON/classsync.faculties.json", "utf8"));
 // genetic to classsync table
 let genetic_reverted_timetable = JSON.parse(fs.readFileSync("./JSON/classsync.backtonormal.tables.json", "utf8"));
 
 // code to create faculty data for classsync from genetic algorithm output jsons
-////////
 let new_converted_faculty_data = [];
 
 // creating a seperate map to find faculty faster inside the converted room data
@@ -72,4 +72,4 @@ for (let i = 0; i < genetic_reverted_timetable.length; i++) {
 
 // Save the converted room data to a JSON file
 fs.writeFileSync("./JSON/classsync.backtonormal.faculties.json", JSON.stringify(new_converted_faculty_data, null, 2), "utf8");
-console.log("Modified faculty data has been saved to classsync.modified.faculties.json");
+console.log("========== Converted faculty data saved to classsync.backtonormal.faculties.json ==========");
