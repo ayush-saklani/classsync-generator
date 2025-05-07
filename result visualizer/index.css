@@ -124,4 +124,6 @@ footer {
     color: wheat;
     font-size: larger;
     font-weight: bold;
+    text-align: center;
+    padding: 10px;
 }

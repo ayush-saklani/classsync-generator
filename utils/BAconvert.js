@@ -1,13 +1,9 @@
 import fs from 'fs';
-import { schedule_sample } from './constant.js';
-import { room_schedule_sample } from "./constant.js";
-import { faculty_schedule_sample } from "./constant.js";
+import { schedule_sample, room_schedule_sample, faculty_schedule_sample } from "./constant.js";
 
 let new_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.converted.tables.json', 'utf8'));
 let old_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.tables.json', 'utf8'));
 new_timetable_data = new_timetable_data.data;
-let room_data = JSON.parse(fs.readFileSync('./JSON/classsync.converted.rooms.json', 'utf8'));
-let faculty_data = JSON.parse(fs.readFileSync('./JSON/classsync.converted.faculties.json', 'utf8'));
 
 let new_converted_data = [];
 const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
@@ -108,8 +104,6 @@ for (let i = 0; i < genetic_reverted_timetable.length; i++) {
             let current_subject_id = table_slot.subjectcode;
 
             let current_room = new_converted_room_data[room_map[current_room_id]];
-            // if (current_room.roomid == "4085")
-            // console.log(current_room.roomid, day, time);
             let room_slot = current_room.schedule[day][time];
 
             room_slot.course = table_course;
@@ -172,8 +166,6 @@ for (let i = 0; i < genetic_reverted_timetable.length; i++) {
             if (current_faculty_id === "0") continue;
 
             let current_faculty = new_converted_faculty_data[faculty_map[current_faculty_id]];
-            // if (current_room.roomid == "4085")
-            // console.log(current_room.roomid, day, time);
             let faculty_slot = current_faculty.schedule[day][time];
 
             faculty_slot.course = table_course;

@@ -87,7 +87,6 @@ const displayTimetableAsTables = (timetable) => {
         });
     });
 };
-
 const functiosn = async () => {
 
     let timetable = [];
@@ -108,7 +107,5 @@ const functiosn = async () => {
                 x.style.overflow = "hidden"; // Hide overflow content
             });
         }).catch(error => console.error('Error fetching the timetable:', error));
-    console.log(timetable);
-
 }
 functiosn();
