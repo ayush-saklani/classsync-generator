@@ -13,6 +13,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cli-progress": "^3.12.0",
     "dotenv": "^16.4.7",
     "mathjs": "^13.1.1",
     "mongoose": "^8.12.1"
