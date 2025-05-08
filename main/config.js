@@ -3,8 +3,8 @@ let config = {
   max: 49,                                      // it 59 then end at 59  (saturday 6pm)
   population_size: 10,                          // population size
   showstats: false,                             // toggle to show stats of each generation // true for debugging // (not fine tuned yet)
-  min_local_fitness: 100,                       // minimum local fitness score which is bare minimum to be acceptable
-  min_global_fitness: 212,                      // minimum global fitness score which is bare minimum to be acceptable
+  min_local_fitness: 80,                        // minimum local fitness score which is bare minimum to be acceptable
+  min_global_fitness: 180,                      // minimum global fitness score which is bare minimum to be acceptable
   max_generation: 1000000,                      // maximum generation limit to avoid infinite computation of poor offsprings
   eliteRate: 0.05,                              // elite rate (5% of population) will be selected as elites for next generation
   selectionRate: 1,                             // selection rate (100% of population) will be selected for crossover (not used rn)

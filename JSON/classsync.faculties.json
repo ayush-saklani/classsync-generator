@@ -82956,5 +82956,6737 @@
       }
     },
     "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6814f59db21c95d591d04591"
+    },
+    "teacherid": "2118615",
+    "name": "Dr. Sumit Pundir",
+    "schedule": {
+      "mon": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d04594"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d04595"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d04596"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d04597"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d04598"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d04599"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d0459a"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d0459b"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d0459c"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d0459d"
+          }
+        },
+        "_id": {
+          "$oid": "6814f59db21c95d591d04593"
+        }
+      },
+      "tue": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d0459f"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045a0"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045a1"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045a2"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045a3"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045a4"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045a5"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045a6"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045a7"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045a8"
+          }
+        },
+        "_id": {
+          "$oid": "6814f59db21c95d591d0459e"
+        }
+      },
+      "wed": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045aa"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045ab"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045ac"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045ad"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045ae"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045af"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045b0"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045b1"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045b2"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045b3"
+          }
+        },
+        "_id": {
+          "$oid": "6814f59db21c95d591d045a9"
+        }
+      },
+      "thu": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045b5"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045b6"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045b7"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045b8"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045b9"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045ba"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045bb"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045bc"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045bd"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045be"
+          }
+        },
+        "_id": {
+          "$oid": "6814f59db21c95d591d045b4"
+        }
+      },
+      "fri": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045c0"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045c1"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045c2"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045c3"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045c4"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045c5"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045c6"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045c7"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045c8"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045c9"
+          }
+        },
+        "_id": {
+          "$oid": "6814f59db21c95d591d045bf"
+        }
+      },
+      "sat": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045cb"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045cc"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045cd"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045ce"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045cf"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045d0"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045d1"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045d2"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045d3"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045d4"
+          }
+        },
+        "_id": {
+          "$oid": "6814f59db21c95d591d045ca"
+        }
+      },
+      "sun": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045d6"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045d7"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045d8"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045d9"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045da"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045db"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045dc"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045dd"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045de"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f59db21c95d591d045df"
+          }
+        },
+        "_id": {
+          "$oid": "6814f59db21c95d591d045d5"
+        }
+      },
+      "_id": {
+        "$oid": "6814f59db21c95d591d04592"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6814f5b0b21c95d591d045e5"
+    },
+    "teacherid": "2118616",
+    "name": "Mr. Ankur Sharma",
+    "schedule": {
+      "mon": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045e8"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045e9"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045ea"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045eb"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045ec"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045ed"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045ee"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045ef"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045f0"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045f1"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5b0b21c95d591d045e7"
+        }
+      },
+      "tue": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045f3"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045f4"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045f5"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045f6"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045f7"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045f8"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045f9"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045fa"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045fb"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045fc"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5b0b21c95d591d045f2"
+        }
+      },
+      "wed": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045fe"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d045ff"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04600"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04601"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04602"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04603"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04604"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04605"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04606"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04607"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5b0b21c95d591d045fd"
+        }
+      },
+      "thu": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04609"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0460a"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0460b"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0460c"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0460d"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0460e"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0460f"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04610"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04611"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04612"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5b0b21c95d591d04608"
+        }
+      },
+      "fri": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04614"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04615"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04616"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04617"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04618"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04619"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0461a"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0461b"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0461c"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0461d"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5b0b21c95d591d04613"
+        }
+      },
+      "sat": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0461f"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04620"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04621"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04622"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04623"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04624"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04625"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04626"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04627"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04628"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5b0b21c95d591d0461e"
+        }
+      },
+      "sun": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0462a"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0462b"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0462c"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0462d"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0462e"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d0462f"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04630"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04631"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04632"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5b0b21c95d591d04633"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5b0b21c95d591d04629"
+        }
+      },
+      "_id": {
+        "$oid": "6814f5b0b21c95d591d045e6"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6814f5c1b21c95d591d04639"
+    },
+    "teacherid": "2118617",
+    "name": "Mr. Tushar Sharma",
+    "schedule": {
+      "mon": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0463c"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0463d"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0463e"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0463f"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04640"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04641"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04642"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04643"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04644"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04645"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5c1b21c95d591d0463b"
+        }
+      },
+      "tue": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04647"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04648"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04649"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0464a"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0464b"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0464c"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0464d"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0464e"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0464f"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04650"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5c1b21c95d591d04646"
+        }
+      },
+      "wed": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04652"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04653"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04654"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04655"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04656"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04657"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04658"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04659"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0465a"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0465b"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5c1b21c95d591d04651"
+        }
+      },
+      "thu": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0465d"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0465e"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0465f"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04660"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04661"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04662"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04663"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04664"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04665"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04666"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5c1b21c95d591d0465c"
+        }
+      },
+      "fri": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04668"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04669"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0466a"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0466b"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0466c"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0466d"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0466e"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0466f"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04670"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04671"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5c1b21c95d591d04667"
+        }
+      },
+      "sat": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04673"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04674"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04675"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04676"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04677"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04678"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04679"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0467a"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0467b"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0467c"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5c1b21c95d591d04672"
+        }
+      },
+      "sun": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0467e"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d0467f"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04680"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04681"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04682"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04683"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04684"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04685"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04686"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f5c1b21c95d591d04687"
+          }
+        },
+        "_id": {
+          "$oid": "6814f5c1b21c95d591d0467d"
+        }
+      },
+      "_id": {
+        "$oid": "6814f5c1b21c95d591d0463a"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6814f7cab21c95d591d049ff"
+    },
+    "teacherid": "2118618",
+    "name": "Dr. Anubha Pundir",
+    "schedule": {
+      "mon": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a02"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a03"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a04"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a05"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a06"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a07"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a08"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a09"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a0a"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a0b"
+          }
+        },
+        "_id": {
+          "$oid": "6814f7cab21c95d591d04a01"
+        }
+      },
+      "tue": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a0d"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a0e"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a0f"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a10"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a11"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a12"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a13"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a14"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a15"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a16"
+          }
+        },
+        "_id": {
+          "$oid": "6814f7cab21c95d591d04a0c"
+        }
+      },
+      "wed": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a18"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a19"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a1a"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a1b"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a1c"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a1d"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a1e"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a1f"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a20"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a21"
+          }
+        },
+        "_id": {
+          "$oid": "6814f7cab21c95d591d04a17"
+        }
+      },
+      "thu": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a23"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a24"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a25"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a26"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a27"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a28"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a29"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a2a"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a2b"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a2c"
+          }
+        },
+        "_id": {
+          "$oid": "6814f7cab21c95d591d04a22"
+        }
+      },
+      "fri": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a2e"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a2f"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a30"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a31"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a32"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a33"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a34"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a35"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a36"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a37"
+          }
+        },
+        "_id": {
+          "$oid": "6814f7cab21c95d591d04a2d"
+        }
+      },
+      "sat": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a39"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a3a"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a3b"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a3c"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a3d"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a3e"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a3f"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a40"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a41"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a42"
+          }
+        },
+        "_id": {
+          "$oid": "6814f7cab21c95d591d04a38"
+        }
+      },
+      "sun": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a44"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a45"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a46"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a47"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a48"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a49"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a4a"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a4b"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a4c"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "6814f7cab21c95d591d04a4d"
+          }
+        },
+        "_id": {
+          "$oid": "6814f7cab21c95d591d04a43"
+        }
+      },
+      "_id": {
+        "$oid": "6814f7cab21c95d591d04a00"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "681501d78c7854936bf21ea4"
+    },
+    "teacherid": "2118619",
+    "name": "Dr. Guru Prasad",
+    "schedule": {
+      "mon": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ea7"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ea8"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ea9"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eaa"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eab"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eac"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ead"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eae"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eaf"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eb0"
+          }
+        },
+        "_id": {
+          "$oid": "681501d78c7854936bf21ea6"
+        }
+      },
+      "tue": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eb2"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eb3"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eb4"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eb5"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eb6"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eb7"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eb8"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eb9"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eba"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ebb"
+          }
+        },
+        "_id": {
+          "$oid": "681501d78c7854936bf21eb1"
+        }
+      },
+      "wed": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ebd"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ebe"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ebf"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ec0"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ec1"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ec2"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ec3"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ec4"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ec5"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ec6"
+          }
+        },
+        "_id": {
+          "$oid": "681501d78c7854936bf21ebc"
+        }
+      },
+      "thu": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ec8"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ec9"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eca"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ecb"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ecc"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ecd"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ece"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ecf"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ed0"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ed1"
+          }
+        },
+        "_id": {
+          "$oid": "681501d78c7854936bf21ec7"
+        }
+      },
+      "fri": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ed3"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ed4"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ed5"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ed6"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ed7"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ed8"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ed9"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eda"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21edb"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21edc"
+          }
+        },
+        "_id": {
+          "$oid": "681501d78c7854936bf21ed2"
+        }
+      },
+      "sat": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ede"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21edf"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ee0"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ee1"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ee2"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ee3"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ee4"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ee5"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ee6"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ee7"
+          }
+        },
+        "_id": {
+          "$oid": "681501d78c7854936bf21edd"
+        }
+      },
+      "sun": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ee9"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eea"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eeb"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eec"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eed"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eee"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21eef"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ef0"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ef1"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681501d78c7854936bf21ef2"
+          }
+        },
+        "_id": {
+          "$oid": "681501d78c7854936bf21ee8"
+        }
+      },
+      "_id": {
+        "$oid": "681501d78c7854936bf21ea5"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "681503b48c7854936bf2212b"
+    },
+    "teacherid": "2118620",
+    "name": "Mr. Sarath",
+    "schedule": {
+      "mon": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2212e"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2212f"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22130"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22131"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22132"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22133"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22134"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22135"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22136"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22137"
+          }
+        },
+        "_id": {
+          "$oid": "681503b48c7854936bf2212d"
+        }
+      },
+      "tue": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22139"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2213a"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2213b"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2213c"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2213d"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2213e"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2213f"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22140"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22141"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22142"
+          }
+        },
+        "_id": {
+          "$oid": "681503b48c7854936bf22138"
+        }
+      },
+      "wed": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22144"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22145"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22146"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22147"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22148"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22149"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2214a"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2214b"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2214c"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2214d"
+          }
+        },
+        "_id": {
+          "$oid": "681503b48c7854936bf22143"
+        }
+      },
+      "thu": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2214f"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22150"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22151"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22152"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22153"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22154"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22155"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22156"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22157"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22158"
+          }
+        },
+        "_id": {
+          "$oid": "681503b48c7854936bf2214e"
+        }
+      },
+      "fri": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2215a"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2215b"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2215c"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2215d"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2215e"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2215f"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22160"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22161"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22162"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22163"
+          }
+        },
+        "_id": {
+          "$oid": "681503b48c7854936bf22159"
+        }
+      },
+      "sat": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22165"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22166"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22167"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22168"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22169"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2216a"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2216b"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2216c"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2216d"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf2216e"
+          }
+        },
+        "_id": {
+          "$oid": "681503b48c7854936bf22164"
+        }
+      },
+      "sun": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22170"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22171"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22172"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22173"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22174"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22175"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22176"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22177"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22178"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681503b48c7854936bf22179"
+          }
+        },
+        "_id": {
+          "$oid": "681503b48c7854936bf2216f"
+        }
+      },
+      "_id": {
+        "$oid": "681503b48c7854936bf2212c"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "681504aa8c7854936bf22466"
+    },
+    "teacherid": "2118621",
+    "name": "Mr. Prateek Kumar",
+    "schedule": {
+      "mon": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22469"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2246a"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2246b"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2246c"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2246d"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2246e"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2246f"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22470"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22471"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22472"
+          }
+        },
+        "_id": {
+          "$oid": "681504aa8c7854936bf22468"
+        }
+      },
+      "tue": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22474"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22475"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22476"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22477"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22478"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22479"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2247a"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2247b"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2247c"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2247d"
+          }
+        },
+        "_id": {
+          "$oid": "681504aa8c7854936bf22473"
+        }
+      },
+      "wed": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2247f"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22480"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22481"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22482"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22483"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22484"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22485"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22486"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22487"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22488"
+          }
+        },
+        "_id": {
+          "$oid": "681504aa8c7854936bf2247e"
+        }
+      },
+      "thu": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2248a"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2248b"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2248c"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2248d"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2248e"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2248f"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22490"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22491"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22492"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22493"
+          }
+        },
+        "_id": {
+          "$oid": "681504aa8c7854936bf22489"
+        }
+      },
+      "fri": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22495"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22496"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22497"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22498"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf22499"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2249a"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2249b"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2249c"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2249d"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf2249e"
+          }
+        },
+        "_id": {
+          "$oid": "681504aa8c7854936bf22494"
+        }
+      },
+      "sat": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224a0"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224a1"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224a2"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224a3"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224a4"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224a5"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224a6"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224a7"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224a8"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224a9"
+          }
+        },
+        "_id": {
+          "$oid": "681504aa8c7854936bf2249f"
+        }
+      },
+      "sun": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224ab"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224ac"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224ad"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224ae"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224af"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224b0"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224b1"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224b2"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224b3"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681504aa8c7854936bf224b4"
+          }
+        },
+        "_id": {
+          "$oid": "681504aa8c7854936bf224aa"
+        }
+      },
+      "_id": {
+        "$oid": "681504aa8c7854936bf22467"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "681505f78c7854936bf227b5"
+    },
+    "teacherid": "2118622",
+    "name": "Dr. Ankit Tomar",
+    "schedule": {
+      "mon": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227b8"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227b9"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227ba"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227bb"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227bc"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227bd"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227be"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227bf"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227c0"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227c1"
+          }
+        },
+        "_id": {
+          "$oid": "681505f78c7854936bf227b7"
+        }
+      },
+      "tue": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227c3"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227c4"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227c5"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227c6"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227c7"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227c8"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227c9"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227ca"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227cb"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227cc"
+          }
+        },
+        "_id": {
+          "$oid": "681505f78c7854936bf227c2"
+        }
+      },
+      "wed": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227ce"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227cf"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227d0"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227d1"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227d2"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227d3"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227d4"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227d5"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227d6"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227d7"
+          }
+        },
+        "_id": {
+          "$oid": "681505f78c7854936bf227cd"
+        }
+      },
+      "thu": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227d9"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227da"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227db"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227dc"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227dd"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227de"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227df"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227e0"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227e1"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227e2"
+          }
+        },
+        "_id": {
+          "$oid": "681505f78c7854936bf227d8"
+        }
+      },
+      "fri": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227e4"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227e5"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227e6"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227e7"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227e8"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227e9"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227ea"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227eb"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227ec"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227ed"
+          }
+        },
+        "_id": {
+          "$oid": "681505f78c7854936bf227e3"
+        }
+      },
+      "sat": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227ef"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227f0"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227f1"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227f2"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227f3"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227f4"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227f5"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227f6"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227f7"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227f8"
+          }
+        },
+        "_id": {
+          "$oid": "681505f78c7854936bf227ee"
+        }
+      },
+      "sun": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227fa"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227fb"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227fc"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227fd"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227fe"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf227ff"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf22800"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf22801"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf22802"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681505f78c7854936bf22803"
+          }
+        },
+        "_id": {
+          "$oid": "681505f78c7854936bf227f9"
+        }
+      },
+      "_id": {
+        "$oid": "681505f78c7854936bf227b6"
+      }
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "681506658c7854936bf22987"
+    },
+    "teacherid": "2118623",
+    "name": "Ms. Nishu Chawla",
+    "schedule": {
+      "mon": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf2298a"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf2298b"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf2298c"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf2298d"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf2298e"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf2298f"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf22990"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf22991"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf22992"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf22993"
+          }
+        },
+        "_id": {
+          "$oid": "681506658c7854936bf22989"
+        }
+      },
+      "tue": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf22995"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf22996"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf22997"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf22998"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf22999"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf2299a"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf2299b"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf2299c"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf2299d"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf2299e"
+          }
+        },
+        "_id": {
+          "$oid": "681506658c7854936bf22994"
+        }
+      },
+      "wed": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229a0"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229a1"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229a2"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229a3"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229a4"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229a5"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229a6"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229a7"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229a8"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229a9"
+          }
+        },
+        "_id": {
+          "$oid": "681506658c7854936bf2299f"
+        }
+      },
+      "thu": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229ab"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229ac"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229ad"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229ae"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229af"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229b0"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229b1"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229b2"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229b3"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229b4"
+          }
+        },
+        "_id": {
+          "$oid": "681506658c7854936bf229aa"
+        }
+      },
+      "fri": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229b6"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229b7"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229b8"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229b9"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229ba"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229bb"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229bc"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229bd"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229be"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229bf"
+          }
+        },
+        "_id": {
+          "$oid": "681506658c7854936bf229b5"
+        }
+      },
+      "sat": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229c1"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229c2"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229c3"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229c4"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229c5"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229c6"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229c7"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229c8"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229c9"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229ca"
+          }
+        },
+        "_id": {
+          "$oid": "681506658c7854936bf229c0"
+        }
+      },
+      "sun": {
+        "08-09": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229cc"
+          }
+        },
+        "09-10": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229cd"
+          }
+        },
+        "10-11": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229ce"
+          }
+        },
+        "11-12": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229cf"
+          }
+        },
+        "12-01": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229d0"
+          }
+        },
+        "01-02": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229d1"
+          }
+        },
+        "02-03": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229d2"
+          }
+        },
+        "03-04": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229d3"
+          }
+        },
+        "04-05": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229d4"
+          }
+        },
+        "05-06": {
+          "course": "",
+          "semester": "",
+          "section": [],
+          "roomid": [],
+          "subjectcode": "",
+          "_id": {
+            "$oid": "681506658c7854936bf229d5"
+          }
+        },
+        "_id": {
+          "$oid": "681506658c7854936bf229cb"
+        }
+      },
+      "_id": {
+        "$oid": "681506658c7854936bf22988"
+      }
+    },
+    "__v": 0
   }
 ]
