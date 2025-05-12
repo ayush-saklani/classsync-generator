@@ -25,9 +25,9 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg" height="75"/>
 </div>
 
-# Data and Algorithm Flow
+# Architecture and Algorithm Flow
 
-<img src="./assets/img/GA Flow diagram.png" />
+<img src="assets/img/full-arch.png" width="100%"/>
 
 ---
 
