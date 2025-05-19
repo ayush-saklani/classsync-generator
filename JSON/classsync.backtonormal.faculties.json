@@ -3718,18 +3718,26 @@
     "schedule": {
       "mon": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "B2"
+          ],
+          "roomid": [
+            "2101"
+          ],
+          "subjectcode": "PCS408"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "B2"
+          ],
+          "roomid": [
+            "2101"
+          ],
+          "subjectcode": "PCS408"
         },
         "10-11": {
           "course": "",
@@ -3895,18 +3903,26 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "A2"
+          ],
+          "roomid": [
+            "4069"
+          ],
+          "subjectcode": "PCS408"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "A2"
+          ],
+          "roomid": [
+            "4069"
+          ],
+          "subjectcode": "PCS408"
         },
         "02-03": {
           "course": "btechcse",
@@ -7390,18 +7406,26 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "D2"
+          ],
+          "roomid": [
+            "3069"
+          ],
+          "subjectcode": "PCS409"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "D2"
+          ],
+          "roomid": [
+            "3069"
+          ],
+          "subjectcode": "PCS409"
         },
         "02-03": {
           "course": "",
@@ -10663,18 +10687,26 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "D2"
+          ],
+          "roomid": [
+            "2069"
+          ],
+          "subjectcode": "PCS604"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "D2"
+          ],
+          "roomid": [
+            "2069"
+          ],
+          "subjectcode": "PCS604"
         },
         "12-01": {
           "course": "",
@@ -19908,18 +19940,26 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "B2"
+          ],
+          "roomid": [
+            "4087"
+          ],
+          "subjectcode": "PCS403"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "B2"
+          ],
+          "roomid": [
+            "4087"
+          ],
+          "subjectcode": "PCS403"
         },
         "12-01": {
           "course": "",
@@ -25272,18 +25312,26 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "B2"
+          ],
+          "roomid": [
+            "2101"
+          ],
+          "subjectcode": "PCS693"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "B2"
+          ],
+          "roomid": [
+            "2101"
+          ],
+          "subjectcode": "PCS693"
         }
       },
       "sat": {
@@ -25542,18 +25590,26 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "A2"
+          ],
+          "roomid": [
+            "2101"
+          ],
+          "subjectcode": "PCS601"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "A2"
+          ],
+          "roomid": [
+            "2101"
+          ],
+          "subjectcode": "PCS601"
         },
         "02-03": {
           "course": "btechcse",
@@ -28780,11 +28836,15 @@
           "subjectcode": "TCS403"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "E2"
+          ],
+          "roomid": [
+            "4087"
+          ],
+          "subjectcode": "PCS403"
         },
         "02-03": {
           "course": "",
@@ -39387,11 +39447,15 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "B2"
+          ],
+          "roomid": [
+            "3069"
+          ],
+          "subjectcode": "PCS409"
         },
         "11-12": {
           "course": "btechcse",
@@ -49907,18 +49971,26 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "D2"
+          ],
+          "roomid": [
+            "4122"
+          ],
+          "subjectcode": "PESE400"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "D2"
+          ],
+          "roomid": [
+            "4122"
+          ],
+          "subjectcode": "PESE400"
         },
         "02-03": {
           "course": "",
@@ -52205,18 +52277,26 @@
           "subjectcode": ""
         },
         "04-05": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "D2"
+          ],
+          "roomid": [
+            "4122"
+          ],
+          "subjectcode": "PESE600"
         },
         "05-06": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "D2"
+          ],
+          "roomid": [
+            "4122"
+          ],
+          "subjectcode": "PESE600"
         }
       },
       "thu": {
@@ -55231,18 +55311,26 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "B2"
+          ],
+          "roomid": [
+            "4122"
+          ],
+          "subjectcode": "PESE400"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "B2"
+          ],
+          "roomid": [
+            "4122"
+          ],
+          "subjectcode": "PESE400"
         },
         "12-01": {
           "course": "",
@@ -55369,18 +55457,26 @@
       },
       "thu": {
         "08-09": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "A2"
+          ],
+          "roomid": [
+            "4122"
+          ],
+          "subjectcode": "PESE400"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "A2"
+          ],
+          "roomid": [
+            "4122"
+          ],
+          "subjectcode": "PESE400"
         },
         "10-11": {
           "course": "",
@@ -55917,18 +56013,26 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "D2"
+          ],
+          "roomid": [
+            "2069"
+          ],
+          "subjectcode": "PCS408"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "D2"
+          ],
+          "roomid": [
+            "2069"
+          ],
+          "subjectcode": "PCS408"
         },
         "12-01": {
           "course": "",
@@ -59213,18 +59317,26 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "C2"
+          ],
+          "roomid": [
+            "1041"
+          ],
+          "subjectcode": "PESE400"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "roomid": [],
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "C2"
+          ],
+          "roomid": [
+            "1041"
+          ],
+          "subjectcode": "PESE400"
         },
         "02-03": {
           "course": "",

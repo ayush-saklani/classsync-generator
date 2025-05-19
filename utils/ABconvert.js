@@ -1,24 +1,5 @@
 import fs from 'fs';
-import { room_schedule_sample } from './constant.js';
-
-let mergemap = {
-    "4": {
-        "A1": ["A2"],
-        "B1": ["B2"],
-        "C1": ["C2"],
-        "D1": ["D2"],
-        "E1": ["E2"],
-        "F1": ["F2"],
-    },
-    "6": {
-        "A1": ["A2"],
-        "B1": ["B2"],
-        "C1": ["C2"],
-        "D1": ["D2"],
-        "E1": ["E2"],
-        "F1": ["F2"],
-    }
-}
+import { room_schedule_sample, merged_section } from './constant.js';
 
 console.log("===========================================================================================");
 console.log("================== Converting from class-sync format to algorithm format ==================");
