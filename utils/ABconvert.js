@@ -53,7 +53,7 @@ for (let i = 0; i < old_timetable_data.length; i++) {
             "room_type":
                 (mergemap[old_timetable_data[i].semester][old_timetable_data[i].section] && (old_timetable_data[i].teacher_subject_data[j].room_type == 'class' || old_timetable_data[i].teacher_subject_data[j].room_type == 'hall')) ? "hall" :
                     (!mergemap[old_timetable_data[i].semester][old_timetable_data[i].section] && (old_timetable_data[i].teacher_subject_data[j].room_type == 'class' || old_timetable_data[i].teacher_subject_data[j].room_type == 'hall')) ? "class" :
-                        old_timetable_data[i].teacher_subject_data[j].room_type,
+                        (old_timetable_data[i].teacher_subject_data[j].room_type).toLowerCase(),
         });
     }
     let tttemp = [
