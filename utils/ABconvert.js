@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { room_schedule_sample, merged_section } from './constant.js';
+import { room_schedule_sample, mergemap } from './constant.js';
 
 console.log("===========================================================================================");
 console.log("================== Converting from class-sync format to algorithm format ==================");

@@ -63,23 +63,27 @@
             "capacity": 1
         },
         {
-            "roomid": "2069",
-            "capacity": 1
-        },
-        {
             "roomid": "3069",
             "capacity": 1
         },
         {
-            "roomid": "4069",
+            "roomid": "1101",
             "capacity": 1
         },
         {
-            "roomid": "3101",
+            "roomid": "2003",
             "capacity": 1
         },
         {
-            "roomid": "2101",
+            "roomid": "2001",
+            "capacity": 1
+        },
+        {
+            "roomid": "4001",
+            "capacity": 1
+        },
+        {
+            "roomid": "4003",
             "capacity": 1
         },
         {
