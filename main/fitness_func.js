@@ -69,6 +69,28 @@ const teacher_overload_penalty = (alltimetable) => {
     }
     return total_overload_penalty_teacher;
 }
+const max_slot_per_day = (alltimetable) => {
+    let penalty = 0;
+    let penalties_per_timetable = [];
+    for (let i = 0; i < alltimetable['data'].length; i++) {
+        let timetable = alltimetable['data'][i].timetable;
+        let local_penalty = 0;
+        for (let j = 0; j < timetable.length; j++) { // for each day
+            let slot_count = 0;
+            for (let k = 0; k < timetable[j].length; k++) { // for each slot
+                if (timetable[j][k].teacherid && timetable[j][k].teacherid !== "") {
+                    slot_count++;
+                }
+            }
+            if (slot_count > config.max_slot_per_day) {
+                local_penalty += (slot_count - config.max_slot_per_day);
+            }
+        }
+        penalties_per_timetable.push(local_penalty);
+        penalty += local_penalty;
+    }
+    return { penalty, penalties_per_timetable };
+}
 const student_overload_penalty = (alltimetable) => {
     let overload_penalty_student_arr = [];
     let active_day_count_arr = [];
@@ -201,6 +223,16 @@ const fitness_func = (alltimetable) => {
     alltimetable = temporary_var.alltimetable;
     // ============================================================================================
 
+    // ====================== Max Slot Per Day Penalty [experiment starts] ========================
+    let max_slot_penalty_obj = max_slot_per_day(alltimetable);
+    let total_max_slot_penalty = max_slot_penalty_obj.penalty;
+    let penalties_per_timetable = max_slot_penalty_obj.penalties_per_timetable;
+    // Apply local penalty to each timetable's local_fitness
+    for (let i = 0; i < alltimetable['data'].length; i++) {
+        alltimetable['data'][i].local_fitness -= penalties_per_timetable[i] * 8; // weight can be adjusted
+    }
+    // ============================================================================================
+
     // ====================== Average Local Fitness Calculation [experiment starts] =================
     let local_fitness_total = 0;
     for (let i = 0; i < alltimetable['data'].length; i++) {
@@ -215,6 +247,7 @@ const fitness_func = (alltimetable) => {
     real_fitness_score -= (count_room_conflicts * 20)
     real_fitness_score -= (total_overload_penalty_teacher * 20)
     real_fitness_score -= (total_overload_penalty_student * 8);
+    real_fitness_score -= (total_max_slot_penalty * 8); // Apply global penalty
     real_fitness_score += (avg_active_day_count == 4 || avg_active_day_count == 5) ? (24 * alltimetable.data.length) : (-24 * alltimetable.data.length);
     real_fitness_score += total_perfect_day_reward;
     real_fitness_score += (avg_local_fitness_total * alltimetable.data.length);
