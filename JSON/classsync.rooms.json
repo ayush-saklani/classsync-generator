@@ -2970,7 +2970,9 @@
     "name": "CR101",
     "type": "class",
     "capacity": 1,
-    "allowed_course": [],
+    "allowed_course": [
+      "btechcse"
+    ],
     "schedule": {
       "mon": {
         "08-09": {
@@ -4749,7 +4751,9 @@
     "name": "CR104",
     "type": "class",
     "capacity": 1,
-    "allowed_course": [],
+    "allowed_course": [
+      "btechcse"
+    ],
     "schedule": {
       "mon": {
         "08-09": {
@@ -5342,7 +5346,9 @@
     "name": "CR105",
     "type": "class",
     "capacity": 1,
-    "allowed_course": [],
+    "allowed_course": [
+      "btechcse"
+    ],
     "schedule": {
       "mon": {
         "08-09": {
@@ -5935,7 +5941,9 @@
     "name": "CR106",
     "type": "class",
     "capacity": 1,
-    "allowed_course": [],
+    "allowed_course": [
+      "btechcse"
+    ],
     "schedule": {
       "mon": {
         "08-09": {
@@ -6528,7 +6536,9 @@
     "name": "CR209",
     "type": "class",
     "capacity": 1,
-    "allowed_course": [],
+    "allowed_course": [
+      "btechcse"
+    ],
     "schedule": {
       "mon": {
         "08-09": {
@@ -7121,7 +7131,9 @@
     "name": "CR211",
     "type": "class",
     "capacity": 1,
-    "allowed_course": [],
+    "allowed_course": [
+      "btechcse"
+    ],
     "schedule": {
       "mon": {
         "08-09": {

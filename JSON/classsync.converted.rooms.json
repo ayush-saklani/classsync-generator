@@ -15,6 +15,30 @@
     ],
     "class": [
         {
+            "roomid": "1036",
+            "capacity": 1
+        },
+        {
+            "roomid": "1085",
+            "capacity": 1
+        },
+        {
+            "roomid": "1087",
+            "capacity": 1
+        },
+        {
+            "roomid": "1089",
+            "capacity": 1
+        },
+        {
+            "roomid": "2122",
+            "capacity": 1
+        },
+        {
+            "roomid": "2017",
+            "capacity": 1
+        },
+        {
             "roomid": "2075",
             "capacity": 1
         },
