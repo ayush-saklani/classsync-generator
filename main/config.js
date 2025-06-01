@@ -4,12 +4,12 @@ let config = {
   population_size: 10,                          // population size
   showstats: false,                             // toggle to show stats of each generation // true for debugging // (not fine tuned yet)
   min_local_fitness: 70,                        // minimum local fitness score which is bare minimum to be acceptable
-  min_global_fitness: 180,                      // minimum global fitness score which is bare minimum to be acceptable
+  min_global_fitness: 170,                      // minimum global fitness score which is bare minimum to be acceptable
   max_generation: 10000,                        // maximum generation limit to avoid infinite computation of poor offsprings
   eliteRate: 0.05,                              // elite rate (5% of population) will be selected as elites for next generation
   selectionRate: 1,                             // selection rate (100% of population) will be selected for crossover (not used rn)
   mutationRate: 0.01,                           // mutation rate (1% of population) will be mutated for next generation
-  max_slot_per_day: 5,                          // maximum slot allocation allowed per day for a teacher
+  max_slot_per_day: 6,                          // maximum slot allocation allowed per day for a teacher
   max_streak: 4,                                // maximum consecutive slot allocation allowed for a teacher
   max_streak_student: 4,                        // maximum consecutive slot allocation allowed for a student
   acceptable_Global_Fitness_Score: 300,         // acceptable Global Fitness Score (Final Result)
