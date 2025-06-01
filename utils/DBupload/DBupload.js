@@ -8,6 +8,17 @@ import cliProgress from 'cli-progress';
 
 dotenv.config(); // Load environment variables
 
+const multibar = new cliProgress.MultiBar({
+  clearOnComplete: false,
+  hideCursor: true,
+  format: '{bar} {percentage}% | {eta}s | {value}/{total} | {filename}',
+}, cliProgress.Presets.rect);
+
+const b0 = multibar.create(100, 0, { filename: "DB Upload" });
+const b1 = multibar.create(100, 0, { filename: "Timetable Data" });
+const b2 = multibar.create(100, 0, { filename: "Room Data" });
+const b3 = multibar.create(100, 0, { filename: "Faculty Data" });
+
 const connectDB = async () => {
   try {
     await mongoose.connect(process.env.DBURI);
@@ -102,42 +113,50 @@ const save_faculty = async (wholeAssFacultyData) => {
   }
 };
 
+const DBupload = async () => {
+  b0.start(3, 0, { filename: "DB Upload" });
+  try {
+    await connectDB();
+    let new_timetable_data = JSON.parse(fs.readFileSync("./JSON/classsync.backtonormal.tables.json", "utf8"));
+    if (new_timetable_data.length != 0) {
+      b1.start(new_timetable_data.length, 0, { filename: "Timetable Data" });
+      for (let i = 0; i < new_timetable_data.length; i++) {
+        await save_timetable(new_timetable_data[i]);
+        b1.update(i + 1);
+      }
+      b1.stop();
+    }
+    b0.update(1);
 
-let new_timetable_data = JSON.parse(fs.readFileSync("./JSON/classsync.backtonormal.tables.json", "utf8"));
-const bar1 = new cliProgress.SingleBar({ format: '{bar} {percentage}% | {eta}s | {value}/{total} \t| Timetable Data' }, cliProgress.Presets.shades_grey);
-if (new_timetable_data.length != 0) {
-  await connectDB(); // Ensure DB connection
-  bar1.start(new_timetable_data.length, 0);
-  for (let i = 0; i < new_timetable_data.length; i++) {
-    await save_timetable(new_timetable_data[i]);
-    bar1.update(i + 1);
-  }
-  bar1.stop();
-  mongoose.connection.close(); // Close connection after operation
-}
+    let new_room_data = JSON.parse(fs.readFileSync("./JSON/classsync.backtonormal.rooms.json", "utf8"));
+    if (new_room_data.length != 0) {
+      b2.start(new_room_data.length, 0, { filename: "Room Data" });
+      for (let i = 0; i < new_room_data.length; i++) {
+        await save_room(new_room_data[i]);
+        b2.update(i + 1);
+      }
+      b2.stop();
+    }
+    b0.update(2);
 
-let new_room_data = JSON.parse(fs.readFileSync("./JSON/classsync.backtonormal.rooms.json", "utf8"));
-const bar2 = new cliProgress.SingleBar({ format: '{bar} {percentage}% | {eta}s | {value}/{total} \t| Room Data' }, cliProgress.Presets.shades_grey);
-if (new_room_data.length != 0) {
-  await connectDB();
-  bar2.start(new_room_data.length, 0);
-  for (let i = 0; i < new_room_data.length; i++) {
-    await save_room(new_room_data[i]);
-    bar2.update(i + 1);
+    let new_faculty_data = JSON.parse(fs.readFileSync("./JSON/classsync.backtonormal.faculties.json", "utf8"));
+    if (new_faculty_data.length != 0) {
+      b3.start(new_faculty_data.length, 0, { filename: "Faculty Data" });
+      for (let i = 0; i < new_faculty_data.length; i++) {
+        await save_faculty(new_faculty_data[i]);
+        b3.update(i + 1);
+      }
+      b3.stop();
+    }
+    b0.update(3);
   }
-  bar2.stop();
-  mongoose.connection.close();
-}
-
-let new_faculty_data = JSON.parse(fs.readFileSync("./JSON/classsync.backtonormal.faculties.json", "utf8"));
-const bar3 = new cliProgress.SingleBar({ format: '{bar} {percentage}% | {eta}s | {value}/{total} \t| Faculty Data' }, cliProgress.Presets.shades_grey);
-if (new_faculty_data.length != 0) {
-  await connectDB();
-  bar3.start(new_faculty_data.length, 0);
-  for (let i = 0; i < new_faculty_data.length; i++) {
-    await save_faculty(new_faculty_data[i]);
-    bar3.update(i + 1);
+  catch (error) {
+    console.error("Error uploading documents:", error);
   }
-  bar3.stop();
-  mongoose.connection.close();
-}
+  finally {
+    b0.stop();
+    mongoose.connection.close();
+    multibar.stop();
+  }
+};
+await DBupload();
