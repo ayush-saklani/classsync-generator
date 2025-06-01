@@ -21,7 +21,7 @@ const displayTimetableAsTables2 = (timetable) => {
 };
 const functiosn = async () => {
     let timetable = [];
-    await fetch('../../JSON/population_selected.json')
+    await fetch('../../JSON/classsync.win.selected.tables.json')
         .then(response => response.json())
         .then(data => {
             displayTimetableAsTables2(data);

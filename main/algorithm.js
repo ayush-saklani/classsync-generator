@@ -78,7 +78,7 @@ const algorithm = (room) => {
   // } else {
   //   population = JSON.parse(fs.readFileSync("./JSON/best_instance_result_featuring_kanye_west.json", "utf8"));
   // }
-  population = JSON.parse(fs.readFileSync("./JSON/population_selected.json", "utf8")); // step 1: read population from file (if exists) (alternate)
+  population = JSON.parse(fs.readFileSync("./JSON/classsync.win.selected.tables.json", "utf8")); // step 1: read population from file (if exists) (alternate)
 
   // The loop is Technically infinite, and it will break when acceptable solution is found
   // but we have set a max_generation limit to avoid infinite computation of poor offsprings
@@ -89,7 +89,7 @@ const algorithm = (room) => {
     if (i % 10 == 0) {
       // Checkpoint: write population to file every 10 generations
       console.log("Checkpoint: writing population to file...");
-      fs.writeFileSync("./JSON/population_selected.json", JSON.stringify(population, null, 4), "utf8");
+      fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8");
     }
     real_checkpoint_save(population); // Checkpoint: write population to file if current population is better than previous population
 
