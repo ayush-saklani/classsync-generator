@@ -1,29 +1,7 @@
 {
-    "englishlab": [
-        {
-            "roomid": "1033",
-            "capacity": 1
-        },
-        {
-            "roomid": "4122",
-            "capacity": 1
-        },
-        {
-            "roomid": "1041",
-            "capacity": 1
-        }
-    ],
     "class": [
         {
-            "roomid": "1036",
-            "capacity": 1
-        },
-        {
             "roomid": "1085",
-            "capacity": 1
-        },
-        {
-            "roomid": "1087",
             "capacity": 1
         },
         {
@@ -31,23 +9,19 @@
             "capacity": 1
         },
         {
-            "roomid": "2122",
-            "capacity": 1
-        },
-        {
             "roomid": "2017",
             "capacity": 1
         },
         {
-            "roomid": "2075",
+            "roomid": "1036",
             "capacity": 1
         },
         {
-            "roomid": "2071",
+            "roomid": "1087",
             "capacity": 1
         },
         {
-            "roomid": "2085",
+            "roomid": "2122",
             "capacity": 1
         },
         {
@@ -63,13 +37,39 @@
             "capacity": 1
         },
         {
+            "roomid": "2085",
+            "capacity": 1
+        },
+        {
             "roomid": "2036",
+            "capacity": 1
+        },
+        {
+            "roomid": "2075",
+            "capacity": 1
+        },
+        {
+            "roomid": "2071",
+            "capacity": 1
+        }
+    ],
+    "englishlab": [
+        {
+            "roomid": "1033",
+            "capacity": 1
+        },
+        {
+            "roomid": "4122",
+            "capacity": 1
+        },
+        {
+            "roomid": "1041",
             "capacity": 1
         }
     ],
     "electroniclab": [
         {
-            "roomid": "4071",
+            "roomid": "4085",
             "capacity": 1
         },
         {
@@ -77,33 +77,17 @@
             "capacity": 1
         },
         {
-            "roomid": "4085",
+            "roomid": "4071",
             "capacity": 1
         }
     ],
     "computerlab": [
         {
-            "roomid": "1069",
-            "capacity": 1
-        },
-        {
             "roomid": "3069",
             "capacity": 1
         },
         {
-            "roomid": "1101",
-            "capacity": 1
-        },
-        {
-            "roomid": "2003",
-            "capacity": 1
-        },
-        {
             "roomid": "2001",
-            "capacity": 1
-        },
-        {
-            "roomid": "4001",
             "capacity": 1
         },
         {
@@ -115,13 +99,33 @@
             "capacity": 1
         },
         {
+            "roomid": "1069",
+            "capacity": 1
+        },
+        {
+            "roomid": "2003",
+            "capacity": 1
+        },
+        {
+            "roomid": "4001",
+            "capacity": 1
+        },
+        {
+            "roomid": "1101",
+            "capacity": 1
+        },
+        {
             "roomid": "1003",
             "capacity": 1
         }
     ],
     "hall": [
         {
-            "roomid": "2041",
+            "roomid": "3041",
+            "capacity": 4
+        },
+        {
+            "roomid": "3031",
             "capacity": 4
         },
         {
@@ -129,11 +133,7 @@
             "capacity": 4
         },
         {
-            "roomid": "3041",
-            "capacity": 4
-        },
-        {
-            "roomid": "3031",
+            "roomid": "2041",
             "capacity": 4
         }
     ]
