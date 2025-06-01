@@ -1,7 +1,12 @@
 import fs from "fs";
 import { schedule_sample, room_schedule_sample, faculty_schedule_sample } from "./constant.js";
+import { sort } from "mathjs";
 
-let new_timetable_data = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8"));
+let checkpoint_timetables = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
+checkpoint_timetables = sort(checkpoint_timetables, (a, b) => b.fitness - a.fitness); // sort by fitness in descending order
+let new_timetable_data = checkpoint_timetables[0];   // take the best timetable from the checkpoint
+
+// let new_timetable_data = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8"));  // uncomment this line to use the converted timetable data directly
 let old_timetable_data = JSON.parse(fs.readFileSync("./JSON/classsync.tables.json", "utf8"));
 new_timetable_data = new_timetable_data.data;
 
@@ -12,8 +17,6 @@ const timeSlots = ["08-09", "09-10", "10-11", "11-12", "12-01", "01-02", "02-03"
 console.log("===========================================================================================");
 console.log("================== Converting from algorithm format to class-sync format ==================");
 console.log("===========================================================================================");
-
-console.log("\n================================ Converting timetable data ================================");
 
 for (let i = 0; i < new_timetable_data.length; i++) {
   let current_timetable = JSON.parse(
@@ -57,9 +60,8 @@ for (let i = 0; i < new_timetable_data.length; i++) {
   }
 }
 fs.writeFileSync("./JSON/classsync.backtonormal.tables.json", JSON.stringify(new_converted_data, null, 4), "utf8");
-console.log("========== Converted timetable data saved to classsync.backtonormal.tables.json  ==========\n");
+console.log("---------- Converted timetable data saved to classsync.backtonormal.tables.json  ----------");
 
-console.log("---------------------------------- Converting room data  ----------------------------------");
 let old_room_data = JSON.parse(fs.readFileSync("./JSON/classsync.rooms.json", "utf8"));
 // genetic to classsync table
 let genetic_reverted_timetable = JSON.parse(fs.readFileSync("./JSON/classsync.backtonormal.tables.json", "utf8"));
@@ -121,9 +123,8 @@ for (let i = 0; i < genetic_reverted_timetable.length; i++) {
   }
 }
 fs.writeFileSync("./JSON/classsync.backtonormal.rooms.json", JSON.stringify(new_converted_room_data, null, 2), "utf8");
-console.log("------------- Converted room data saved to classsync.backtonormal.rooms.json  -------------\n");
+console.log("------------- Converted room data saved to classsync.backtonormal.rooms.json  -------------");
 
-console.log("================================= Converting faculty data =================================");
 let old_faculty_data = JSON.parse(fs.readFileSync("./JSON/classsync.faculties.json", "utf8"));
 
 let new_converted_faculty_data = []; // code to create faculty data for classsync from genetic algorithm output jsons
@@ -182,7 +183,7 @@ for (let i = 0; i < genetic_reverted_timetable.length; i++) {
   }
 }
 fs.writeFileSync("./JSON/classsync.backtonormal.faculties.json", JSON.stringify(new_converted_faculty_data, null, 2), "utf8");
-console.log("========== Converted faculty data saved to classsync.backtonormal.faculties.json ==========\n");
+console.log("---------- Converted faculty data saved to classsync.backtonormal.faculties.json ----------");
 
 console.log("===========================================================================================");
 console.log("================ Finished converting to class-sync format from algorithm format  ==========");
