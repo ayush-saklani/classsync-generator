@@ -16,7 +16,7 @@ const multibar = new cliProgress.MultiBar({
 }, cliProgress.Presets.rect);
 
 const b1 = multibar.create(100, 0, { filename: "AB Conversion" });
-const b0 = multibar.create(100, 0, { filename: "Fetching Data" });
+const b0 = multibar.create(1, 0, { filename: "Fetching Data" });
 const b2 = multibar.create(100, 0, { filename: "Timetable Data" });
 const b3 = multibar.create(100, 0, { filename: "Room Data" });
 const b4 = multibar.create(100, 0, { filename: "Faculty Data" });
@@ -200,14 +200,17 @@ const ABconvert = async () => {
     b1.start(4, 0, { filename: "AB Conversion" });
     await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
     let data = await fetchAndSaveAll();
-    b1.update(1);
     let old_timetable_data = JSON.parse(JSON.stringify(data.allTables));
     let old_room_data = JSON.parse(JSON.stringify(data.allRooms));
     let old_faculty_data = JSON.parse(JSON.stringify(data.allFaculties));
 
+    // traditionally, the data is taken from the local storage use this for that and comment the above code
+    // b0.update(1, { filename: "Data Taken from Local Storage" });
     // let old_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.tables.json', 'utf8'));
     // let old_room_data = JSON.parse(fs.readFileSync('./JSON/classsync.rooms.json', 'utf8'));
     // let old_faculty_data = JSON.parse(fs.readFileSync('./JSON/classsync.faculties.json', 'utf8'));
+
+    b1.update(1);
 
     await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
     let new_timetable_data = await converttimetable(old_timetable_data);
