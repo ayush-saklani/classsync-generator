@@ -76,8 +76,8 @@ const converttimetable = async (old_timetable_data) => {
                 // it can be changed to 4 if needed
                 "type": old_timetable_data[i].teacher_subject_data[j].theory_practical == "PRACTICAL" ? "practical" : "theory",
                 "room_type":
-                    (mergemap[old_timetable_data[i].semester][old_timetable_data[i].section] && (old_timetable_data[i].teacher_subject_data[j].room_type == 'class' || old_timetable_data[i].teacher_subject_data[j].room_type == 'hall')) ? "hall" :
-                        (!mergemap[old_timetable_data[i].semester][old_timetable_data[i].section] && (old_timetable_data[i].teacher_subject_data[j].room_type == 'class' || old_timetable_data[i].teacher_subject_data[j].room_type == 'hall')) ? "class" :
+                    (mergemap[old_timetable_data[i].semester][old_timetable_data[i].section] && (old_timetable_data[i].teacher_subject_data[j].room_type.toLowerCase() == 'class' || old_timetable_data[i].teacher_subject_data[j].room_type.toLowerCase() == 'hall')) ? "hall" :
+                        (!mergemap[old_timetable_data[i].semester][old_timetable_data[i].section] && (old_timetable_data[i].teacher_subject_data[j].room_type.toLowerCase() == 'class' || old_timetable_data[i].teacher_subject_data[j].room_type.toLowerCase() == 'hall')) ? "class" :
                             (old_timetable_data[i].teacher_subject_data[j].room_type).toLowerCase(),
             });
         }
