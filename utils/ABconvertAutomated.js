@@ -9,18 +9,23 @@ import cliProgress from 'cli-progress';
 
 dotenv.config(); // Load environment variables
 
-const multibar = new cliProgress.MultiBar({
-    clearOnComplete: false,
-    hideCursor: true,
-    format: '{bar} {percentage}% | {eta}s | {value}/{total} | {filename}',
-}, cliProgress.Presets.rect);
+let production = false; // Set to false for skipping progress bar and database connection
 
-const b1 = multibar.create(100, 0, { filename: "AB Conversion" });
-const b0 = multibar.create(1, 0, { filename: "Fetching Data" });
-const b2 = multibar.create(100, 0, { filename: "Timetable Data" });
-const b3 = multibar.create(100, 0, { filename: "Room Data" });
-const b4 = multibar.create(100, 0, { filename: "Faculty Data" });
+let multibar, b1, b0, b2, b3, b4;
 
+if (production) {
+    multibar = new cliProgress.MultiBar({
+        clearOnComplete: false,
+        hideCursor: true,
+        format: '{bar} {percentage}% | {eta}s | {value}/{total} | {filename}',
+    }, cliProgress.Presets.rect);
+
+    b1 = multibar.create(100, 0, { filename: "AB Conversion" });
+    b0 = multibar.create(1, 0, { filename: "Fetching Data" });
+    b2 = multibar.create(100, 0, { filename: "Timetable Data" });
+    b3 = multibar.create(100, 0, { filename: "Room Data" });
+    b4 = multibar.create(100, 0, { filename: "Faculty Data" });
+}
 const connectDB = async () => {
     try {
         await mongoose.connect(process.env.DBURI);
@@ -30,11 +35,11 @@ const connectDB = async () => {
     }
 };
 const converttimetable = async (old_timetable_data) => {
-    b2.start(old_timetable_data.length, 0);
+    if (production) b2.start(old_timetable_data.length, 0);
     let new_timetable_data = [];
     // process.stdout.write("Skipping | ");
     for (let i = 0; i < old_timetable_data.length; i++) {
-        b2.update(i + 1, { filename: "Timetable Data" });
+        if (production) b2.update(i + 1, { filename: "Timetable Data" });
         let tttemp3 = [];
         let skip = false;
         if (mergemap[old_timetable_data[i].semester]) {
@@ -68,6 +73,20 @@ const converttimetable = async (old_timetable_data) => {
                 continue;
             }
 
+            // Find all teachers for the current section and add them to an array
+            let sectionTeachers = [];
+            if (mergemap[old_timetable_data[i].semester][old_timetable_data[i].section] && old_timetable_data[i].teacher_subject_data[j].theory_practical == "PRACTICAL") {
+                for (let k = 0; k < old_timetable_data.length; k++) {
+                    if (old_timetable_data[k].semester === old_timetable_data[i].semester && mergemap[old_timetable_data[i].semester][old_timetable_data[i].section].includes(old_timetable_data[k].section)) {
+                        let subj = old_timetable_data[k].teacher_subject_data.find(s => s.subjectcode === old_timetable_data[i].teacher_subject_data[j].subjectcode);
+                        if (subj && subj.teacherid && !sectionTeachers.includes(subj.teacherid)) {
+                            sectionTeachers.push(subj.teacherid);
+                        }
+                    }
+                }
+            }
+
+            // Existing logic for pushing subject info
             tttemp3.push({
                 "subjectid": old_timetable_data[i].teacher_subject_data[j].subjectcode,
                 "teacherid": old_timetable_data[i].teacher_subject_data[j].teacherid,
@@ -79,6 +98,7 @@ const converttimetable = async (old_timetable_data) => {
                     (mergemap[old_timetable_data[i].semester][old_timetable_data[i].section] && (old_timetable_data[i].teacher_subject_data[j].room_type.toLowerCase() == 'class' || old_timetable_data[i].teacher_subject_data[j].room_type.toLowerCase() == 'hall')) ? "hall" :
                         (!mergemap[old_timetable_data[i].semester][old_timetable_data[i].section] && (old_timetable_data[i].teacher_subject_data[j].room_type.toLowerCase() == 'class' || old_timetable_data[i].teacher_subject_data[j].room_type.toLowerCase() == 'hall')) ? "class" :
                             (old_timetable_data[i].teacher_subject_data[j].room_type).toLowerCase(),
+                "merge_teachers": sectionTeachers // add the array here
             });
         }
         let tttemp = [
@@ -122,14 +142,14 @@ const converttimetable = async (old_timetable_data) => {
         old_timetable_data[i].schedule = JSON.parse(JSON.stringify(table_schedule_sample));
     }
     fs.writeFileSync('./JSON/classsync.tables.json', JSON.stringify(old_timetable_data, null, 4), 'utf8');//removes _id from the data
-    b2.stop();
+    if (production) b2.stop();
     return new_timetable_data;
 }
 const convertrooms = async (old_room_data) => {
     let new_room_data = {};
-    b3.start(old_room_data.length, 0);
+    if (production) b3.start(old_room_data.length, 0);
     for (let i = 0; i < old_room_data.length; i++) {
-        b3.update(i + 1, { filename: "Room Data" });
+        if (production) b3.update(i + 1, { filename: "Room Data" });
         if (old_room_data[i].allowed_course.length > 0 &&
             old_room_data[i].allowed_course.includes("btechcse") &&
             old_room_data[i].roomid != "0"
@@ -149,14 +169,14 @@ const convertrooms = async (old_room_data) => {
         // old_room_data[i]['schedule'] = room_schedule_sample;
     }
     // fs.writeFileSync('classsync.rooms.json', JSON.stringify(old_room_data, null, 4), 'utf8');//removes _id from the data
-    b3.stop();
+    if (production) b3.stop();
     return new_room_data;
 }
 const convertfaculties = async (old_faculty_data) => {
     let new_faculty_data = {};
-    b4.start(old_faculty_data.length, 0);
+    if (production) b4.start(old_faculty_data.length, 0);
     for (let i = 0; i < old_faculty_data.length; i++) {
-        b4.update(i + 1, { filename: "Faculty Data" });
+        if (production) b4.update(i + 1, { filename: "Faculty Data" });
         if (old_faculty_data[i].teacherid == 0) {
             continue;
         }
@@ -165,22 +185,22 @@ const convertfaculties = async (old_faculty_data) => {
             "name": old_faculty_data[i].name,
         };
     }
-    b4.stop();
+    if (production) b4.stop();
     return new_faculty_data;
 }
 const fetchAndSaveAll = async () => {
     await connectDB();
-    b0.start(3, 0, { filename: "Connecting to MongoDB" });
+    if (production) b0.start(3, 0, { filename: "Connecting to MongoDB" });
     try {
         let allTables = await Tables.find({});
         fs.writeFileSync("./JSON/classsync.tables.json", JSON.stringify(allTables, null, 2), "utf8");
-        b0.update(1, { filename: "Fetching Timetable Data" });
+        if (production) b0.update(1, { filename: "Fetching Timetable Data" });
         let allRooms = await Rooms.find({});
         fs.writeFileSync("./JSON/classsync.rooms.json", JSON.stringify(allRooms, null, 2), "utf8");
-        b0.update(2, { filename: "Fetching Room Data" });
+        if (production) b0.update(2, { filename: "Fetching Room Data" });
         let allFaculties = await Faculties.find({});
         fs.writeFileSync("./JSON/classsync.faculties.json", JSON.stringify(allFaculties, null, 2), "utf8");
-        b0.update(3, { filename: "Fetching Faculty Data" });
+        if (production) b0.update(3, { filename: "Fetching Faculty Data" });
 
         return {
             "allTables": allTables,
@@ -190,45 +210,45 @@ const fetchAndSaveAll = async () => {
     } catch (error) {
         console.error("Error fetching and saving documents:", error);
     } finally {
-        b0.update(3, { filename: "Fetching Data" });
-        b0.stop();
+        if (production) b0.update(3, { filename: "Fetching Data" });
+        if (production) b0.stop();
         mongoose.connection.close();
     }
 };
 
 const ABconvert = async () => {
-    b1.start(4, 0, { filename: "AB Conversion" });
-    await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
-    let data = await fetchAndSaveAll();
-    let old_timetable_data = JSON.parse(JSON.stringify(data.allTables));
-    let old_room_data = JSON.parse(JSON.stringify(data.allRooms));
-    let old_faculty_data = JSON.parse(JSON.stringify(data.allFaculties));
+    if (production) b1.start(4, 0, { filename: "AB Conversion" });
+    if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
+    // let data = await fetchAndSaveAll();
+    // let old_timetable_data = JSON.parse(JSON.stringify(data.allTables));
+    // let old_room_data = JSON.parse(JSON.stringify(data.allRooms));
+    // let old_faculty_data = JSON.parse(JSON.stringify(data.allFaculties));
 
     // traditionally, the data is taken from the local storage use this for that and comment the above code
-    // b0.update(1, { filename: "Data Taken from Local Storage" });
-    // let old_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.tables.json', 'utf8'));
-    // let old_room_data = JSON.parse(fs.readFileSync('./JSON/classsync.rooms.json', 'utf8'));
-    // let old_faculty_data = JSON.parse(fs.readFileSync('./JSON/classsync.faculties.json', 'utf8'));
+    if (production) b0.update(1, { filename: "Data Taken from Local Storage" });
+    let old_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.tables.json', 'utf8'));
+    let old_room_data = JSON.parse(fs.readFileSync('./JSON/classsync.rooms.json', 'utf8'));
+    let old_faculty_data = JSON.parse(fs.readFileSync('./JSON/classsync.faculties.json', 'utf8'));
 
-    b1.update(1);
+    if (production) b1.update(1);
 
-    await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
+    if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
     let new_timetable_data = await converttimetable(old_timetable_data);
-    b1.update(2);
+    if (production) b1.update(2);
 
-    await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
+    if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
     let new_room_data = await convertrooms(old_room_data);
-    b1.update(3);
+    if (production) b1.update(3);
 
-    await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
+    if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
     let new_faculty_data = await convertfaculties(old_faculty_data);
-    b1.update(4);
+    if (production) b1.update(4);
 
     fs.writeFileSync('./JSON/classsync.converted.tables.json', JSON.stringify(new_timetable_data, null, 4), 'utf8');
     fs.writeFileSync('./JSON/classsync.converted.rooms.json', JSON.stringify(new_room_data, null, 4), 'utf8');
     fs.writeFileSync('./JSON/classsync.converted.faculties.json', JSON.stringify(new_faculty_data, null, 4), 'utf8');
-    b1.stop();
-    multibar.stop();
+    if (production) b1.stop();
+    if (production) multibar.stop();
 }
 await ABconvert();
 
@@ -238,4 +258,4 @@ await ABconvert();
 // The converted timetable is saved in the following files:
 // ./JSON/classsync.converted.tables.json, ./JSON/classsync.converted.faculties.json, ./JSON/classsync.converted.rooms.json
 // The converted timetable can be used as an input to the genetic algorithm.
-// The genetic algorithm is implemented in ABconvert.js 
+// The genetic algorithm is implemented in ABconvert.js
