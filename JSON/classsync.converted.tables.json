@@ -452,70 +452,88 @@
                     "teacherid": "2118570",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118615",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118523",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118571",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118616",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS619",
                     "teacherid": "2118550",
                     "weekly_hrs": "2",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118617",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118550"
+                    ]
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118523",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118523"
+                    ]
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118573",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": [
+                        "2118573"
+                    ]
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118517",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118517"
+                    ]
                 }
             ]
         },
@@ -970,70 +988,88 @@
                     "teacherid": "2118572",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118535",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118506",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118580",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118593",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118608",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118535",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": [
+                        "2118539"
+                    ]
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118506",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118507"
+                    ]
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118583",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118583"
+                    ]
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118595",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": [
+                        "2118607"
+                    ]
                 }
             ]
         },
@@ -1486,70 +1522,80 @@
                     "teacherid": "2118520",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118559",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118522",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118610",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118592",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118568",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118563",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118522",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118611",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118599",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -2002,70 +2048,80 @@
                     "teacherid": "2118520",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118556",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118522",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118610",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118592",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118608",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118556",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118522",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118525",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118596",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -2518,70 +2574,80 @@
                     "teacherid": "2118519",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118560",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118612",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118613",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118593",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118591",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118556",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118612",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118611",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118599",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -3034,70 +3100,80 @@
                     "teacherid": "2118519",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118556",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118612",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118610",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118593",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118591",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118556",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118612",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118611",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118596",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -3550,70 +3626,80 @@
                     "teacherid": "2118511",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118559",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118529",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118610",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118592",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118591",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118557",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118609",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118611",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118595",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -4066,70 +4152,80 @@
                     "teacherid": "2118511",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118535",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118522",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118610",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118593",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118567",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118535",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118522",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118526",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118599",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -4582,77 +4678,88 @@
                     "teacherid": "2118511",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118559",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118612",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118579",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118592",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118567",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS462",
                     "teacherid": "2118549",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118559",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118612",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118611",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118599",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -5105,77 +5212,88 @@
                     "teacherid": "2118511",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118559",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118612",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118579",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118592",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118567",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS462",
                     "teacherid": "2118549",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118559",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118612",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118611",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118599",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -5628,84 +5746,96 @@
                     "teacherid": "2118520",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118558",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118529",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118580",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118592",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118567",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS464",
                     "teacherid": "2118531",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118560",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118531",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118581",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118607",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS464",
                     "teacherid": "2118531",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -6158,84 +6288,96 @@
                     "teacherid": "2118520",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118558",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118529",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118580",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118592",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118567",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS464",
                     "teacherid": "2118531",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118558",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118531",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118526",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118595",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS464",
                     "teacherid": "2118531",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -6688,84 +6830,96 @@
                     "teacherid": "2118511",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118560",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118529",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118610",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118592",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118608",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS462",
                     "teacherid": "2118531",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118558",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118531",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118515",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118596",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS464",
                     "teacherid": "2118531",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -7218,84 +7372,96 @@
                     "teacherid": "2118511",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118568",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118529",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118610",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118592",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118608",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS464",
                     "teacherid": "2118510",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118560",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118510",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118515",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118595",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS464",
                     "teacherid": "2118510",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -7750,63 +7916,80 @@
                     "teacherid": "2118570",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118504",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118510",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118571",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118616",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118550",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118550"
+                    ]
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118510",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118549"
+                    ]
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118573",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": [
+                        "2118573"
+                    ]
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118517",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118517"
+                    ]
                 }
             ]
         },
@@ -8261,63 +8444,80 @@
                     "teacherid": "2118528",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118537",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118513",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118571",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118573",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118528",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118528"
+                    ]
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118513",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118513"
+                    ]
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118618",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": [
+                        "2118618"
+                    ]
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118537",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118537"
+                    ]
                 }
             ]
         },
@@ -8772,63 +8972,80 @@
                     "teacherid": "2118542",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118537",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118513",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118571",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118573",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118542",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118542"
+                    ]
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118577",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118577"
+                    ]
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118618",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": [
+                        "2118602"
+                    ]
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118537",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118521"
+                    ]
                 }
             ]
         },
@@ -9281,63 +9498,72 @@
                     "teacherid": "2118541",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118518",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118510",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118616",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118541",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118549",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118618",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118518",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -9790,63 +10016,72 @@
                     "teacherid": "2118541",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118518",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118510",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118616",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118541",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118549",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118605",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118518",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -10299,63 +10534,72 @@
                     "teacherid": "2118619",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118504",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118551",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118616",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118617",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118551",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118605",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118504",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -10808,63 +11052,72 @@
                     "teacherid": "2118619",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118504",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118551",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118616",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118617",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118551",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118605",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118504",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -11317,63 +11570,72 @@
                     "teacherid": "2118619",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118602",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118620",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118616",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118550",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118574",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118605",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118537",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -11826,63 +12088,72 @@
                     "teacherid": "2118619",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118602",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118620",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118616",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118581",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118574",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118605",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118518",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -12335,63 +12606,72 @@
                     "teacherid": "2118541",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118504",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118523",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118616",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118541",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118523",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118605",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118521",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -12844,56 +13124,64 @@
                     "teacherid": "2118541",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118538",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118523",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118538",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118621",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118605",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118538",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -13346,63 +13634,72 @@
                     "teacherid": "2118542",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118538",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118551",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118616",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118542",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118551",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118602",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118538",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -13855,63 +14152,72 @@
                     "teacherid": "2118587",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118518",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118523",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118616",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118617",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118621",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118602",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118518",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -14364,63 +14670,72 @@
                     "teacherid": "2118587",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118518",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118523",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118616",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118617",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118507",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118602",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118518",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -14873,63 +15188,72 @@
                     "teacherid": "2118622",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118504",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118513",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118602",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118542",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118513",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118618",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118504",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -15382,63 +15706,72 @@
                     "teacherid": "2118622",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118504",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118513",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118602",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118520",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118574",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118623",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118504",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -15891,63 +16224,72 @@
                     "teacherid": "2118528",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118537",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118510",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118602",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118528",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118621",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118604",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118521",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -16400,63 +16742,72 @@
                     "teacherid": "2118528",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS604",
                     "teacherid": "2118537",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118510",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601V",
                     "teacherid": "2118602",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118528",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118621",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118604",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS604",
                     "teacherid": "2118521",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -16909,42 +17260,48 @@
                     "teacherid": "2118542",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS693",
                     "teacherid": "2118551",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS601Q",
                     "teacherid": "2118600",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS601",
                     "teacherid": "2118520",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS693",
                     "teacherid": "2118551",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE600",
                     "teacherid": "2118602",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -17399,70 +17756,88 @@
                     "teacherid": "2118572",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118535",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118506",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118580",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118593",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118608",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118535",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": [
+                        "2118539"
+                    ]
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118609",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118507"
+                    ]
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118583",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118579"
+                    ]
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118595",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": [
+                        "2118607"
+                    ]
                 }
             ]
         },
@@ -17917,70 +18292,88 @@
                     "teacherid": "2118572",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118588",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118507",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118580",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118593",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118608",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118558",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": [
+                        "2118558"
+                    ]
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118519",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118519"
+                    ]
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118581",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118581"
+                    ]
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118599",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": [
+                        "2118614"
+                    ]
                 }
             ]
         },
@@ -18435,70 +18828,88 @@
                     "teacherid": "2118515",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118588",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118506",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118579",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118593",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118608",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "hall"
+                    "room_type": "hall",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118564",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": [
+                        "2118564"
+                    ]
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118519",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118609"
+                    ]
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118581",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": [
+                        "2118515"
+                    ]
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118614",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": [
+                        "2118599"
+                    ]
                 }
             ]
         },
@@ -18951,70 +19362,80 @@
                     "teacherid": "2118515",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118559",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118529",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118613",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118593",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118568",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118561",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118529",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118525",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118596",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -19467,70 +19888,80 @@
                     "teacherid": "2118515",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118559",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118529",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118613",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118593",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118568",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118561",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118529",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118525",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118596",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -19983,70 +20414,80 @@
                     "teacherid": "2118520",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118539",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118531",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118613",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118593",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118568",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118539",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118609",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118526",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118596",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 }
             ]
         },
@@ -20499,70 +20940,80 @@
                     "teacherid": "2118520",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS403",
                     "teacherid": "2118539",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS408",
                     "teacherid": "2118531",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "TCS409",
                     "teacherid": "2118613",
                     "weekly_hrs": "3",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401V",
                     "teacherid": "2118593",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "XCS401Q",
                     "teacherid": "2118568",
                     "weekly_hrs": "1",
                     "type": "theory",
-                    "room_type": "class"
+                    "room_type": "class",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS403",
                     "teacherid": "2118556",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "electroniclab"
+                    "room_type": "electroniclab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS408",
                     "teacherid": "2118609",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PCS409",
                     "teacherid": "2118526",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "computerlab"
+                    "room_type": "computerlab",
+                    "merge_teachers": []
                 },
                 {
                     "subjectid": "PESE400",
                     "teacherid": "2118596",
                     "weekly_hrs": 2,
                     "type": "practical",
-                    "room_type": "englishlab"
+                    "room_type": "englishlab",
+                    "merge_teachers": []
                 }
             ]
         }
