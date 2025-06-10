@@ -2,6 +2,7 @@ import fs from "fs";
 import validate_timetable_set from "./validate_timetable.js";
 import { fitness_func } from "./fitness_func.js";
 import config from "./config.js";
+// practical merger changes are done here ig (tested)
 
 //  structure of timetable as template
 let timetablestructure = [
@@ -220,37 +221,18 @@ const initialize_gene = (alltimetable, room) => {
           }
         }
 
-        if (
-          timetable[temp_day][temp_slot].teacherid == "" &&
-          timetable[temp_day][temp_slot].roomid == ""
-        ) {
+        if (timetable[temp_day][temp_slot].teacherid == "" && timetable[temp_day][temp_slot].roomid == "") {
           // if slot is empty only then assign the subject to that slot
 
           //if validation in slot is true then assign the subject to that slot
           if (
-            validate_timetable_slot(
-              temp_day,
-              temp_slot,
-              subjects[temp_subject_index].teacherid,
-              room[room_type][temp_room_index].roomid,
-              subjects[temp_subject_index].type,
-              teacher_overload_map,
-              room_overload_map,
-            )
+            validate_timetable_slot(temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[room_type][temp_room_index].roomid, subjects[temp_subject_index].type, teacher_overload_map, room_overload_map,)
           ) {
             if (
-              check_teacher_overload(
-                temp_day,
-                temp_slot,
-                subjects[temp_subject_index].teacherid,
-                subjects[temp_subject_index].type,
-                teacher_overload_map,
-              )
+              check_teacher_overload(temp_day, temp_slot, subjects[temp_subject_index].teacherid, subjects[temp_subject_index].type, teacher_overload_map,)
             ) {
               // if validation in a day is true then assign the subject to that slot (this will prevent the teacher to teach in multiple slots in a day)
-              if (
-                validate_multiple_slot_in_a_day(timetable, temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[room_type][temp_room_index].roomid, subjects[temp_subject_index].subjectid, subjects[temp_subject_index].type,)
-              ) {
+              if (validate_multiple_slot_in_a_day(timetable, temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[room_type][temp_room_index].roomid, subjects[temp_subject_index].subjectid, subjects[temp_subject_index].type,)) {
                 timetable[temp_day][temp_slot].teacherid = subjects[temp_subject_index].teacherid;
                 timetable[temp_day][temp_slot].roomid = room[room_type][temp_room_index].roomid;
                 timetable[temp_day][temp_slot].subjectid = subjects[temp_subject_index].subjectid;
@@ -258,6 +240,11 @@ const initialize_gene = (alltimetable, room) => {
                 slotmap[temp_day * 10 + temp_slot] = true; // mark the slot as assigned
                 teacher_overload_map["teacher" + ";" + temp_day + ";" + temp_slot + ";" + timetable[temp_day][temp_slot].teacherid] = true;
                 room_overload_map["room" + ";" + temp_day + ";" + temp_slot + ";" + room[room_type][temp_room_index].roomid] = true;
+                if (timetable.joint && subjects[temp_subject_index].type == "practical") {
+                  for (let itr = 0; itr < subjects[temp_subject_index].merge_teachers; itr++) {
+                    teacher_overload_map["teacher" + ";" + temp_day + ";" + temp_slot + ";" + subjects[temp_subject_index].merge_teachers[itr]] = true;
+                  }
+                }
 
                 // if subject is practical then assign the next slot to the teacher and room as well (this is for practical subjects)
                 // the practical subjects are assigned in even slots only because the odd slots are best suited as they fit better
@@ -271,6 +258,11 @@ const initialize_gene = (alltimetable, room) => {
                   slotmap[temp_day * 10 + (temp_slot + 1)] = true; // mark the slot as assigned
                   teacher_overload_map["teacher" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + timetable[temp_day][temp_slot].teacherid] = true;
                   room_overload_map["room" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + room[room_type][temp_room_index].roomid] = true;
+                  if (timetable.joint && subjects[temp_subject_index].type == "practical") {
+                    for (let itr = 0; itr < subjects[temp_subject_index].merge_teachers; itr++) {
+                      teacher_overload_map["teacher" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + subjects[temp_subject_index].merge_teachers[itr]] = true;
+                    }
+                  }
                 }
 
                 subjects[temp_subject_index].weekly_hrs--;

@@ -46,7 +46,7 @@ const real_checkpoint_save = (population) => {    // Checkpoint: write populatio
   }
 };
 
-const initial_population = false;                 // start from scratch
+const initial_population = true;                 // start from scratch
 
 const algorithm = () => {                                                                   // timetable data with subjects and teachers already assigned
   let room = JSON.parse(fs.readFileSync("./JSON/classsync.converted.rooms.json", "utf8"));  // (capacity is not implemented in this code right now)
