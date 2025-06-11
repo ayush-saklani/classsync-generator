@@ -5,8 +5,9 @@ import { mergemap } from "./constant.js";
 
 let stats = {
   filled: 0,
-  skipped: 0,
-  failed: 0,
+  already_filled: 0,
+  sameteacherskipped: 0,
+  roomfail: 0,
   total: 0,
 };
 
@@ -33,18 +34,27 @@ for (let i = 0; i < backtonormal_faculty_data.length; i++) {
   faculty_map[backtonormal_faculty_data[i].teacherid] = i;
 }
 
-function findAndAssignPracticalRoomAndFacultySlot(original_slot, merged_slot, isSameFaculty, day, time, subject_room_type, metadata) {
+const findAndAssignPracticalRoomAndFacultySlot = (original_slot, merged_slot, isSameFaculty, day, time, subject_room_type, metadata) => {
   stats.total++;
+  // console.log("FINDING:- ", day, time, subject_room_type, metadata);
   if (isSameFaculty) {
-    console.log("SKIPPED:- SAME FACULTY ", day, time);
-    stats.skipped++;
+    // console.log("SKIPPED:- SAME FACULTY ", day, time);
+    stats.sameteacherskipped++;
+    return;
+  } else if (merged_slot.subjectcode === original_slot.subjectcode) {
+    stats.already_filled++;
     return;
   } else {
     let similar_room_list = rooms_list[subject_room_type];
     for (let room of similar_room_list) {
       let current_room_schedule = backtonormal_rooms_data[room_map[room.roomid]].schedule;
+      if (current_room_schedule[day][time].subjectcode !== "") {
+        continue;
+      }
+
       let current_faculty_schedule = backtonormal_faculty_data[faculty_map[metadata.merged_teacherid]].schedule;
-      if (current_room_schedule[day][time].subjectcode === "" && current_faculty_schedule[day][time].subjectcode === "") {
+      // console.log(current_room_schedule[day][time].subjectcode);
+      if (current_faculty_schedule[day][time].subjectcode === "") {
         // fill merged slot
         merged_slot.class_id = room.roomid;
         merged_slot.subjectcode = original_slot.subjectcode;
@@ -69,13 +79,13 @@ function findAndAssignPracticalRoomAndFacultySlot(original_slot, merged_slot, is
           subjectcode: original_slot.subjectcode,
         };
 
-        console.log("FILLED:- DIFFERENT FACULTY ", day, time);
+        // console.log("FILLED:- DIFFERENT FACULTY ", day, time);
         stats.filled++;
         return;
       }
     }
-    console.log("FAILED:- ", day, time);
-    stats.failed++;
+    // console.log("FAILED:- ", day, time);
+    stats.roomfail++;
     return;
   }
 }
@@ -83,7 +93,7 @@ function findAndAssignPracticalRoomAndFacultySlot(original_slot, merged_slot, is
 console.log("================================= Filling up practical data for merged sections =================================");
 
 Object.entries(mergemap).forEach(([semester, sections]) => {
-  console.log("current semester=====", semester);
+  // console.log("current semester=====", semester);
   Object.entries(sections).forEach(([originalSection, mergedSections]) => {
     let original_section_index = section_map[semester + originalSection];
     let original_timetable = backtonormal_timetable_data[original_section_index];
@@ -103,7 +113,7 @@ Object.entries(mergemap).forEach(([semester, sections]) => {
         subjectcode_to_metadata_map_merged[subject_data.subjectcode] = { subject_type: subject_data.theory_practical, room_type: subject_data.room_type, teacherid: subject_data.teacherid };
       }
 
-      console.log("filling up practical data for section:", section);
+      // console.log("filling up practical data for section:", section);
       for (let day of days) {
         for (let time of timeSlots) {
           let original_slot = original_timetable.schedule[day][time];
@@ -130,7 +140,7 @@ Object.entries(mergemap).forEach(([semester, sections]) => {
 
           if (original_slot.subjectcode !== "0" && original_slot_isPractical) {
             findAndAssignPracticalRoomAndFacultySlot(original_slot, merged_slot, isSameFaculty, day, time, subject_room_type, metadata);
-            console.log(merged_slot);
+            // console.log(merged_slot);
           }
         }
       }
@@ -143,8 +153,9 @@ fs.writeFileSync("./JSON/classsync.backtonormal.rooms.json", JSON.stringify(back
 fs.writeFileSync("./JSON/classsync.backtonormal.faculties.json", JSON.stringify(backtonormal_faculty_data, null, 4), "utf8");
 
 console.log("\n========================= SUMMARY =========================");
-console.log("Filled slots   :", stats.filled);
-console.log("Skipped slots  :", stats.skipped);
-console.log("Failed slots   :", stats.failed);
-console.log("Total slots    :", stats.total);
+console.log("Filled slots      :", stats.filled);
+console.log("Already filled    :", stats.already_filled);
+console.log("Same teacher fail :", stats.sameteacherskipped);
+console.log("Room Fail         :", stats.roomfail);
+console.log("Total slots       :", stats.total);
 console.log("===========================================================\n");
