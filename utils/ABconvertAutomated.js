@@ -215,20 +215,23 @@ const fetchAndSaveAll = async () => {
         mongoose.connection.close();
     }
 };
-
+const serverorlocal = false; // Set to false for local storage, true for server database
 const ABconvert = async () => {
     if (production) b1.start(4, 0, { filename: "AB Conversion" });
     if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
-    // let data = await fetchAndSaveAll();
-    // let old_timetable_data = JSON.parse(JSON.stringify(data.allTables));
-    // let old_room_data = JSON.parse(JSON.stringify(data.allRooms));
-    // let old_faculty_data = JSON.parse(JSON.stringify(data.allFaculties));
-
-    // traditionally, the data is taken from the local storage use this for that and comment the above code
-    if (production) b0.update(1, { filename: "Data Taken from Local Storage" });
-    let old_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.tables.json', 'utf8'));
-    let old_room_data = JSON.parse(fs.readFileSync('./JSON/classsync.rooms.json', 'utf8'));
-    let old_faculty_data = JSON.parse(fs.readFileSync('./JSON/classsync.faculties.json', 'utf8'));
+    let old_timetable_data, old_room_data, old_faculty_data;
+    if (serverorlocal) {
+        let data = await fetchAndSaveAll();
+        old_timetable_data = JSON.parse(JSON.stringify(data.allTables));
+        old_room_data = JSON.parse(JSON.stringify(data.allRooms));
+        old_faculty_data = JSON.parse(JSON.stringify(data.allFaculties));
+    }
+    else { // traditionally, the data is taken from the local storage use this for that and comment the above code
+        if (production) b0.update(1, { filename: "Data Taken from Local Storage" });
+        old_timetable_data = JSON.parse(fs.readFileSync('./JSON/classsync.tables.json', 'utf8'));
+        old_room_data = JSON.parse(fs.readFileSync('./JSON/classsync.rooms.json', 'utf8'));
+        old_faculty_data = JSON.parse(fs.readFileSync('./JSON/classsync.faculties.json', 'utf8'));
+    }
 
     if (production) b1.update(1);
 
