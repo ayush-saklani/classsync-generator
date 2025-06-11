@@ -4,6 +4,7 @@ import validate_timetable from "./validate_timetable.js";
 import config from "./config.js";
 import teacher_room_clash_map_generator from "./teacher_room_clash_map_generator.js";
 let showstats = config.showstats;
+// practical merger changes are done here ig (tested)
 
 const check_teacher_overload = (j, k, teacherid, type, teacher_room_clash_map,) => {
   let curr_index = k + 1;
@@ -53,6 +54,8 @@ const find_new_slot_or_room = (timetable, day, slot, teacherid, roomid, type, te
   let slotsubjectid = timetable[day][slot].subjectid;
   let slottype = timetable[day][slot].type;
 
+  const merge_teachers = teacher_subject_data.find(sub => sub.subjectid === slotsubjectid).merge_teachers;
+
   // Clear the current slot for the conflicting class
   if (timetable[day][slot].teacherid === teacherid && timetable[day][slot].roomid === roomid) {
     timetable[day][slot].teacherid = "";
@@ -96,6 +99,20 @@ const find_new_slot_or_room = (timetable, day, slot, teacherid, roomid, type, te
 
     // Check forward for practical subjects
     if (type === "practical" && temp_slot_forward < 9 && !teacher_room_clash_map[teacher_checker_forward] && !teacher_room_clash_map[teacher_checker_forward_practical] && timetable[temp_day_forward][temp_slot_forward].teacherid === "" && timetable[temp_day_forward][temp_slot_forward + 1].teacherid === "" && check_teacher_overload(temp_day_forward, temp_slot_forward, teacherid, type, teacher_room_clash_map,)) {
+      if (merge_teachers && merge_teachers.length > 0) {        // Check all merged teachers for conflict
+        const anyClash = merge_teachers.some(tid =>
+          teacher_room_clash_map[`teacher;${temp_day_forward};${temp_slot_forward};${tid}`] ||
+          teacher_room_clash_map[`teacher;${temp_day_forward};${temp_slot_forward + 1};${tid}`]
+        );
+        if (anyClash) {
+          if (showstats) {
+            console.log(`Merge teacher clash at ${temp_day_forward}, ${temp_slot_forward}`);
+          }
+          temp_total_forward += 2;
+          continue;
+        }
+      }
+
       // Check room availability for the practical class in two consecutive slots
       if (showstats)
         process.stdout.write("Slot : " + temp_day_forward + " " + temp_slot_forward + " || Room : ",);
@@ -121,6 +138,14 @@ const find_new_slot_or_room = (timetable, day, slot, teacherid, roomid, type, te
           teacher_room_clash_map[room_checker_forward_practical] = true;
           teacher_room_clash_map[teacher_checker_forward] = true;
           teacher_room_clash_map[teacher_checker_forward_practical] = true;
+
+          if (merge_teachers && merge_teachers.length > 0) {  // mark merged teachers in the clash map
+            for (let l = 0; l < merge_teachers.length; l++) {
+              teacher_room_clash_map[`teacher;${temp_day_forward};${temp_slot_forward};${merge_teachers[l]}`] = true;
+              teacher_room_clash_map[`teacher;${temp_day_forward};${temp_slot_forward + 1};${merge_teachers[l]}`] = true;
+            }
+          }
+
           if (showstats) {
             process.stdout.write(" || slot found at " + temp_day_forward + " " + temp_slot_forward,);
             console.log("\n===================================================================",);
@@ -161,6 +186,20 @@ const find_new_slot_or_room = (timetable, day, slot, teacherid, roomid, type, te
 
     // Check backward for practical subjects
     if (type === "practical" && temp_slot_backward < 9 && !teacher_room_clash_map[teacher_checker_backward] && !teacher_room_clash_map[teacher_checker_backward_practical] && timetable[temp_day_backward][temp_slot_backward].teacherid === "" && timetable[temp_day_backward][temp_slot_backward + 1].teacherid === "" && check_teacher_overload(temp_day_forward, temp_slot_forward, teacherid, type, teacher_room_clash_map,)) {
+      if (merge_teachers && merge_teachers.length > 0) { // check all merged teachers for conflict
+        const anyClash = merge_teachers.some(tid =>
+          teacher_room_clash_map[`teacher;${temp_day_backward};${temp_slot_backward};${tid}`] ||
+          teacher_room_clash_map[`teacher;${temp_day_backward};${temp_slot_backward + 1};${tid}`]
+        );
+        if (anyClash) {
+          if (showstats) {
+            console.log(`Merge teacher clash at ${temp_day_backward}, ${temp_slot_backward}`);
+          }
+          temp_total_backward -= 2;
+          continue;
+        }
+      }
+
       if (showstats)
         process.stdout.write("Slot : " + temp_day_backward + " " + temp_slot_backward + " || Room : ",);
       for (let i = 0; i < room[room_type].length; i++) {
@@ -185,6 +224,14 @@ const find_new_slot_or_room = (timetable, day, slot, teacherid, roomid, type, te
           teacher_room_clash_map[room_checker_backward_practical] = true;
           teacher_room_clash_map[teacher_checker_backward] = true;
           teacher_room_clash_map[teacher_checker_backward_practical] = true;
+
+          if (merge_teachers && merge_teachers.length > 0) {  // mark merged teachers in the clash map
+            for (let l = 0; l < merge_teachers.length; l++) {
+              teacher_room_clash_map[`teacher;${temp_day_backward};${temp_slot_backward};${merge_teachers[l]}`] = true;
+              teacher_room_clash_map[`teacher;${temp_day_backward};${temp_slot_backward + 1};${merge_teachers[l]}`] = true;
+            }
+          }
+
           if (showstats) {
             process.stdout.write(" || slot found at " + temp_day_backward + " " + temp_slot_backward,);
             console.log("\n===================================================================",);
@@ -247,6 +294,15 @@ const find_new_slot_or_room = (timetable, day, slot, teacherid, roomid, type, te
   return null;
 };
 
+const check_merge_teacher = (timetable_set, teacher_room_clash_map) => {
+  let joint_teacher_set = timetable_set["data"][i].subjects.find((subject) => subject.subjectid === timetable_set["data"][i]["timetable"][j][k].subjectid).merge_teachers;
+  for (let l = 0; l < joint_teacher_set.length; l++) {
+    if (teacher_room_clash_map["teacher" + ";" + j + ";" + k + ";" + joint_teacher_set[l]]) {
+      return false; // If any joint teacher is already assigned in the same slot, return false
+    }
+  }
+  return true; // If no joint teacher is assigned in the same slot, return true
+}
 // Function to resolve conflicts (teacher/room clashes) in a timetable
 const resolveConflicts = (timetable_set, room) => {
   let teacher_room_clash_map = {};
@@ -256,7 +312,30 @@ const resolveConflicts = (timetable_set, room) => {
         if (timetable_set["data"][i]["timetable"][j][k].teacherid == "" && timetable_set["data"][i]["timetable"][j][k].roomid == "") {
           continue;          // if class is empty, skip it
         } else if (timetable_set["data"][i]["timetable"][j][k].teacherid && timetable_set["data"][i]["timetable"][j][k].roomid) {
-          if (teacher_room_clash_map["teacher" + ";" + j + ";" + k + ";" + timetable_set["data"][i]["timetable"][j][k].teacherid] || teacher_room_clash_map["room" + ";" + j + ";" + k + ";" + timetable_set["data"][i]["timetable"][j][k].roomid]) {
+          if (timetable_set["data"][i].joint && timetable_set["data"][i]["timetable"][j][k].type === "practical") {
+            if (!check_merge_teacher(timetable_set, teacher_room_clash_map)) {
+              let newslottedtt;
+              if (k < 9 && timetable_set["data"][i]["timetable"][j][k + 1].subjectid === timetable_set["data"][i]["timetable"][j][k].subjectid) {
+                newslottedtt = find_new_slot_or_room(timetable_set["data"][i]["timetable"], j, k, timetable_set["data"][i]["timetable"][j][k].teacherid, timetable_set["data"][i]["timetable"][j][k].roomid, timetable_set["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room, timetable_set['data'][i].subjects);
+              } else if (k > 0 && timetable_set["data"][i]["timetable"][j][k - 1].subjectid === timetable_set["data"][i]["timetable"][j][k].subjectid) {
+                newslottedtt = find_new_slot_or_room(timetable_set["data"][i]["timetable"], j, k - 1, timetable_set["data"][i]["timetable"][j][k].teacherid, timetable_set["data"][i]["timetable"][j][k].roomid, timetable_set["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room, timetable_set['data'][i].subjects);
+              }
+              if (newslottedtt == null) {
+                if (showstats) console.log("TraahiMaam TraahiMaam, PaahiMaam PaahiMaam Jagat-Srishti-Pralay Vishva, Sankat tav Naashitaam",);
+                return false;
+              } else {
+                timetable_set["data"][i]["timetable"] = newslottedtt.timetable;
+                teacher_room_clash_map = newslottedtt.teacher_room_clash_map;
+              }
+            } else {
+              let joint_teacher_set = timetable_set["data"][i].subjects.find((subject) => subject.subjectid === timetable_set["data"][i]["timetable"][j][k].subjectid).merge_teachers;
+              for (let l = 0; l < joint_teacher_set.length; l++) {
+                teacher_room_clash_map["teacher" + ";" + j + ";" + k + ";" + joint_teacher_set[l]] = true;
+              }
+              teacher_room_clash_map["room" + ";" + j + ";" + k + ";" + timetable_set["data"][i]["timetable"][j][k].roomid] = true;
+            }
+          }
+          else if (teacher_room_clash_map["teacher" + ";" + j + ";" + k + ";" + timetable_set["data"][i]["timetable"][j][k].teacherid] || teacher_room_clash_map["room" + ";" + j + ";" + k + ";" + timetable_set["data"][i]["timetable"][j][k].roomid]) {
             let newslottedtt;
             if (timetable_set["data"][i]["timetable"][j][k].type === "practical" && k < 9 && timetable_set["data"][i]["timetable"][j][k + 1].teacherid === timetable_set["data"][i]["timetable"][j][k].teacherid) {
               newslottedtt = find_new_slot_or_room(timetable_set["data"][i]["timetable"], j, k, timetable_set["data"][i]["timetable"][j][k].teacherid, timetable_set["data"][i]["timetable"][j][k].roomid, timetable_set["data"][i]["timetable"][j][k].type, teacher_room_clash_map, room, timetable_set['data'][i].subjects);
