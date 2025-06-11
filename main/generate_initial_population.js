@@ -2,6 +2,7 @@ import fs from "fs";
 import initialize_gene from "./plot_timetables.js";
 import config from "./config.js";
 import { fitness_func_generation } from "./fitness_func.js";
+// practical merger changes are done here ig (tested)
 
 const generate_initialize_population = (alltimetable_sent, room_sent) => {
   let population = [];

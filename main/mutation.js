@@ -4,42 +4,46 @@ import validate_timetable from "./validate_timetable.js";
 import config from "./config.js";
 import teacher_room_clash_map_generator from "./teacher_room_clash_map_generator.js";
 let showstats = config.showstats;
-const check_teacher_overload = (j, k, teacherid, type, teacher_room_clash_map) => {
-  let curr_index = k + 1;
-  let streak = 1;
-  if (type == "practical") {
-    k++;
-    streak++;
-  }
-  let local_stream = 0;
-  while (curr_index <= 9) {
-    let teacher_overload_checker = "teacher" + ";" + j + ";" + curr_index + ";" + teacherid;
-    if (teacher_room_clash_map[teacher_overload_checker] == true) {
-      local_stream++;
-    } else {
-      break;
-    }
-    curr_index++;
-  }
-  streak += local_stream;
-  local_stream = 0;
-  curr_index = k--;
+// practical merger changes are done here ig (tested)
 
-  while (curr_index >= 0) {
-    let teacher_overload_checker = "teacher" + ";" + j + ";" + curr_index + ";" + teacherid;
-    if (teacher_room_clash_map[teacher_overload_checker] == true) {
-      local_stream++;
-    } else {
-      break;
+const check_teacher_overload = (j, k, teacherid, type, teacher_room_clash_map, merge_teachers = []) => {
+  const isOverloaded = (tid) => {
+    let base_slot = k;
+    let streak = type === "practical" ? 2 : 1;
+
+    // Forward scan
+    let forward = base_slot + streak;
+    while (forward <= 9) {
+      if (teacher_room_clash_map[`teacher;${j};${forward};${tid}`]) {
+        streak++;
+        forward++;
+      } else {
+        break;
+      }
     }
-    curr_index--;
+
+    // Backward scan
+    let backward = base_slot - 1;
+    while (backward >= 0) {
+      if (teacher_room_clash_map[`teacher;${j};${backward};${tid}`]) {
+        streak++;
+        backward--;
+      } else {
+        break;
+      }
+    }
+    return streak > config.max_streak;
+  };
+
+  const teachersToCheck = [teacherid, ...(merge_teachers || [])];
+  for (let tid of teachersToCheck) {
+    if (isOverloaded(tid)) {
+      return false; // One of the teachers is overloaded
+    }
   }
-  streak += local_stream;
-  if (streak > 4) {
-    // console.log(streak>4 ? false : true);
-  }
-  return streak > 4 ? false : true;
+  return true; // All are under the overload threshold
 };
+
 const mutate_Single_timetable = (timetable, day, slot, teacher_room_clash_map, room, teacher_subject_data) => {
   let teacherid = timetable[day][slot].teacherid;
   let roomid = timetable[day][slot].roomid;
@@ -54,6 +58,8 @@ const mutate_Single_timetable = (timetable, day, slot, teacher_room_clash_map, r
   let temp_total_backward = day * 10 + slot;
   let slotsubjectid = timetable[day][slot].subjectid;
   let slottype = timetable[day][slot].type;
+
+  const merge_teachers = teacher_subject_data.find(sub => sub.subjectid === slotsubjectid).merge_teachers;
 
   // Clear the current slot for the conflicting class
   if (timetable[day][slot].teacherid === teacherid && timetable[day][slot].roomid === roomid) {
@@ -124,7 +130,11 @@ const mutate_Single_timetable = (timetable, day, slot, teacher_room_clash_map, r
     // For practical classes, also check the next slot
     let teacher_checker_forward_practical = "teacher" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + teacherid;
     // Check forward for practical subjects
-    if (type === "practical" && temp_slot < 9 && !teacher_room_clash_map[teacher_checker_forward] && !teacher_room_clash_map[teacher_checker_forward_practical] && timetable[temp_day][temp_slot].teacherid === "" && timetable[temp_day][temp_slot + 1].teacherid === "" && check_teacher_overload(temp_day, temp_slot, teacherid, type, teacher_room_clash_map)) {
+    if (type === "practical" && temp_slot < 9 && !teacher_room_clash_map[teacher_checker_forward] && !teacher_room_clash_map[teacher_checker_forward_practical] && timetable[temp_day][temp_slot].teacherid === "" && timetable[temp_day][temp_slot + 1].teacherid === "" &&
+      !merge_teachers.some(tid =>
+        teacher_room_clash_map[`teacher;${temp_day};${temp_slot};${tid}`] ||
+        teacher_room_clash_map[`teacher;${temp_day};${temp_slot + 1};${tid}`]
+      ) && check_teacher_overload(temp_day, temp_slot, teacherid, type, teacher_room_clash_map, merge_teachers)) {
       // Check room availability for the practical class in two consecutive slots
       if (showstats) process.stdout.write("Slot : " + temp_day + " " + temp_slot + " || Room : ");
       for (let i = 0; i < room[room_type].length; i++) {
@@ -149,6 +159,12 @@ const mutate_Single_timetable = (timetable, day, slot, teacher_room_clash_map, r
           teacher_room_clash_map[room_checker_forward_practical] = true;
           teacher_room_clash_map[teacher_checker_forward] = true;
           teacher_room_clash_map[teacher_checker_forward_practical] = true;
+
+          for (const tid of merge_teachers) {
+            teacher_room_clash_map[`teacher;${temp_day};${temp_slot};${tid}`] = true;
+            teacher_room_clash_map[`teacher;${temp_day};${temp_slot + 1};${tid}`] = true;
+          }
+
           if (showstats) {
             process.stdout.write(" || slot found at " + temp_day + " " + temp_slot);
             console.log("\n===================================================================");
