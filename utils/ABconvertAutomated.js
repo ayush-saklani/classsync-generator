@@ -218,7 +218,7 @@ const fetchAndSaveAll = async () => {
 const serverorlocal = true; // Set to false for local storage, true for server database
 const ABconvert = async () => {
     if (production) b1.start(4, 0, { filename: "AB Conversion" });
-    if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
+    // if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
     let old_timetable_data, old_room_data, old_faculty_data;
     if (serverorlocal) {
         let data = await fetchAndSaveAll();
@@ -235,15 +235,15 @@ const ABconvert = async () => {
 
     if (production) b1.update(1);
 
-    if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
+    // if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
     let new_timetable_data = await converttimetable(old_timetable_data);
     if (production) b1.update(2);
 
-    if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
+    // if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
     let new_room_data = await convertrooms(old_room_data);
     if (production) b1.update(3);
 
-    if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
+    // if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
     let new_faculty_data = await convertfaculties(old_faculty_data);
     if (production) b1.update(4);
 

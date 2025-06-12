@@ -17,7 +17,7 @@ const teacher_room_clash_map_generator = (population) => {
   return population;
 };
 
-export default check_merge_error = (timetable_data, rooms_list) => {
+const check_merge_error = (timetable_data, showstats = false) => {
   let stats = {
     filled: 0,
     sameteacherskipped: 0,
@@ -25,11 +25,12 @@ export default check_merge_error = (timetable_data, rooms_list) => {
     total: 0,
     bothfail: 0,
   };
+  let rooms_list = JSON.parse(fs.readFileSync("./JSON/classsync.converted.rooms.json", "utf8"));
 
   for (let i = 0; i < timetable_data['data'].length; i++) {
     if (timetable_data['data'][i].joint) {
       timetable_data = teacher_room_clash_map_generator(timetable_data);
-      console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+      if (showstats) console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
       for (let j = 0; j < timetable_data['data'][i].timetable.length; j++) {
         for (let k = 0; k < timetable_data['data'][i].timetable[j].length; k++) {
           if (timetable_data['data'][i].timetable[j][k].roomid != "" && timetable_data['data'][i].timetable[j][k].type == "practical") {
@@ -55,10 +56,11 @@ export default check_merge_error = (timetable_data, rooms_list) => {
               if (!roomexist) stats.roomfail++;
               if (teacherslot && nextteacherslot) stats.sameteacherskipped++;
             }
-            console.log(
+            if (showstats) console.log(
               timetable_data['data'][i].timetable[j][k].teacherid + " " + otherteacherids + " || " +
               (teacherslot ? 'clash' : 'free') + " " + (nextteacherslot ? 'clash' : 'free') + "\t || " +
-              "free room: " + roomexist
+              "free room: " + roomexist + "\t || " +
+              "Room Type: " + currroomtype
             );
             k++;
           }
@@ -66,19 +68,23 @@ export default check_merge_error = (timetable_data, rooms_list) => {
       }
     }
   }
-  console.log("\n======================= SUMMARY =======================");
-  console.log("Total slots Detected :", stats.total);
-  console.log("=======================================================");
-  console.log("Fillable slots       :", stats.filled);
-  console.log("Teacher fail         :", stats.sameteacherskipped);
-  console.log("Room Fail            :", stats.roomfail);
-  console.log("Teacher & Room Fail  :", stats.bothfail);
-  console.log("=======================================================");
-  return ((stats.sameteacherskipped + stats.roomfail + stats.bothfail) == 0);
+  if (showstats) {
+    console.log("\n======================= SUMMARY =======================");
+    console.log("Total slots Detected :", stats.total);
+    console.log("=======================================================");
+    console.log("Fillable slots       :", stats.filled);
+    console.log("Teacher fail         :", stats.sameteacherskipped);
+    console.log("Room Fail            :", stats.roomfail);
+    console.log("Teacher & Room Fail  :", stats.bothfail);
+    console.log("=======================================================");
+  }
+  // return ((stats.sameteacherskipped + stats.roomfail + stats.bothfail) == 0);
+  return ((stats.sameteacherskipped + " " + stats.roomfail + " " + stats.bothfail));
 }
+export default check_merge_error;
 
 //for testing purposes (at present check the best one in the checkpoint)
-// let rooms_list = JSON.parse(fs.readFileSync("./JSON/classsync.converted.rooms.json", "utf8"));
-// let timetable_data = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
-// timetable_data = timetable_data[0];
-// console.log(check_merge_error(timetable_data, rooms_list));
+
+let timetable_data = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
+timetable_data = timetable_data[0];
+console.log(check_merge_error(timetable_data, true));

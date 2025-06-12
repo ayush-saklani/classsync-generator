@@ -4,6 +4,8 @@ import generate_initialize_population from "./generate_initial_population.js";
 import { fitness_func_generation } from "./fitness_func.js";
 import crossoverGeneration from "./crossover.js";
 import mutate_Population from "./mutation.js";
+import check_merge_error from "../utils/practical_merge_possible.js";
+
 const art = await fs.promises.readFile("./assets/art.txt", "utf-8");
 console.log(art);
 
@@ -62,7 +64,7 @@ const algorithm = () => {                                                       
     population = crossoverGeneration(population, room);                                     // step 2: crossover population
     population = mutate_Population(population, room);                                       // step 3: mutate population
     if (i % 10 == 0) {                                                                      // Checkpoint: write population to file every 10 generations to avoid redoing the same work
-      console.log("Checkpoint: writing population to file : " + i);
+      console.log("Checkpoint: writing population to file : " + i + " " + check_merge_error(population[0]));
       fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8");
     }
     real_checkpoint_save(population);                                                       // 2nd Checkpoint: write population to file if current population is best then save it to file
