@@ -148,9 +148,9 @@ Object.entries(mergemap).forEach(([semester, sections]) => {
   });
 });
 
-fs.writeFileSync("./JSON/classsync.backtonormal.tables.json", JSON.stringify(backtonormal_timetable_data, null, 4), "utf8");
-fs.writeFileSync("./JSON/classsync.backtonormal.rooms.json", JSON.stringify(backtonormal_rooms_data, null, 4), "utf8");
-fs.writeFileSync("./JSON/classsync.backtonormal.faculties.json", JSON.stringify(backtonormal_faculty_data, null, 4), "utf8");
+fs.writeFileSync("./JSON/classsync.backtonormal.tables.json", JSON.stringify(backtonormal_timetable_data, null, 2), "utf8");
+fs.writeFileSync("./JSON/classsync.backtonormal.rooms.json", JSON.stringify(backtonormal_rooms_data, null, 2), "utf8");
+fs.writeFileSync("./JSON/classsync.backtonormal.faculties.json", JSON.stringify(backtonormal_faculty_data, null, 2), "utf8");
 
 console.log("\n========================= SUMMARY =========================");
 console.log("Filled slots      :", stats.filled);

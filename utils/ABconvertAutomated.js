@@ -9,7 +9,7 @@ import cliProgress from 'cli-progress';
 
 dotenv.config(); // Load environment variables
 
-let production = false; // Set to false for skipping progress bar and database connection
+let production = true; // Set to false for skipping progress bar and database connection
 
 let multibar, b1, b0, b2, b3, b4;
 
@@ -215,7 +215,7 @@ const fetchAndSaveAll = async () => {
         mongoose.connection.close();
     }
 };
-const serverorlocal = false; // Set to false for local storage, true for server database
+const serverorlocal = true; // Set to false for local storage, true for server database
 const ABconvert = async () => {
     if (production) b1.start(4, 0, { filename: "AB Conversion" });
     if (production) await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for 2 seconds to ensure room data is ready
