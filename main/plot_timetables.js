@@ -93,13 +93,32 @@ let timetablestructure = [
 ];
 
 //  this function will validate the slot of timetable and flag out the room and teacher conflicts from that batch of timetables
-const validate_timetable_slot = (j, k, teacherid, roomid, type, teacher_overload_map, room_overload_map,) => {
+const validate_timetable_slot = (j, k, teacherid, roomid, type, teacher_overload_map, room_overload_map, merge_teachers = [], room, room_type) => {
   if (type == "practical" && k % 2 !== 0) return false;
-  if (teacher_overload_map["teacher" + ";" + j + ";" + k + ";" + teacherid] || room_overload_map["room" + ";" + j + ";" + k + ";" + roomid]) {
+  if (teacher_overload_map[`teacher;${j};${k};${teacherid}`] || room_overload_map[`room;${j};${k};${roomid}`]) {
     return false;
   }
-  if (type == "practical" && (teacher_overload_map["teacher" + ";" + j + ";" + (k + 1) + ";" + teacherid] == true || room_overload_map["room" + ";" + j + ";" + (k + 1) + ";" + roomid] == true)) {
+  if (type == "practical" && (teacher_overload_map[`teacher;${j};${k + 1};${teacherid}`] == true || room_overload_map[`room;${j};${k + 1};${roomid}`] == true)) {
     return false;
+  }
+  if (merge_teachers.length > 0) {
+    for (let itr = 0; itr < merge_teachers.length; itr++) {
+      if (
+        teacher_overload_map[`teacher;${j};${k};${merge_teachers[itr]}`] == true ||
+        teacher_overload_map[`teacher;${j};${k + 1};${merge_teachers[itr]}`] == true
+      ) {
+        return false;
+      }
+    }
+    let count = 0;
+    for (let itr = 0; itr < room[room_type].length; itr++) {
+      if (!room_overload_map[`room;${j};${k};${room[room_type][itr].roomid}`] == true) {
+        count++;
+      }
+    }
+    if (count < merge_teachers.length) {
+      return false;
+    }
   }
   return true;
 };
@@ -107,37 +126,10 @@ const validate_timetable_slot = (j, k, teacherid, roomid, type, teacher_overload
 const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, roomid, subjectid, type,) => {
   // this function will prevent the teacher to teach in multiple slots in a day
   let map = {};
-  // testing code for day reward for bus students
-  // let flaglimit = 8000;
-  // let day_start = 0;
-  // let day_end = 0;
-  // let pflag = true;
-  // for (let z = 0; z < 10; z++) {
-  //     if (timetable[j][z].roomid == "" && timetable[j][z].teacherid == "") {
-  //         continue;
-  //     } else {
-  //         if (pflag) {
-  //             day_start = z;
-  //             pflag = false;
-  //         }
-  //         day_end = z;
-  //     }
-  // }
-  // if ((day_start >= 0 && day_start <= 7) && (day_end >= 0 && day_end <= 7) && flag < flaglimit) {
-  //     if (k >= 8) {
-  //         return false;
-  //     }
-  // }
-  // else if ((day_start >= 4 && day_start <= 9) && (day_end >= 4 && day_end <= 9) && flag < flaglimit) {
-  //     if (k <= 3) {
-  //         return false;
-  //     }
-  // }
   for (let i = 0; i < 10; i++) {
     if (timetable[j][i].teacherid == "" || timetable[j][i].roomid == "")
       continue;
-    map["subjectid" + ";" + j + ";" + i + ";" + timetable[j][i].subjectid] =
-      true;
+    map["subjectid" + ";" + j + ";" + i + ";" + timetable[j][i].subjectid] = true;
   }
   if (map["subjectid" + ";" + j + ";" + k + ";" + subjectid]) {
     return false;
@@ -145,36 +137,39 @@ const validate_multiple_slot_in_a_day = (timetable, j, k, teacherid, roomid, sub
     return true;
   }
 };
-const check_teacher_overload = (j, k, teacherid, type, teacher_overload_map,) => {
-  if (type == "practical" && k % 2 !== 0) return false;
-  let curr_index = type == "practical" ? k + 2 : k + 1;
-  let streak = type == "practical" ? 2 : 1;
-  let local_stream = 0;
-  while (curr_index <= 9) {
-    let teacher_overload_checker = "teacher" + ";" + j + ";" + curr_index + ";" + teacherid;
-    if (teacher_overload_map[teacher_overload_checker] == true) {
-      local_stream++;
-    } else {
-      break;
+const check_teacher_overload = (j, k, teacherid, type, teacher_overload_map, merge_teachers = []) => {
+  const teacherids = [teacherid, ...merge_teachers];
+  for (const tid of teacherids) {
+    if (type == "practical" && k % 2 !== 0) return false;
+    let curr_index = type == "practical" ? k + 2 : k + 1;
+    let streak = type == "practical" ? 2 : 1;
+    let local_stream = 0;
+    while (curr_index <= 9) {
+      let teacher_overload_checker = `teacher;${j};${curr_index};${tid}`;
+      if (teacher_overload_map[teacher_overload_checker] == true) {
+        local_stream++;
+      } else {
+        break;
+      }
+      curr_index++;
     }
-    curr_index++;
-  }
-  streak += local_stream;
-  local_stream = 0;
+    streak += local_stream;
+    local_stream = 0;
 
-  curr_index = k - 1;
-  while (curr_index >= 0) {
-    let teacher_overload_checker = "teacher" + ";" + j + ";" + curr_index + ";" + teacherid;
-    if (teacher_overload_map[teacher_overload_checker] == true) {
-      local_stream++;
-    } else {
-      break;
+    curr_index = k - 1;
+    while (curr_index >= 0) {
+      let teacher_overload_checker = `teacher;${j};${curr_index};${tid}`;
+      if (teacher_overload_map[teacher_overload_checker] == true) {
+        local_stream++;
+      } else {
+        break;
+      }
+      curr_index--;
     }
-    curr_index--;
+    streak += local_stream;
+    if (streak > config.max_streak) return false;
   }
-  streak += local_stream;
-
-  return streak > config.max_streak ? false : true;
+  return true;
 };
 const initialize_gene = (alltimetable, room) => {
   let max = config.max;
@@ -226,10 +221,10 @@ const initialize_gene = (alltimetable, room) => {
 
           //if validation in slot is true then assign the subject to that slot
           if (
-            validate_timetable_slot(temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[room_type][temp_room_index].roomid, subjects[temp_subject_index].type, teacher_overload_map, room_overload_map,)
+            validate_timetable_slot(temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[room_type][temp_room_index].roomid, subjects[temp_subject_index].type, teacher_overload_map, room_overload_map, subjects[temp_subject_index].merge_teachers, room, room_type)
           ) {
             if (
-              check_teacher_overload(temp_day, temp_slot, subjects[temp_subject_index].teacherid, subjects[temp_subject_index].type, teacher_overload_map,)
+              check_teacher_overload(temp_day, temp_slot, subjects[temp_subject_index].teacherid, subjects[temp_subject_index].type, teacher_overload_map, subjects[temp_subject_index].merge_teachers)
             ) {
               // if validation in a day is true then assign the subject to that slot (this will prevent the teacher to teach in multiple slots in a day)
               if (validate_multiple_slot_in_a_day(timetable, temp_day, temp_slot, subjects[temp_subject_index].teacherid, room[room_type][temp_room_index].roomid, subjects[temp_subject_index].subjectid, subjects[temp_subject_index].type,)) {
@@ -240,7 +235,7 @@ const initialize_gene = (alltimetable, room) => {
                 slotmap[temp_day * 10 + temp_slot] = true; // mark the slot as assigned
                 teacher_overload_map["teacher" + ";" + temp_day + ";" + temp_slot + ";" + timetable[temp_day][temp_slot].teacherid] = true;
                 room_overload_map["room" + ";" + temp_day + ";" + temp_slot + ";" + room[room_type][temp_room_index].roomid] = true;
-                if (timetable.joint && subjects[temp_subject_index].type == "practical") {
+                if (subjects[temp_subject_index].merge_teachers.length > 0) {
                   for (let itr = 0; itr < subjects[temp_subject_index].merge_teachers; itr++) {
                     teacher_overload_map["teacher" + ";" + temp_day + ";" + temp_slot + ";" + subjects[temp_subject_index].merge_teachers[itr]] = true;
                   }
@@ -258,7 +253,8 @@ const initialize_gene = (alltimetable, room) => {
                   slotmap[temp_day * 10 + (temp_slot + 1)] = true; // mark the slot as assigned
                   teacher_overload_map["teacher" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + timetable[temp_day][temp_slot].teacherid] = true;
                   room_overload_map["room" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + room[room_type][temp_room_index].roomid] = true;
-                  if (timetable.joint && subjects[temp_subject_index].type == "practical") {
+                  if (subjects[temp_subject_index].merge_teachers.length > 0) {
+                    // console.log("Practical subject with merge teachers found.");
                     for (let itr = 0; itr < subjects[temp_subject_index].merge_teachers; itr++) {
                       teacher_overload_map["teacher" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + subjects[temp_subject_index].merge_teachers[itr]] = true;
                     }
@@ -314,3 +310,13 @@ export default initialize_gene;
 // let room = JSON.parse(fs.readFileSync('../JSON/classsync.converted.rooms.json', 'utf8'));
 // fs.writeFileSync('data2.json', JSON.stringify(initialize_gene(alltimetable, room), null, 4), 'utf8');
 // initialize_gene(alltimetable, room, true); // demo function call
+
+// import check_merge_error from "../utils/practical_merge_possible.js";
+// for (let i = 0; i < 10; i++) {  // test to test practical merge errors
+//   console.log(
+//     check_merge_error(initialize_gene(
+//       JSON.parse(fs.readFileSync('./JSON/classsync.converted.tables.json', 'utf8')),
+//       JSON.parse(fs.readFileSync('./JSON/classsync.converted.rooms.json', 'utf8'))
+//     ))
+//   ); // check_merge_error function call
+// }

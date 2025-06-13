@@ -64,7 +64,12 @@ const algorithm = () => {                                                       
     population = crossoverGeneration(population, room);                                     // step 2: crossover population
     population = mutate_Population(population, room);                                       // step 3: mutate population
     if (i % 10 == 0) {                                                                      // Checkpoint: write population to file every 10 generations to avoid redoing the same work
-      console.log("Checkpoint: writing population to file : " + i + " " + check_merge_error(population[0]));
+      // console.log("Checkpoint: writing population to file : " + i + " " + check_merge_error(population[0]));
+      process.stdout.write("Checkpoint: writing population to file : " + i + "\t || ");
+      for (let j = 0; j < population.length; j++) {                                                // Check for merge errors in the population
+        process.stdout.write(check_merge_error(population[j], false, false) ? " ✔ " : " ✘ ");
+      }
+      console.log();
       fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8");
     }
     real_checkpoint_save(population);                                                       // 2nd Checkpoint: write population to file if current population is best then save it to file

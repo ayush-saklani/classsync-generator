@@ -140,10 +140,36 @@ const find_new_slot_or_room = (timetable, day, slot, teacherid, roomid, type, te
           teacher_room_clash_map[teacher_checker_forward_practical] = true;
 
           if (merge_teachers && merge_teachers.length > 0) {  // mark merged teachers in the clash map
-            for (let l = 0; l < merge_teachers.length; l++) {
-              teacher_room_clash_map[`teacher;${temp_day_forward};${temp_slot_forward};${merge_teachers[l]}`] = true;
-              teacher_room_clash_map[`teacher;${temp_day_forward};${temp_slot_forward + 1};${merge_teachers[l]}`] = true;
+            let count = 0;
+            for (let x = 0; x < room[room_type].length; x++) {
+              let room2_checker_forward = "room" + ";" + temp_day_forward + ";" + temp_slot_forward + ";" + room[room_type][x].roomid;
+              let room2_checker_forward_practical = "room" + ";" + temp_day_forward + ";" + (temp_slot_forward + 1) + ";" + room[room_type][x].roomid;
+              if (!teacher_room_clash_map[room2_checker_forward] && !teacher_room_clash_map[room2_checker_forward_practical]) {
+                count++;
+              }
             }
+            if (count < merge_teachers.length) {
+              teacher_room_clash_map[room_checker_forward] = false;
+              teacher_room_clash_map[room_checker_forward_practical] = false;
+              teacher_room_clash_map[teacher_checker_forward] = false;
+              teacher_room_clash_map[teacher_checker_forward_practical] = false;
+              temp_total_forward += 2;
+              continue;
+            }
+            // console.log("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy")
+            for (let l = 0; l < merge_teachers.length; l++) {
+              for (let x = 0; x < room[room_type].length; x++) {
+                let room2_checker_forward = "room" + ";" + temp_day_forward + ";" + temp_slot_forward + ";" + room[room_type][x].roomid;
+                let room2_checker_forward_practical = "room" + ";" + temp_day_forward + ";" + (temp_slot_forward + 1) + ";" + room[room_type][x].roomid;
+                if (!teacher_room_clash_map[room2_checker_forward] && !teacher_room_clash_map[room2_checker_forward_practical]) {
+                  teacher_room_clash_map[room2_checker_forward] = true;
+                  teacher_room_clash_map[room2_checker_forward_practical] = true;
+                  teacher_room_clash_map[`teacher;${temp_day_forward};${temp_slot_forward};${merge_teachers[l]}`] = true;
+                  teacher_room_clash_map[`teacher;${temp_day_forward};${temp_slot_forward + 1};${merge_teachers[l]}`] = true;
+                }
+              }
+            }
+            return { timetable, teacher_room_clash_map };
           }
 
           if (showstats) {
@@ -237,12 +263,37 @@ const find_new_slot_or_room = (timetable, day, slot, teacherid, roomid, type, te
           teacher_room_clash_map[teacher_checker_backward_practical] = true;
 
           if (merge_teachers && merge_teachers.length > 0) {  // mark merged teachers in the clash map
-            for (let l = 0; l < merge_teachers.length; l++) {
-              teacher_room_clash_map[`teacher;${temp_day_backward};${temp_slot_backward};${merge_teachers[l]}`] = true;
-              teacher_room_clash_map[`teacher;${temp_day_backward};${temp_slot_backward + 1};${merge_teachers[l]}`] = true;
+            let count = 0;
+            for (let x = 0; x < room[room_type].length; x++) {
+              let room2_checker_backward = "room" + ";" + temp_day_backward + ";" + temp_slot_backward + ";" + room[room_type][x].roomid;
+              let room2_checker_backward_practical = "room" + ";" + temp_day_backward + ";" + (temp_slot_backward + 1) + ";" + room[room_type][x].roomid;
+              if (!teacher_room_clash_map[room2_checker_backward] && !teacher_room_clash_map[room2_checker_backward_practical]) {
+                count++;
+              }
             }
+            if (count < merge_teachers.length) {
+              teacher_room_clash_map[room_checker_backward] = false;
+              teacher_room_clash_map[room_checker_backward_practical] = false;
+              teacher_room_clash_map[teacher_checker_backward] = false;
+              teacher_room_clash_map[teacher_checker_backward_practical] = false;
+              temp_total_backward -= 2;
+              continue;
+            }
+            // console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+            for (let l = 0; l < merge_teachers.length; l++) {
+              for (let x = 0; x < room[room_type].length; x++) {
+                let room2_checker_backward = "room" + ";" + temp_day_backward + ";" + temp_slot_backward + ";" + room[room_type][x].roomid;
+                let room2_checker_backward_practical = "room" + ";" + temp_day_backward + ";" + (temp_slot_backward + 1) + ";" + room[room_type][x].roomid;
+                if (!teacher_room_clash_map[room2_checker_backward] && !teacher_room_clash_map[room2_checker_backward_practical]) {
+                  teacher_room_clash_map[room2_checker_backward] = true;
+                  teacher_room_clash_map[room2_checker_backward_practical] = true;
+                  teacher_room_clash_map[`teacher;${temp_day_backward};${temp_slot_backward};${merge_teachers[l]}`] = true;
+                  teacher_room_clash_map[`teacher;${temp_day_backward};${temp_slot_backward + 1};${merge_teachers[l]}`] = true;
+                }
+              }
+            }
+            return { timetable, teacher_room_clash_map };
           }
-
           if (showstats) {
             process.stdout.write(" || slot found at " + temp_day_backward + " " + temp_slot_backward,);
             console.log("\n===================================================================",);

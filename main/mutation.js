@@ -131,7 +131,7 @@ const mutate_Single_timetable = (timetable, day, slot, teacher_room_clash_map, r
     let teacher_checker_forward_practical = "teacher" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + teacherid;
     // Check forward for practical subjects
     if (type === "practical" && temp_slot < 9 && !teacher_room_clash_map[teacher_checker_forward] && !teacher_room_clash_map[teacher_checker_forward_practical] && timetable[temp_day][temp_slot].teacherid === "" && timetable[temp_day][temp_slot + 1].teacherid === "" &&
-      !merge_teachers.some(tid =>
+      !merge_teachers.some(tid => // ek bhi present hoga (true) to matlab nahi chalana hai aage
         teacher_room_clash_map[`teacher;${temp_day};${temp_slot};${tid}`] ||
         teacher_room_clash_map[`teacher;${temp_day};${temp_slot + 1};${tid}`]
       ) && check_teacher_overload(temp_day, temp_slot, teacherid, type, teacher_room_clash_map, merge_teachers)) {
@@ -160,11 +160,36 @@ const mutate_Single_timetable = (timetable, day, slot, teacher_room_clash_map, r
           teacher_room_clash_map[teacher_checker_forward] = true;
           teacher_room_clash_map[teacher_checker_forward_practical] = true;
 
-          for (const tid of merge_teachers) {
-            teacher_room_clash_map[`teacher;${temp_day};${temp_slot};${tid}`] = true;
-            teacher_room_clash_map[`teacher;${temp_day};${temp_slot + 1};${tid}`] = true;
+          if (merge_teachers && merge_teachers.length > 0) {  // mark merged teachers in the clash map
+            let count = 0;
+            for (let x = 0; x < room[room_type].length; x++) {
+              let room_checker = "room" + ";" + temp_day + ";" + temp_slot + ";" + room[room_type][x].roomid;
+              let room_checker_practical = "room" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + room[room_type][x].roomid;
+              if (!teacher_room_clash_map[room_checker] && !teacher_room_clash_map[room_checker_practical]) {
+                count++;
+              }
+            }
+            if (count < merge_teachers.length) {
+              teacher_room_clash_map[room_checker_forward] = false;
+              teacher_room_clash_map[room_checker_forward_practical] = false;
+              teacher_room_clash_map[teacher_checker_forward] = false;
+              teacher_room_clash_map[teacher_checker_forward_practical] = false;
+              continue;
+            }
+            for (let l = 0; l < merge_teachers.length; l++) {
+              for (let x = 0; x < room[room_type].length; x++) {
+                let room_checker = "room" + ";" + temp_day + ";" + temp_slot + ";" + room[room_type][x].roomid;
+                let room_checker_practical = "room" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + room[room_type][x].roomid;
+                if (!teacher_room_clash_map[room_checker] && !teacher_room_clash_map[room_checker_practical]) {
+                  teacher_room_clash_map[room_checker] = true;
+                  teacher_room_clash_map[room_checker_practical] = true;
+                  teacher_room_clash_map[`teacher;${temp_day};${temp_slot};${merge_teachers[l]}`] = true;
+                  teacher_room_clash_map[`teacher;${temp_day};${temp_slot + 1};${merge_teachers[l]}`] = true;
+                }
+              }
+            }
+            return { timetable, teacher_room_clash_map };
           }
-
           if (showstats) {
             process.stdout.write(" || slot found at " + temp_day + " " + temp_slot);
             console.log("\n===================================================================");
