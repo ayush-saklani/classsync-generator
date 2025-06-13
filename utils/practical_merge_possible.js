@@ -17,7 +17,7 @@ const teacher_room_clash_map_generator = (population) => {
   return population;
 };
 
-const check_merge_error = (timetable_data, showstats = false) => {
+const check_merge_error = (timetable_data, showstats = false, logging = false) => {
   let stats = {
     filled: 0,
     sameteacherskipped: 0,
@@ -78,13 +78,16 @@ const check_merge_error = (timetable_data, showstats = false) => {
     console.log("Teacher & Room Fail  :", stats.bothfail);
     console.log("=======================================================");
   }
-  // return ((stats.sameteacherskipped + stats.roomfail + stats.bothfail) == 0);
-  return ((stats.sameteacherskipped + " " + stats.roomfail + " " + stats.bothfail));
+  if (logging) {
+    return ("\t|| Practical Teacher Clash : " + stats.sameteacherskipped + " Room Fail : " + stats.roomfail + " Both Fail : " + stats.bothfail);
+  } else {
+    return ((stats.sameteacherskipped + stats.roomfail + stats.bothfail) == 0);
+  }
 }
 export default check_merge_error;
 
 //for testing purposes (at present check the best one in the checkpoint)
 
-let timetable_data = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
-timetable_data = timetable_data[0];
-console.log(check_merge_error(timetable_data, true));
+// let timetable_data = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
+// timetable_data = timetable_data[0];
+// console.log(check_merge_error(timetable_data, true));
