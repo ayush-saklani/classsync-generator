@@ -1,4 +1,6 @@
 import fs from "fs";
+import readline from 'readline/promises';
+import { stdin as input, stdout as output } from 'process';
 import config from "./config.js";
 import generate_initialize_population from "./generate_initial_population.js";
 import { fitness_func_generation } from "./fitness_func.js";
@@ -43,7 +45,7 @@ const real_checkpoint_save = (population) => {    // Checkpoint: write populatio
   let check_merge_error_flag = population.every((timetable) => { return check_merge_error(timetable); });
   if (!check_merge_error_flag) return; // If any timetable has merge error, do not save the checkpoint
   if (previous_population.length >= 1 && population[0].fitness > previous_population[0].fitness) {
-    console.log("Ka-Chow! New checkpoint saved." + population[0].fitness + " > " + previous_population[0].fitness);
+    console.log("Ka-Chow! New checkpoint saved. || " + previous_population[0].fitness + " => " + population[0].fitness + " || " + "(+" + (population[0].fitness - previous_population[0].fitness).toFixed(5) + ")");
     fs.writeFileSync("./JSON/classsync.win.chechpoint.tables.json", JSON.stringify(population, null, 4), "utf8");
   } else if (previous_population.length == 0) {
     fs.writeFileSync("./JSON/classsync.win.chechpoint.tables.json", JSON.stringify(population, null, 4), "utf8");
@@ -53,8 +55,27 @@ const check_failed_generation = (population) => { // Check if the population has
   let check_merge_error_flag = population.every((timetable) => { return !check_merge_error(timetable); });
   return check_merge_error_flag; // If every timetable has no merge error, return true
 }
+const tackle_downfall = (population) => { // Check if the population has downfalls
+  let previous_population = [];
+  if (fs.existsSync("./JSON/classsync.win.chechpoint.tables.json")) {
+    previous_population = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
+  } else {
+    return false; // If no previous population exists, return false
+  }
+  if (population[0].fitness < previous_population[0].fitness) {
+    console.log("Downfall detected || " + previous_population[0].fitness + " => " + population[0].fitness + " || " + "(-" + (population[0].fitness - previous_population[0].fitness).toFixed(5) + ")" + "|| Fetching previous checkpoint population...");
+    return true; // If the current population is worse than the previous population, return true
+  } else {
+    return false; // If the current population is better than or equal to the previous population, return false
+  }
+}
 
-const initial_population = true;                 // start from scratch
+const initial_population = false;                  // start from scratch
+// let initial_population = true;                 // Uncomment the below lines to take user input for initial population
+// const rl = readline.createInterface({ input, output });
+// const response = await rl.question("Start from Scratch ? Generate initial population ? (Y/N): ");
+// initial_population = response.trim().toLowerCase() === 'y' || response.trim().toLowerCase() === 'yes';
+// rl.close();
 
 const algorithm = () => {                                                                   // timetable data with subjects and teachers already assigned
   let room = JSON.parse(fs.readFileSync("./JSON/classsync.converted.rooms.json", "utf8"));  // (capacity is not implemented in this code right now)
@@ -73,6 +94,14 @@ const algorithm = () => {                                                       
     population = mutate_Population(population, room);                                       // step 3: mutate population
     if (i % 10 == 0) {                                                                      // Checkpoint: write population to file every 10 generations to avoid redoing the same work
       // console.log("Checkpoint: writing population to file : " + i + " " + check_merge_error(population[0]));
+      if (tackle_downfall(population)) {
+        if (fs.existsSync("./JSON/classsync.win.chechpoint.tables.json")) {
+          population = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
+        } else {
+          let alltimetable = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8"));
+          population = generate_initialize_population(alltimetable, room); // If failed generation, regenerate the population
+        }
+      }
       process.stdout.write("Checkpoint: writing population to file : " + i + "\t || ");
       for (let j = 0; j < population.length; j++) {                                                // Check for merge errors in the population
         process.stdout.write(check_merge_error(population[j], false, false) ? " ✔ " : " ✘ ");
