@@ -6,6 +6,7 @@ import Faculties from "./DBupload/faculty.model.js";
 import mongoose, { set } from "mongoose";
 import dotenv from "dotenv";
 import cliProgress from 'cli-progress';
+import { target_course, target_semester } from './config2.js';
 
 dotenv.config(); // Load environment variables
 
@@ -192,10 +193,15 @@ const fetchAndSaveAll = async () => {
     await connectDB();
     if (production) b0.start(3, 0, { filename: "Connecting to MongoDB" });
     try {
-        let allTables = await Tables.find({});
+        let allTables = await Tables.find({
+            course: { $in: target_course },
+            semester: { $in: target_semester }
+        });
         fs.writeFileSync("./JSON/classsync.tables.json", JSON.stringify(allTables, null, 2), "utf8");
         if (production) b0.update(1, { filename: "Fetching Timetable Data" });
-        let allRooms = await Rooms.find({});
+        let allRooms = await Rooms.find({
+            allowed_course: { $in: target_course },
+        });
         fs.writeFileSync("./JSON/classsync.rooms.json", JSON.stringify(allRooms, null, 2), "utf8");
         if (production) b0.update(2, { filename: "Fetching Room Data" });
         let allFaculties = await Faculties.find({});
