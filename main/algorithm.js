@@ -63,7 +63,7 @@ const tackle_downfall = (population) => { // Check if the population has downfal
     return false; // If no previous population exists, return false
   }
   if (population[0].fitness < previous_population[0].fitness) {
-    console.log("Downfall detected || " + previous_population[0].fitness + " => " + population[0].fitness + " || " + "(-" + (population[0].fitness - previous_population[0].fitness).toFixed(5) + ")" + "|| Fetching previous checkpoint population...");
+    console.log("Downfall detected || " + previous_population[0].fitness + " => " + population[0].fitness + " || " + "(" + (population[0].fitness - previous_population[0].fitness).toFixed(5) + ")" + "|| Fetching previous checkpoint population...");
     return true; // If the current population is worse than the previous population, return true
   } else {
     return false; // If the current population is better than or equal to the previous population, return false
