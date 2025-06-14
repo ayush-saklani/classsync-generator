@@ -40,6 +40,8 @@ const real_checkpoint_save = (population) => {    // Checkpoint: write populatio
   if (fs.existsSync("./JSON/classsync.win.chechpoint.tables.json")) {
     previous_population = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
   }
+  let check_merge_error_flag = population.every((timetable) => { return check_merge_error(timetable); });
+  if (!check_merge_error_flag) return; // If any timetable has merge error, do not save the checkpoint
   if (previous_population.length >= 1 && population[0].fitness > previous_population[0].fitness) {
     console.log("Ka-Chow! New checkpoint saved." + population[0].fitness + " > " + previous_population[0].fitness);
     fs.writeFileSync("./JSON/classsync.win.chechpoint.tables.json", JSON.stringify(population, null, 4), "utf8");
@@ -47,6 +49,10 @@ const real_checkpoint_save = (population) => {    // Checkpoint: write populatio
     fs.writeFileSync("./JSON/classsync.win.chechpoint.tables.json", JSON.stringify(population, null, 4), "utf8");
   }
 };
+const check_failed_generation = (population) => { // Check if the population has failed generation
+  let check_merge_error_flag = population.every((timetable) => { return !check_merge_error(timetable); });
+  return check_merge_error_flag; // If every timetable has no merge error, return true
+}
 
 const initial_population = true;                 // start from scratch
 
@@ -54,6 +60,8 @@ const algorithm = () => {                                                       
   let room = JSON.parse(fs.readFileSync("./JSON/classsync.converted.rooms.json", "utf8"));  // (capacity is not implemented in this code right now)
   let population = [];                                                                      // population array to store the generated timetables
   if (initial_population) {                                                                 // step 1: generate initial population
+    // fs.unlinkSync("./JSON/classsync.win.chechpoint.tables.json"); // delete the checkpoint file if it exists
+    // fs.unlinkSync("./JSON/classsync.win.selected.tables.json"); // delete the selected file if it exists
     let alltimetable = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8"));
     population = generate_initialize_population(alltimetable, room);
     fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8"); // Checkpoint: write population to file
@@ -79,6 +87,16 @@ const algorithm = () => {                                                       
       fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8");
       return;
     }                                                                                       // Now Repeat step 2 to 5 until stop criteria
+    if (check_failed_generation(population)) {
+      if (fs.existsSync("./JSON/classsync.win.chechpoint.tables.json")) {
+        console.log("Failed generation detected || Fetching previous checkpoint population...");
+        population = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
+      } else {
+        console.log("Failed generation detected || Regenerating population...");
+        let alltimetable = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8"));
+        population = generate_initialize_population(alltimetable, room); // If failed generation, regenerate the population
+      }
+    }
   }
   console.log("No acceptable solution found.");
   console.log("Try again with a larger generation limit.");

@@ -32,17 +32,17 @@ const generate_initialize_population = (alltimetable_sent, room_sent) => {
         i--;
         continue;
       }
-      // let check = check_merge_error(timetable);
-      // if (!check) {
-      //   i--;
-      //   continue;
-      // }
+      let check = check_merge_error(timetable);
+      if (!check) {
+        i--;
+        continue;
+      }
       console.log(
         "Iteration no : ",
         counter + "\tTimetable accepted : ",
         i + 1,
+        (check ? " ✔ " : " ✘ ")
       );
-      // (check ? " ✔ " : " ✘ ")
       population.push(timetable);
     }
     // population.push(timetable);

@@ -235,9 +235,11 @@ const initialize_gene = (alltimetable, room) => {
                 slotmap[temp_day * 10 + temp_slot] = true; // mark the slot as assigned
                 teacher_overload_map["teacher" + ";" + temp_day + ";" + temp_slot + ";" + timetable[temp_day][temp_slot].teacherid] = true;
                 room_overload_map["room" + ";" + temp_day + ";" + temp_slot + ";" + room[room_type][temp_room_index].roomid] = true;
-                if (subjects[temp_subject_index].merge_teachers.length > 0) {
-                  for (let itr = 0; itr < subjects[temp_subject_index].merge_teachers; itr++) {
-                    teacher_overload_map["teacher" + ";" + temp_day + ";" + temp_slot + ";" + subjects[temp_subject_index].merge_teachers[itr]] = true;
+
+                let curr_merge_teachers = subjects[temp_subject_index].merge_teachers;
+                if (curr_merge_teachers.length > 0) {
+                  for (let itr = 0; itr < curr_merge_teachers.length; itr++) {
+                    teacher_overload_map["teacher" + ";" + temp_day + ";" + temp_slot + ";" + curr_merge_teachers[itr]] = true;
                   }
                 }
 
@@ -253,10 +255,11 @@ const initialize_gene = (alltimetable, room) => {
                   slotmap[temp_day * 10 + (temp_slot + 1)] = true; // mark the slot as assigned
                   teacher_overload_map["teacher" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + timetable[temp_day][temp_slot].teacherid] = true;
                   room_overload_map["room" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + room[room_type][temp_room_index].roomid] = true;
-                  if (subjects[temp_subject_index].merge_teachers.length > 0) {
-                    // console.log("Practical subject with merge teachers found.");
-                    for (let itr = 0; itr < subjects[temp_subject_index].merge_teachers; itr++) {
-                      teacher_overload_map["teacher" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + subjects[temp_subject_index].merge_teachers[itr]] = true;
+
+                  let curr_merge_teachers = subjects[temp_subject_index].merge_teachers;
+                  if (curr_merge_teachers.length > 0) {
+                    for (let itr = 0; itr < curr_merge_teachers.length; itr++) {
+                      teacher_overload_map["teacher" + ";" + temp_day + ";" + (temp_slot + 1) + ";" + curr_merge_teachers[itr]] = true;
                     }
                   }
                 }
