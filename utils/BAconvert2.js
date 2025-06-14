@@ -85,6 +85,12 @@ const findAndAssignPracticalRoomAndFacultySlot = (original_slot, merged_slot, is
       }
     }
     // console.log("FAILED:- ", day, time);
+    fs.appendFileSync(
+      "./JSONdata/merge_failures.log.txt",
+      JSON.stringify({ day, time, subject_room_type, ...metadata }) + "\n",
+      "utf8"
+    );
+    console.log({ day, time, subject_room_type, ...metadata });
     stats.roomfail++;
     return;
   }
