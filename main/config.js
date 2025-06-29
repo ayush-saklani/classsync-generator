@@ -4,7 +4,7 @@ let config = {
   population_size: 14,                          // population size
   showstats: false,                             // toggle to show stats of each generation // true for debugging // (not fine tuned yet)
   max_generation: 10000,                        // maximum generation limit to avoid infinite computation of poor offsprings
-  eliteRate: 0.05,                              // elite rate (5% of population) will be selected as elites for next generation
+  eliteRate: 0.1,                              // elite rate (5% of population) will be selected as elites for next generation
   selectionRate: 1,                             // selection rate (100% of population) will be selected for crossover (not used rn)
   crossover_point_from_lowest_fitness: true,    // crossover point will be selected from lowest local fitness score
   mutationRate: 0.01,                           // mutation rate (1% of population) will be mutated for next generation
@@ -14,7 +14,7 @@ let config = {
   min_local_fitness: 70,                        // minimum local fitness score which is bare minimum to be acceptable
   min_global_fitness: 140,                      // minimum global fitness score which is bare minimum to be acceptable
   acceptable_Global_Fitness_Score: 170,         // acceptable Global Fitness Score (Final Result)
-  acceptable_Local_Fitness_Score_min: 125,      // acceptable Local Fitness Score (Final Result)
+  acceptable_Local_Fitness_Score_min: 130,      // acceptable Local Fitness Score (Final Result)
   acceptable_Local_Fitness_Score_bareminimum: 100,// acceptable Local Fitness Score (Final Result)
   acceptable_Local_Fitness_Score_percentage: 0.95, // acceptable Local Fitness Score (Final Result)
 };

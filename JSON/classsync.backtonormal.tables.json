@@ -788,12 +788,12 @@
           "slotdata": ""
         },
         "02-03": {
-          "class_id": "3069",
+          "class_id": "2003",
           "subjectcode": "PCS604",
           "slotdata": ""
         },
         "03-04": {
-          "class_id": "3069",
+          "class_id": "2003",
           "subjectcode": "PCS604",
           "slotdata": ""
         },
@@ -2322,8 +2322,8 @@
           "slotdata": ""
         },
         "12-01": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "1087",
+          "subjectcode": "TCS403",
           "slotdata": ""
         },
         "01-02": {
@@ -2359,8 +2359,8 @@
           "slotdata": ""
         },
         "09-10": {
-          "class_id": "2089",
-          "subjectcode": "TCS403",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         },
         "10-11": {
@@ -3307,8 +3307,8 @@
           "slotdata": ""
         },
         "09-10": {
-          "class_id": "2033",
-          "subjectcode": "TCS408",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         },
         "10-11": {
@@ -3421,8 +3421,8 @@
           "slotdata": ""
         },
         "11-12": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "2089",
+          "subjectcode": "TCS408",
           "slotdata": ""
         },
         "12-01": {
@@ -14084,13 +14084,13 @@
           "slotdata": ""
         },
         "02-03": {
-          "class_id": "2003",
-          "subjectcode": "PCS693",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         },
         "03-04": {
-          "class_id": "2003",
-          "subjectcode": "PCS693",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         },
         "04-05": {
@@ -14136,13 +14136,13 @@
           "slotdata": ""
         },
         "02-03": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "3069",
+          "subjectcode": "PCS693",
           "slotdata": ""
         },
         "03-04": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "3069",
+          "subjectcode": "PCS693",
           "slotdata": ""
         },
         "04-05": {
@@ -14457,8 +14457,8 @@
           "slotdata": ""
         },
         "11-12": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "1087",
+          "subjectcode": "TCS601",
           "slotdata": ""
         },
         "12-01": {
@@ -14643,8 +14643,8 @@
           "slotdata": ""
         },
         "05-06": {
-          "class_id": "1085",
-          "subjectcode": "TCS601",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         }
       },
@@ -15021,8 +15021,8 @@
           "slotdata": ""
         },
         "03-04": {
-          "class_id": "2036",
-          "subjectcode": "XCS601Q",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         },
         "04-05": {
@@ -15095,8 +15095,8 @@
           "slotdata": ""
         },
         "09-10": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "1085",
+          "subjectcode": "TCS693",
           "slotdata": ""
         },
         "10-11": {
@@ -15110,8 +15110,8 @@
           "slotdata": ""
         },
         "12-01": {
-          "class_id": "2033",
-          "subjectcode": "TCS693",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         },
         "01-02": {
@@ -15120,8 +15120,8 @@
           "slotdata": ""
         },
         "02-03": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "2085",
+          "subjectcode": "XCS601Q",
           "slotdata": ""
         },
         "03-04": {
@@ -16198,13 +16198,13 @@
           "slotdata": ""
         },
         "12-01": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "1069",
+          "subjectcode": "PCS693",
           "slotdata": ""
         },
         "01-02": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "1069",
+          "subjectcode": "PCS693",
           "slotdata": ""
         },
         "02-03": {
@@ -16240,13 +16240,13 @@
           "slotdata": ""
         },
         "10-11": {
-          "class_id": "1003",
-          "subjectcode": "PCS693",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         },
         "11-12": {
-          "class_id": "1003",
-          "subjectcode": "PCS693",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         },
         "12-01": {
@@ -17192,13 +17192,13 @@
           "slotdata": ""
         },
         "02-03": {
-          "class_id": "1101",
-          "subjectcode": "PCS601",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         },
         "03-04": {
-          "class_id": "1101",
-          "subjectcode": "PCS601",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         },
         "04-05": {
@@ -17343,8 +17343,8 @@
           "slotdata": ""
         },
         "01-02": {
-          "class_id": "1071",
-          "subjectcode": "TCS601",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         },
         "02-03": {
@@ -17385,8 +17385,8 @@
           "slotdata": ""
         },
         "11-12": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "2033",
+          "subjectcode": "TCS601",
           "slotdata": ""
         },
         "12-01": {
@@ -17400,13 +17400,13 @@
           "slotdata": ""
         },
         "02-03": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "1101",
+          "subjectcode": "PCS601",
           "slotdata": ""
         },
         "03-04": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "1101",
+          "subjectcode": "PCS601",
           "slotdata": ""
         },
         "04-05": {
@@ -18846,13 +18846,13 @@
       },
       "tue": {
         "08-09": {
-          "class_id": "2127",
-          "subjectcode": "PESE600",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         },
         "09-10": {
-          "class_id": "2127",
-          "subjectcode": "PESE600",
+          "class_id": "",
+          "subjectcode": "",
           "slotdata": ""
         },
         "10-11": {
@@ -19022,13 +19022,13 @@
           "slotdata": ""
         },
         "12-01": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "6003",
+          "subjectcode": "PESE600",
           "slotdata": ""
         },
         "01-02": {
-          "class_id": "",
-          "subjectcode": "",
+          "class_id": "6003",
+          "subjectcode": "PESE600",
           "slotdata": ""
         },
         "02-03": {

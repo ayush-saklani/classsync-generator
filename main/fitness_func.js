@@ -159,7 +159,7 @@ const perfect_day_reward = (alltimetable) => {
     let perfect_day_status_average = '';
     let total_perfect_day_reward = 0;
     let perfect_dat_reward_map = {
-        'PerfectDay': 20,
+        'PerfectDay': 25,
         'GoodDay': 10,
         'AverageDay': 5,
         'PoorDay': -20,
@@ -188,23 +188,25 @@ const perfect_day_reward = (alltimetable) => {
                     day_end = k;
                 }
             }
-            if ((day_start >= 0 && day_start <= 4) && (day_end <= 4 && day_end >= 0)) {
-                perfect_day_status = (day_load >= 4) ? 'PerfectDay' : (day_load >= 3) ? 'GoodDay' : 'PoorDay';
-            }
-            else if ((day_start >= 4 && day_start <= 7) && (day_end <= 7 && day_end >= 4)) {
-                perfect_day_status = (day_load >= 3) ? 'PerfectDay' : (day_load >= 2) ? 'GoodDay' : 'PoorDay';
-            }
-            else if ((day_start >= 4 && day_start <= 9) && (day_end <= 9 && day_end >= 4)) {
-                perfect_day_status = (day_load >= 4) ? 'PerfectDay' : (day_load >= 3) ? 'GoodDay' : 'PoorDay';
-            }
-            else if ((day_start >= 0 && day_start <= 7) && (day_end <= 7 && day_end >= 0)) {
-                perfect_day_status = (day_load >= 6) ? 'PerfectDay' : (day_load >= 5) ? 'GoodDay' : (day_load >= 4) ? 'AverageDay' : 'PoorDay';
-            }
-            else if (day_load == 0) {
+            if (day_load == 0) {
                 perfect_day_status = 'Holiday';
             }
-            else {
+            else if ((day_start >= 0 && day_start <= 4) && (day_end <= 4 && day_end >= 0)) {          // 8am to 1pm
+                perfect_day_status = (day_load >= 4) ? 'PerfectDay' : (day_load >= 3) ? 'GoodDay' : 'PoorDay';
+            }
+            else if ((day_start >= 4 && day_start <= 7) && (day_end <= 7 && day_end >= 4)) {         // 12pm to 4pm
+                perfect_day_status = (day_load >= 3) ? 'PerfectDay' : (day_load >= 2) ? 'GoodDay' : 'PoorDay';
+            }
+            else if ((day_start >= 4 && day_start <= 9) && (day_end <= 9 && day_end >= 4)) {          // 12pm to 6pm
+                perfect_day_status = (day_load >= 4) ? 'PerfectDay' : (day_load >= 3) ? 'GoodDay' : 'PoorDay';
+            }
+            else if ((day_start >= 0 && day_start <= 7) && (day_end <= 7 && day_end >= 0)) {          // 8am to 4pm
+                perfect_day_status = (day_load >= 6) ? 'PerfectDay' : (day_load >= 5) ? 'GoodDay' : (day_load >= 4) ? 'AverageDay' : 'PoorDay';
+            }
+            else if ((day_start >= 0 && day_start <= 9) && (day_end <= 9 && day_end >= 0)) {          // 8am to 6pm
                 perfect_day_status = (day_load >= 7) ? 'PerfectDay' : (day_load >= 6) ? 'GoodDay' : (day_load >= 5) ? 'AverageDay' : 'PoorDay';
+            }else{
+                console.log("Unexpected case in perfect day calculation for timetable index: " + i + ", day index: " + j);
             }
             if (perfect_day_status != 'Holiday') {
                 perfect_day_status_arr.push(perfect_day_status);

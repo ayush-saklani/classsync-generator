@@ -2023,13 +2023,11 @@
           "subjectcode": "TCS693"
         },
         "01-02": {
-          "course": "btechcse",
-          "semester": "6",
-          "section": [
-            "J2"
-          ],
-          "teacherid": "2118587",
-          "subjectcode": "TCS601"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         },
         "02-03": {
           "course": "btechcse",
@@ -2494,11 +2492,13 @@
           "subjectcode": "TCS693"
         },
         "09-10": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118523",
+          "subjectcode": "TCS693"
         },
         "10-11": {
           "course": "",
@@ -2654,13 +2654,11 @@
           "subjectcode": "XCS401V"
         },
         "05-06": {
-          "course": "btechcse",
-          "semester": "6",
-          "section": [
-            "G2"
-          ],
-          "teacherid": "2118619",
-          "subjectcode": "TCS601"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         }
       },
       "fri": {
@@ -2935,11 +2933,13 @@
           "subjectcode": "TCS601"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "G2"
+          ],
+          "teacherid": "2118619",
+          "subjectcode": "TCS601"
         },
         "12-01": {
           "course": "btechcse",
@@ -3208,11 +3208,13 @@
           "subjectcode": ""
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118559",
+          "subjectcode": "TCS403"
         },
         "01-02": {
           "course": "btechcse",
@@ -5488,11 +5490,13 @@
           "subjectcode": "XCS601V"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118600",
+          "subjectcode": "XCS601Q"
         },
         "03-04": {
           "course": "btechcse",
@@ -6749,13 +6753,11 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "btechcse",
-          "semester": "4",
-          "section": [
-            "G1"
-          ],
-          "teacherid": "2118559",
-          "subjectcode": "TCS403"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         },
         "10-11": {
           "course": "",
@@ -6765,11 +6767,13 @@
           "subjectcode": ""
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "4",
+          "section": [
+            "H1"
+          ],
+          "teacherid": "2118612",
+          "subjectcode": "TCS408"
         },
         "12-01": {
           "course": "btechcse",
@@ -7156,13 +7160,11 @@
           "subjectcode": ""
         },
         "09-10": {
-          "course": "btechcse",
-          "semester": "4",
-          "section": [
-            "H1"
-          ],
-          "teacherid": "2118612",
-          "subjectcode": "TCS408"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         },
         "10-11": {
           "course": "",
@@ -7181,13 +7183,11 @@
           "subjectcode": "TCS403"
         },
         "12-01": {
-          "course": "btechcse",
-          "semester": "6",
-          "section": [
-            "H1"
-          ],
-          "teacherid": "2118523",
-          "subjectcode": "TCS693"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         },
         "01-02": {
           "course": "btechcse",
@@ -7338,11 +7338,13 @@
           "subjectcode": "XCS601Q"
         },
         "11-12": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118587",
+          "subjectcode": "TCS601"
         },
         "12-01": {
           "course": "btechcse",
@@ -7611,13 +7613,11 @@
           "subjectcode": ""
         },
         "03-04": {
-          "course": "btechcse",
-          "semester": "6",
-          "section": [
-            "H1"
-          ],
-          "teacherid": "2118600",
-          "subjectcode": "XCS601Q"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         },
         "04-05": {
           "course": "btechcse",
@@ -8463,18 +8463,22 @@
           "subjectcode": "PESE600"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118604",
+          "subjectcode": "PESE600"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "L1"
+          ],
+          "teacherid": "2118604",
+          "subjectcode": "PESE600"
         },
         "02-03": {
           "course": "btechcse",
@@ -9844,22 +9848,18 @@
       },
       "tue": {
         "08-09": {
-          "course": "btechcse",
-          "semester": "6",
-          "section": [
-            "L1"
-          ],
-          "teacherid": "2118604",
-          "subjectcode": "PESE600"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         },
         "09-10": {
-          "course": "btechcse",
-          "semester": "6",
-          "section": [
-            "L1"
-          ],
-          "teacherid": "2118604",
-          "subjectcode": "PESE600"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         },
         "10-11": {
           "course": "",
@@ -10535,18 +10535,22 @@
           "subjectcode": "PCS408"
         },
         "12-01": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118551",
+          "subjectcode": "PCS693"
         },
         "01-02": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "I1"
+          ],
+          "teacherid": "2118551",
+          "subjectcode": "PCS693"
         },
         "02-03": {
           "course": "btechcse",
@@ -11310,16 +11314,20 @@
         "02-03": {
           "course": "btechcse",
           "semester": "6",
-          "section": "A2",
-          "teacherid": "2118504",
-          "subjectcode": "PCS604"
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118574",
+          "subjectcode": "PCS693"
         },
         "03-04": {
           "course": "btechcse",
           "semester": "6",
-          "section": "A2",
-          "teacherid": "2118504",
-          "subjectcode": "PCS604"
+          "section": [
+            "G1"
+          ],
+          "teacherid": "2118574",
+          "subjectcode": "PCS693"
         },
         "04-05": {
           "course": "btechcse",
@@ -11547,22 +11555,18 @@
           "subjectcode": "PCS693"
         },
         "02-03": {
-          "course": "btechcse",
-          "semester": "6",
-          "section": [
-            "J2"
-          ],
-          "teacherid": "2118617",
-          "subjectcode": "PCS601"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         },
         "03-04": {
-          "course": "btechcse",
-          "semester": "6",
-          "section": [
-            "J2"
-          ],
-          "teacherid": "2118617",
-          "subjectcode": "PCS601"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         },
         "04-05": {
           "course": "btechcse",
@@ -11883,18 +11887,22 @@
           "subjectcode": "PCS409"
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118617",
+          "subjectcode": "PCS601"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": [
+            "J2"
+          ],
+          "teacherid": "2118617",
+          "subjectcode": "PCS601"
         },
         "04-05": {
           "course": "btechcse",
@@ -15806,22 +15814,18 @@
           "subjectcode": "PCS408"
         },
         "02-03": {
-          "course": "btechcse",
-          "semester": "6",
-          "section": [
-            "G1"
-          ],
-          "teacherid": "2118574",
-          "subjectcode": "PCS693"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         },
         "03-04": {
-          "course": "btechcse",
-          "semester": "6",
-          "section": [
-            "G1"
-          ],
-          "teacherid": "2118574",
-          "subjectcode": "PCS693"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         },
         "04-05": {
           "course": "btechcse",
@@ -15886,18 +15890,18 @@
           "subjectcode": ""
         },
         "02-03": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": "A2",
+          "teacherid": "2118504",
+          "subjectcode": "PCS604"
         },
         "03-04": {
-          "course": "",
-          "semester": "",
-          "section": [],
-          "teacherid": "",
-          "subjectcode": ""
+          "course": "btechcse",
+          "semester": "6",
+          "section": "A2",
+          "teacherid": "2118504",
+          "subjectcode": "PCS604"
         },
         "04-05": {
           "course": "",
@@ -18513,22 +18517,18 @@
           "subjectcode": ""
         },
         "10-11": {
-          "course": "btechcse",
-          "semester": "6",
-          "section": [
-            "I1"
-          ],
-          "teacherid": "2118551",
-          "subjectcode": "PCS693"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         },
         "11-12": {
-          "course": "btechcse",
-          "semester": "6",
-          "section": [
-            "I1"
-          ],
-          "teacherid": "2118551",
-          "subjectcode": "PCS693"
+          "course": "",
+          "semester": "",
+          "section": [],
+          "teacherid": "",
+          "subjectcode": ""
         },
         "12-01": {
           "course": "btechcse",
