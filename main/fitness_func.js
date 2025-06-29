@@ -1,6 +1,6 @@
 import fs from 'fs';
 import config from './config.js';
-import { count } from 'mathjs';
+
 const teacher_and_room_conflicts = (alltimetable) => {
     let count_teacher_conflicts = 0;
     let count_room_conflicts = 0;
@@ -20,6 +20,20 @@ const teacher_and_room_conflicts = (alltimetable) => {
                         temp[("room" + alltimetable['data'][i]['timetable'][j][k].roomid)] = true;
                         temp[("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid)] = true;
                         temp[(("room" + alltimetable['data'][i]['timetable'][j][k].roomid) + ";" + ("teacher" + alltimetable['data'][i]['timetable'][j][k].teacherid))] = true;
+                    }
+                    if (alltimetable['data'][i].joint) {
+                        let otherteacherids = alltimetable['data'][i].subjects.find(
+                            (subject) => subject.subjectid == alltimetable['data'][i].timetable[j][k].subjectid
+                        ).merge_teachers;
+                        if (otherteacherids.length > 0) {
+                            otherteacherids.forEach((otherteacherid) => {
+                                if (temp[("teacher" + otherteacherid)]) {
+                                    count_teacher_conflicts++;
+                                } else {
+                                    temp[("teacher" + otherteacherid)] = true;
+                                }
+                            });
+                        }
                     }
                 }
             }
@@ -57,6 +71,17 @@ const teacher_overload_penalty = (alltimetable) => {
         for (let j = 0; j < timetable.length; j++) {
             for (let k = 0; k < timetable[j].length; k++) {
                 if (timetable[j][k].teacherid == "") continue;
+                if (alltimetable['data'][i].joint) {
+                    let otherteacherids = alltimetable['data'][i].subjects.find(
+                        (subject) => subject.subjectid == alltimetable['data'][i].timetable[j][k].subjectid
+                    ).merge_teachers;
+                    if (otherteacherids.length > 0) {
+                        otherteacherids.forEach((otherteacherid) => {
+                            overload_teacher_map[(j + ";" + k + ";" + otherteacherid)] = true;
+                            teacher_map[otherteacherid] = true;
+                        });
+                    }
+                }
                 let curr_teacher_mark = j + ";" + k + ";" + timetable[j][k].teacherid;
                 overload_teacher_map[curr_teacher_mark] = true;
                 teacher_map[timetable[j][k].teacherid] = true;
@@ -166,7 +191,7 @@ const perfect_day_reward = (alltimetable) => {
             if ((day_start >= 0 && day_start <= 4) && (day_end <= 4 && day_end >= 0)) {
                 perfect_day_status = (day_load >= 4) ? 'PerfectDay' : (day_load >= 3) ? 'GoodDay' : 'PoorDay';
             }
-            else if ((day_start >= 4 && day_start <= 7 ) && (day_end <= 7 && day_end >= 4)) {
+            else if ((day_start >= 4 && day_start <= 7) && (day_end <= 7 && day_end >= 4)) {
                 perfect_day_status = (day_load >= 3) ? 'PerfectDay' : (day_load >= 2) ? 'GoodDay' : 'PoorDay';
             }
             else if ((day_start >= 4 && day_start <= 9) && (day_end <= 9 && day_end >= 4)) {
@@ -179,7 +204,7 @@ const perfect_day_reward = (alltimetable) => {
                 perfect_day_status = 'Holiday';
             }
             else {
-                perfect_day_status = (day_load >= 7) ? 'PerfectDay' : (day_load >= 6) ? 'GoodDay' : (day_load >= 5) ?'AverageDay' : 'PoorDay';
+                perfect_day_status = (day_load >= 7) ? 'PerfectDay' : (day_load >= 6) ? 'GoodDay' : (day_load >= 5) ? 'AverageDay' : 'PoorDay';
             }
             if (perfect_day_status != 'Holiday') {
                 perfect_day_status_arr.push(perfect_day_status);
