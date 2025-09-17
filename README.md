@@ -6,7 +6,17 @@
 </p>
 
 **This is the all new addition to the ClassSync where we are introducing the automation in timetable generation using genetic algorithm.**<br>
-**_(currently in the Finalizing-coding-ish phase of development)_**
+<!-- **_(currently in the Finalizing-coding-ish phase of development)_** -->
+
+# **Languages, Frameworks and Tools**
+
+<div align="left" style="margin: 10px;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="75"/>
+<img src="https://devicon-website.vercel.app/api/nodejs/original.svg"height="75"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" height="75"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg" height="75"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg" height="75"/>
+</div>
 
 # Steps to follow
 
@@ -19,16 +29,6 @@
 1.  **Run `room.reverse.js` which converts the data format to Class-Sync data format.**
 1.  **Run `DBupload.js` which uploads the converted data back to the MongoDB database which can be reflected to the Class-sync Website or downloaded for recirculation. _(the data can be ironed out from here)_**
 1.  **Outputs of the algorithm. <br>`classsync.backtonormal.tables.json`, <br> `classsync.backtonormal.faculties.json`, <br> `classsync.backtonormal.rooms.json`**
-
-# **Languages, Frameworks and Tools**
-
-<div align="left" style="margin: 10px;">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="75"/>
-<img src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png"height="75"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" height="75"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg" height="75"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-plain.svg" height="75"/>
-</div>
 
 # Architecture and Algorithm Flow
 
