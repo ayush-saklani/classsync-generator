@@ -1,4 +1,9 @@
-# <img src="assets/img/new-logo-white-2.png" height="70"/>
+<p align="center">
+    <div align="center">
+        <img src="assets/img/classsync_generator_logo.png" height="150"/><br>
+        <h1>Automation in Timetable Generation using Genetic Algorithm</h1>
+    </div>
+</p>
 
 **This is the all new addition to the ClassSync where we are introducing the automation in timetable generation using genetic algorithm.**<br>
 **_(currently in the Finalizing-coding-ish phase of development)_**
