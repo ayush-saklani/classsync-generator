@@ -5,6 +5,14 @@
             "capacity": 1
         },
         {
+            "roomid": "6003",
+            "capacity": 1
+        },
+        {
+            "roomid": "2127",
+            "capacity": 1
+        },
+        {
             "roomid": "1041",
             "capacity": 1
         }

@@ -1,12 +1,15 @@
 import fs from "fs";
+import readline from 'readline/promises';
+import { stdin as input, stdout as output } from 'process';
 import config from "./config.js";
 import generate_initialize_population from "./generate_initial_population.js";
 import { fitness_func_generation } from "./fitness_func.js";
 import crossoverGeneration from "./crossover.js";
 import mutate_Population from "./mutation.js";
+import check_merge_error from "../utils/practical_merge_possible.js";
+
 const art = await fs.promises.readFile("./assets/art.txt", "utf-8");
-const runId = process.argv[2] || "default";
-const runCounter = process.argv[3] || 1;
+console.log(art);
 
 const check_acceptability = (population) => {
   let flag = true;
@@ -15,7 +18,6 @@ const check_acceptability = (population) => {
     if (population[i].fitness >= config.acceptable_Global_Fitness_Score) {
       let count = 0;
       for (let j = 0; j < population[i].data.length; j++) {
-        // console.log(population[i].data[j].local_fitness);
         if (population[i].data[j].local_fitness < config.acceptable_Local_Fitness_Score_bareminimum) {
           flag = false;
         } else {
@@ -24,94 +26,112 @@ const check_acceptability = (population) => {
           }
         }
       }
-      if (count >= config.acceptable_Local_Fitness_Score_percentage * population[i].data.length) {
-        flag = true;
-      } else {
-        flag = false;
-      }
+      flag = count >= config.acceptable_Local_Fitness_Score_percentage * population[i].data.length ? true : false;
     } else {
       flag = false;
     }
     if (flag == true) {
       fs.writeFileSync("./JSON/classsync.Win.perfect.tables.json", JSON.stringify(population, null, 4), "utf8");
-      fs.writeFileSync("./JSON/accepetedsol.json", JSON.stringify([population[i]], null, 4), "utf8");
       return true;
     }
   }
   return false;
 };
-
-const real_checkpoint_save = (population) => {
-  // Checkpoint: write population to file if current population is better than previous population
+const real_checkpoint_save = (population) => {    // Checkpoint: write population to file if current population is better than previous population
   let previous_population = [];
   if (fs.existsSync("./JSON/classsync.win.chechpoint.tables.json")) {
     previous_population = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
   }
+  let check_merge_error_flag = population.every((timetable) => { return check_merge_error(timetable); });
+  if (!check_merge_error_flag) return; // If any timetable has merge error, do not save the checkpoint
   if (previous_population.length >= 1 && population[0].fitness > previous_population[0].fitness) {
-    console.log("Ka-Chow! New checkpoint saved.");
-
+    console.log("Ka-Chow! New checkpoint saved. || " + previous_population[0].fitness + " => " + population[0].fitness + " || " + "(+" + (population[0].fitness - previous_population[0].fitness).toFixed(5) + ")");
     fs.writeFileSync("./JSON/classsync.win.chechpoint.tables.json", JSON.stringify(population, null, 4), "utf8");
   } else if (previous_population.length == 0) {
     fs.writeFileSync("./JSON/classsync.win.chechpoint.tables.json", JSON.stringify(population, null, 4), "utf8");
   }
-
-  const solutionPath = `./results/solution_${runId}.json`;
-  if (fs.existsSync(solutionPath)) {
-    let previous_current_instance_population = JSON.parse(fs.readFileSync(solutionPath, "utf8"));
-    if (previous_current_instance_population[0].fitness < population[0].fitness) {
-      fs.writeFileSync(solutionPath, JSON.stringify(population, null, 4), "utf8");
-    }
-  } else {
-    fs.writeFileSync(solutionPath, JSON.stringify(population, null, 4), "utf8");
-  }
 };
+const check_failed_generation = (population) => { // Check if the population has failed generation
+  let check_merge_error_flag = population.every((timetable) => { return !check_merge_error(timetable); });
+  return check_merge_error_flag; // If every timetable has no merge error, return true
+}
+const tackle_downfall = (population) => { // Check if the population has downfalls
+  let previous_population = [];
+  if (fs.existsSync("./JSON/classsync.win.chechpoint.tables.json")) {
+    previous_population = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
+  } else {
+    return false; // If no previous population exists, return false
+  }
+  if (population[0].fitness < previous_population[0].fitness) {
+    console.log("Downfall detected || " + previous_population[0].fitness + " => " + population[0].fitness + " || " + "(" + (population[0].fitness - previous_population[0].fitness).toFixed(5) + ")" + "|| Fetching previous checkpoint population...");
+    return true; // If the current population is worse than the previous population, return true
+  } else {
+    return false; // If the current population is better than or equal to the previous population, return false
+  }
+}
 
-const algorithm = (room) => {
-  console.log("Run ID of current run instance: ", runId, "Current Run Number: ", runCounter);
-  //  timetable data with subjects and teachers already assigned
-  let alltimetable = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8")); // step 1: generate initial population
-  let population;
+const initial_population = false;                  // start from scratch
+// let initial_population = true;                 // Uncomment the below lines to take user input for initial population
+// const rl = readline.createInterface({ input, output });
+// const response = await rl.question("Start from Scratch ? Generate initial population ? (Y/N): ");
+// initial_population = response.trim().toLowerCase() === 'y' || response.trim().toLowerCase() === 'yes';
+// rl.close();
 
-  // if (runCounter == 1) {
-  //   population = generate_initialize_population(alltimetable, room);
-  //   fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8"); // Checkpoint: write population to file
-  // } else {
-  //   population = JSON.parse(fs.readFileSync("./JSON/best_instance_result_featuring_kanye_west.json", "utf8"));
-  // }
-  population = JSON.parse(fs.readFileSync("./JSON/classsync.win.selected.tables.json", "utf8")); // step 1: read population from file (if exists) (alternate)
-
-  // The loop is Technically infinite, and it will break when acceptable solution is found
-  // but we have set a max_generation limit to avoid infinite computation of poor offsprings
+const algorithm = () => {                                                                   // timetable data with subjects and teachers already assigned
+  let room = JSON.parse(fs.readFileSync("./JSON/classsync.converted.rooms.json", "utf8"));  // (capacity is not implemented in this code right now)
+  let population = [];                                                                      // population array to store the generated timetables
+  if (initial_population) {                                                                 // step 1: generate initial population
+    // fs.unlinkSync("./JSON/classsync.win.chechpoint.tables.json"); // delete the checkpoint file if it exists
+    // fs.unlinkSync("./JSON/classsync.win.selected.tables.json"); // delete the selected file if it exists
+    let alltimetable = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8"));
+    population = generate_initialize_population(alltimetable, room);
+    fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8"); // Checkpoint: write population to file
+  } else {                                                                                  // step 1: generate initial population
+    population = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
+  }
   for (let i = 0; i < config.max_generation; i++) {
-    population = crossoverGeneration(population, room); // step 2: crossover population
-    population = mutate_Population(population, room); // step 3: mutate population
-
-    if (i % 10 == 0) {
-      // Checkpoint: write population to file every 10 generations
-      console.log("Checkpoint: writing population to file...");
+    population = crossoverGeneration(population, room);                                     // step 2: crossover population
+    population = mutate_Population(population, room);                                       // step 3: mutate population
+    if (i % 10 == 0) {                                                                      // Checkpoint: write population to file every 10 generations to avoid redoing the same work
+      // console.log("Checkpoint: writing population to file : " + i + " " + check_merge_error(population[0]));
+      if (tackle_downfall(population)) {
+        if (fs.existsSync("./JSON/classsync.win.chechpoint.tables.json")) {
+          population = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
+        } else {
+          let alltimetable = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8"));
+          population = generate_initialize_population(alltimetable, room); // If failed generation, regenerate the population
+        }
+      }
+      process.stdout.write("Checkpoint: writing population to file : " + i + "\t || ");
+      for (let j = 0; j < population.length; j++) {                                                // Check for merge errors in the population
+        process.stdout.write(check_merge_error(population[j], false, false) ? " ✔ " : " ✘ ");
+      }
+      console.log();
       fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8");
     }
-    real_checkpoint_save(population); // Checkpoint: write population to file if current population is better than previous population
-
-    population = fitness_func_generation(population, room); // step 4: calculate fitness score
-
-    if (check_acceptability(population)) {
-      console.log("Acceptable solution found"); // step 5: Check for acceptability or Stop criteria
-      return population;
+    real_checkpoint_save(population);                                                       // 2nd Checkpoint: write population to file if current population is best then save it to file
+    population = fitness_func_generation(population, room);                                 // step 4: calculate fitness score
+    if (check_acceptability(population)) {                                                  // step 5: Check for acceptability or Stop criteria
+      console.log("Acceptable solution found");
+      fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8");
+      return;
+    }                                                                                       // Now Repeat step 2 to 5 until stop criteria
+    if (check_failed_generation(population)) {
+      if (fs.existsSync("./JSON/classsync.win.chechpoint.tables.json")) {
+        console.log("Failed generation detected || Fetching previous checkpoint population...");
+        population = JSON.parse(fs.readFileSync("./JSON/classsync.win.chechpoint.tables.json", "utf8"));
+      } else {
+        console.log("Failed generation detected || Regenerating population...");
+        let alltimetable = JSON.parse(fs.readFileSync("./JSON/classsync.converted.tables.json", "utf8"));
+        population = generate_initialize_population(alltimetable, room); // If failed generation, regenerate the population
+      }
     }
-    // Now Repeat step 2 to 5 until stop criteria
   }
-  return null;
+  console.log("No acceptable solution found.");
+  console.log("Try again with a larger generation limit.");
+  return;
 };
 
-//console.log(art);
 console.time("Execution Time");
-
-let room = JSON.parse(fs.readFileSync("./JSON/classsync.converted.rooms.json", "utf8")); //  (capacity is not implemented in this code right now)
-let population = algorithm(room);
-
-if (population == null) {
-  console.log("No acceptable solution found. Try again with a larger generation limit.");
-  console.log("Population data is saved in classsync.win.selected.tables.json file.\n");
-} else fs.writeFileSync("./JSON/classsync.win.selected.tables.json", JSON.stringify(population, null, 4), "utf8");
+algorithm();
 console.timeEnd("Execution Time");

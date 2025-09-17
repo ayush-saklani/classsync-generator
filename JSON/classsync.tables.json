@@ -2101,9 +2101,9 @@
             },
             {
                 "subjectcode": "PCS409",
-                "teacherid": "2118583",
+                "teacherid": "2118515",
                 "weekly_hrs": "2",
-                "teachername": "Ms. Swati Joshi",
+                "teachername": "Dr. Vikrant Sharma",
                 "subjectname": "DAA LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "computerlab"
@@ -8455,27 +8455,27 @@
             },
             {
                 "subjectcode": "PCS693",
-                "teacherid": "2118523",
+                "teacherid": "2118551",
                 "weekly_hrs": "2",
-                "teachername": "Mr. Samir Rana",
+                "teachername": "Ms. Shagun Singh Dasawat",
                 "subjectname": "FULL STACK WEB LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "computerlab"
             },
             {
                 "subjectcode": "PESE600",
-                "teacherid": "2118573",
+                "teacherid": "2118605",
                 "weekly_hrs": "2",
-                "teachername": "Ms. Neelam Kathait",
+                "teachername": "Mr. Animesh Sharma",
                 "subjectname": "PRACTICAL FOR EMPLOYABILITY SKILL ENHANCEMENT LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "englishlab"
             },
             {
                 "subjectcode": "PCS604",
-                "teacherid": "2118517",
+                "teacherid": "2118504",
                 "weekly_hrs": "2",
-                "teachername": "Mr. Saumitra Chattopadhyay",
+                "teachername": "Dr. Ashok Kumar Sahoo",
                 "subjectname": "COMPUTER NETWORKS LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "computerlab"
@@ -9538,9 +9538,9 @@
             },
             {
                 "subjectcode": "PCS601",
-                "teacherid": "2118550",
+                "teacherid": "2118617",
                 "weekly_hrs": "2",
-                "teachername": "Ms. Sonal Malhotra",
+                "teachername": "Mr. Tushar Sharma",
                 "subjectname": "COMPILER DESIGN LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "computerlab"
@@ -9556,18 +9556,18 @@
             },
             {
                 "subjectcode": "PESE600",
-                "teacherid": "2118573",
+                "teacherid": "2118605",
                 "weekly_hrs": "2",
-                "teachername": "Ms. Neelam Kathait",
+                "teachername": "Mr. Animesh Sharma",
                 "subjectname": "PRACTICAL FOR EMPLOYABILITY SKILL ENHANCEMENT LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "englishlab"
             },
             {
                 "subjectcode": "PCS604",
-                "teacherid": "2118517",
+                "teacherid": "2118504",
                 "weekly_hrs": "2",
-                "teachername": "Mr. Saumitra Chattopadhyay",
+                "teachername": "Dr. Ashok Kumar Sahoo",
                 "subjectname": "COMPUTER NETWORKS LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "computerlab"
@@ -10630,36 +10630,36 @@
             },
             {
                 "subjectcode": "PCS601",
-                "teacherid": "2118528",
+                "teacherid": "2118617",
                 "weekly_hrs": "2",
-                "teachername": "Mr. Chandradeep Bhatt",
+                "teachername": "Mr. Tushar Sharma",
                 "subjectname": "COMPILER DESIGN LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "computerlab"
             },
             {
                 "subjectcode": "PCS693",
-                "teacherid": "2118513",
+                "teacherid": "2118551",
                 "weekly_hrs": "2",
-                "teachername": "Mr. Piyush Bagla",
+                "teachername": "Ms. Shagun Singh Dasawat",
                 "subjectname": "FULL STACK WEB LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "computerlab"
             },
             {
                 "subjectcode": "PESE600",
-                "teacherid": "2118618",
+                "teacherid": "2118605",
                 "weekly_hrs": "2",
-                "teachername": "Dr. Anubha Pundir",
+                "teachername": "Mr. Animesh Sharma",
                 "subjectname": "PRACTICAL FOR EMPLOYABILITY SKILL ENHANCEMENT LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "englishlab"
             },
             {
                 "subjectcode": "PCS604",
-                "teacherid": "2118537",
+                "teacherid": "2118517",
                 "weekly_hrs": "2",
-                "teachername": "Ms. Richa Gupta",
+                "teachername": "Mr. Saumitra Chattopadhyay",
                 "subjectname": "COMPUTER NETWORKS LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "computerlab"
@@ -11722,18 +11722,18 @@
             },
             {
                 "subjectcode": "PCS601",
-                "teacherid": "2118542",
+                "teacherid": "2118520",
                 "weekly_hrs": "2",
-                "teachername": "Mr. Mukesh Kumar",
+                "teachername": "Dr. Rishika Yadav",
                 "subjectname": "COMPILER DESIGN LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "computerlab"
             },
             {
                 "subjectcode": "PCS693",
-                "teacherid": "2118577",
+                "teacherid": "2118574",
                 "weekly_hrs": "2",
-                "teachername": "Ms Shraddha",
+                "teachername": "Ms Manvi",
                 "subjectname": "FULL STACK WEB LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "computerlab"
@@ -22033,9 +22033,9 @@
             },
             {
                 "subjectcode": "PCS403",
-                "teacherid": "2118558",
+                "teacherid": "2118535",
                 "weekly_hrs": "2",
-                "teachername": "Dr. Jyoti Ramola",
+                "teachername": "Mr. Rahul Chauhan",
                 "subjectname": "MICROPROCESSOR LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "Electroniclab"
@@ -22051,18 +22051,18 @@
             },
             {
                 "subjectcode": "PCS408",
-                "teacherid": "2118519",
+                "teacherid": "2118507",
                 "weekly_hrs": "2",
-                "teachername": "Ms. Sonali Gupta",
+                "teachername": "Dr. Prateek Srivastava",
                 "subjectname": "JAVA LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "Computerlab"
             },
             {
                 "subjectcode": "PCS409",
-                "teacherid": "2118581",
+                "teacherid": "2118579",
                 "weekly_hrs": "2",
-                "teachername": "Mr. Ayush Kumar",
+                "teachername": "Dr Anupam Singh",
                 "subjectname": "DAA LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "Computerlab"
@@ -23089,9 +23089,9 @@
             },
             {
                 "subjectcode": "PCS403",
-                "teacherid": "2118564",
+                "teacherid": "2118539",
                 "weekly_hrs": "2",
-                "teachername": "Dr. Mohit Payal",
+                "teachername": "Dr. Devesh Tiwari",
                 "subjectname": "MICROPROCESSOR LAB",
                 "theory_practical": "PRACTICAL",
                 "room_type": "electroniclab"

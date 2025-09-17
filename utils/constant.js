@@ -346,6 +346,21 @@ export const table_schedule_sample = {
   },
 }
 
+export const elective_map_sample = {
+  "course": "",
+  "semester": "",
+  "no_of_section": "",
+  "timetable": [
+    [{ "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }],
+    [{ "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }],
+    [{ "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }],
+    [{ "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }],
+    [{ "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }],
+    [{ "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }],
+    [{ "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }, { "elective_section_avail": [] }]
+  ]
+}
+
 export const mergemap = {
   "4": {
     "A1": ["A2"],

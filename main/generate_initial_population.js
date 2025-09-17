@@ -2,6 +2,8 @@ import fs from "fs";
 import initialize_gene from "./plot_timetables.js";
 import config from "./config.js";
 import { fitness_func_generation } from "./fitness_func.js";
+import check_merge_error from "../utils/practical_merge_possible.js";
+// practical merger changes are done here ig (tested)
 
 const generate_initialize_population = (alltimetable_sent, room_sent) => {
   let population = [];
@@ -30,10 +32,16 @@ const generate_initialize_population = (alltimetable_sent, room_sent) => {
         i--;
         continue;
       }
+      let check = check_merge_error(timetable);
+      if (!check) {
+        i--;
+        continue;
+      }
       console.log(
         "Iteration no : ",
         counter + "\tTimetable accepted : ",
         i + 1,
+        (check ? " ✔ " : " ✘ ")
       );
       population.push(timetable);
     }
